@@ -413,10 +413,10 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .drawer__panel, .drawer__backdrop { transition: none; } }
 
-/* ===== Fade in up: each section, first time it enters the screen ===== */
-.reveal { opacity: .45; transform: translateY(14px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,0,0,1); }
-.reveal.is-in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+/* ===== Slide up: each section, first time it enters the screen. No fade ===== */
+.reveal { transform: translateY(24px); transition: transform .9s cubic-bezier(.2,0,0,1); }
+.reveal.is-in { transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { transform: none; transition: none; } }
 
 /* Grow on hover for every card (category + product) */
 .cat, .prod { transition: transform .5s cubic-bezier(.2,0,0,1); will-change: transform; }
