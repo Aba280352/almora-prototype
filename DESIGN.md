@@ -252,7 +252,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 ## 5l. Mobile header and menu (phones only, up to 767px)
 
-- The main header is one row, balanced around the logo: hamburger and search together on the start side (magicoon `menu` 28px), the logo exactly in the middle, and account and cart together on the end side. The text menu row and the "Best Sellers" button are not shown in the header on phones. The sticky header v2 uses the same three zones.
+- The main header is one row: hamburger alone on the start side (magicoon `menu`, 28px), the logo exactly in the middle, and the three tools (search, account, cart) close together on the end side with a 10px gap. The text menu row and the "Best Sellers" button are not shown in the header on phones. The sticky header v2 uses the same three zones.
 - The hamburger opens a drawer from the start side (88vw, max 380px, white, 0.4s slide) over a `rgba(32,32,32,.45)` backdrop; the page does not scroll behind it. Close with the X (magicoon `times`), the backdrop, a link, or Escape.
 - Drawer: logo and close button on top, then the menu as a vertical list in Body SemiBold: בית, חנות (opens a sub list with the live categories and the "בקרוב" ones muted), אודות, מחשבון זהב וכסף, מדיניות (opens the policy links), צור קשר. At the bottom, the **Best Sellers** button, full width, black, bold.
 - Desktop and tablet are unchanged.

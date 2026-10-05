@@ -381,12 +381,9 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 @media (prefers-reduced-motion: reduce) { .sticky, .sticky.is-on { transition: none; } .tag:hover::after { animation: none; } }
 
 /* ===== Mobile menu (phones only) ===== */
-.burger, .drawer, .mstart { display: none; }
+.burger, .drawer { display: none; }
 @media (max-width: 767px) {
-  .mstart, .header__tools { width: 84px; justify-content: space-between; }
-  .mstart { display: flex; align-items: center; justify-self: start; }
-  .mstart .tool { display: grid; place-items: center; width: 40px; height: 44px; }
-  .header__tools .tool--search { display: none; }
+  .header__tools { gap: 10px; }
   .burger { display: grid; place-items: center; justify-self: start; width: 44px; height: 44px; margin-inline-start: -10px; padding: 0; border: 0; background: none; color: var(--color-text); cursor: pointer; }
   .burger .icon { width: 28px; height: 28px; }
   .header__cta { display: none; }
@@ -476,7 +473,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 
 <header class="header">
   <div class="header__top">
-    <div class="mstart"><button class="burger" type="button" aria-label="פתיחת תפריט" aria-controls="drawer" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#menu"/></svg></button><a class="tool" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a></div>
+    <button class="burger" type="button" aria-label="פתיחת תפריט" aria-controls="drawer" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#menu"/></svg></button>
     <a class="btn header__cta" href="#">Best Sellers</a>
 
     <a class="header__logo" href="#" aria-label="ALMORA">
@@ -484,7 +481,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
     </a>
 
     <div class="header__tools">
-      <a class="tool tool--search" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a>
+      <a class="tool" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a>
       <a class="tool" href="#" aria-label="החשבון שלי"><svg class="icon"><use href="#user"/></svg></a>
       <a class="tool" href="#" aria-label="עגלה"><svg class="icon"><use href="#shopping-bag"/></svg><span class="tool__count">1</span></a>
     </div>
@@ -538,7 +535,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 <!-- Header v2: slides in once the hero reaches the top of the screen, then stays fixed while scrolling -->
 <header class="sticky" id="stickyHeader" inert>
   <div class="sticky__inner">
-    <div class="mstart"><button class="burger" type="button" aria-label="פתיחת תפריט" aria-controls="drawer" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#menu"/></svg></button><a class="tool" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a></div>
+    <button class="burger" type="button" aria-label="פתיחת תפריט" aria-controls="drawer" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#menu"/></svg></button>
     <a class="sticky__logo" href="https://almora.co.il/" aria-label="ALMORA"><img src="../ALMORA-header-compact.png" alt="ALMORA"></a>
     <nav class="snav" aria-label="ראשי">
     <a class="navlink" href="https://almora.co.il/">בית</a>
@@ -585,7 +582,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
     <a class="tag" href="https://almora.co.il/shop/?orderby=popularity">Best Sellers</a>
   </nav>
     <div class="header__tools">
-      <a class="tool tool--search" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a>
+      <a class="tool" href="#" aria-label="חיפוש"><svg class="icon"><use href="#search"/></svg></a>
       <a class="tool" href="#" aria-label="החשבון שלי"><svg class="icon"><use href="#user"/></svg></a>
       <a class="tool" href="#" aria-label="עגלה"><svg class="icon"><use href="#shopping-bag"/></svg><span class="tool__count">1</span></a>
     </div>
