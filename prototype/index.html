@@ -271,7 +271,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 .review__product img { width: 44px; height: 44px; border-radius: var(--radius); object-fit: cover; background: var(--color-bg); flex: none; }
 .review__product span { font-size: var(--fs-caption); font-weight: var(--fw-semibold); line-height: var(--lh-body); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 @media (max-width: 1200px) { .reviews__grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 767px) { .reviews { padding-inline: var(--space-element-max); } .reviews__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-element-min); } .reviews__filters { width: 100%; } .rfield { flex: 1 1 100%; } .rfield select { width: 100%; } .reviews__title { border: 0; padding: 0; } }
+@media (max-width: 767px) { .reviews { padding-inline: var(--space-element-max); } .reviews__grid { grid-template-columns: 1fr; gap: var(--space-element-max); } .review__photo { aspect-ratio: 4 / 3; } .reviews__filters { width: 100%; } .rfield { flex: 1 1 100%; } .rfield select { width: 100%; } .reviews__title { border: 0; padding: 0; } }
 @media (prefers-reduced-motion: reduce) { .reviews__grid { transition: none; } }
 
 /* ===== Why buy: benefits strip ===== */
