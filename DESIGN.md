@@ -244,14 +244,15 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 ## 5k. Header v2 (sticky)
 
+- No wishlist icon anywhere on the site (main header, sticky header, mobile). Only search, account and cart.
 - Appears when the hero reaches the top of the screen (the main header has scrolled away) and then stays fixed at the top while the page scrolls. It slides down (0.45s, `cubic-bezier(.2,0,0,1)`) and slides away again when the user returns above the hero.
-- Full width, 72px tall (60px mobile), white, with a 1px bottom line. Three zones: the logo on the start side (48px tall), the open menu in the middle, and search, account, wishlist and cart on the end side (magicoon icons, same count badges as the main header).
+- Full width, 72px tall (60px mobile), white, with a 1px bottom line. Three zones: the logo on the start side (48px tall), the open menu in the middle, and search, account and cart on the end side (magicoon icons, same count badge as the main header).
 - Menu: the same links as the main header with the same underline hover and the same dropdowns (חנות, מדיניות), plus a **Best Sellers** tag as the last item of the menu, at its far left end: black pill, white SemiBold 16px text with 0.05em letter spacing (the same spacing is on the "Best Sellers" button in the main header), with the same light sweep on hover.
 - Under 1100px the menu is hidden and only the logo and the icons remain.
 
 ## 5l. Mobile header and menu (phones only, up to 767px)
 
-- The main header is one row: hamburger on the start side (magicoon `menu`, 28px), the logo in the middle, and search, account, wishlist and cart on the end side. The text menu row and the "Best Sellers" button are not shown in the header on phones. The sticky header v2 uses the same three zones.
+- The main header is one row: hamburger on the start side (magicoon `menu`, 28px), the logo in the middle, and search, account and cart on the end side. The text menu row and the "Best Sellers" button are not shown in the header on phones. The sticky header v2 uses the same three zones.
 - The hamburger opens a drawer from the start side (88vw, max 380px, white, 0.4s slide) over a `rgba(32,32,32,.45)` backdrop; the page does not scroll behind it. Close with the X (magicoon `times`), the backdrop, a link, or Escape.
 - Drawer: logo and close button on top, then the menu as a vertical list in Body SemiBold: בית, חנות (opens a sub list with the live categories and the "בקרוב" ones muted), אודות, מחשבון זהב וכסף, מדיניות (opens the policy links), צור קשר. At the bottom, the **Best Sellers** button, full width, black, bold.
 - Desktop and tablet are unchanged.
