@@ -256,10 +256,9 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Drawer: logo and close button on top, then the menu as a vertical list in Body SemiBold: בית, חנות (opens a sub list with the live categories and the "בקרוב" ones muted), אודות, מחשבון זהב וכסף, מדיניות (opens the policy links), צור קשר. At the bottom, the **Best Sellers** button, full width, black, bold.
 - Desktop and tablet are unchanged.
 
-## 5m. Scroll reveal (slide up, no fade)
+## 5m. Scroll animation
 
-- Every section below the hero (category grid, product grid, the three rails, reviews, why buy, FAQ, and the three footer blocks) rises 24px into place (`translateY(24px)` to 0, 0.9s, `cubic-bezier(.2,0,0,1)`) the first time it enters the screen. There is no fade: the section is fully visible the whole time. It plays once and never repeats when scrolling back.
-- Trigger: 12% of the section visible, measured 6% above the bottom edge. The class is added by script, so without JavaScript or with reduced motion everything is simply visible. The header, the hero and the sticky header are not animated.
+- None. Sections appear in place with no reveal, fade or slide animation when scrolling.
 
 ---
 

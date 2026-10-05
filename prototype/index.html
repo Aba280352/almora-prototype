@@ -413,11 +413,6 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .drawer__panel, .drawer__backdrop { transition: none; } }
 
-/* ===== Slide up: each section, first time it enters the screen. No fade ===== */
-.reveal { transform: translateY(24px); transition: transform .9s cubic-bezier(.2,0,0,1); }
-.reveal.is-in { transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { transform: none; transition: none; } }
-
 /* Grow on hover for every card (category + product) */
 .cat, .prod { transition: transform .5s cubic-bezier(.2,0,0,1); will-change: transform; }
 .cat:hover, .cat:focus-visible, .prod:hover, .prod:focus-visible { transform: scale(1.03); }
@@ -1092,19 +1087,5 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 })();
 </script>
 
-<script>
-/* Fade in up, once per section: the class is added by script, so without JS everything stays visible. */
-(function () {
-  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var els = [].slice.call(document.querySelectorAll('.cats, .prods, .rail, .reviews, .why, .faq, .foot__news, .foot__cols, .foot__bar'));
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      e.target.classList.add('is-in'); io.unobserve(e.target);
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-  els.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
-})();
-</script>
 </body>
 </html>
