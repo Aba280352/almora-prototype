@@ -414,7 +414,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 @media (prefers-reduced-motion: reduce) { .drawer__panel, .drawer__backdrop { transition: none; } }
 
 /* ===== Fade in up: each section, first time it enters the screen ===== */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,0,0,1); }
+.reveal { opacity: .45; transform: translateY(14px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,0,0,1); }
 .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
 

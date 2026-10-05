@@ -258,7 +258,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 ## 5m. Scroll reveal (fade in up)
 
-- Every section below the hero (category grid, product grid, the three rails, reviews, why buy, FAQ, and the three footer blocks) fades in and rises 28px (`opacity` 0 to 1, `translateY(28px)` to 0, 0.9s, `ease` and `cubic-bezier(.2,0,0,1)`) the first time it enters the screen. It plays once and never repeats when scrolling back.
+- Every section below the hero (category grid, product grid, the three rails, reviews, why buy, FAQ, and the three footer blocks) fades in softly and rises 14px (`opacity` 0.45 to 1, `translateY(14px)` to 0, 0.8s, `ease` and `cubic-bezier(.2,0,0,1)`) the first time it enters the screen. It plays once and never repeats when scrolling back. Kept low on purpose: the section is never fully invisible.
 - Trigger: 12% of the section visible, measured 6% above the bottom edge. The class is added by script, so without JavaScript or with reduced motion everything is simply visible. The header, the hero and the sticky header are not animated.
 
 ---
