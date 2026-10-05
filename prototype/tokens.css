@@ -1,0 +1,52 @@
+/* ALMORA design tokens – mirror of DESIGN.md */
+@font-face {
+  font-family: "Polin";
+  src: url("../fonts/Polin-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("../fonts/Polin-Semibold.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+
+:root {
+  --color-text: #202020;
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-gold: #B8860B;
+  --color-sale: #E24A49;
+  --color-stock: #22C55E;
+  --color-star: #FFB323;
+  --color-verified: #E6F4F1;
+
+  --radius: 12px;
+  --shadow: none;
+
+  --font-main: "Polin", serif;
+  --fs-h1: 120px; --fs-h2: 80px; --fs-h3: 48px; --fs-h4: 36px; --fs-h5: 24px;
+  --fs-body: 18px; --fs-caption: 14px;
+  --lh-heading: 1em; --lh-body: 1.3em;
+  --fw-regular: 400; --fw-semibold: 600;
+
+  --space-section: 8vw;
+  --space-element-min: 15px;
+  --space-element-max: 20px;
+}
+@media (max-width: 1024px) {
+  :root { --fs-h1: 80px; --fs-h2: 58px; --fs-h3: 40px; --fs-h4: 32px; --fs-h5: 24px; }
+}
+@media (max-width: 767px) {
+  :root { --fs-h1: 42px; --fs-h2: 36px; --fs-h3: 30px; --fs-h4: 26px; --fs-h5: 22px; --space-section: 80px; }
+}
+
+html { direction: rtl; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body);
+}
