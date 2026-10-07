@@ -414,6 +414,12 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .drawer__panel, .drawer__backdrop { transition: none; } }
 
+/* ===== Print mode (?print): one full width page for the PDF sketch ===== */
+@media print { * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.is-print *, .is-print *::before, .is-print *::after { animation: none !important; transition: none !important; }
+.is-print .sticky, .is-print .drawer { display: none !important; }
+.is-print, .is-print body { margin: 0; }
+
 /* Grow on hover for every card (category + product) */
 .cat, .prod { transition: transform .5s cubic-bezier(.2,0,0,1); will-change: transform; }
 .cat:hover, .cat:focus-visible, .prod:hover, .prod:focus-visible { transform: scale(1.03); }
@@ -1086,5 +1092,23 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 })();
 </script>
 
+
+<script>
+/* ?print : makes one single page, exactly as tall as the site, with no margins, for exporting a PDF. */
+(function () {
+  var q = new URLSearchParams(location.search);
+  if (!q.has('print')) return;
+  var root = document.documentElement, w = parseInt(q.get('w'), 10) || 1440;
+  root.classList.add('is-print');
+  [].forEach.call(document.querySelectorAll('img[loading="lazy"]'), function (i) { i.loading = 'eager'; });
+  function size() {
+    var s = document.getElementById('printPage') || document.head.appendChild(document.createElement('style'));
+    s.id = 'printPage';
+    s.textContent = '@page { size: ' + w + 'px ' + Math.ceil(root.scrollHeight + 2) + 'px; margin: 0; }';
+  }
+  addEventListener('load', function () { setTimeout(size, 800); });
+  setTimeout(size, 6000);
+})();
+</script>
 </body>
 </html>
