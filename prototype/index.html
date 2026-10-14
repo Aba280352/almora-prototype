@@ -253,27 +253,49 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 }
 .rfield select { padding-inline-start: 44px; padding-inline-end: 40px; }
 .rfield select:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
-.rtoggle { padding: 11px 20px; border: 1px solid rgba(32,32,32,.3); border-radius: var(--radius); background: var(--color-bg); color: var(--color-text); cursor: pointer; font-family: var(--font-main); font-size: var(--fs-body); line-height: var(--lh-body); transition: background-color .25s, color .25s; }
-.rtoggle[aria-pressed="true"] { background: var(--color-text); border-color: var(--color-text); color: var(--color-bg); }
-.reviews__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-element-max); transition: opacity .3s ease; }
+/* Category filter: text only, thin dividers (same language as the product tabs) */
+.rvcats { display: flex; flex-wrap: wrap; align-items: center; gap: 0; margin: 0 0 var(--space-element-max); }
+.rvcats button { position: relative; padding: 4px 14px; border: 0; background: none; cursor: pointer; font-family: var(--font-main); font-size: 16px; font-weight: var(--fw-light); line-height: var(--lh-body); color: var(--color-text); opacity: .6; transition: opacity .25s; }
+.rvcats button:first-child { padding-inline-start: 0; }
+.rvcats button + button::before { content: ""; position: absolute; inset-inline-start: 0; top: 50%; width: 1px; height: 14px; transform: translateY(-50%); background: rgba(32,32,32,.25); }
+.rvcats button:hover { opacity: 1; }
+.rvcats button[aria-pressed="true"] { opacity: 1; font-weight: var(--fw-medium); }
+.reviews__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-element-min); transition: opacity .3s ease; }
 .reviews__grid.is-out { opacity: 0; }
 .reviews__empty { grid-column: 1 / -1; padding: calc(var(--space-element-max) * 2) 0; text-align: center; opacity: .6; }
+/* Card: compact and quiet */
 .review { display: flex; flex-direction: column; overflow: hidden; border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); }
-.review__photo { aspect-ratio: 1; overflow: hidden; background: var(--color-bg); }
+.review__photo { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-bg); }
 .review__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.review__body { display: flex; flex-direction: column; gap: 8px; padding: var(--space-element-min); flex: 1; }
-.review__head { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
-.review__name { font-size: var(--fs-body); font-weight: var(--fw-semibold); line-height: var(--lh-body); }
-.review__verified { padding: 2px 10px; border-radius: 100px; background: var(--color-verified); font-size: 12px; line-height: var(--lh-body); }
-.review__date { width: 100%; font-size: var(--fs-caption); line-height: var(--lh-body); opacity: .6; }
-.review__stars { display: flex; gap: 2px; }
-.review__stars .icon { width: 20px; height: 20px; color: var(--color-star); }
-.review__text { margin: 0; font-size: var(--fs-body); line-height: var(--lh-body); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
-.review__product { display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: var(--space-element-min); border-top: 1px solid rgba(32,32,32,.1); color: var(--color-text); text-decoration: none; }
-.review__product img { width: 44px; height: 44px; border-radius: var(--radius); object-fit: cover; background: var(--color-bg); flex: none; }
-.review__product span { font-size: var(--fs-caption); font-weight: var(--fw-semibold); line-height: var(--lh-body); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.review__body { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px 14px; flex: 1; }
+.review__head { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; }
+.review__name { font-size: 15px; font-weight: var(--fw-medium); line-height: var(--lh-body); }
+.review__verified { padding: 1px 8px; border-radius: 100px; background: var(--color-verified); font-size: 11px; line-height: var(--lh-body); }
+.review__date { margin-inline-start: auto; font-size: 12px; font-weight: var(--fw-light); line-height: var(--lh-body); opacity: .6; }
+.review__stars { display: flex; gap: 1px; }
+.review__stars .icon { width: 15px; height: 15px; color: var(--color-star); }
+.review__text { margin: 0; font-size: 15px; font-weight: var(--fw-light); line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.review__product { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 10px; border-top: 1px solid rgba(32,32,32,.08); color: var(--color-text); text-decoration: none; }
+.review__product img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; background: var(--color-bg); flex: none; }
+.review__product span { font-size: 13px; font-weight: var(--fw-light); line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; }
 @media (max-width: 1200px) { .reviews__grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 767px) { .reviews { padding-inline: var(--space-element-max); } .reviews__grid { grid-template-columns: 1fr; gap: var(--space-element-max); } .review__photo { aspect-ratio: 4 / 3; } .reviews__filters { width: 100%; } .rfield { flex: 1 1 100%; } .rfield select { width: 100%; } .reviews__title { border: 0; padding: 0; } }
+@media (max-width: 767px) {
+  .reviews { padding-inline: var(--space-element-max); }
+  .reviews__filters { width: 100%; } .rfield { flex: 1 1 0; } .rfield select { width: 100%; min-width: 0; font-size: 15px; padding-inline-start: 36px; padding-inline-end: 28px; } .rfield .icon--lead { inset-inline-start: 10px; width: 18px; height: 18px; } .rfield .icon--chev { inset-inline-end: 6px; }
+  .reviews__title { border: 0; padding: 0; }
+  .rvcats { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(var(--space-element-max) * -1); padding-inline: var(--space-element-max); scrollbar-width: none; }
+  .rvcats::-webkit-scrollbar { display: none; }
+  .rvcats button { flex: none; white-space: nowrap; }
+  /* Phones: a small horizontal card, photo on the side */
+  .reviews__grid { grid-template-columns: 1fr; gap: 10px; }
+  .review { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 10px; align-items: start; }
+  .review__photo { aspect-ratio: 1; border-radius: 8px; }
+  .review__body { padding: 0; gap: 4px; }
+  .review__text { -webkit-line-clamp: 2; font-size: 14px; }
+  .review__product { padding-top: 6px; border-top: 0; }
+  .review__product img { width: 24px; height: 24px; border-radius: 6px; }
+  .review__product span { font-size: 12px; }
+}
 @media (prefers-reduced-motion: reduce) { .reviews__grid { transition: none; } }
 
 /* ===== Why buy: benefits strip ===== */
@@ -710,7 +732,6 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
       <div class="reviews__score" id="rvScore"></div>
     </div>
     <div class="reviews__filters">
-      <button class="rtoggle" type="button" id="rvPhotos" aria-pressed="false">עם תמונות</button>
       <label class="rfield"><svg class="icon icon--lead" aria-hidden="true"><use href="#filter"/></svg>
         <select id="rvRating" aria-label="סינון לפי דירוג">
           <option value="0">כל הדירוגים</option><option value="5">5 כוכבים</option><option value="4">4 כוכבים</option><option value="3">3 כוכבים</option><option value="2">2 כוכבים</option><option value="1">כוכב אחד</option>
@@ -721,6 +742,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
         </select><svg class="icon icon--chev" aria-hidden="true"><use href="#angle-down-small"/></svg></label>
     </div>
   </div>
+  <div class="rvcats" id="rvCats" role="group" aria-label="סינון לפי קטגוריה"></div>
   <div class="reviews__grid" id="rvGrid"></div>
 </section>
 
@@ -1001,10 +1023,12 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 <script>
 /* Reviews: summary, filters and sorting. DATA mirrors WooCommerce review fields (placeholder content). */
 (function () {
-  var DATA = [{"id":1,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"התכשיט הגיע באריזה מהודרת והוא יפה בדיוק כמו בתמונות.","photo":"../reviews/review-1.png","product":{"name":"טבעת יהלום אובל מוסונייט VVS 1","url":"https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%99%d7%98-vvs-1","img":"https://almora.co.il/wp-content/uploads/2025/12/שות-300x300.png"}},{"id":2,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"קניתי במתנה והיא התרגשה. הברק של האבן מטורף.","photo":"../reviews/review-2.png","product":{"name":"שרשרת קשיחה אובל","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%a9%d7%99%d7%97%d7%94-%d7%90%d7%95%d7%91%d7%9c","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9072-scaled-e1765061535753-300x131.jpg"}},{"id":3,"reviewer":"שם הלקוחה","rating":4,"verified":true,"text":"השרשרת עדינה ונוחה, אני עונדת אותה כל יום.","photo":"../reviews/review-3.png","product":{"name":"שרשרת יהלום מוסונייט סוליטר","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a1%d7%95%d7%9c%d7%99%d7%98%d7%a8","img":"https://almora.co.il/wp-content/uploads/2025/11/PJ9B9777_v924-ni-300x300.jpg"}},{"id":4,"reviewer":"שם הלקוחה","rating":5,"verified":false,"text":"שירות מהיר ואדיב, ההזמנה הגיעה לפני שציפיתי.","photo":"../reviews/review-4.png","product":{"name":"עגיל יהלום אובל יוקרתי מוסוניט VVS 1","url":"https://almora.co.il/product/%d7%a2%d7%92%d7%99%d7%9c-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%98-vvs-1","img":"https://almora.co.il/wp-content/uploads/2025/12/Gemini_Generated_Image_r33sk0r33sk0r33s-300x300.png"}},{"id":5,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"העיצוב נקי ואלגנטי, מתאים לכל לבוש.","photo":"../reviews/review-5.png","product":{"name":"שרשרת חוליות","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%97%d7%95%d7%9c%d7%99%d7%95%d7%aa","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9173-scaled-e1765475544319-600x739.jpg"}},{"id":6,"reviewer":"שם הלקוחה","rating":4,"verified":true,"text":"הטבעת יושבת מושלם על האצבע וקיבלתי הרבה מחמאות.","photo":"../reviews/review-6.png","product":{"name":"שרשרת קובנית","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%95%d7%91%d7%a0%d7%99%d7%aa","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9178-scaled-e1765475356572-300x266.jpg"}},{"id":7,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"איכות מעולה במחיר הוגן, בהחלט אקנה שוב.","photo":"../reviews/review-7.png","product":{"name":"שרשרת לב קלאסית","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%9c%d7%91-%d7%a7%d7%9c%d7%90%d7%a1%d7%99%d7%aa","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9212-scaled-e1765474386737-300x246.jpg"}},{"id":8,"reviewer":"שם הלקוחה","rating":3,"verified":false,"text":"המוצר טוב, אבל קיוויתי לגוון קצת שונה.","photo":"","product":{"name":"סט אייס מושלם","url":"https://almora.co.il/product/%d7%a1%d7%98-%d7%90%d7%99%d7%99%d7%a1-%d7%9e%d7%95%d7%a9%d7%9c%d7%9d","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9135.jpg"}},{"id":9,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"אריזה יפה ומשלוח מסודר, ממליצה.","photo":"","product":{"name":"שרשרת אייס","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%90%d7%99%d7%99%d7%a1","img":"https://almora.co.il/wp-content/uploads/2025/11/SILVER-1-300x290.jpg"}},{"id":10,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"אהבתי מאוד, זה נראה עוד יותר טוב בחיים.","photo":"","product":{"name":"צמיד אייס","url":"https://almora.co.il/product/%d7%a6%d7%9e%d7%99%d7%93-%d7%90%d7%99%d7%99%d7%a1-2","img":"https://almora.co.il/wp-content/uploads/2025/11/1752757663_1746964264_3-600x750.jpg"}}];
+  var DATA = [{"id":1,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"התכשיט הגיע באריזה מהודרת והוא יפה בדיוק כמו בתמונות.","photo":"../reviews/review-2.png","product":{"name":"טבעת יהלום אובל מוסונייט VVS 1","url":"https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%99%d7%98-vvs-1","img":"https://almora.co.il/wp-content/uploads/2025/12/שות-300x300.png"}},{"id":2,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"קניתי במתנה והיא התרגשה. השרשרת עדינה ומבריקה.","photo":"../reviews/review-1.png","product":{"name":"שרשרת קשיחה אובל","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%a9%d7%99%d7%97%d7%94-%d7%90%d7%95%d7%91%d7%9c","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9072-scaled-e1765061535753-300x131.jpg"}},{"id":3,"reviewer":"שם הלקוחה","rating":4,"verified":true,"text":"השרשרת עדינה ונוחה, אני עונדת אותה כל יום.","photo":"../reviews/review-4.png","product":{"name":"שרשרת יהלום מוסונייט סוליטר","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a1%d7%95%d7%9c%d7%99%d7%98%d7%a8","img":"https://almora.co.il/wp-content/uploads/2025/11/PJ9B9777_v924-ni-300x300.jpg"}},{"id":4,"reviewer":"שם הלקוחה","rating":5,"verified":false,"text":"שירות מהיר ואדיב, ההזמנה הגיעה לפני שציפיתי.","photo":"","product":{"name":"עגיל יהלום אובל יוקרתי מוסוניט VVS 1","url":"https://almora.co.il/product/%d7%a2%d7%92%d7%99%d7%9c-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%98-vvs-1","img":"https://almora.co.il/wp-content/uploads/2025/12/Gemini_Generated_Image_r33sk0r33sk0r33s-300x300.png"}},{"id":5,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"העיצוב נקי ואלגנטי, מתאים לכל לבוש.","photo":"../reviews/review-5.png","product":{"name":"שרשרת חוליות","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%97%d7%95%d7%9c%d7%99%d7%95%d7%aa","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9173-scaled-e1765475544319-600x739.jpg"}},{"id":6,"reviewer":"שם הלקוחה","rating":4,"verified":true,"text":"הטבעת יושבת מושלם על האצבע וקיבלתי הרבה מחמאות.","photo":"../reviews/review-6.png","product":{"name":"טבעת סוליטר עגול מוסונייט VVS 1","url":"https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%a1%d7%95%d7%9c%d7%99%d7%98%d7%a8-%d7%a2%d7%92%d7%95%d7%9c%d7%94","img":"https://almora.co.il/wp-content/uploads/2025/12/סוליטר-חדש-300x300.png"}},{"id":7,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"איכות מעולה במחיר הוגן, הטבעת מבריקה מאוד.","photo":"../reviews/review-7.png","product":{"name":"טבעת טיפה יהלום מוסונייט VVS 1","url":"https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%98%d7%99%d7%a4%d7%94","img":"https://almora.co.il/wp-content/uploads/2025/11/טפיה-לבן-300x300.png"}},{"id":8,"reviewer":"שם הלקוחה","rating":3,"verified":false,"text":"המוצר טוב, אבל קיוויתי לגוון קצת שונה.","photo":"","product":{"name":"סט אייס מושלם","url":"https://almora.co.il/product/%d7%a1%d7%98-%d7%90%d7%99%d7%99%d7%a1-%d7%9e%d7%95%d7%a9%d7%9c%d7%9d","img":"https://almora.co.il/wp-content/uploads/2025/12/IMG_9135.jpg"}},{"id":9,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"אריזה יפה ומשלוח מסודר, ממליצה.","photo":"","product":{"name":"שרשרת אייס","url":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%90%d7%99%d7%99%d7%a1","img":"https://almora.co.il/wp-content/uploads/2025/11/SILVER-1-300x290.jpg"}},{"id":10,"reviewer":"שם הלקוחה","rating":5,"verified":true,"text":"אהבתי מאוד, זה נראה עוד יותר טוב בחיים.","photo":"../reviews/review-3.png","product":{"name":"צמיד אייס","url":"https://almora.co.il/product/%d7%a6%d7%9e%d7%99%d7%93-%d7%90%d7%99%d7%99%d7%a1-2","img":"https://almora.co.il/wp-content/uploads/2025/11/1752757663_1746964264_3-600x750.jpg"}}];
   var PER_PAGE = 10;
   var grid = document.getElementById('rvGrid'), score = document.getElementById('rvScore');
-  var fRating = document.getElementById('rvRating'), fSort = document.getElementById('rvSort'), fPhotos = document.getElementById('rvPhotos');
+  var fRating = document.getElementById('rvRating'), fSort = document.getElementById('rvSort'), cats = document.getElementById('rvCats'), CAT = '';
+  var catOf = function (n) { var m = [['שרשר', 'שרשראות'], ['טבע', 'טבעות'], ['עגיל', 'עגילים'], ['צמיד', 'צמידים'], ['תליון', 'תליונים'], ['סט', 'סטים']]; for (var i = 0; i < m.length; i++) if (n.indexOf(m[i][0]) === 0) return m[i][1]; return ''; };
+  DATA.forEach(function (r) { r.cat = catOf(r.product.name); });
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var star = function (on) { return '<svg class="icon" aria-hidden="true"><use href="#' + (on ? 'star-fill' : 'star') + '"/></svg>'; };
   var stars = function (n) { var s = ''; for (var i = 1; i <= 5; i++) s += star(i <= n); return s; };
@@ -1015,14 +1039,14 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   function card(r) {
     return '<article class="review"><div class="review__photo"><img src="' + esc(r.photo || r.product.img) + '" alt="" loading="lazy"></div>' +
       '<div class="review__body"><div class="review__head"><span class="review__name">' + esc(r.reviewer) + '</span>' + (r.verified ? '<span class="review__verified">מאומת</span>' : '') +
-      '<span class="review__date">תאריך הביקורת</span></div>' +
+      '<span class="review__date">תאריך</span></div>' +
       '<div class="review__stars" role="img" aria-label="' + r.rating + ' מתוך 5">' + stars(r.rating) + '</div>' +
       '<p class="review__text">' + esc(r.text) + '</p>' +
       '<a class="review__product" href="' + esc(r.product.url) + '"><img src="' + esc(r.product.img) + '" alt="" loading="lazy"><span>' + esc(r.product.name) + '</span></a></div></article>';
   }
   function list() {
-    var min = +fRating.value, photos = fPhotos.getAttribute('aria-pressed') === 'true';
-    var out = DATA.filter(function (r) { return (!min || r.rating === min) && (!photos || r.photo); });
+    var min = +fRating.value;
+    var out = DATA.filter(function (r) { return (!min || r.rating === min) && (!CAT || r.cat === CAT); });
     var by = fSort.value;
     if (by === 'new') out.sort(function (a, b) { return b.id - a.id; });
     else if (by === 'high') out.sort(function (a, b) { return b.rating - a.rating || a.id - b.id; });
@@ -1036,7 +1060,14 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
     grid.classList.add('is-out'); setTimeout(fill, 300);
   }
   fRating.onchange = fSort.onchange = function () { render(); };
-  fPhotos.onclick = function () { fPhotos.setAttribute('aria-pressed', fPhotos.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); render(); };
+  // category row: only categories that have reviews
+  var order = ['שרשראות', 'טבעות', 'עגילים', 'צמידים', 'תליונים', 'סטים'];
+  [''].concat(order.filter(function (c) { return DATA.some(function (r) { return r.cat === c; }); })).forEach(function (c) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = c || 'הכל'; b.setAttribute('aria-pressed', c === CAT ? 'true' : 'false');
+    b.onclick = function () { CAT = c; [].forEach.call(cats.children, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); render(); };
+    cats.appendChild(b);
+  });
   render(true);
 })();
 </script>
