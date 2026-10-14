@@ -184,6 +184,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Text block is one fixed box for every banner, so X and Y never move: title (H1, one line, no wrap), paragraph (Body, box is always exactly 3 lines high, copy is 2 to 3 lines), button on a fixed row. Width `min(560px, 86vw)`, 6vw from the start edge, vertically centered.
 - Button on the banner: light variant (white background, `#202020` text), same radius. On hover it flips to black (`#202020`) with white text, plus the same light sweep.
 - Transition (curtain, subtle): the next image is revealed by 8 vertical strips, each `clip-path: inset(0 0 35%)` to `inset(0)` with opacity 0 to 1, 0.9s `cubic-bezier(.2,0,0,1)`, staggered 35ms starting from the right strip. Text fades out and in (0.45s). Auto advance every 6s, paused on hover. Off when the user prefers reduced motion.
+- Phones (up to 767px): the text is one centered group near the bottom of the banner, in a clear hierarchy: the title (H1), one short sentence under it (Body, one line, a separate short line per banner), then the button. The longer paragraph is shown on desktop and tablet only. The dots are centered under the group. Inspired by the Shani Jacobi mobile banner for position and hierarchy only.
 - No label pill on the banner. Navigation dots: plain white dots (8px) straight on the image, bottom, aligned to the same start edge as the title; the active dot gets a soft white ring (24px, 30% white). No pill behind the dots.
 
 ## 5d. Category grid

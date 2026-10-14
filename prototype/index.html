@@ -145,6 +145,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
 }
 .hero__content .btn { justify-self: start; }
+.hero__sub { display: none; }
 .btn--light { background: var(--color-bg); color: var(--color-text); }
 .btn--light:hover, .btn--light:focus-visible { background: var(--color-text); color: var(--color-bg); }
 
@@ -441,8 +442,17 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 @media (max-width: 767px) {
   .menu--sm { right: auto; left: 0; }
   .hero { height: 130vw; }
-  .hero__content { inset-inline-start: var(--space-element-max); width: calc(100% - var(--space-element-max) * 2); top: auto; bottom: 16vw; transform: none; }
-  .hero__dots { inset-inline-start: var(--space-element-max); bottom: 5vw; }
+  /* Phones: one centered group. Title, one short sentence under it, then the button */
+  .hero__content {
+    inset-inline: var(--space-element-max); width: auto; top: auto; bottom: 17vw; transform: none;
+    grid-template-rows: var(--fs-h1) calc(var(--fs-body) * 1.3) auto; row-gap: var(--space-element-min);
+    justify-items: center; text-align: center;
+  }
+  .hero__title { white-space: nowrap; }
+  .hero__text { display: none; }
+  .hero__sub { display: block; margin: 0; font-size: var(--fs-body); line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .hero__content .btn { justify-self: center; margin-top: 5px; }
+  .hero__dots { inset-inline-start: 50%; margin: 0; transform: translateX(50%); bottom: 5vw; }
 }
 @media (prefers-reduced-motion: reduce) { .hero__strip { animation: none; } .hero__content { transition: none; } }
 
@@ -638,6 +648,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   <div class="hero__content" id="heroContent" aria-live="polite">
     <h1 class="hero__title" id="heroTitle"></h1>
     <p class="hero__text" id="heroText"></p>
+    <p class="hero__sub" id="heroSub"></p>
     <a class="btn btn--light" id="heroCta" href="#"></a>
   </div>
 </section>
@@ -827,15 +838,15 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   var CAT = 'https://almora.co.il/product-category/';
   // Live categories only, ordered by number of products
   var slides = [
-    { title: 'שרשראות', cta: 'לכל השרשראות', img: UP + '2025/12/IMG_9072-1-scaled-e1765061579647-2048x1184.jpg', pos: '30% 50%',
+    { title: 'שרשראות', sub: 'שרשראות כסף 925 לכל יום ולכל אירוע', cta: 'לכל השרשראות', img: UP + '2025/12/IMG_9072-1-scaled-e1765061579647-2048x1184.jpg', pos: '30% 50%',
       text: 'שרשראות כסף 925 בעיצוב עדין ונקי, שמתאימות לכל יום ולכל אירוע. ענדי אחת לבד או שלבי כמה יחד למראה שכבות אישי.' },
-    { title: 'טבעות', cta: 'לכל הטבעות', img: UP + '2025/12/IMG_9053-scaled-e1765061936568-2048x1529.jpg', pos: '30% 45%',
+    { title: 'טבעות', sub: 'טבעות כסף 925 בקווים נקיים', cta: 'לכל הטבעות', img: UP + '2025/12/IMG_9053-scaled-e1765061936568-2048x1529.jpg', pos: '30% 45%',
       text: 'טבעות כסף 925 בקווים נקיים, מהעדינות ביותר ועד כאלה שתופסות את העין. בחרי אחת שמלווה אותך כל יום, או כמה שמשתלבות יחד.' },
-    { title: 'עגילים', cta: 'לכל העגילים', img: UP + '2025/12/IMG_9116-scaled.jpg', pos: '35% 35%',
+    { title: 'עגילים', sub: 'עגילי כסף 925 שמאירים את הפנים', cta: 'לכל העגילים', img: UP + '2025/12/IMG_9116-scaled.jpg', pos: '35% 35%',
       text: 'עגילי כסף 925 שמאירים את הפנים בלי להכביד. צמודים, תלויים וחישוקים, בעיצוב שמתאים לבוקר בעבודה וגם לערב בחוץ.' },
-    { title: 'תליונים', cta: 'לכל התליונים', img: UP + '2025/12/IMG_9001-scaled-e1765062348359-2048x1236.jpg', pos: '30% 50%',
+    { title: 'תליונים', sub: 'תליונים עם אופי, קרוב ללב', cta: 'לכל התליונים', img: UP + '2025/12/IMG_9001-scaled-e1765062348359-2048x1236.jpg', pos: '30% 50%',
       text: 'תליוני כסף 925 עם אופי, כל אחד מספר סיפור קטן משלו. מתנה מרגשת לעצמך או למישהי קרובה, שנשארת קרוב ללב.' },
-    { title: 'צמידים', cta: 'לכל הצמידים', img: UP + '2025/12/IMG_9013-2048x1365.jpg', pos: '30% 55%',
+    { title: 'צמידים', sub: 'צמידי כסף 925 שמשלימים כל מראה', cta: 'לכל הצמידים', img: UP + '2025/12/IMG_9013-2048x1365.jpg', pos: '30% 55%',
       text: 'צמידי כסף 925 עדינים שמשלימים כל מראה. ענדי אחד לבד למראה נקי, או שלבי כמה יחד עם השעון למראה עשיר ואישי.' }
   ];
   var STRIPS = 8, STEP = 35, DUR = 900, HOLD = 6000;
@@ -855,6 +866,7 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   function setText(s) {
     $('heroTitle').textContent = s.title;
     $('heroText').textContent = s.text;
+    $('heroSub').textContent = s.sub;
     $('heroCta').textContent = s.cta;
     $('heroCta').href = CAT + s.title + '/';
   }
