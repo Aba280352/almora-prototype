@@ -214,7 +214,8 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Lead card: 300px wide, same height as the cards, 12px radius, lifestyle photo with a flat overlay `rgba(32,32,32,.32)`. Bottom start: small Caption label, H4 title (SemiBold, white), and a black 56px square button with the magicoon `arrow-left` icon (same shine hover). The whole card links to the shop.
 - Cards: the same product card as the grid (framed, tags, name, specs, price), fixed 250px wide, 20px gap.
 - Motion: the strip moves slowly and linearly (26px per second), endless loop, toward the lead card. Draggable with mouse or touch; clicks right after a drag do not open the product. Pauses while off screen. No auto motion for reduced motion (still draggable).
-- If a rail has too few products to fill the width, it stays still and aligned to the lead card (no loop, no drag).
+- If a rail has too few products to fill the width, it stays still and aligned to the lead card (no loop, no drag, no progress bar).
+- Progress bar under every moving strip (in the spirit of Danon): 94px wide, 2px tall, centered 18px under the cards, track `rgba(32,32,32,.15)`, the dark part `#202020` sized by how much of the strip is visible and moving with the strip (auto motion and drag), right to left as in RTL.
 - Data: best sellers by popularity, sale by on_sale, new by date. The silver investment category is excluded (jewelry only).
 
 ## 5g. Reviews (WooCommerce)

@@ -254,6 +254,10 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 .rail__track { display: flex; flex-direction: row-reverse; gap: var(--space-element-max); width: max-content; will-change: transform; }
 .rail__track .prod { flex: 0 0 250px; width: 250px; direction: rtl; -webkit-user-drag: none; }
 .rail__track .prod__qv { pointer-events: auto; }
+/* Progress bar under each moving rail (thin, like Danon): the dark part moves with the strip */
+.rail__bar { position: relative; direction: rtl; width: 94px; height: 2px; margin: 18px auto 0; background: rgba(32,32,32,.15); overflow: hidden; }
+.rail__bar span { position: absolute; top: 0; bottom: 0; inset-inline-start: 0; background: var(--color-text); will-change: transform; }
+.rail__bar[hidden] { display: none; }
 .rail__track img { -webkit-user-drag: none; pointer-events: none; }
 @media (max-width: 767px) {
   .rail { flex-direction: column; padding-inline: var(--space-element-max); }
@@ -1141,6 +1145,9 @@ window.ALM = (function () {
   function rail(key) {
     var tr = document.getElementById('rail_' + key), vp = tr.parentNode;
     tr.innerHTML = DATA[key].map(card).join('');
+    var bar = document.createElement('div'), thumb = document.createElement('span');
+    bar.className = 'rail__bar'; bar.setAttribute('aria-hidden', 'true'); bar.appendChild(thumb); vp.appendChild(bar);
+    var tw = 0;
     var x = 0, L = 0, loop = false, run = false, drag = false, moved = 0, lx = 0, last = 0, visible = true;
 
     function measure() {
@@ -1149,12 +1156,20 @@ window.ALM = (function () {
       var w = kids.reduce(function (s, c) { return s + c.getBoundingClientRect().width + gap; }, 0);
       L = w;
       loop = L > vp.clientWidth + 40;
+      bar.hidden = !loop;
+      tw = loop ? Math.max(.25, Math.min(1, vp.clientWidth / L)) : 1;
+      thumb.style.width = (tw * 100) + '%';
       [].slice.call(tr.querySelectorAll('[data-clone]')).forEach(function (c) { c.remove(); });
       if (loop) kids.forEach(function (k) { var c = k.cloneNode(true); c.dataset.clone = '1'; c.setAttribute('aria-hidden', 'true'); c.tabIndex = -1; tr.appendChild(c); });
       paint();
     }
     function paint() {
-      if (loop) { x = ((x % L) + L) % L; tr.style.transform = 'translate3d(' + (x - L) + 'px,0,0)'; }
+      if (loop) {
+        x = ((x % L) + L) % L; tr.style.transform = 'translate3d(' + (x - L) + 'px,0,0)';
+        /* progress 0..1 through one loop; in RTL the thumb travels from right to left */
+        var w = bar.clientWidth, pos = (x / L) * (w - w * tw);
+        thumb.style.transform = 'translate3d(' + (-pos) + 'px,0,0)';
+      }
       else { tr.style.transform = 'translate3d(' + Math.max(0, vp.clientWidth - tr.scrollWidth) + 'px,0,0)'; }
     }
     function tick(t) {
