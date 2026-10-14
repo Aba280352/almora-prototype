@@ -74,7 +74,7 @@ body { overflow-x: clip; }
 }
 .nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding-block: var(--space-element-min); }
 .nav { gap: 0; }
-.nav > a, .has-menu { padding-inline: 15px; }
+.nav > a, .has-menu { padding-inline: clamp(8px, .9vw, 15px); }
 /* Same hover as the live site: 1px line grows under the link, width 0 to 100% in .4s */
 .navlink {
   position: relative; display: inline-flex; align-items: center; gap: 6px;
@@ -422,13 +422,13 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 .sticky__logo { justify-self: start; display: block; line-height: 0; }
 .sticky__logo img { display: block; height: 48px; width: auto; }
 .snav { position: relative; display: flex; align-items: center; justify-content: center; height: 100%; }
-.snav > a, .snav > .has-menu { padding-inline: 14px; }
+.snav > a, .snav > .has-menu { padding-inline: clamp(6px, .65vw, 12px); }
 .snav > .has-menu { display: flex; align-items: center; height: 100%; position: static; }
-.snav .navlink { padding-block: 6px; font-size: var(--fs-body); }
+.snav .navlink { padding-block: 6px; font-size: clamp(14px, 1.08vw, 17px); white-space: nowrap; }
 .snav .icon { width: 20px; height: 20px; }
 .snav .menu { top: 100%; }
-.snav .has-menu--sm { position: static; }
-.snav .menu--sm { right: auto; left: 50%; transform: translateX(-50%); }
+.snav .has-menu--sm { position: relative; }
+.snav .menu--sm { left: auto; right: 0; transform: none; }
 .sticky .header__tools { justify-self: end; }
 /* Best Sellers tag inside the menu */
 .header__cta, .tag { letter-spacing: 0.05em; }
@@ -594,26 +594,28 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 
   <nav class="nav" aria-label="ראשי">
     <a class="navlink" href="https://almora.co.il/">בית</a>
-    <div class="has-menu">
-      <a class="navlink" href="https://almora.co.il/shop/">חנות <svg class="icon"><use href="#angle-down-small"/></svg></a>
-      <div class="menu">
+    <a class="navlink" href="https://almora.co.il/product-category/עגילים/">עגילים</a>
+    <a class="navlink" href="https://almora.co.il/product-category/טבעות/">טבעות</a>
+    <a class="navlink" href="https://almora.co.il/product-category/צמידים/">צמידים</a>
+    <a class="navlink" href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
+    <div class="has-menu has-menu--sm">
+      <a class="navlink" href="#">תכשיטי מוסונייט <svg class="icon"><use href="#angle-down-small"/></svg></a>
+      <div class="menu menu--sm">
         <div class="menu__col">
-          <p class="menu__title">סילבר נשים</p>
-          <a class="menu__link" href="https://almora.co.il/product-category/עגילים/">עגילים</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/טבעות/">טבעות</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/צמידים/">צמידים</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
-        </div>
-        <div class="menu__col">
-          <p class="menu__title">תכשיטי מוסונייט <span class="soon">בקרוב</span></p>
+          <p class="menu__title"><span class="soon">בקרוב</span></p>
           <span class="menu__link is-soon" aria-disabled="true">עגילים</span>
           <span class="menu__link is-soon" aria-disabled="true">טבעות</span>
           <span class="menu__link is-soon" aria-disabled="true">צמידים</span>
           <span class="menu__link is-soon" aria-disabled="true">שרשראות</span>
           <span class="menu__link is-soon" aria-disabled="true">סטים</span>
         </div>
+      </div>
+    </div>
+    <div class="has-menu has-menu--sm">
+      <a class="navlink" href="#">תכשיטי גברים <svg class="icon"><use href="#angle-down-small"/></svg></a>
+      <div class="menu menu--sm">
         <div class="menu__col">
-          <p class="menu__title">גברים <span class="soon">בקרוב</span></p>
+          <p class="menu__title"><span class="soon">בקרוב</span></p>
           <span class="menu__link is-soon" aria-disabled="true">צמידים</span>
           <span class="menu__link is-soon" aria-disabled="true">שרשראות</span>
         </div>
@@ -644,26 +646,28 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
     <a class="sticky__logo" href="https://almora.co.il/" aria-label="ALMORA"><img src="../ALMORA-header-compact.png" alt="ALMORA"></a>
     <nav class="snav" aria-label="ראשי">
     <a class="navlink" href="https://almora.co.il/">בית</a>
-    <div class="has-menu">
-      <a class="navlink" href="https://almora.co.il/shop/">חנות <svg class="icon"><use href="#angle-down-small"/></svg></a>
-      <div class="menu">
+    <a class="navlink" href="https://almora.co.il/product-category/עגילים/">עגילים</a>
+    <a class="navlink" href="https://almora.co.il/product-category/טבעות/">טבעות</a>
+    <a class="navlink" href="https://almora.co.il/product-category/צמידים/">צמידים</a>
+    <a class="navlink" href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
+    <div class="has-menu has-menu--sm">
+      <a class="navlink" href="#">תכשיטי מוסונייט <svg class="icon"><use href="#angle-down-small"/></svg></a>
+      <div class="menu menu--sm">
         <div class="menu__col">
-          <p class="menu__title">סילבר נשים</p>
-          <a class="menu__link" href="https://almora.co.il/product-category/עגילים/">עגילים</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/טבעות/">טבעות</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/צמידים/">צמידים</a>
-          <a class="menu__link" href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
-        </div>
-        <div class="menu__col">
-          <p class="menu__title">תכשיטי מוסונייט <span class="soon">בקרוב</span></p>
+          <p class="menu__title"><span class="soon">בקרוב</span></p>
           <span class="menu__link is-soon" aria-disabled="true">עגילים</span>
           <span class="menu__link is-soon" aria-disabled="true">טבעות</span>
           <span class="menu__link is-soon" aria-disabled="true">צמידים</span>
           <span class="menu__link is-soon" aria-disabled="true">שרשראות</span>
           <span class="menu__link is-soon" aria-disabled="true">סטים</span>
         </div>
+      </div>
+    </div>
+    <div class="has-menu has-menu--sm">
+      <a class="navlink" href="#">תכשיטי גברים <svg class="icon"><use href="#angle-down-small"/></svg></a>
+      <div class="menu menu--sm">
         <div class="menu__col">
-          <p class="menu__title">גברים <span class="soon">בקרוב</span></p>
+          <p class="menu__title"><span class="soon">בקרוב</span></p>
           <span class="menu__link is-soon" aria-disabled="true">צמידים</span>
           <span class="menu__link is-soon" aria-disabled="true">שרשראות</span>
         </div>
@@ -721,12 +725,22 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
     </div>
     <nav class="drawer__nav">
       <a href="https://almora.co.il/">בית</a>
+      <a href="https://almora.co.il/product-category/עגילים/">עגילים</a>
+      <a href="https://almora.co.il/product-category/טבעות/">טבעות</a>
+      <a href="https://almora.co.il/product-category/צמידים/">צמידים</a>
+      <a href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
       <details>
-        <summary>חנות<svg class="icon" aria-hidden="true"><use href="#angle-down-small"/></svg></summary>
+        <summary>תכשיטי מוסונייט<svg class="icon" aria-hidden="true"><use href="#angle-down-small"/></svg></summary>
         <div class="drawer__sub">
-          <p class="drawer__grp">סילבר נשים</p><a href="https://almora.co.il/product-category/עגילים/">עגילים</a><a href="https://almora.co.il/product-category/טבעות/">טבעות</a><a href="https://almora.co.il/product-category/צמידים/">צמידים</a><a href="https://almora.co.il/product-category/שרשראות/">שרשראות</a>
-          <p class="drawer__grp">תכשיטי מוסונייט <span class="soon">בקרוב</span></p><span class="is-soon" aria-disabled="true">עגילים</span><span class="is-soon" aria-disabled="true">טבעות</span><span class="is-soon" aria-disabled="true">צמידים</span><span class="is-soon" aria-disabled="true">שרשראות</span><span class="is-soon" aria-disabled="true">סטים</span>
-          <p class="drawer__grp">גברים <span class="soon">בקרוב</span></p><span class="is-soon" aria-disabled="true">צמידים</span><span class="is-soon" aria-disabled="true">שרשראות</span>
+          <p class="drawer__grp"><span class="soon">בקרוב</span></p>
+          <span class="is-soon" aria-disabled="true">עגילים</span><span class="is-soon" aria-disabled="true">טבעות</span><span class="is-soon" aria-disabled="true">צמידים</span><span class="is-soon" aria-disabled="true">שרשראות</span><span class="is-soon" aria-disabled="true">סטים</span>
+        </div>
+      </details>
+      <details>
+        <summary>תכשיטי גברים<svg class="icon" aria-hidden="true"><use href="#angle-down-small"/></svg></summary>
+        <div class="drawer__sub">
+          <p class="drawer__grp"><span class="soon">בקרוב</span></p>
+          <span class="is-soon" aria-disabled="true">צמידים</span><span class="is-soon" aria-disabled="true">שרשראות</span>
         </div>
       </details>
       <a href="https://almora.co.il/about-us">אודות</a>

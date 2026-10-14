@@ -255,14 +255,14 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - No wishlist icon anywhere on the site (main header, sticky header, mobile). Only search, account and cart.
 - Appears when the hero reaches the top of the screen (the main header has scrolled away) and then stays fixed at the top while the page scrolls. It slides down (0.45s, `cubic-bezier(.2,0,0,1)`) and slides away again when the user returns above the hero.
 - Full width, 72px tall (60px mobile), white, with a 1px bottom line. Three zones: the logo on the start side (48px tall), the open menu in the middle, and search, account and cart on the end side (magicoon icons, same count badge as the main header).
-- Menu: the same links as the main header with the same underline hover and the same dropdowns (חנות, מדיניות), plus a **Best Sellers** tag as the last item of the menu, at its far left end: black pill, white SemiBold 16px text with 0.05em letter spacing (the same spacing is on the "Best Sellers" button in the main header), with the same light sweep on hover.
+- Menu: the same links as the main header with the same underline hover and the same dropdowns (תכשיטי מוסונייט, תכשיטי גברים, מדיניות), sizes scaling with the screen (14 to 17px) so all items fit on one row, plus a **Best Sellers** tag as the last item of the menu, at its far left end: black pill, white SemiBold 16px text with 0.05em letter spacing (the same spacing is on the "Best Sellers" button in the main header), with the same light sweep on hover.
 - Under 1100px the menu is hidden and only the logo and the icons remain.
 
 ## 5l. Mobile header and menu (phones only, up to 767px)
 
 - The main header is one row: hamburger alone on the start side (magicoon `menu`, 28px), the logo exactly in the middle, and the three tools (search, account, cart) close together on the end side with a 10px gap. The text menu row and the "Best Sellers" button are not shown in the header on phones. The sticky header v2 uses the same three zones.
 - The hamburger opens a drawer from the start side (88vw, max 380px, white, 0.4s slide) over a `rgba(32,32,32,.45)` backdrop; the page does not scroll behind it. Close with the X (magicoon `times`), the backdrop, a link, or Escape.
-- Drawer: logo and close button on top, then the menu as a vertical list in Body SemiBold: בית, חנות (opens a sub list with the live categories and the "בקרוב" ones muted), אודות, מחשבון זהב וכסף, מדיניות (opens the policy links), צור קשר. At the bottom, the **Best Sellers** button, full width, black, bold, at the regular mobile button size (8px 18px padding, Caption text). It never shrinks when a section is open.
+- Drawer: logo and close button on top, then the menu as a vertical list in Body SemiBold: בית, the four live categories (עגילים, טבעות, צמידים, שרשראות), תכשיטי מוסונייט and תכשיטי גברים (each opens a sub list of "בקרוב" items), אודות, מחשבון זהב וכסף, מדיניות (opens the policy links), צור קשר. At the bottom, the **Best Sellers** button, full width, black, bold, at the regular mobile button size (8px 18px padding, Caption text). It never shrinks when a section is open.
 - Desktop and tablet are unchanged.
 
 ## 5m. Scroll animation
@@ -282,6 +282,12 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Lighter type across the page, with the approved structure unchanged. Section titles ("ביקורות", "למה לקנות באלמורה?", "לכל שאלה יש תשובה", the newsletter headline, the footer marquee words) are Polin Regular instead of SemiBold. Small labels and the active tab are Medium. Supporting text (benefit descriptions, FAQ intro and answers, review text, product names) is Light.
 - SemiBold is kept only where weight carries meaning: the hero title, the titles printed on photos (rail lead cards), buttons, the announcement bar, and the footer credit.
 - Thin dividers, white product photos, quiet badges, and lots of white space, as in the references. Anything beyond these points is to be agreed with Itai first.
+
+## 5p. Main menu structure
+
+- One row, in this order (right to left): בית, **עגילים, טבעות, צמידים, שרשראות** (the four live categories, as top level items like בית and אודות), **תכשיטי מוסונייט** (category with a dropdown), **תכשיטי גברים** (category with a dropdown), אודות, מחשבון זהב וכסף, מדיניות (dropdown), צור קשר. There is no separate "חנות" item.
+- The two category dropdowns are small, open under their own item and list the sub categories they will have: מוסונייט (עגילים, טבעות, צמידים, שרשראות, סטים) and גברים (צמידים, שרשראות). Those categories do not exist on the site yet, so the list is muted and marked "בקרוב" until they are created, then the items become links like the live ones.
+- Same underline hover for every item. The sticky header and the phone drawer use the same structure.
 
 ---
 
