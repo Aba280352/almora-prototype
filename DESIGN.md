@@ -268,6 +268,14 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 - None. Sections appear in place with no reveal, fade or slide animation when scrolling.
 
+## 5n. Shop The Look
+
+- Between the "חדשים בחנות" rail and the reviews. Side padding `6vw`, bottom `8vw`. Centered title "SHOP THE LOOK" in Polin Light 30px (22px phones), letter spacing 0.14em.
+- Desktop: the model photo (1024:725, 12px radius) on one side and the look's products on the other (1.7fr / 1fr, max 1200px). Phones: the photo cropped square, the list under it.
+- Hotspots: white 26px dots on the jewelry with a soft breathing ring (scale 1 to 0.8, 2s, alternate, off for reduced motion). Each dot opens the quick view of its product, which links to the product page. Positions are stored as fractions of the photo, and the dots are re-mapped when the photo is cropped (`--f`), so they stay on the jewelry on every screen.
+- Product list: rows with a 72px photo (60px phones), the name in Light, the price, and the quick view eye. A row and its dot highlight each other on hover.
+- Photo and products are a first proposal (rigid drop necklace, oval ring, tennis bracelet on IMG_9019) and must be confirmed with Itai.
+
 ---
 
 ## 6. Do / Don't

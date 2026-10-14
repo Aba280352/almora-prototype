@@ -475,6 +475,37 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 .is-print .sticky, .is-print .drawer { display: none !important; }
 .is-print, .is-print body { margin: 0; }
 
+/* ===== Shop The Look: model photo with white hotspots, the look's products next to it ===== */
+.look { padding: 0 6vw var(--space-section); background: var(--color-bg); }
+.look__title { margin: 0 0 calc(var(--space-element-max) * 1.5); text-align: center; font-size: 30px; font-weight: var(--fw-light); letter-spacing: .14em; line-height: var(--lh-heading); }
+.look__wrap { display: grid; grid-template-columns: 1.7fr 1fr; gap: 3vw; align-items: center; max-width: 1200px; margin-inline: auto; }
+.look__photo { --f: 1; position: relative; aspect-ratio: 1024 / 725; overflow: hidden; border-radius: var(--radius); background: var(--color-surface); }
+.look__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+/* --f = visible share of the photo width (1 when not cropped), so dots stay on the jewelry when the photo is cropped */
+.look__dot { position: absolute; z-index: 1; left: calc((var(--x) - (1 - var(--f)) / 2) / var(--f) * 100%); top: calc(var(--y) * 100%); width: 26px; height: 26px; margin: -13px 0 0 -13px; padding: 0; border: 0; border-radius: 100px; background: var(--color-bg); cursor: pointer; transition: transform .25s; }
+.look__dot::after { content: ""; position: absolute; inset: -8px; border-radius: 100px; background: radial-gradient(closest-side, rgba(255,255,255,0) 55%, rgba(255,255,255,.55) 56%, rgba(255,255,255,.55) 100%); animation: look-pulse 2s ease-in-out infinite alternate; }
+.look__dot:hover, .look__dot.is-hot { transform: scale(1.15); }
+@keyframes look-pulse { from { transform: scale(1); } to { transform: scale(.8); } }
+.look__list { list-style: none; margin: 0; padding: 0; }
+.look__item { display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: var(--space-element-min); padding: 14px 0; border-bottom: 1px solid rgba(32,32,32,.08); transition: background-color .25s; }
+.look__item:first-child { border-top: 1px solid rgba(32,32,32,.08); }
+.look__item.is-hot { background: rgba(32,32,32,.03); }
+.look__item img { width: 72px; height: 72px; border-radius: 8px; object-fit: cover; display: block; background: var(--color-bg); }
+.look__item a { color: var(--color-text); text-decoration: none; }
+.look__name { display: block; font-size: 16px; font-weight: var(--fw-light); line-height: 1.35; }
+.look__item .prod__price { font-size: 15px; margin-top: 4px; }
+.look__item .prod__qv { position: static; opacity: 1; transform: none; }
+@media (max-width: 767px) {
+  .look { padding-inline: var(--space-element-max); }
+  .look__title { font-size: 22px; margin-bottom: var(--space-element-max); }
+  .look__wrap { grid-template-columns: 1fr; gap: var(--space-element-max); }
+  .look__photo { --f: .708; aspect-ratio: 1; }
+  .look__item { grid-template-columns: 60px 1fr auto; padding: 10px 0; }
+  .look__item img { width: 60px; height: 60px; }
+  .look__name { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .look__dot::after { animation: none; } }
+
 /* Grow on hover for every card (category + product) */
 .cat, .prod { transition: transform .5s cubic-bezier(.2,0,0,1); will-change: transform; }
 .cat:hover, .cat:focus-visible, .prod:hover, .prod:focus-visible { transform: scale(1.03); }
@@ -772,6 +803,25 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
   <div class="rail__vp"><div class="rail__track" id="rail_new"></div></div>
 </section>
 
+<section class="look" aria-label="Shop the look">
+  <!-- Hotspot products and positions need confirmation with Itai -->
+  <h2 class="look__title">SHOP THE LOOK</h2>
+  <div class="look__wrap">
+    <div class="look__photo">
+      <img src="https://almora.co.il/wp-content/uploads/2025/12/IMG_9019-scaled-e1765062096819-1536x1087.jpg" alt="דוגמנית עונדת שרשרת, טבעת וצמידים של ALMORA" loading="lazy">
+      <button class="look__dot" type="button" style="--x:0.389;--y:0.29" data-qv="6970" data-look="6970" aria-label="שרשרת קשיחה טיפה"></button>
+      <button class="look__dot" type="button" style="--x:0.232;--y:0.505" data-qv="7540" data-look="7540" aria-label="טבעת יהלום אובל מוסונייט VVS 1"></button>
+      <button class="look__dot" type="button" style="--x:0.68;--y:0.86" data-qv="6577" data-look="6577" aria-label="צמיד טניס משובץ יהלומי מוסונייט VVS 1"></button>
+    </div>
+    <ul class="look__list">
+      <li class="look__item" data-look="6970"><a href="https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%a9%d7%99%d7%97%d7%94-%d7%98%d7%99%d7%a4%d7%94" tabindex="-1" aria-hidden="true"><img src="https://almora.co.il/wp-content/uploads/2025/12/IMG_8994-scaled-e1765061468288-300x166.jpg" alt="" loading="lazy"></a><div><a class="look__name" href="https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%a9%d7%99%d7%97%d7%94-%d7%98%d7%99%d7%a4%d7%94">שרשרת קשיחה טיפה</a><div class="prod__price"><b>₪549</b></div></div><button class="prod__qv" type="button" data-qv="6970" aria-label="צפייה מהירה: שרשרת קשיחה טיפה"><svg class="icon" aria-hidden="true"><use href="#eye"/></svg></button></li>
+      <li class="look__item" data-look="7540"><a href="https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%99%d7%98-vvs-1" tabindex="-1" aria-hidden="true"><img src="https://almora.co.il/wp-content/uploads/2025/12/שות-150x150.png" alt="" loading="lazy"></a><div><a class="look__name" href="https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%99%d7%98-vvs-1">טבעת יהלום אובל מוסונייט VVS 1</a><div class="prod__price"><b>₪549</b></div></div><button class="prod__qv" type="button" data-qv="7540" aria-label="צפייה מהירה: טבעת יהלום אובל מוסונייט VVS 1"><svg class="icon" aria-hidden="true"><use href="#eye"/></svg></button></li>
+      <li class="look__item" data-look="6577"><a href="https://almora.co.il/product/%d7%a6%d7%9e%d7%99%d7%93-%d7%98%d7%a0%d7%99%d7%a1" tabindex="-1" aria-hidden="true"><img src="https://almora.co.il/wp-content/uploads/2025/11/PJ9B0414_441g-f7-150x150.jpg" alt="" loading="lazy"></a><div><a class="look__name" href="https://almora.co.il/product/%d7%a6%d7%9e%d7%99%d7%93-%d7%98%d7%a0%d7%99%d7%a1">צמיד טניס משובץ יהלומי מוסונייט VVS 1</a><div class="prod__price"><b>₪949</b></div></div><button class="prod__qv" type="button" data-qv="6577" aria-label="צפייה מהירה: צמיד טניס משובץ יהלומי מוסונייט VVS 1"><svg class="icon" aria-hidden="true"><use href="#eye"/></svg></button></li>
+    </ul>
+  </div>
+</section>
+
+
 <section class="reviews" aria-label="ביקורות">
   <!-- Sample content for layout only. Replace DATA with real WooCommerce reviews (reviewer, rating, review, verified, product, image). -->
   <div class="reviews__top">
@@ -1048,7 +1098,7 @@ window.ALM = (function () {
     if (e.target.closest('[data-qv-close]')) close();
   });
   addEventListener('keydown', function (e) { if (e.key === 'Escape' && qv.classList.contains('is-open')) close(); });
-  return { card: card, fmt: fmt, esc: esc };
+  return { card: card, fmt: fmt, esc: esc, add: function (p) { store[p.id] = p; } };
 })();
 </script>
 
@@ -1123,6 +1173,21 @@ window.ALM = (function () {
     measure(); requestAnimationFrame(tick);
   }
   ['best', 'sale', 'new'].forEach(rail);
+})();
+</script>
+
+<script>
+/* Shop The Look: each dot opens the quick view of its product; dot and list row highlight each other. */
+(function () {
+  var LOOK = [{"id":6970,"n":"שרשרת קשיחה טיפה","u":"https://almora.co.il/product/%d7%a9%d7%a8%d7%a9%d7%a8%d7%aa-%d7%a7%d7%a9%d7%99%d7%97%d7%94-%d7%98%d7%99%d7%a4%d7%94","i":"https://almora.co.il/wp-content/uploads/2025/12/IMG_8994-scaled-e1765061468288-600x333.jpg","t":"https://almora.co.il/wp-content/uploads/2025/12/IMG_8994-scaled-e1765061468288-300x166.jpg","g":["https://almora.co.il/wp-content/uploads/2025/12/IMG_8994-scaled-e1765061468288-768x426.jpg"],"p":549,"r":549,"s":0,"k":1,"c":["זהב לבן","רוז גולד"]},{"id":7540,"n":"טבעת יהלום אובל מוסונייט VVS 1","u":"https://almora.co.il/product/%d7%98%d7%91%d7%a2%d7%aa-%d7%99%d7%94%d7%9c%d7%95%d7%9d-%d7%90%d7%95%d7%91%d7%9c-%d7%9e%d7%95%d7%a1%d7%95%d7%a0%d7%99%d7%99%d7%98-vvs-1","i":"https://almora.co.il/wp-content/uploads/2025/12/שות-600x600.png","t":"https://almora.co.il/wp-content/uploads/2025/12/שות-150x150.png","g":["https://almora.co.il/wp-content/uploads/2025/12/שות-768x768.png"],"p":549,"r":549,"s":0,"k":1,"c":["זהב לבן","זהב צהוב","רוז גולד"]},{"id":6577,"n":"צמיד טניס משובץ יהלומי מוסונייט VVS 1","u":"https://almora.co.il/product/%d7%a6%d7%9e%d7%99%d7%93-%d7%98%d7%a0%d7%99%d7%a1","i":"https://almora.co.il/wp-content/uploads/2025/11/PJ9B0414_441g-f7-600x600.jpg","t":"https://almora.co.il/wp-content/uploads/2025/11/PJ9B0414_441g-f7-150x150.jpg","g":["https://almora.co.il/wp-content/uploads/2025/11/PJ9B0414_441g-f7-768x768.jpg"],"p":949,"r":949,"s":0,"k":1,"c":["זהב לבן","זהב צהוב","רוז גולד"]}];
+  LOOK.forEach(ALM.add);
+  var all = [].slice.call(document.querySelectorAll('.look [data-look]'));
+  all.forEach(function (el) {
+    var id = el.getAttribute('data-look');
+    var mates = all.filter(function (x) { return x.getAttribute('data-look') === id; });
+    el.addEventListener('mouseenter', function () { mates.forEach(function (m) { m.classList.add('is-hot'); }); });
+    el.addEventListener('mouseleave', function () { mates.forEach(function (m) { m.classList.remove('is-hot'); }); });
+  });
 })();
 </script>
 
