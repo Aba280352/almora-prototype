@@ -60,10 +60,12 @@ Text color is always `#202020`.
 
 ### Font files (Polin)
 Web fonts, WOFF2, stored in `fonts/`:
+- `fonts/Polin-Light.woff2` → weight 300
 - `fonts/Polin-Regular.woff2` → weight 400
+- `fonts/Polin-Medium.woff2` → weight 500
 - `fonts/Polin-Semibold.woff2` → weight 600
 
-Only these two weights exist, which matches the system (Regular for body/caption, SemiBold for headings and Body strong). Do not request other weights, to avoid faux-bold.
+Four weights are loaded: Light 300 for refined small text (product names, category labels, review text), Regular 400 for body and prices, Medium 500 for small emphasis, SemiBold 600 for headings and Body strong. Do not request any other weight, to avoid faux-bold. All four files come from the licensed Polin WEB package.
 
 ```css
 @font-face {
@@ -115,7 +117,7 @@ Platform: WordPress + Elementor only.
   --fs-h1: 120px; --fs-h2: 80px; --fs-h3: 48px; --fs-h4: 36px; --fs-h5: 24px;
   --fs-body: 18px; --fs-caption: 14px;
   --lh-heading: 1em; --lh-body: 1.3em;
-  --fw-regular: 400; --fw-semibold: 600;
+  --fw-light: 300; --fw-regular: 400; --fw-medium: 500; --fw-semibold: 600;
 
   /* spacing */
   --space-section: 8vw;
@@ -189,9 +191,9 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 ## 5d. Category grid
 
-- Below the hero. Section padding `8vw` top and bottom, `6vw` on the sides (same start edge as the hero text). 3 columns by 2 rows on desktop, 2 columns on mobile. Gap `20px` (`15px` on mobile).
+- Below the hero. Section padding `8vw` top and bottom, `6vw` on the sides. 3 columns by 2 rows on desktop inside a centered 1100px grid, 2 columns on mobile (28px side padding, 12px gap). Kept slightly smaller than the first version on purpose.
 - Square cards (`aspect-ratio: 1`), `12px` radius, lifestyle photo from the Media library, `object-fit: cover`.
-- Name bar at the bottom of each card: white 82% with a light blur, centered Body SemiBold, `#202020`.
+- Name strip at the bottom of each card: thin and see-through (white 60% with a 4px blur, 9px padding, 7px on mobile), centered text in Polin Light 300, 17px (15px mobile), letter spacing 0.06em, `#202020`. Classic and quiet, in the spirit of Sapporo. Never bold.
 - Hover: the whole card grows to 1.03 (0.5s, `cubic-bezier(.2,0,0,1)`), same on product cards. A second photo of the same category fades in over the first, 0.5s `ease-in-out`. No shadows.
 - Only live categories with real products are shown: שרשראות, טבעות, עגילים, תליונים, צמידים, plus a "כל התכשיטים" card to the shop. Future categories (מוסונייט, גברים) are not shown until they exist.
 

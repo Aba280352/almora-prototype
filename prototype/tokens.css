@@ -1,6 +1,16 @@
 /* ALMORA design tokens – mirror of DESIGN.md */
 @font-face {
   font-family: "Polin";
+  src: url("../fonts/Polin-Light.woff2") format("woff2");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
+  src: url("../fonts/Polin-Medium.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Polin";
   src: url("../fonts/Polin-Regular.woff2") format("woff2");
   font-weight: 400; font-style: normal; font-display: swap;
 }
@@ -27,7 +37,7 @@
   --fs-h1: 120px; --fs-h2: 80px; --fs-h3: 48px; --fs-h4: 36px; --fs-h5: 24px;
   --fs-body: 18px; --fs-caption: 14px;
   --lh-heading: 1em; --lh-body: 1.3em;
-  --fw-regular: 400; --fw-semibold: 600;
+  --fw-light: 300; --fw-regular: 400; --fw-medium: 500; --fw-semibold: 600;
 
   --space-section: 8vw;
   --space-element-min: 15px;

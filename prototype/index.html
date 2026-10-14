@@ -152,18 +152,19 @@ a.menu__link:hover::after, a.menu__link:focus-visible::after { width: 100%; }
 
 /* ===== Category grid: 3 columns x 2 rows, square cards, name bar at the bottom ===== */
 .cats { padding: var(--space-section) 6vw; background: var(--color-bg); }
-.cats__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-element-max); }
+.cats__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-element-max); max-width: 1100px; margin-inline: auto; }
 .cat { position: relative; display: block; aspect-ratio: 1; overflow: hidden; border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); text-decoration: none; }
 .cat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .cat .cat__alt { opacity: 0; transition: opacity .5s ease-in-out; }
 .cat:hover .cat__alt, .cat:focus-visible .cat__alt { opacity: 1; }
 .cat__alt--ear { object-position: 62% 35%; transform: scale(1.8); transform-origin: 62% 35%; }
+/* Name: a thin, see-through strip with light, slightly spaced text (classic, in the spirit of Sapporo) */
 .cat__name {
-  position: absolute; inset-inline: 0; bottom: 0; padding: var(--space-element-min) var(--space-element-max);
-  background: rgba(255,255,255,.82); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  text-align: center; font-size: var(--fs-body); font-weight: var(--fw-semibold); line-height: var(--lh-body);
+  position: absolute; inset-inline: 0; bottom: 0; padding: 9px var(--space-element-max);
+  background: rgba(255,255,255,.6); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  text-align: center; font-size: 17px; font-weight: var(--fw-light); letter-spacing: .06em; line-height: var(--lh-body);
 }
-@media (max-width: 767px) { .cats__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-element-min); } .cats { padding-inline: var(--space-element-max); } }
+@media (max-width: 767px) { .cats__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .cats { padding-inline: 28px; } .cat__name { padding: 7px 10px; font-size: 15px; } }
 
 
 /* ===== Products: text tabs + 4 column grid (store data) ===== */
