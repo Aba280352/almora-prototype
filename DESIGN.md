@@ -277,6 +277,12 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Product list: rows with a 72px photo (60px phones), the name in Light, the price, and the quick view eye. A row and its dot highlight each other on hover.
 - Photo and products are a first proposal (rigid drop necklace, oval ring, tennis bracelet on IMG_9019) and must be confirmed with Itai.
 
+## 5o. Overall refinement (inspired by Danon and Topten)
+
+- Lighter type across the page, with the approved structure unchanged. Section titles ("ביקורות", "למה לקנות באלמורה?", "לכל שאלה יש תשובה", the newsletter headline, the footer marquee words) are Polin Regular instead of SemiBold. Small labels and the active tab are Medium. Supporting text (benefit descriptions, FAQ intro and answers, review text, product names) is Light.
+- SemiBold is kept only where weight carries meaning: the hero title, the titles printed on photos (rail lead cards), buttons, the announcement bar, and the footer credit.
+- Thin dividers, white product photos, quiet badges, and lots of white space, as in the references. Anything beyond these points is to be agreed with Itai first.
+
 ---
 
 ## 6. Do / Don't
