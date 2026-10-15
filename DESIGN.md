@@ -151,6 +151,12 @@ html { direction: rtl; }
 - Use Global Colors and Global Fonts in every widget. No hardcoded values.
 - The CSS variables above can be added in Site Settings > Custom CSS if needed.
 
+### Live build (almora.co.il, started 2026-10-15)
+- New homepage: page "דף בית חדש" (`/home-new/`), template Elementor Canvas, noindex and kept out of the sitemap until it replaces the live homepage.
+- Polin is installed in Elementor > Custom Fonts (300, 400, 500, 600, woff2).
+- Globals are added as **new custom** entries named "ALMORA ..." (colors: Text, Background, Surface, Sale, Stock, Star, Verified, plus the existing Gold; fonts: ALMORA Body, ALMORA Body SemiBold, more as sections need them). The Elementor system colors and fonts are left untouched, because the live site may use them.
+- Containers only (no sections or columns), and only the widgets a section needs. Announcement strip: one full-width container and one Ecomus Marquee widget (speed 0.15, gap 8vw, padding 15px top and bottom).
+
 ## 5b. Icons
 
 **Mandatory: the only icon set allowed in this project is magicoon, style Light (the thinnest outline).** No other icon library, no other magicoon style (Regular, Filled, Duotone), no emoji, no icon fonts, no hand-drawn or ad-hoc SVGs.
