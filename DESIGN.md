@@ -152,7 +152,7 @@ html { direction: rtl; }
 - The CSS variables above can be added in Site Settings > Custom CSS if needed.
 
 ### Live build (almora.co.il, started 2026-10-15)
-- New homepage: page "דף בית חדש" (`/home-new/`), template Elementor Canvas, noindex and kept out of the sitemap until it replaces the live homepage.
+- New homepage: page "דף בית חדש" (`/home-new/`), template Elementor Canvas, noindex and kept out of the sitemap through Yoast SEO until it replaces the live homepage. Polin loads with font-display swap via the mu-plugin `almora-font-display.php`.
 - Polin is installed in Elementor > Custom Fonts (300, 400, 500, 600, woff2).
 - Globals are added as **new custom** entries named "ALMORA ..." (colors: Text, Background, Surface, Sale, Stock, Star, Verified, plus the existing Gold; fonts: ALMORA Body, ALMORA Body SemiBold, more as sections need them). The Elementor system colors and fonts are left untouched, because the live site may use them.
 - Containers only (no sections or columns), and only the widgets a section needs. Announcement strip: one full-width container and one Ecomus Marquee widget (speed 0.15, gap 8vw, padding 15px top and bottom).
