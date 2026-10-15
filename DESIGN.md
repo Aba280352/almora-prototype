@@ -18,7 +18,7 @@ Scope: new homepage. This file covers foundations only (no component specs yet).
 | `--color-text` | `#202020` | All text, tags, **buttons** (button background/border) |
 | `--color-bg` | `#FFFFFF` | Page background. Pure white across the whole page |
 | `--color-surface` | `#F5F5F5` | Light emphasis, e.g. cards placed on a white background. Optional, not always needed |
-| `--color-gold` | `#B8860B` | **Hero section and the top announcement bar only**, as an accent. Do not use elsewhere. Text on gold is white `#FFFFFF` |
+| `--color-gold` | `#B8860B` | **Hero section only**, as an accent. Do not use elsewhere. Text on gold is white `#FFFFFF` |
 | `--color-stock` | `#22C55E` | The availability dot inside the black "במלאי" tag only |
 | `--color-star` | `#FFB323` | Review stars only (filled) |
 | `--color-verified` | `#E6F4F1` | Background of the "מאומת" pill in reviews only |
@@ -27,8 +27,8 @@ Scope: new homepage. This file covers foundations only (no component specs yet).
 Rules:
 - Page background is always `#FFFFFF`.
 - `#F5F5F5` appears only on top of a white background.
-- Green appears only as the availability dot, yellow `#FFB323` only on review stars, and mint `#E6F4F1` only on the verified pill. Gold never appears outside the hero and the announcement bar. Red never appears outside discount tags and sale prices.
-- Announcement bar: gold background, white Polin SemiBold (600) text, running continuously (marquee). This is the only exception to "text is always `#202020`".
+- Green appears only as the availability dot, yellow `#FFB323` only on review stars, and mint `#E6F4F1` only on the verified pill. Gold never appears outside the hero. Red never appears outside discount tags and sale prices.
+- Announcement bar: black (`#202020`) background, white Polin SemiBold (600) text, running continuously (marquee). This is the only exception to "text is always `#202020`".
 
 ## 3. Shape and depth
 - Border radius: **12px** on everything: product images, product grid items, buttons, cards. Uniform.
