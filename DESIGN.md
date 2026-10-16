@@ -28,7 +28,7 @@ Rules:
 - Page background is always `#FFFFFF`.
 - `#F5F5F5` appears only on top of a white background.
 - Green appears only as the availability dot, yellow `#FFB323` only on review stars, and mint `#E6F4F1` only on the verified pill. Gold never appears outside the hero. Red never appears outside discount tags and sale prices.
-- Announcement bar: black (`#202020`) background, white Polin SemiBold (600) text, running continuously (marquee). This is the only exception to "text is always `#202020`".
+- Announcement bar: black (`#202020`) background, white Polin Medium (500) text at 20px (18px on phones), running continuously (marquee). Medium at a slightly larger size renders cleaner than SemiBold while the strip moves. This is the only exception to "text is always `#202020`".
 
 ## 3. Shape and depth
 - Border radius: **12px** on everything: product images, product grid items, buttons, cards. Uniform.
@@ -293,7 +293,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 ## 5o. Overall refinement (inspired by Danon and Topten)
 
 - Lighter type across the page, with the approved structure unchanged. Section titles ("ביקורות", "למה לקנות באלמורה?", "לכל שאלה יש תשובה", the newsletter headline, the footer marquee words) are Polin Regular instead of SemiBold. Small labels and the active tab are Medium. Supporting text (benefit descriptions, FAQ intro and answers, review text, product names) is Light.
-- SemiBold is kept only where weight carries meaning: the hero title, the titles printed on photos (rail lead cards), buttons, the announcement bar, and the footer credit.
+- SemiBold is kept only where weight carries meaning: the hero title, the titles printed on photos (rail lead cards), buttons, and the footer credit.
 - Thin dividers, white product photos, quiet badges, and lots of white space, as in the references. Anything beyond these points is to be agreed with Itai first.
 
 ## 5p. Main menu structure

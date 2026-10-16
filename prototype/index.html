@@ -7,16 +7,19 @@
 <title>ALMORA דף בית אב טיפוס</title>
 <link rel="stylesheet" href="tokens.css">
 <style>
-/* ===== Announcement bar: black, white Polin SemiBold, continuous marquee ===== */
+/* ===== Announcement bar: black, white Polin Medium 20px, continuous marquee ===== */
 .announce {
   background: var(--color-text);
   color: var(--color-bg);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-semibold);
+  font-size: 20px;
+  font-weight: var(--fw-medium);
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
   line-height: var(--lh-body);
   overflow: hidden;
   direction: ltr;
 }
+@media (max-width: 767px) { .announce { font-size: 18px; } }
 .announce__track { display: flex; width: max-content; animation: announce-scroll 30s linear infinite; }
 .announce:hover .announce__track { animation-play-state: paused; }
 .announce__group { display: flex; flex: none; }
