@@ -156,6 +156,9 @@ html { direction: rtl; }
 - Polin is installed in Elementor > Custom Fonts (300, 400, 500, 600, woff2).
 - Globals are added as **new custom** entries named "ALMORA ..." (colors: Text, Background, Surface, Sale, Stock, Star, Verified, plus the existing Gold; fonts: ALMORA Body, ALMORA Body SemiBold, more as sections need them). The Elementor system colors and fonts are left untouched, because the live site may use them.
 - Containers only (no sections or columns), and only the widgets a section needs. Announcement strip: one full-width container and one Ecomus Marquee widget (speed 0.15, gap 8vw, padding 15px top and bottom).
+- Hero: one full-width container and one Elementor Pro Slides widget (class `alm-hero`). Each banner holds its image, shade, title, text, button and link. The text field has two lines: line 1 shows on desktop, line 2 on phones. Fonts and colors come from the globals (ALMORA H1 120/80/42, ALMORA Body, ALMORA Button 18/14). Layout details that have no native control (fixed text box, dots, image focus per banner, phone layout) are in the widget's Custom CSS.
+- The curtain transition is an Elementor Custom Code snippet ("ALMORA hero curtain (home-new)") that loads on this page only. Without it, the slider falls back to a plain fade.
+- The site's Additional CSS forces all headings to Playfair with `!important`. The new page overrides it in its own page Custom CSS, using the ALMORA global font, so the live site is not touched.
 
 ## 5b. Icons
 
