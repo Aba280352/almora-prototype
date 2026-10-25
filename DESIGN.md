@@ -215,7 +215,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 - Below the hero. Section padding `8vw` top and bottom, `6vw` on the sides. 3 columns by 2 rows on desktop inside a centered 1100px grid, 2 columns on mobile (28px side padding, 12px gap). Kept slightly smaller than the first version on purpose.
 - Square cards (`aspect-ratio: 1`), `12px` radius, lifestyle photo from the Media library, `object-fit: cover`.
-- Name on each card (changed 2026-10-25 at the client's request): only the category title, no description and no glass strip. White SemiBold title (H4: 36px, 32px tablet, 26px phones) centered near the bottom (20px, 12px on phones), over a light flat shade `rgba(32,32,32,.18)` on the photo so it stays readable. On phones the cards run edge to edge with rounded corners.
+- Name on each card (changed 2026-10-25 at the client's request): only the category title, no description and no glass strip. White SemiBold title (H4: 36px, 32px tablet, 26px phones) centered near the bottom (20px, 12px on phones), over a light flat shade `rgba(32,32,32,.18)` on the photo so it stays readable. On phones the cards run edge to edge: the corners on the screen edge are square (0px) and the inner corners stay rounded (12px), set per card in its Border Radius for mobile.
 - Hover: the whole card grows to 1.03 (0.5s, `cubic-bezier(.2,0,0,1)`), same on product cards. A second photo of the same category fades in over the first, 0.5s `ease-in-out`. No shadows.
 - Only live categories with real products are shown: שרשראות, טבעות, עגילים, תליונים, צמידים, plus a "כל התכשיטים" card to the shop. Future categories (מוסונייט, גברים) are not shown until they exist.
 
