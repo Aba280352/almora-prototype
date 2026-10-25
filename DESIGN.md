@@ -310,7 +310,8 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 ## 5p. Main menu structure
 
 - One row, in this order (right to left): בית, **עגילים, טבעות, צמידים, שרשראות** (the four live categories, as top level items like בית and אודות), **תכשיטי מוסונייט** (category with a dropdown), **תכשיטי גברים** (category with a dropdown), אודות, מחשבון זהב וכסף, מדיניות (dropdown), צור קשר. There is no separate "חנות" item.
-- The two category dropdowns are small, open under their own item and list the sub categories they will have: מוסונייט (עגילים, טבעות, צמידים, שרשראות, סטים) and גברים (צמידים, שרשראות). Those categories do not exist on the site yet, so the list is muted and marked "בקרוב" until they are created, then the items become links like the live ones.
+- The two category dropdowns are small and open under their own item. Live since 2026-10-25: תכשיטי מוסונייט (עגילי מוסונייט, טבעות מוסונייט, צמידי מוסונייט, שרשראות מוסונייט) and תכשיטי גברים (טבעות גברים, צמידי גברים). Empty sub categories (סטים מוסונייט, שרשראות גברים) stay out of the menu until they have products.
+- Category hierarchy: every product keeps its general category (e.g. עגילים) and, when it is moissanite, also gets תכשיטי מוסונייט and the matching sub category (e.g. עגילי מוסונייט). Men products get תכשיטי גברים and its matching sub category. A product counts as moissanite when its name says so (מוסונייט / מוסוניט / מואסניט).
 - Same underline hover for every item. The sticky header and the phone drawer use the same structure.
 
 ---
