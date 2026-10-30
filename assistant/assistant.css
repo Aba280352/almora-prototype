@@ -1,0 +1,84 @@
+#almora-bot{--alb-ink:#202020;--alb-sur:#F5F5F5;--alb-line:#E4E4E4;--alb-mute:#666;--alb-sale:#E24A49;--alb-bottom:84px;font-family:inherit;color:var(--alb-ink);direction:rtl;text-align:right;font-size:15px;line-height:1.5;letter-spacing:0}
+#almora-bot[hidden]{display:none!important}
+#almora-bot *,#almora-bot *::before,#almora-bot *::after{box-sizing:border-box}
+#almora-bot [hidden]{display:none!important}
+#almora-bot button,#almora-bot input,#almora-bot a{font-family:inherit;letter-spacing:0;text-transform:none}
+#almora-bot svg{display:block;fill:currentColor}
+html.alb-lock{overflow:hidden}
+
+#almora-bot .alb-fab{position:fixed;right:15px;bottom:var(--alb-bottom);z-index:99999990;width:54px;height:54px;margin:0;padding:0;border:0!important;border-radius:12px!important;background:var(--alb-ink)!important;color:#fff!important;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease}
+#almora-bot .alb-fab:hover,#almora-bot .alb-fab:focus-visible{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.26);background:var(--alb-ink)!important;color:#fff!important}
+#almora-bot .alb-fab:focus-visible{outline:2px solid #fff;outline-offset:-5px}
+#almora-bot .alb-fab__a,#almora-bot .alb-fab__b{display:flex}
+#almora-bot .alb-fab__b{display:none}
+#almora-bot.is-open .alb-fab__a{display:none}
+#almora-bot.is-open .alb-fab__b{display:flex}
+
+#almora-bot .alb-panel{position:fixed;right:15px;bottom:calc(var(--alb-bottom) + 66px);z-index:99999991;width:392px;max-width:calc(100vw - 30px);height:min(640px,calc(100vh - var(--alb-bottom) - 82px));height:min(640px,calc(100dvh - var(--alb-bottom) - 82px));display:flex;flex-direction:column;background:#fff;border-radius:12px;box-shadow:0 18px 60px rgba(0,0,0,.24),0 0 0 1px rgba(0,0,0,.06);overflow:hidden;outline:0}
+#almora-bot .alb-head{display:flex;align-items:center;gap:8px;padding:14px 16px 12px;border-bottom:1px solid var(--alb-line);flex:none}
+#almora-bot .alb-head__t{flex:1;min-width:0}
+#almora-bot .alb-head__n{font-size:16px;font-weight:600;line-height:1.3;margin:0}
+#almora-bot .alb-head__s{font-size:12.5px;color:var(--alb-mute);line-height:1.4;margin:2px 0 0}
+#almora-bot .alb-ib{width:40px;height:40px;margin:0;padding:0;border:0!important;border-radius:12px!important;background:transparent!important;color:var(--alb-ink)!important;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+#almora-bot .alb-ib:hover,#almora-bot .alb-ib:focus-visible{background:var(--alb-sur)!important;color:var(--alb-ink)!important}
+
+#almora-bot .alb-body{position:relative;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px;display:flex;flex-direction:column;gap:10px}
+#almora-bot .alb-m{max-width:88%;padding:11px 14px;border-radius:12px;font-size:15px;line-height:1.55;overflow-wrap:anywhere;white-space:pre-line;margin:0}
+#almora-bot .alb-m--b{align-self:flex-start;background:var(--alb-sur);color:var(--alb-ink)}
+#almora-bot .alb-m--u{align-self:flex-end;background:var(--alb-ink);color:#fff}
+#almora-bot .alb-c{display:flex;flex-wrap:wrap;gap:8px;align-self:stretch}
+#almora-bot .alb-chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:0;padding:8px 14px;border:1px solid var(--alb-ink)!important;border-radius:12px!important;background:#fff!important;color:var(--alb-ink)!important;font-size:14px;font-weight:600;line-height:1.3;text-decoration:none!important;cursor:pointer;text-align:right}
+#almora-bot .alb-chip:hover,#almora-bot .alb-chip:focus-visible{background:var(--alb-sur)!important;color:var(--alb-ink)!important}
+#almora-bot .alb-chip--pri{background:var(--alb-ink)!important;color:#fff!important}
+#almora-bot .alb-chip--pri:hover,#almora-bot .alb-chip--pri:focus-visible{background:#000!important;color:#fff!important}
+#almora-bot .alb-chip:focus-visible,#almora-bot .alb-btn:focus-visible,#almora-bot .alb-ib:focus-visible,#almora-bot .alb-opt:focus-visible,#almora-bot .alb-link:focus-visible,#almora-bot .alb-p__name:focus-visible{outline:2px solid var(--alb-ink);outline-offset:2px}
+
+#almora-bot .alb-ps{display:flex;flex-direction:column;gap:8px;align-self:stretch}
+#almora-bot .alb-p{display:flex;flex-wrap:wrap;gap:10px 12px;background:var(--alb-sur);border-radius:12px;padding:10px}
+#almora-bot .alb-p__img{width:88px;height:88px;border-radius:10px;object-fit:cover;background:#fff;flex:none;display:block}
+#almora-bot .alb-p__main{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+#almora-bot .alb-p__name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14px;font-weight:600;line-height:1.4;color:var(--alb-ink)!important;text-decoration:none!important}
+#almora-bot .alb-p__price{font-size:15px;font-weight:600;line-height:1.3}
+#almora-bot .alb-p__price s{margin-inline-start:6px;font-size:13px;font-weight:400;color:var(--alb-mute)}
+#almora-bot .alb-p__price.is-sale{color:var(--alb-sale)}
+#almora-bot .alb-p__act{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+#almora-bot .alb-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;margin:0;padding:0 12px;border:1px solid var(--alb-ink)!important;border-radius:12px!important;background:#fff!important;color:var(--alb-ink)!important;font-size:13.5px;font-weight:600;line-height:1;text-decoration:none!important;cursor:pointer;white-space:nowrap}
+#almora-bot .alb-btn:hover,#almora-bot .alb-btn:focus-visible{background:var(--alb-sur)!important;color:var(--alb-ink)!important}
+#almora-bot .alb-btn--pri{background:var(--alb-ink)!important;color:#fff!important}
+#almora-bot .alb-btn--pri:hover,#almora-bot .alb-btn--pri:focus-visible{background:#000!important;color:#fff!important}
+#almora-bot .alb-btn[disabled]{opacity:.45;cursor:default}
+#almora-bot .alb-o{flex:1 1 100%;display:flex;flex-direction:column;gap:10px;padding-top:10px;border-top:1px solid var(--alb-line)}
+#almora-bot .alb-o__g{display:flex;flex-direction:column;gap:6px}
+#almora-bot .alb-o__l{font-size:13px;color:var(--alb-mute)}
+#almora-bot .alb-o__r{display:flex;flex-wrap:wrap;gap:6px}
+#almora-bot .alb-opt{min-height:34px;margin:0;padding:5px 12px;border:1px solid var(--alb-ink)!important;border-radius:12px!important;background:#fff!important;color:var(--alb-ink)!important;font-size:13.5px;font-weight:600;line-height:1.2;cursor:pointer}
+#almora-bot .alb-opt:hover{background:var(--alb-sur)!important}
+#almora-bot .alb-opt[aria-pressed="true"]{background:var(--alb-ink)!important;color:#fff!important}
+#almora-bot .alb-opt[disabled]{opacity:.38;text-decoration:line-through;cursor:default}
+#almora-bot .alb-err{flex:1 1 100%;margin:0;font-size:13px;color:#B3261E}
+
+#almora-bot .alb-typing{align-self:flex-start;display:flex;gap:4px;padding:15px 16px;border-radius:12px;background:var(--alb-sur)}
+#almora-bot .alb-typing i{width:6px;height:6px;border-radius:50%;background:#8a8a8a;animation:alb-b 1s infinite ease-in-out}
+#almora-bot .alb-typing i:nth-child(2){animation-delay:.15s}
+#almora-bot .alb-typing i:nth-child(3){animation-delay:.3s}
+@keyframes alb-b{0%,60%,100%{opacity:.35;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+
+#almora-bot .alb-foot{flex:none;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--alb-line);display:flex;flex-direction:column;gap:8px}
+#almora-bot .alb-form{display:flex;gap:8px;margin:0}
+#almora-bot .alb-in{flex:1;min-width:0;height:44px;margin:0;padding:0 14px;border:1px solid var(--alb-line);border-radius:12px;background:#fff;color:var(--alb-ink);font-size:16px;box-shadow:none;outline:0}
+#almora-bot .alb-in:focus{border-color:var(--alb-ink)}
+#almora-bot .alb-in::placeholder{color:#767676}
+#almora-bot .alb-send{width:44px;height:44px;margin:0;padding:0;border:0!important;border-radius:12px!important;background:var(--alb-ink)!important;color:#fff!important;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+#almora-bot .alb-send svg{transform:scaleX(-1)}
+#almora-bot .alb-send:focus-visible{outline:2px solid var(--alb-ink);outline-offset:2px}
+#almora-bot .alb-link{align-self:center;font-size:13px;font-weight:600;color:var(--alb-ink)!important;text-decoration:underline!important;text-underline-offset:3px;background:none!important;border:0!important;padding:2px 4px;cursor:pointer}
+
+@media (max-width:600px){
+	#almora-bot .alb-panel{right:0;left:0;top:0;bottom:0;width:auto;max-width:none;height:100vh;height:100dvh;border-radius:0;box-shadow:none}
+	#almora-bot.is-open .alb-fab{display:none}
+	#almora-bot .alb-m{max-width:92%}
+}
+@media (prefers-reduced-motion:reduce){
+	#almora-bot .alb-fab{transition:none}
+	#almora-bot .alb-typing i{animation:none;opacity:.7}
+}
