@@ -840,45 +840,82 @@ window.ALMORA_BOT=<?php echo wp_json_encode( $cfg ); ?>;
 	}
 
 	/* ---------------------------------------------------------------- free text */
-	var KW = [
-		['human', /נציג|בן אדם|אדם אמיתי|וואטסאפ|וואצאפ|ווטסאפ|whatsapp/i],
-		['contact', /טלפון|שעות|פתוח|כתובת|ליצור קשר|יצירת קשר|להתקשר/],
-		['ret', /החזר|להחליף|החלפ|ביטול|לבטל/],
-		['ship', /משלוח|שליח|הגעה|מגיע|אספקה|דמי משלוח/],
-		['pay', /תשלום|לשלם|אשראי|ביט\b|apple|google|פיי|תשלומים|חשבונית/i],
-		['moi', /מוסונייט|מויסנייט|יהלום|זרקון/],
-		['mat', /925|ציפוי|זהב|חומר|אלרגי|מתכת|ניקל/],
-		['care', /ניקוי|לנקות|טיפול|להשחיר|משחיר|מקלחת|שמירה/],
-		['size', /מידה|מידות|גודל/],
-		['color', /גוון|תמונות|תמונה/]
+	/* JS  does not work with Hebrew letters, so word ends are checked with a lookahead */
+	var END = "(?![א-ת])";
+	var STRONG = [
+		["human", new RegExp("נציג|בן אדם|אדם אמיתי|וואטסאפ|וואצאפ|ווטסאפ|whatsapp", "i")],
+		["contact", new RegExp("טלפון|שעות|פתוח|כתובת|ליצור קשר|יצירת קשר|להתקשר")],
+		["ret", new RegExp("החזר|להחליף|החלפ|ביטול|לבטל")],
+		["ship", new RegExp("משלוח|שליח|הגעה|מגיע|אספקה|דמי משלוח")],
+		["pay", new RegExp("תשלום|לשלם|אשראי|ביט" + END + "|apple|google|פיי|תשלומים|חשבונית", "i")]
 	];
+	var SOFT = [
+		["mat", new RegExp("מוסונייט|מויסנייט|יהלום|זרקון|925|ציפוי|זהב|חומר|אלרגי|מתכת|ניקל")],
+		["care", new RegExp("ניקוי|לנקות|טיפול|להשחיר|משחיר|מקלחת|שמירה")],
+		["size", new RegExp("מידה|מידות|גודל")],
+		["color", new RegExp("גוון|תמונות|תמונה")]
+	];
+	var NOUN = new RegExp("(?:^|[^א-ת])[הולבכמש]?(?:טבעת|טבעות|עגילים|עגיל|שרשרת|שרשראות|צמיד|צמידים|תליון|תליונים|סט|סטים|תכשיט|תכשיטים)" + END);
+	var GIFT = new RegExp("מתנה|אירוסין|חתונה|יום הולדת|יום נישואין|יום נישואים");
+	var HELLO = new RegExp("^(?:שלום|היי|הי|הלו|בוקר טוב|ערב טוב|צהריים טובים|אהלן)" + END);
+	var THANKS = new RegExp("^(?:תודה|תודה רבה|מעולה|אחלה|סבבה|יופי|מושלם|ביי|להתראות)" + END);
+	function firstKey(list, v) {
+		for (var i = 0; i < list.length; i++) { if (list[i][1].test(v)) { return list[i][0]; } }
+		return "";
+	}
+	function notUnderstood() {
+		track("unknown", { len: S.last.length });
+		say([tx("לא הצלחתי להבין מה ביקשתם. למעבר לנציג אנושי אפשר להמשיך בוואטסאפ, מתאים?"), chips([
+			{ h: "wa", l: "המשך בוואטסאפ", pri: 1 },
+			{ k: "m:pick", l: "עוזרים לי לבחור תכשיט", i: "sparkle" },
+			{ k: "m:faq", l: "שאלות נפוצות" }
+		])]);
+	}
 	function freeText(v) {
 		S.last = v;
 		save();
-		push({ r: 'u', t: 'text', x: v });
+		push({ r: "u", t: "text", x: v });
 		scrollEnd();
-		track('text', { len: v.length });
-		var key = '';
-		for (var i = 0; i < KW.length; i++) { if (KW[i][1].test(v)) { key = KW[i][0]; break; } }
-		if (key === 'human') {
-			say([tx('בשמחה. כאן אפשר להמשיך בוואטסאפ, ההודעה כבר מוכנה עם סיכום השיחה.'), chips([{ h: 'wa', l: 'המשך בוואטסאפ', pri: 1 }, mainChips().o[0]])]);
+		track("text", { len: v.length });
+		var key = firstKey(STRONG, v);
+		if (key === "human") {
+			say([tx("בשמחה. כאן אפשר להמשיך בוואטסאפ, ההודעה כבר מוכנה עם סיכום השיחה."), chips([{ h: "wa", l: "המשך בוואטסאפ", pri: 1 }, mainChips().o[0]])]);
 			return;
 		}
-		if (key) {
-			if (key === 'moi') { key = 'mat'; }
-			faq(key);
+		if (key) { faq(key); return; }
+		if (NOUN.test(v)) {
+			var m = v.match(/(?:עד|מתחת ל|לא יותר מ)s*₪?s*(d{2,5})/);
+			S.ans.s = v.replace(/(?:עד|מתחת ל|לא יותר מ)s*₪?s*d{2,5}s*(?:₪|שקל|שקלים|ש"ח)?/, "").replace(/s+/g, " ").trim() || v;
+			S.ans.smax = m ? m[1] : "";
+			S.off = 0;
+			save();
+			recommend();
 			return;
 		}
-		if (/^(שלום|היי|הי|הלו|בוקר טוב|ערב טוב|צהריים טובים)\b/.test(v) && v.length < 25) {
-			say([tx('שלום, שמחים לעזור.'), mainChips()]);
+		key = firstKey(SOFT, v);
+		if (key) { faq(key); return; }
+		if (GIFT.test(v)) {
+			S.ans.who = "gift";
+			save();
+			say([tx("איזה כיף, נבחר יחד מתנה."), tx("איזה סוג תכשיט מעניין?"), chips([
+				{ k: "type:ring", l: "טבעת" },
+				{ k: "type:earrings", l: "עגילים" },
+				{ k: "type:necklace", l: "שרשרת" },
+				{ k: "type:bracelet", l: "צמיד" },
+				{ k: "type:men", l: "תכשיט לגברים" },
+				{ k: "type:any", l: "הציעו לי" }
+			])]);
 			return;
 		}
-		var m = v.match(/(?:עד|מתחת ל|לא יותר מ)\s*₪?\s*(\d{2,5})/);
-		S.ans.s = v.replace(/(?:עד|מתחת ל|לא יותר מ)\s*₪?\s*\d{2,5}\s*(?:₪|שקל|שקלים|ש"ח)?/, '').replace(/\s+/g, ' ').trim() || v;
-		S.ans.smax = m ? m[1] : '';
-		S.off = 0;
-		save();
-		recommend();
+		if (HELLO.test(v) && v.length < 25) {
+			say([tx("שלום, שמחים לעזור."), mainChips()]);
+			return;
+		}
+		if (THANKS.test(v) && v.length < 30) {
+			say([tx("בשמחה. אם צריך עוד משהו, אני כאן."), mainChips()]);
+			return;
+		}
+		notUnderstood();
 	}
 
 	/* ---------------------------------------------------------------- product card */
