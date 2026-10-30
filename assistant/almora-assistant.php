@@ -384,6 +384,9 @@ html.alb-lock{overflow:hidden}
 @media (max-width:600px){
 	#almora-bot .alb-panel{right:0;left:0;top:0;bottom:0;width:auto;max-width:none;height:100vh;height:100dvh;border-radius:0;box-shadow:none}
 	#almora-bot.is-open .alb-fab{display:none}
+	/* the WhatsApp and accessibility buttons float above the sheet: keep the input clear of them, the link sits between them */
+	#almora-bot .alb-foot{padding-bottom:calc(15px + env(safe-area-inset-bottom,0px))}
+	#almora-bot .alb-link{min-height:44px;display:flex;align-items:center}
 	#almora-bot .alb-m{max-width:92%}
 }
 @media (prefers-reduced-motion:reduce){
