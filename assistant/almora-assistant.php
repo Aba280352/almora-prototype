@@ -306,7 +306,7 @@ ICONS
 	<button type="button" class="alb-fab" aria-label="העוזר של ALMORA" title="העוזר של ALMORA" aria-expanded="false" aria-controls="alb-panel"><span class="alb-fab__a"></span><span class="alb-fab__b"></span></button>
 </div>
 <style id="almora-bot-css">
-#almora-bot{--alb-ink:#202020;--alb-sur:#F5F5F5;--alb-line:#E4E4E4;--alb-mute:#666;--alb-sale:#E24A49;--alb-bottom:84px;font-family:inherit;color:var(--alb-ink);direction:rtl;text-align:right;font-size:15px;line-height:1.5;letter-spacing:0}
+#almora-bot{--alb-ink:#202020;--alb-sur:#F5F5F5;--alb-line:#E4E4E4;--alb-mute:#666;--alb-sale:#E24A49;--alb-bottom:69px;font-family:inherit;color:var(--alb-ink);direction:rtl;text-align:right;font-size:15px;line-height:1.5;letter-spacing:0}
 #almora-bot[hidden]{display:none!important}
 #almora-bot *,#almora-bot *::before,#almora-bot *::after{box-sizing:border-box}
 #almora-bot [hidden]{display:none!important}
@@ -314,7 +314,7 @@ ICONS
 #almora-bot svg{display:block;fill:currentColor}
 html.alb-lock{overflow:hidden}
 
-#almora-bot .alb-fab{position:fixed;right:15px;bottom:var(--alb-bottom);z-index:99999990;width:54px;height:54px;margin:0;padding:0;border:0!important;border-radius:12px!important;background:var(--alb-ink)!important;color:#fff!important;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease}
+#almora-bot .alb-fab{position:fixed;right:10px;bottom:var(--alb-bottom);z-index:99999990;width:54px;height:54px;margin:0;padding:0;border:0!important;border-radius:12px!important;background:var(--alb-ink)!important;color:#fff!important;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease}
 #almora-bot .alb-fab:hover,#almora-bot .alb-fab:focus-visible{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.26);background:var(--alb-ink)!important;color:#fff!important}
 #almora-bot .alb-fab:focus-visible{outline:2px solid #fff;outline-offset:-5px}
 #almora-bot .alb-fab__a,#almora-bot .alb-fab__b{display:flex}
@@ -322,7 +322,7 @@ html.alb-lock{overflow:hidden}
 #almora-bot.is-open .alb-fab__a{display:none}
 #almora-bot.is-open .alb-fab__b{display:flex}
 
-#almora-bot .alb-panel{position:fixed;right:15px;bottom:calc(var(--alb-bottom) + 66px);z-index:99999991;width:392px;max-width:calc(100vw - 30px);height:min(640px,calc(100vh - var(--alb-bottom) - 82px));height:min(640px,calc(100dvh - var(--alb-bottom) - 82px));display:flex;flex-direction:column;background:#fff;border-radius:12px;box-shadow:0 18px 60px rgba(0,0,0,.24),0 0 0 1px rgba(0,0,0,.06);overflow:hidden;outline:0}
+#almora-bot .alb-panel{position:fixed;right:15px;bottom:calc(var(--alb-bottom) + 66px);z-index:2147483000;width:392px;max-width:calc(100vw - 30px);height:min(640px,calc(100vh - var(--alb-bottom) - 82px));height:min(640px,calc(100dvh - var(--alb-bottom) - 82px));display:flex;flex-direction:column;background:#fff;border-radius:12px;box-shadow:0 18px 60px rgba(0,0,0,.24),0 0 0 1px rgba(0,0,0,.06);overflow:hidden;outline:0}
 #almora-bot .alb-head{display:flex;align-items:center;gap:8px;padding:14px 16px 12px;border-bottom:1px solid var(--alb-line);flex:none}
 #almora-bot .alb-head__t{flex:1;min-width:0}
 #almora-bot .alb-head__n{font-size:16px;font-weight:600;line-height:1.3;margin:0}
@@ -347,7 +347,7 @@ html.alb-lock{overflow:hidden}
 #almora-bot .alb-p__main{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
 #almora-bot .alb-p__name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14px;font-weight:600;line-height:1.4;color:var(--alb-ink)!important;text-decoration:none!important}
 #almora-bot .alb-p__price{font-size:15px;font-weight:600;line-height:1.3}
-#almora-bot .alb-p__price s{margin-inline-start:6px;font-size:13px;font-weight:400;color:var(--alb-mute)}
+#almora-bot .alb-p__price s{margin-inline-start:8px;font-size:13px;font-weight:400;color:var(--alb-mute)}
 #almora-bot .alb-p__price.is-sale{color:var(--alb-sale)}
 #almora-bot .alb-p__act{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
 #almora-bot .alb-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;margin:0;padding:0 12px;border:1px solid var(--alb-ink)!important;border-radius:12px!important;background:#fff!important;color:var(--alb-ink)!important;font-size:13.5px;font-weight:600;line-height:1;text-decoration:none!important;cursor:pointer;white-space:nowrap}
@@ -674,22 +674,14 @@ window.ALMORA_BOT=<?php echo wp_json_encode( $cfg ); ?>;
 		if (typingEl) { typingEl.remove(); typingEl = null; }
 	}
 	function scrollEnd() { if (body) { body.scrollTop = body.scrollHeight; } }
-	/* a tall answer is read from its first line, a short one from the bottom */
-	function say(list, delay) {
+		function say(list, delay) {
 		busy = true;
 		showTyping();
 		setTimeout(function () {
 			hideTyping();
-			var before = body ? body.lastElementChild : null;
 			list.forEach(push);
 			busy = false;
-			if (!body) { return; }
-			var first = before ? before.nextElementSibling : body.firstElementChild;
-			if (first && body.scrollHeight - first.offsetTop > body.clientHeight) {
-				body.scrollTop = Math.max(0, first.offsetTop - 12);
-			} else {
-				scrollEnd();
-			}
+			scrollEnd();
 		}, delay == null ? 420 : delay);
 	}
 	function tx(x) { return { r: 'b', t: 'text', x: x }; }
@@ -819,10 +811,9 @@ window.ALMORA_BOT=<?php echo wp_json_encode( $cfg ); ?>;
 					]));
 				} else {
 					if (!S.off) {
-						out.push(tx(a.s ? 'אלה התוצאות שמצאתי:' : (a.who === 'gift' ? 'הנה כמה רעיונות למתנה:' : 'הנה כמה דגמים שמתאימים:')));
+						out.push(tx(a.s ? 'אלה התוצאות שמצאתי:' : (a.who === 'gift' ? 'הנה כמה רעיונות למתנה. בכל הזמנה מצורפת מטלית לניקוי תכשיטים במתנה.' : 'הנה כמה דגמים שמתאימים:')));
 					}
 					out.push({ r: 'b', t: 'prods', items: items });
-					if (a.who === 'gift' && !S.off) { out.push(tx('בכל הזמנה מצורפת מתנה: מטלית לניקוי תכשיטים.')); }
 					var c = [];
 					if (d.more) { c.push({ k: 'more', l: 'עוד המלצות', pri: 1 }); }
 					c.push({ k: 'chbud', l: 'לשנות תקציב' }, { k: 'chtype', l: 'סוג תכשיט אחר' }, { h: 'wa', l: 'שיחה עם נציג' });
@@ -841,15 +832,8 @@ window.ALMORA_BOT=<?php echo wp_json_encode( $cfg ); ?>;
 			});
 	}
 	function pushAll(list) {
-		var before = body ? body.lastElementChild : null;
 		list.forEach(push);
-		if (!body) { return; }
-		var first = before ? before.nextElementSibling : body.firstElementChild;
-		if (first && body.scrollHeight - first.offsetTop > body.clientHeight) {
-			body.scrollTop = Math.max(0, first.offsetTop - 12);
-		} else {
-			scrollEnd();
-		}
+		scrollEnd();
 	}
 
 	/* ---------------------------------------------------------------- free text */

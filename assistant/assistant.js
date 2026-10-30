@@ -278,22 +278,14 @@
 		if (typingEl) { typingEl.remove(); typingEl = null; }
 	}
 	function scrollEnd() { if (body) { body.scrollTop = body.scrollHeight; } }
-	/* a tall answer is read from its first line, a short one from the bottom */
-	function say(list, delay) {
+		function say(list, delay) {
 		busy = true;
 		showTyping();
 		setTimeout(function () {
 			hideTyping();
-			var before = body ? body.lastElementChild : null;
 			list.forEach(push);
 			busy = false;
-			if (!body) { return; }
-			var first = before ? before.nextElementSibling : body.firstElementChild;
-			if (first && body.scrollHeight - first.offsetTop > body.clientHeight) {
-				body.scrollTop = Math.max(0, first.offsetTop - 12);
-			} else {
-				scrollEnd();
-			}
+			scrollEnd();
 		}, delay == null ? 420 : delay);
 	}
 	function tx(x) { return { r: 'b', t: 'text', x: x }; }
@@ -423,10 +415,9 @@
 					]));
 				} else {
 					if (!S.off) {
-						out.push(tx(a.s ? 'אלה התוצאות שמצאתי:' : (a.who === 'gift' ? 'הנה כמה רעיונות למתנה:' : 'הנה כמה דגמים שמתאימים:')));
+						out.push(tx(a.s ? 'אלה התוצאות שמצאתי:' : (a.who === 'gift' ? 'הנה כמה רעיונות למתנה. בכל הזמנה מצורפת מטלית לניקוי תכשיטים במתנה.' : 'הנה כמה דגמים שמתאימים:')));
 					}
 					out.push({ r: 'b', t: 'prods', items: items });
-					if (a.who === 'gift' && !S.off) { out.push(tx('בכל הזמנה מצורפת מתנה: מטלית לניקוי תכשיטים.')); }
 					var c = [];
 					if (d.more) { c.push({ k: 'more', l: 'עוד המלצות', pri: 1 }); }
 					c.push({ k: 'chbud', l: 'לשנות תקציב' }, { k: 'chtype', l: 'סוג תכשיט אחר' }, { h: 'wa', l: 'שיחה עם נציג' });
@@ -445,15 +436,8 @@
 			});
 	}
 	function pushAll(list) {
-		var before = body ? body.lastElementChild : null;
 		list.forEach(push);
-		if (!body) { return; }
-		var first = before ? before.nextElementSibling : body.firstElementChild;
-		if (first && body.scrollHeight - first.offsetTop > body.clientHeight) {
-			body.scrollTop = Math.max(0, first.offsetTop - 12);
-		} else {
-			scrollEnd();
-		}
+		scrollEnd();
 	}
 
 	/* ---------------------------------------------------------------- free text */
