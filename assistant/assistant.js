@@ -27,7 +27,7 @@
 	};
 	var fab = root.querySelector('.alb-fab');
 	var S = load();
-	var panel, body, input, typingEl, busy = false, built = false, isOpen = false;
+	var panel, body, input, typingEl, busy = false, queued = null, built = false, isOpen = false;
 	var varsCache = {};
 
 	function load() {
@@ -151,8 +151,9 @@
 		form.addEventListener('submit', function (ev) {
 			ev.preventDefault();
 			var v = input.value.trim();
-			if (!v || busy) { return; }
+			if (!v) { return; }
 			input.value = '';
+			if (busy) { queued = v; return; }
 			freeText(v);
 		});
 		var wa = el('a', 'alb-link', T.wa);
@@ -286,6 +287,8 @@
 			list.forEach(push);
 			busy = false;
 			scrollEnd();
+				// a message typed while the bot was still answering is answered now, not dropped
+				if (queued) { var q = queued; queued = null; freeText(q); }
 		}, delay == null ? 420 : delay);
 	}
 	function tx(x) { return { r: 'b', t: 'text', x: x }; }
