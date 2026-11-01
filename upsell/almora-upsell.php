@@ -315,7 +315,7 @@ function almora_xs_block( $ids, $class, $title, $note = '' ) {
 	global $product;
 	$keep = $product;
 	wc_setup_loop( array( 'columns' => max( 2, count( $ids ) ), 'name' => 'almora_xs' ) );
-	echo '<section class="' . esc_attr( $class ) . ' products alm-xs">';
+	echo '<section class="' . esc_attr( $class ) . ' alm-xs">';
 	echo '<h2>' . esc_html( $title ) . '</h2>';
 	if ( $note ) {
 		echo '<p class="alm-xs__note">' . esc_html( $note ) . '</p>';
@@ -340,10 +340,11 @@ add_action( 'woocommerce_after_single_product_summary', function () {
 	static $css = false;
 	if ( ! $css ) {
 		$css = true;
-		echo '<style id="almora-xs-css">.alm-xs{margin:48px 0}.alm-xs__note{margin:-4px 0 18px;font-size:14px;color:#6b6b6b}</style>';
+		// not .related / .upsells: the theme turns those into endless carousels, three cards sit better in a grid
+		echo '<style id="almora-xs-css">.alm-xs{margin:61px 0 0}.alm-xs h2{margin:0 0 12px;font-size:32px;font-weight:400;line-height:1.2;text-align:center}.alm-xs__note{margin:0 0 24px;font-size:14px;color:#6b6b6b;text-align:center}@media(max-width:767px){.alm-xs{margin-top:40px}.alm-xs h2{font-size:24px}}</style>';
 	}
-	almora_xs_block( almora_xs_cross( $id ), 'related', 'מומלץ יחד עם', almora_xs_note() );
-	almora_xs_block( almora_xs_upsell( $id ), 'up-sells upsells', 'אפשר גם יותר' );
+	almora_xs_block( almora_xs_cross( $id ), 'alm-xs-cross', 'מומלץ יחד עם', almora_xs_note() );
+	almora_xs_block( almora_xs_upsell( $id ), 'alm-xs-up', 'אפשר גם יותר' );
 }, 12 );
 
 /* ------------------------------------------------------------------ cart discount */
