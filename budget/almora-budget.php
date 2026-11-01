@@ -107,7 +107,7 @@ function almora_bud_css() {
 		. '@media(max-width:767px){body.page-id-8599{overflow-x:clip}.alm-bud,.alm-bud-intro{padding-left:5px;padding-right:5px}.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}.alm-bud__cards li{min-width:0}'
 		// phones: each filter is one row of big chips that scrolls sideways, running out to the screen edges (the container already leaves 20px)
 		. '.alm-bud__bar{flex-direction:column;gap:16px}.alm-bud__group{display:block;min-width:0;max-width:100%}.alm-bud__label{display:block;margin:0 0 8px;font-size:15px}.alm-bud__chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:2px 20px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.alm-bud__chips::-webkit-scrollbar{display:none}.alm-bud__chip{flex:none;display:inline-flex;align-items:center;min-height:46px;padding:0 24px;font-size:16px;white-space:nowrap}}'
-		. '@media(max-width:400px){.alm-bud__card{padding:8px;font-size:17px;white-space:normal}}'
+		. '@media(max-width:400px){.alm-bud h2{font-size:21px}.alm-bud__card{padding:8px;font-size:17px;white-space:normal}}'
 		. '</style>';
 }
 
