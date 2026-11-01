@@ -10,6 +10,6 @@ add_action( 'wp_head', function () {
 	echo '<style id="almora-mobile-menu-css">'
 		. '.e-off-canvas__content{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}'
 		. '.e-off-canvas__content .elementor-element-mobile-menu-content{padding-bottom:160px}'
-		. '.e-off-canvas__content .elementor-element-mobile-menu-button .elementor-button{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:14px 24px;font-size:17px;line-height:1.2}'
+		. '.e-off-canvas__content .elementor-element-mobile-menu-button .elementor-button{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:14px 24px!important;font-size:17px!important;line-height:1.2}'
 		. '</style>';
 }, 99 );
