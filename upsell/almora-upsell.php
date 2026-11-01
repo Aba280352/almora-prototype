@@ -344,7 +344,7 @@ add_action( 'woocommerce_after_single_product_summary', function () {
 		echo '<style id="almora-xs-css">.alm-xs{margin:61px 0 0}.alm-xs h2{margin:0 0 12px;font-size:32px;font-weight:400;line-height:1.2;text-align:center}.alm-xs__note{margin:0 0 24px;font-size:14px;color:#6b6b6b;text-align:center}@media(max-width:767px){.alm-xs{margin-top:40px}.alm-xs h2{font-size:24px}}</style>';
 	}
 	almora_xs_block( almora_xs_cross( $id ), 'alm-xs-cross', 'מומלץ יחד עם', almora_xs_note() );
-	almora_xs_block( almora_xs_upsell( $id ), 'alm-xs-up', 'אפשר גם יותר' );
+	// "אפשר גם יותר" (almora_xs_upsell) removed from the product page on 2026-11-02 at the owner's request; the function stays for later use
 }, 12 );
 
 /* ------------------------------------------------------------------ cart discount */
