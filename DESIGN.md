@@ -384,6 +384,7 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Decisions (2026-11-01):
 - Goal: bigger basket. Shown on the product page and in the chat assistant only.
 - Product page: "מומלץ יחד עם" with 3 pieces (same stone, same style; men's jewelry only with men's products) and "אפשר גם יותר" with 2 upgrades (same category, at most +30% or at least +50 ₪ above the viewed price).
+- 2026-11-02 (owner): the "אפשר גם יותר" upgrade block is removed from the product page (the price jump is too small to matter, at most ~50 ₪ more in the basket). Only "מומלץ יחד עם" stays. `almora_xs_upsell()` and the `_almora_xs_up` override stay in the code, unused; to bring the block back, restore the `almora_xs_block( almora_xs_upsell( $id ), 'alm-xs-up', 'אפשר גם יותר' )` call in the priority 12 hook.
 - Discount: 5% on the cheapest item when the cart holds 2 or more items; automatic in the cart, no code; products already on sale get none and the page says so.
 - Chat assistant: after "add to cart", offers 2 matching pieces and the 5% note.
 - Build: our own mu-plugin in this repo (works without Novamira), pairings produced by rules (stone, style, type, price band, in stock, priced; test product 8538, 8244 and unpriced items excluded) and shown to the owner as a table for approval before any live write.
@@ -399,6 +400,8 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 
 ## 5u. Phone menu scroll (2026-11-02)
 - The phone menu is the Elementor off-canvas `mobile-menu` (menu "ALMORA ראשי", id 114). The floating chat and WhatsApp buttons covered its last links (מחשבון זהב וכסף, צור קשר). Fix: `menu/almora-mobile-menu.php`, live as the mu-plugin `almora-mobile-menu.php` (same deploy recipe as 5s): `.e-off-canvas__content` scrolls on its own (`overflow-y:auto`, `overscroll-behavior:contain`) and the menu content gets 160px of bottom padding, so every link, and the "Best Sellers" button, can be scrolled clear of the floating buttons. Checked at 340x640: scrolled to the end, all links sit above the buttons.
+- The "Best Sellers" button in the phone menu is full width, 54px high, 17px text (`.elementor-element-mobile-menu-button .elementor-button`; `!important` on padding and font-size because the Elementor widget style wins otherwise). Checked at 340px after the slide animation: 259px wide, 54px high.
+- No yellow or beige on hover (owner request, 2026-11-02): the beige came from the theme mod `primary_color_custom_color` (#d4bba3), which Ecomus prints as `--em-color__primary` and `--em-link-color-hover`. It and `campaign_background_color` are now #202020 (old values saved in the option `almora_theme_color_backup_20261102`), whole Rocket cache cleared. Not touched: gold review stars (#FFB323), social icon brand hovers in the theme CSS, "Gold" #B8860B in the Elementor palette.
 
 ## 5r. SEO (2026-11-01)
 - Research: `seo/keyword-research.md` (Google Israel autocomplete clusters, spelling decisions "מוסונייט" / "כסף 925" / "זרקון", page-to-keyphrase map). No search-volume numbers (no Ahrefs/SimilarWeb connection).
