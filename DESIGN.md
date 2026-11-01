@@ -375,6 +375,16 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Code: repo folder `assistant/` (template, css, js, `build.js` makes `almora-assistant.php`), live as the mu-plugin `wp-content/mu-plugins/almora-assistant.php`. REST: `almora/v1/bot/products` and `almora/v1/bot/variations`. The option `almora_bot_live` shows it to visitors (off = only with `?almora-bot=1`). The facts in the answers are in the JS (`FAQ`); update them there when shipping, returns or payment change.
 - Known mismatch: the home page FAQ still says shipping takes up to 6 or 8 business days and payment by card, Bit or PayBox; checkout, the product page and the bot say 3–5 / 5–10 days and card, Bit, Google Pay, Apple Pay.
 
+## 5r. SEO (2026-11-01)
+- Research: `seo/keyword-research.md` (Google Israel autocomplete clusters, spelling decisions "מוסונייט" / "כסף 925" / "זרקון", page-to-keyphrase map). No search-volume numbers (no Ahrefs/SimilarWeb connection).
+- Products: `seo/products-seo.js` holds one row per product (focus keyphrase, title name, feature sentence, material flag, stone flags). `node seo/products-seo.js` checks it (unique keyphrases, title up to 60, meta 120–155) and writes `seo/products-seo.json`; `seo/apply-products-seo.php` applies the JSON on the site (Yoast title, meta description, focus keyphrase; short and full description only where the old description was under 150 characters). 150 products; skipped on purpose: test 8538, BALDUCCI 8259 / 8257 / 8249, "שרשרת steel" 8244.
+- Yoast title format `<name> | ALMORA`. Meta description starts with the keyphrase and ends with the shipping / returns line (35 ₪, free from 1,000 ₪, return within 14 days), always followed by "ALMORA.". The old templated metas (all said "אחריות מלאה") were replaced.
+- Only what is true: a material or stone is named only if the product name, its own description or its attributes name it (zircon = cubic zirconia, a synthetic stone; moissanite = silicon carbide, lab made; 925 silver = 92.5% silver). Products whose name states no material get no material claim (flag `u`). No warranty, "hypoallergenic" or water-resistance claims. GRA, VVS1 and colour D appear only on the moissanite necklaces 6566–6570, where the owner's own text says so.
+- Full description structure: first line with the keyphrase and feature, "פרטי התכשיט" list, the options line built from the live product attributes, how to wear, care, shipping and returns.
+- Backup: before the first change every product keeps its old Yoast fields, description and short description in the post meta `_almora_seo_backup` (JSON). To undo a product, copy the values back from there.
+- Home page (7752): title "ALMORA | תכשיטי כסף 925 ומוסונייט אונליין לנשים ולגברים", focus keyphrase "תכשיטי כסף 925"; old values in `_almora_seo_backup`.
+- Not done yet: category pages (suggested keyphrases in the research file), blog posts (מוסונייט מה זה, איך מנקים כסף 925), a "שרשרת עם שם" product.
+
 ---
 
 ## 6. Do / Don't
