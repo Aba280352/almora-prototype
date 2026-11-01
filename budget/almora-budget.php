@@ -91,7 +91,7 @@ function almora_bud_css() {
 	return '<style id="almora-budget-css">'
 		. '.alm-bud{margin:0 0 40px}'
 		. '.alm-bud__cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:0 0 40px;padding:0;list-style:none}'
-		. '.alm-bud__card{display:flex;align-items:center;justify-content:center;min-height:120px;padding:16px;border:1px solid #d9d9d9;border-radius:12px;background:#fff;color:#202020;font-size:26px;line-height:1.2;text-align:center;text-decoration:none;transition:background .2s,color .2s,border-color .2s}'
+		. '.alm-bud__card{display:flex;align-items:center;justify-content:center;min-height:120px;padding:16px;border:1px solid #d9d9d9;border-radius:12px;background:#fff;color:#202020;font-size:22px;line-height:1.2;text-align:center;white-space:nowrap;text-decoration:none;transition:background .2s,color .2s,border-color .2s}'
 		. '.alm-bud__card:hover,.alm-bud__card:focus-visible{border-color:#202020}'
 		. '.alm-bud__card[aria-current=true]{background:#202020;border-color:#202020;color:#fff}'
 		. '.alm-bud__bar{display:flex;flex-wrap:wrap;gap:12px 32px;margin:0 0 24px}'
@@ -103,7 +103,7 @@ function almora_bud_css() {
 		. '.alm-bud h2{margin:0 0 20px;font-size:32px;font-weight:400;line-height:1.2}'
 		. '.alm-bud__empty,.alm-bud__hint{margin:0;font-size:16px;color:#6b6b6b}'
 		. '@media(max-width:991px){.alm-bud__cards{grid-template-columns:repeat(3,1fr)}}'
-		. '@media(max-width:767px){.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:22px}.alm-bud__card:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}}'
+		. '@media(max-width:767px){.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__card:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}}'
 		. '</style>';
 }
 
