@@ -103,7 +103,7 @@ function almora_bud_css() {
 		. '.alm-bud h2{margin:0 0 20px;font-size:32px;font-weight:400;line-height:1.2}'
 		. '.alm-bud__empty,.alm-bud__hint{margin:0;font-size:16px;color:#6b6b6b}'
 		. '@media(max-width:991px){.alm-bud__cards{grid-template-columns:repeat(3,1fr)}}'
-		. '@media(max-width:767px){.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}}'
+		. '@media(max-width:767px){.alm-bud,.alm-bud-intro{padding-left:20px;padding-right:20px}.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}}'
 		. '</style>';
 }
 
