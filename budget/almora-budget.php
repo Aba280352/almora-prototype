@@ -95,7 +95,8 @@ function almora_bud_css() {
 		. '.alm-bud__card:hover,.alm-bud__card:focus-visible{border-color:#202020}'
 		. '.alm-bud__card[aria-current=true]{background:#202020;border-color:#202020;color:#fff}'
 		. '.alm-bud__bar{display:flex;flex-wrap:wrap;gap:12px 32px;margin:0 0 24px}'
-		. '.alm-bud__group{display:flex;flex-wrap:wrap;align-items:center;gap:8px}'
+		. '.alm-bud__group{display:flex;align-items:center;gap:8px}'
+		. '.alm-bud__chips{display:flex;flex-wrap:wrap;gap:8px}'
 		. '.alm-bud__label{font-size:14px;color:#6b6b6b}'
 		. '.alm-bud__chip{padding:8px 16px;border:1px solid #d9d9d9;border-radius:12px;color:#202020;font-size:14px;line-height:1.2;text-decoration:none}'
 		. '.alm-bud__chip:hover,.alm-bud__chip:focus-visible{border-color:#202020}'
@@ -103,7 +104,9 @@ function almora_bud_css() {
 		. '.alm-bud h2{margin:0 0 20px;font-size:32px;font-weight:400;line-height:1.2}'
 		. '.alm-bud__empty,.alm-bud__hint{margin:0;font-size:16px;color:#6b6b6b}'
 		. '@media(max-width:991px){.alm-bud__cards{grid-template-columns:repeat(3,1fr)}}'
-		. '@media(max-width:767px){body.page-id-8599{overflow-x:clip}.alm-bud,.alm-bud-intro{padding-left:5px;padding-right:5px}.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}.alm-bud__cards li{min-width:0}}'
+		. '@media(max-width:767px){body.page-id-8599{overflow-x:clip}.alm-bud,.alm-bud-intro{padding-left:5px;padding-right:5px}.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}.alm-bud__cards li{min-width:0}'
+		// phones: each filter is one row of big chips that scrolls sideways, running out to the screen edges (the container already leaves 20px)
+		. '.alm-bud__bar{flex-direction:column;gap:16px}.alm-bud__group{display:block}.alm-bud__label{display:block;margin:0 0 8px;font-size:15px}.alm-bud__chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:2px 20px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.alm-bud__chips::-webkit-scrollbar{display:none}.alm-bud__chip{flex:none;display:inline-flex;align-items:center;min-height:46px;padding:0 24px;font-size:16px;white-space:nowrap}}'
 		. '@media(max-width:400px){.alm-bud__card{padding:8px;font-size:17px;white-space:normal}}'
 		. '</style>';
 }
@@ -181,7 +184,7 @@ function almora_bud_render() {
 
 	$bar = '<div class="alm-bud__bar">';
 	if ( count( $genders ) > 1 ) {
-		$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">למי:</span>';
+		$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">למי:</span><div class="alm-bud__chips">';
 		foreach ( array( '' => 'הכל', 'w' => 'נשים', 'm' => 'גברים' ) as $k => $label ) {
 			if ( '' !== $k && empty( $genders[ $k ] ) ) {
 				continue;
@@ -189,10 +192,10 @@ function almora_bud_render() {
 			$cur  = $g === $k ? ' aria-current="true"' : '';
 			$bar .= '<a class="alm-bud__chip" href="' . almora_bud_url( $base, $keep + array( 'g' => $k, 'sort' => 'new' === $sort ? '' : $sort ) ) . '"' . $cur . '>' . esc_html( $label ) . '</a>';
 		}
-		$bar .= '</div>';
+		$bar .= '</div></div>';
 	}
 	if ( count( $have ) > 1 ) {
-		$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">סוג:</span>';
+		$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">סוג:</span><div class="alm-bud__chips">';
 		$bar .= '<a class="alm-bud__chip" href="' . almora_bud_url( $base, $keep + array( 'g' => $g, 'sort' => 'new' === $sort ? '' : $sort ) ) . '"' . ( '' === $t ? ' aria-current="true"' : '' ) . '>הכל</a>';
 		foreach ( $types as $k => $label ) {
 			if ( empty( $have[ $k ] ) ) {
@@ -201,14 +204,14 @@ function almora_bud_render() {
 			$cur  = $t === $k ? ' aria-current="true"' : '';
 			$bar .= '<a class="alm-bud__chip" href="' . almora_bud_url( $base, $keep + array( 'g' => $g, 't' => $k, 'sort' => 'new' === $sort ? '' : $sort ) ) . '"' . $cur . '>' . esc_html( $label ) . '</a>';
 		}
-		$bar .= '</div>';
+		$bar .= '</div></div>';
 	}
-	$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">מיון:</span>';
+	$bar .= '<div class="alm-bud__group"><span class="alm-bud__label">מיון:</span><div class="alm-bud__chips">';
 	foreach ( array( 'new' => 'הכי חדש', 'asc' => 'מחיר עולה', 'desc' => 'מחיר יורד' ) as $k => $label ) {
 		$cur  = $sort === $k ? ' aria-current="true"' : '';
 		$bar .= '<a class="alm-bud__chip" href="' . almora_bud_url( $base, $keep + array( 'g' => $g, 't' => $t, 'sort' => 'new' === $k ? '' : $k ) ) . '"' . $cur . '>' . esc_html( $label ) . '</a>';
 	}
-	$bar .= '</div></div>';
+	$bar .= '</div></div></div>';
 
 	$html .= '<h2>' . esc_html( 'תכשיטים ' . ( 0 === $r[0] ? $r[2] : ( 0 === $r[1] ? $r[2] : 'בטווח ' . $r[2] ) ) ) . '</h2>';
 	$html .= $bar;
