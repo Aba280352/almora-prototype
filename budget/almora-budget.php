@@ -104,7 +104,9 @@ function almora_bud_css() {
 		. '.alm-bud__empty,.alm-bud__hint{margin:0;font-size:16px;color:#6b6b6b}'
 		. '@media(max-width:991px){.alm-bud__cards{grid-template-columns:repeat(3,1fr)}}'
 		. '@media(max-width:767px){.alm-bud,.alm-bud-intro{padding-left:20px;padding-right:20px}.alm-bud__cards{grid-template-columns:repeat(2,1fr);gap:12px}.alm-bud__card{min-height:96px;font-size:20px}.alm-bud__cards li:last-child{grid-column:1/-1}.alm-bud h2{font-size:24px}}'
-		. '</style>';
+		. '</style>'
+		// the theme wraps page content in a container with its own uneven side space: on phones measure it and make the side margins exactly 20px
+		. '<script>(function(){function fit(){var m=innerWidth<768;document.querySelectorAll(".alm-bud,.alm-bud-intro").forEach(function(e){e.style.margin="";e.style.padding="";if(!m)return;e.style.padding="0";var b=e.getBoundingClientRect();e.style.marginLeft=(20-b.left)+"px";e.style.marginRight=(20-(document.documentElement.clientWidth-b.right))+"px"})}document.addEventListener("DOMContentLoaded",fit);addEventListener("load",fit);addEventListener("resize",fit)})()</script>';
 }
 
 function almora_bud_render() {
