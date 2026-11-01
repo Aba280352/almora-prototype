@@ -159,6 +159,9 @@ function almora_bud_render() {
 	foreach ( $inrng as $it ) {
 		$genders[ $it['gender'] ] = true;
 	}
+	if ( $g && empty( $genders[ $g ] ) ) {
+		$g = '';
+	}
 	$set = $g ? array_filter( $inrng, function ( $it ) use ( $g ) {
 		return $it['gender'] === $g;
 	} ) : $inrng;
