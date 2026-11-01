@@ -294,6 +294,7 @@ ICONS
 		'live'     => (bool) get_option( 'almora_bot_live' ),
 		'rest'     => esc_url_raw( rest_url( 'almora/v1/bot/' ) ),
 		'ajax'     => esc_url_raw( WC_AJAX::get_endpoint( 'almora_bot_add' ) ),
+		'xs'       => esc_url_raw( rest_url( 'almora/v1/xsell' ) ),
 		'wa'       => ALMORA_BOT_WA,
 		'phone'    => ALMORA_BOT_PHONE,
 		'free'     => ALMORA_BOT_FREE,

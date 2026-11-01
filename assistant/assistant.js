@@ -705,14 +705,25 @@
 				} catch (e) {}
 				track('add_to_cart', { item_id: item.id, item_name: item.n, value: ctx.vid ? 0 : item.p });
 				var left = (C.free || 1000) - (d.sub || 0);
-				pushAll([
-					tx('נוסף לסל: ' + item.n + '.\n' + (left > 0 ? 'עוד ' + ils(Math.ceil(left)) + ' למשלוח חינם.' : 'המשלוח בהזמנה הזו חינם.')),
-					chips([
-						{ h: C.checkout, k: 'checkout', l: 'לתשלום', pri: 1 },
-						{ h: C.cart, k: 'cart', l: 'לצפייה בעגלה' },
-						{ k: 'chtype', l: 'להמשיך לחפש' }
-					])
+				var added = tx('נוסף לסל: ' + item.n + '.\n' + (left > 0 ? 'עוד ' + ils(Math.ceil(left)) + ' למשלוח חינם.' : 'המשלוח בהזמנה הזו חינם.'));
+				var after = chips([
+					{ h: C.checkout, k: 'checkout', l: 'לתשלום', pri: 1 },
+					{ h: C.cart, k: 'cart', l: 'לצפייה בעגלה' },
+					{ k: 'chtype', l: 'להמשיך לחפש' }
 				]);
+				// two matching pieces and the cart discount note; if the request fails the chat goes on without them
+				var recs = C.xs ? fetch(C.xs + '?id=' + item.id, { credentials: 'same-origin' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }) : Promise.resolve(null);
+				recs.then(function (x) {
+					var out = [added];
+					if (x && x.items && x.items.length) {
+						out.push(tx('כדאי להשלים עם:'));
+						out.push({ r: 'b', t: 'prods', items: x.items });
+						if (x.note) { out.push(tx(x.note)); }
+						track('xsell_shown', { item_id: item.id, n: x.items.length });
+					}
+					out.push(after);
+					pushAll(out);
+				});
 			})
 			.catch(function () {
 				ctx.ad.disabled = false;
