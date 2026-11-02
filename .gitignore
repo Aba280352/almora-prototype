@@ -3,3 +3,7 @@ icons/
 *.zip
 *.pdf
 almora-team/
+
+# worn-photo working files (large PNGs/refs kept local)
+worn-photos/**/*.png
+worn-photos/**/ref.*

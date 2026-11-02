@@ -1,0 +1,10 @@
+﻿שרשרת מכסף 925
+<div id="content_description" class="ty-wysiwyg-content content-description">
+<div>שרשרת מכסף 925</div>
+</div>
+<div id="content_files" class="ty-wysiwyg-content content-files"></div>
+<div id="content_tags" class="ty-wysiwyg-content content-tags"></div>
+<div id="content_product_bundles" class="ty-wysiwyg-content content-product_bundles"></div>
+<div id="content_required_products" class="ty-wysiwyg-content content-required_products"></div>
+<div id="product_tab_10" class="tab-list-title"></div>
+https://almora.co.il/wp-content/uploads/2026/10/m_jpg.webp
