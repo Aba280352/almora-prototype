@@ -438,3 +438,9 @@ On WordPress: upload the needed SVGs to Media (or Elementor > Custom Icons as an
 - Component specs (buttons states, cards, forms), to be defined as we design.
 
 Resolved: tablet type sizes, section/element spacing, Polin font files (body text uses Polin as well).
+
+## 8. Worn-product photos (2026-11-03)
+- Every product (144) has one on-body photo as the 2nd gallery image (main product photo stays first). Source: `worn-photos/<type>/<id>/final.webp`, same width x height as the product's main image, WebP q82.
+- Style: natural close-up of only the body part wearing the piece, no facial features. Men's pieces on a man (hand, wrist, neck). Sets: one combined image cropped below the eyes.
+- Uploaded as attachments `almora-worn-<id>.webp`, post meta `_almora_worn_att` on the product, alt text "<name> - <body-part phrase>".
+- Held for owner decision: earrings 8169, necklace 8145, pendants 8267, 8223, 8221, 8226, 7935. Open: a "הדמיה להמחשה" note.
