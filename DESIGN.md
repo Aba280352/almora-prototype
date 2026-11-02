@@ -444,4 +444,4 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Style: natural close-up of only the body part wearing the piece, no facial features. Men's pieces on a man (hand, wrist, neck). Sets: one combined image cropped below the eyes.
 - Uploaded as attachments `almora-worn-<id>.webp`, post meta `_almora_worn_att` on the product, alt text "<name> - <body-part phrase>".
 - Held for owner decision: earrings 8169, necklace 8145, pendants 8267, 8223, 8221, 8226, 7935. Open: a "הדמיה להמחשה" note.
-- Slider arrows (product gallery and carousels, `.ecomus-swiper-button`): always #202020 circle with white arrow; no hover, click or disabled colour change. Lives in Customizer Additional CSS (backup option `almora_backup_customcss_20261103`).
+- Slider arrows (product gallery and carousels, `.ecomus-swiper-button`): always #E3E3E3 gray circle with #202020 arrow; no hover, click or disabled colour change. Lives in Customizer Additional CSS (backup option `almora_backup_customcss_20261103`).
