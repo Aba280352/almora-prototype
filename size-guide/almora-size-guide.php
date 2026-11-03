@@ -17,6 +17,7 @@ function almora_sg_rings_html() {
 	return '<section class="alm-sg__part" id="rings">'
 		. '<h2>מידות טבעות</h2>'
 		. '<p>המידות באתר הן מידות אמריקאיות (US), השיטה המקובלת ברוב אתרי התכשיטים. הטבלה מציגה לכל מידה את הקוטר הפנימי של הטבעת ואת היקף האצבע במילימטרים.</p>'
+		. ( function_exists( 'almora_sg_tool_html' ) ? almora_sg_tool_html() : '' )
 		. '<div class="alm-sg__ways">'
 		. '<div class="alm-sg__way"><h3>לפי טבעת שכבר מתאימה לך</h3><p>מניחים את הטבעת על סרגל ומודדים את הקוטר הפנימי, מקצה לקצה מבפנים. מוצאים בטבלה את הקוטר הקרוב.</p></div>'
 		. '<div class="alm-sg__way"><h3>לפי היקף האצבע</h3><p>כורכים פס נייר דק או חוט סביב בסיס האצבע, מסמנים איפה הוא נפגש ומודדים בסרגל במילימטרים. מוצאים בטבלה את ההיקף הקרוב.</p></div>'
@@ -126,9 +127,12 @@ add_action( 'wp_footer', function () {
 (function () {
 	var d = document.getElementById('alm-sg-dialog');
 	if (!d) { return; }
+	var downOnBackdrop = false;
+	d.addEventListener('pointerdown', function (e) { downOnBackdrop = e.target === d; });
 	document.addEventListener('click', function (e) {
 		if (e.target.closest('[data-alm-sg-open]')) { e.preventDefault(); if (d.showModal) { d.showModal(); } else { d.setAttribute('open', ''); } }
-		if (e.target.closest('[data-alm-sg-close]') || e.target === d) { d.close ? d.close() : d.removeAttribute('open'); }
+		/* close on the X, or on the backdrop only when the press also started there (dragging a slider and letting go outside must not close it) */
+		if (e.target.closest('[data-alm-sg-close]') || (e.target === d && downOnBackdrop)) { d.close ? d.close() : d.removeAttribute('open'); }
 	});
 })();
 </script>
