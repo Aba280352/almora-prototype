@@ -65,6 +65,23 @@ function almora_sg_circles_svg( $variant = 'd' ) {
 	return $o;
 }
 
+/**
+ * Under the circles: tells the visitor that on screen the circles are small and where to get the true-size PDF.
+ * The PDF is a media-library attachment whose ID is in option almora_size_guide_pdf (source: size-guide/pdf-src/ring-sizes.html).
+ */
+function almora_sg_pdf_box() {
+	$id  = (int) get_option( 'almora_size_guide_pdf' );
+	$url = $id ? wp_get_attachment_url( $id ) : '';
+	if ( ! $url ) {
+		return '<p class="alm-sz__note">העיגולים בגודל אמיתי רק כשמדפיסים את הדף על A4 ב-100% (בלי "התאמה לעמוד"). על המסך הם מוקטנים ולכן אי אפשר למדוד עליהם.</p>';
+	}
+	$icon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path transform="translate(4.5 2.5)" d="M15.854 6.146L9.854 0.146C9.76 0.052 9.633 0 9.5 0L3.5 0C1.21 0 0 1.21 0 3.5L0 15.5C0 17.79 1.21 19 3.5 19L12.5 19C14.79 19 16 17.79 16 15.5L16 6.5C16 6.367 15.947 6.24 15.854 6.146ZM10 1.707L14.293 6L12.5 6C10.771 6 10 5.229 10 3.5L10 1.707ZM12.5 18L3.5 18C1.771 18 1 17.229 1 15.5L1 3.5C1 1.771 1.771 1 3.5 1L9 1L9 3.5C9 5.79 10.21 7 12.5 7L15 7L15 15.5C15 17.229 14.229 18 12.5 18ZM8.854 12.146C9.049 12.341 9.049 12.658 8.854 12.853L6.854 14.853C6.808 14.899 6.752 14.936 6.691 14.961C6.63 14.986 6.565 15 6.5 15C6.435 15 6.37 14.987 6.309 14.961C6.247 14.936 6.192 14.899 6.146 14.853L4.146 12.853C3.951 12.658 3.951 12.341 4.146 12.146C4.341 11.951 4.658 11.951 4.853 12.146L5.999 13.292L5.999 9.5C5.999 9.224 6.223 9 6.499 9C6.775 9 6.999 9.224 6.999 9.5L6.999 13.293L8.145 12.147C8.342 11.951 8.658 11.951 8.854 12.146Z"/></svg>';
+	return '<div class="alm-sz__pdf">'
+		. '<p class="alm-sz__pdf-t"><b>העיגולים על המסך מוקטנים.</b> כדי לקבל אותם בגודל האמיתי, מורידים את הקובץ ומדפיסים אותו על דף A4 ב-100% (בלי "התאמה לעמוד").</p>'
+		. '<a class="alm-sz__pdf-btn" href="' . esc_url( $url ) . '" download target="_blank" rel="noopener">' . $icon . '<span>הורדת PDF להדפסה בגודל אמיתי</span></a>'
+		. '</div>';
+}
+
 function almora_sg_table_html() {
 	$rows = '';
 	foreach ( almora_sg_sizes() as $us ) {
@@ -105,13 +122,19 @@ function almora_sg_css() {
 		. '.alm-sz__table td{padding:5px 6px;border-top:1px solid #e6e6e6;text-align:center;line-height:1.5;font-size:15px}'
 		. '.alm-sz__table tbody tr:nth-child(even) td{background:#fafafa}'
 		. '.alm-sz__note{font-size:13px;color:#6b6b6b}'
+		. '.alm-sz__pdf{text-align:center;background:#f5f5f5;border-radius:12px;padding:16px 18px;margin:14px 0 4px}'
+		. '.alm-sz__pdf-t{margin:0 0 12px;font-size:15px}'
+		. '.alm-sz a.alm-sz__pdf-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 26px;border-radius:12px;background:#202020;color:#fff!important;font-size:16px;font-weight:600;text-decoration:none!important;box-shadow:none}'
+		. '.alm-sz a.alm-sz__pdf-btn:hover{background:#202020;color:#fff!important;opacity:.9}'
+		. '.alm-sz__pdf-btn svg{flex:none;width:22px;height:22px}'
 		. '.alm-sg-link{display:inline-flex;align-items:center;gap:6px;margin:4px 0 14px;padding:0;background:none;border:0;color:#202020;font-size:14px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}'
-		. '@media(max-width:600px){.alm-sz__sheet{padding:18px 14px}.alm-sz h2{font-size:22px}}'
+		. '@media(max-width:600px){.alm-sz__sheet{padding:18px 14px}.alm-sz h2{font-size:22px}.alm-sz a.alm-sz__pdf-btn{display:flex;width:100%;padding:10px 14px}}'
 		/* print: only the sheets, one per A4 page, true size */
 		. '@media print{'
 		. '@page{size:A4;margin:0}'
 		. 'html,body{background:#fff!important;margin:0!important;padding:0!important}'
 		. '.alm-sz-noprint{display:none!important}'
+		. '.alm-sz .alm-sz__pdf{display:none!important}'
 		. '.alm-sz-keep{margin:0!important;padding:0!important;border:0!important;width:auto!important;max-width:none!important;min-width:0!important;min-height:0!important;height:auto!important;display:block!important;position:static!important;overflow:visible!important;transform:none!important;background:none!important;float:none!important;box-shadow:none!important}'
 		. '.alm-sz{line-height:1.55;font-size:10.5pt;max-width:none!important;margin:0!important;width:210mm}'
 		. '.alm-sz .alm-sz__sheet{box-sizing:border-box;width:210mm;height:296mm;margin:0!important;border:0;border-radius:0;box-shadow:none;padding:12mm 16mm;overflow:hidden;break-after:page;page-break-after:always;display:flex;flex-direction:column}'
@@ -141,7 +164,7 @@ add_shortcode( 'almora_size_guide', function () {
 		. '<h2>המדריך למציאת מידת טבעת</h2>'
 		. '<p>בוחרים טבעת שיש ברשותכם ומתאימה לכם בגודלה. מניחים אותה על אחד העיגולים, ומוודאים שהעיגול ממלא את החלק הפנימי של הטבעת בדיוק: בתוך החור של הטבעת רואים רק צבע לבן, בלי אפור. המספר שבתוך העיגול הוא המידה. אם יצא בין שתי מידות, בוחרים את הגדולה.</p>'
 		. almora_sg_circles_svg( 'd' ) . almora_sg_circles_svg( 'm' )
-		. '<p class="alm-sz__note">העיגולים בגודל אמיתי רק כשמדפיסים את הדף על A4 ב-100% (בלי "התאמה לעמוד"). על המסך הם מוקטנים ולכן אי אפשר למדוד עליהם.</p>'
+		. almora_sg_pdf_box()
 		. '</section>';
 
 	/* sheet 2: table */
