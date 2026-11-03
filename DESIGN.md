@@ -448,5 +448,5 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 
 ## 9. Moissanite home (page 8755, /moissanite, draft)
 - Clone of the home page for category 117 only (rings, necklaces, earrings, tennis bracelet). Copy in moissanite wording, same tone, truth rule kept. Draft + noindex + not in the menu until the owner approves.
-- Hero: 5 banners generated in ChatGPT at 16:9 (`moissanite-home/banners/`, WebP desktop + mobile). Category cards, rail lead cards and FAQ photos reuse the worn-product photos. Sale rail and Shop the Look removed (no moissanite on sale, no moissanite look photo yet).
+- Hero: 5 banners generated in ChatGPT at 16:9 (`moissanite-home/banners/`, WebP desktop + mobile). Category cards, rail lead cards and FAQ photos reuse the worn-product photos. Sale rail removed (no moissanite on sale). Shop the Look rebuilt with a new ChatGPT photo (necklace 6569, ring 7540, tennis bracelet 6577).
 - Snippets 7779 and 7865 and the two home mu-plugins also run on 8755 (conditions must be added both in post meta and in option `elementor_pro_theme_builder_conditions`).
