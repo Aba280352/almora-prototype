@@ -470,3 +470,6 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Review 40 (צמיד גאדי 8373, 5 stars) approved. The 10 older pending reviews (ids 26-35) were left pending.
 - mu-plugin `almora-review-cards.php`: on product pages each review is a card (12px radius, border) and the avatar is the product photo (`pre_get_avatar` filter) instead of the gravatar silhouette.
 - Header lost nav/cart/search because of a stale Elementor element cache (`_elementor_element_cache`); fixed by deleting those rows. Header template 8107 was not changed.
+
+## 13. Package cards (2026-11-03)
+`cards/almora-thank-you-card.png` (gold) and `cards/almora-silver-care-card.png` (silver care instructions), 1060x1484 px, 5:7 (wedding-invitation size, 5x7 in). Made in ChatGPT with the top area left empty, then the real logo (`almora-team/logo.png`, recoloured gold / grey) placed on top so the logo is exact. Hebrew text checked letter by letter. For print, ask for a higher-resolution export.
