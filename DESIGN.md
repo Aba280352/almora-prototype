@@ -459,3 +459,9 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Products used: necklace 6569 + ring 7540 (H1 banner), 6568, 6575, 6564, flame pendant 8226, tennis bracelet 6577; cards 6569, 7540, 6562, 8226, nail bracelet 6579, 6577 + 7540.
 - Gotcha: `*/` inside Elementor custom_css written from PHP must not be escaped (`*\/` swallows the next rules). Backup of the old home Elementor data: option `almora_backup_home_elementor_20261103`.
 - Moissanite page (8755) also has an H1 now: first slide title "תכשיטי מוסונייט" (mu-plugin `almora-home-h1.php` covers 7752 and 8755; backup `.bak-20261103`). Elementor widget cache and OPcache must be cleared after editing the plugin or the hero.
+
+## 11. Ring sizes and size filter (2026-11-03)
+- Filter "מידה" (attribute `pa_מידה`) already existed in the Ecomus products-filter widget (`ecomus-products-filter-1`). Attribute order is now numeric (`name_num`) so it reads 5..14.
+- Women's rings: the 28 simple rings (no size) were converted to variable products with sizes 7-12, same price, no stock management. Moissanite variable rings 7540, 6571-6575 now have sizes 5-12 per colour/carat; 6576, 7909, 7915, 7928 got sizes 7-12. Men's rings (10) now 8-14.
+- Mistake to remember: older variations were "any size" or used a differently-keyed size meta, and `get_attributes()` returned no size for them, so a first run assigned a wrong size. Fixed the same session (men's rings rebuilt as exactly one variation per size 8-14, women's any-size ones expanded to every size). Always read `get_post_meta($vid)` before bulk-editing variations.
+- Sizes 13/14 and 9-12 on moissanite rings were added on the owner's instruction; whether each size is actually available from the supplier was not checked.
