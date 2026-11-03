@@ -465,3 +465,8 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Women's rings: the 28 simple rings (no size) were converted to variable products with sizes 7-12, same price, no stock management. Moissanite variable rings 7540, 6571-6575 now have sizes 5-12 per colour/carat; 6576, 7909, 7915, 7928 got sizes 7-12. Men's rings (10) now 8-14.
 - Mistake to remember: older variations were "any size" or used a differently-keyed size meta, and `get_attributes()` returned no size for them, so a first run assigned a wrong size. Fixed the same session (men's rings rebuilt as exactly one variation per size 8-14, women's any-size ones expanded to every size). Always read `get_post_meta($vid)` before bulk-editing variations.
 - Sizes 13/14 and 9-12 on moissanite rings were added on the owner's instruction; whether each size is actually available from the supplier was not checked.
+
+## 12. Review cards and header cache (2026-11-03)
+- Review 40 (צמיד גאדי 8373, 5 stars) approved. The 10 older pending reviews (ids 26-35) were left pending.
+- mu-plugin `almora-review-cards.php`: on product pages each review is a card (12px radius, border) and the avatar is the product photo (`pre_get_avatar` filter) instead of the gravatar silhouette. Source in `reviews/almora-review-cards.php`.
+- Header lost nav/cart/search because of a stale Elementor element cache (`_elementor_element_cache`); fixed by deleting those rows. Header template 8107 was not changed.
