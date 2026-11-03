@@ -72,11 +72,11 @@ function almora_sg_strip_svg() {
 		$whole = ( floor( $us ) == $us );
 		$o    .= '<path d="M' . almora_sg_n( $x, 2 ) . ' 17V' . ( $whole ? 14.8 : 15.8 ) . '" stroke="#202020" stroke-width="' . ( $whole ? '.3' : '.2' ) . '"/>';
 		if ( $whole ) {
-			$o .= '<text x="' . almora_sg_n( $x, 2 ) . '" y="14.1" font-size="2.2" text-anchor="middle" font-weight="700" fill="#202020">' . (int) $us . '</text>';
+			$o .= '<text x="' . almora_sg_n( $x, 2 ) . '" y="14.1" font-size="1.9" text-anchor="middle" font-weight="700" fill="#202020">' . (int) $us . '</text>';
 		}
 	}
-	$o .= '<text x="52" y="9.5" font-size="2.4" text-anchor="end" fill="#202020" direction="rtl">היקף במ״מ</text>';
-	$o .= '<text x="52" y="14.1" font-size="2.4" text-anchor="end" fill="#202020" direction="rtl" font-weight="700">מידת US</text>';
+	$o .= '<text x="52" y="9.5" font-size="2.4" text-anchor="start" fill="#202020" direction="rtl">היקף במ״מ</text>';
+	$o .= '<text x="52" y="14.1" font-size="2.4" text-anchor="start" fill="#202020" direction="rtl" font-weight="700">מידת US</text>';
 	$o .= '</svg>';
 	return $o;
 }
