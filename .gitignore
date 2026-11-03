@@ -7,3 +7,6 @@ almora-team/
 # worn-photo working files (large PNGs/refs kept local)
 worn-photos/**/*.png
 worn-photos/**/ref.*
+
+# the true-size ring sheet is a deliverable (uploaded to the site by SHA)
+!size-guide/almora-ring-size-guide.pdf
