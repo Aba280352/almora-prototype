@@ -18,10 +18,9 @@ function almora_sg_tool_html() {
 
 		. '<div data-sz-pane="screen">'
 		. '<div data-sz-step="1">'
-		. '<p class="alm-sizer__step"><b>שלב 1, כיול המסך.</b> מניחים כרטיס אשראי זקוף על המלבן, ומזיזים את המחוון עד שהכרטיס מכסה אותו בדיוק, בלי שנשאר קו מבחוץ.</p>'
-		. '<div class="alm-sizer__stage" data-sz-stage1><div class="alm-sizer__card" data-sz-card></div></div>'
-		. '<input type="range" class="alm-sizer__range" min="120" max="380" step="1" value="294" data-sz-card-range aria-label="גודל המלבן">'
-		. '<p class="alm-sizer__warn" data-sz-warn hidden>המלבן רחב מהמסך. אפשר להשתמש בטבלה למטה או בלשונית "יש לכם מידה במ"מ".</p>'
+		. '<p class="alm-sizer__step"><b>שלב 1, כיול המסך.</b> מניחים כרטיס אשראי זקוף על המסך, כשהקצה העליון שלו על הקו העליון. מזיזים את המחוון עד שהקצה התחתון של הכרטיס נוגע בקו התחתון.</p>'
+		. '<input type="range" class="alm-sizer__range" min="170" max="620" step="1" value="470" data-sz-card-range aria-label="המרחק בין שני הקווים">'
+		. '<div class="alm-sizer__stage alm-sizer__stage--lines" data-sz-stage1><div class="alm-sizer__line alm-sizer__line--top"></div><div class="alm-sizer__line alm-sizer__line--bottom" data-sz-line></div></div>'
 		. '<button type="button" class="alm-sizer__btn" data-sz-next>הכרטיס מתאים, ממשיכים</button>'
 		. '</div>'
 		. '<div data-sz-step="2" hidden>'
@@ -62,7 +61,9 @@ function almora_sg_tool_css() {
 		. '.alm-sizer .alm-sizer__tabs button:hover{background:#fff;border-color:#202020;color:#202020}'
 		. '.alm-sizer .alm-sizer__stage{display:flex;justify-content:center;align-items:flex-start;padding:12px;background:#fff;border-radius:12px;overflow:hidden;margin:0 0 12px}'
 		. '.alm-sizer .alm-sizer__stage--ring{align-items:center}'
-		. '.alm-sizer .alm-sizer__card{box-sizing:border-box;border:3px solid #202020;background:rgba(32,32,32,.05);flex:none}'
+		. '.alm-sizer .alm-sizer__stage--lines{display:block;position:relative;padding:0}'
+		. '.alm-sizer .alm-sizer__line{position:absolute;left:0;right:0;height:3px;background:#202020}'
+		. '.alm-sizer .alm-sizer__line--top{top:8px}'
 		. '.alm-sizer .alm-sizer__circle{box-sizing:border-box;border:3px solid #202020;border-radius:50%;background:rgba(32,32,32,.05);flex:none}'
 		. '.alm-sizer .alm-sizer__range{width:100%;margin:0 0 12px;accent-color:#202020;height:32px}'
 		. '.alm-sizer .alm-sizer__btn{display:block;width:100%;min-height:46px;padding:10px 16px;border:0;border-radius:12px;background:#202020;color:#fff;font-size:15px;font-weight:600;cursor:pointer;box-shadow:none;text-transform:none}'
@@ -73,8 +74,7 @@ function almora_sg_tool_css() {
 		. '.alm-sizer .alm-sizer__res b{font-size:20px}'
 		. '.alm-sizer .alm-sizer__row{display:flex;gap:8px;margin:0 0 12px}'
 		. '.alm-sizer .alm-sizer__field{flex:1;min-width:0;min-height:46px;padding:8px 12px;border:1px solid #e6e6e6;border-radius:12px;background:#fff;color:#202020;font-size:16px}'
-		. '.alm-sizer .alm-sizer__warn{color:#E24A49;font-size:14px}'
-		. '.alm-sizer .alm-sizer__note{font-size:13px;color:#6b6b6b;margin:8px 0 0}'
+				. '.alm-sizer .alm-sizer__note{font-size:13px;color:#6b6b6b;margin:8px 0 0}'
 		. '@media(max-width:600px){.alm-sizer{padding:14px}.alm-sg-dialog{padding:28px 12px 16px!important}.alm-sizer .alm-sizer__row{flex-direction:column}}'
 		. '</style>';
 }
@@ -87,7 +87,7 @@ add_action( 'wp_footer', function () {
 	?>
 <script>
 (function () {
-	var KEY = 'almora_sizer_ppm', CARD_W = 53.98, CARD_H = 85.6, CARD_R = 3.18;
+	var KEY = 'almora_sizer_ppm', CARD_H = 85.6;
 	function usOf(d) { return (d - 11.63) / 0.8128; }
 	function fmt(n) { return (Math.round(n * 10) / 10).toFixed(1); }
 	function loadPpm() {
@@ -127,18 +127,16 @@ add_action( 'wp_footer', function () {
 		});
 
 		var step1 = $('[data-sz-step="1"]'), step2 = $('[data-sz-step="2"]');
-		var card = $('[data-sz-card]'), cr = $('[data-sz-card-range]'), warn = $('[data-sz-warn]'), stage1 = $('[data-sz-stage1]');
+		var line = $('[data-sz-line]'), cr = $('[data-sz-card-range]'), stage1 = $('[data-sz-stage1]');
 		var circle = $('[data-sz-circle]'), rr = $('[data-sz-ring-range]'), stage2 = $('[data-sz-stage2]'), res = $('[data-sz-res]');
 		var ppm = loadPpm();
 
-		cr.value = ppm ? Math.round(ppm * CARD_W) : (window.innerWidth < 700 ? 290 : 204);
+		cr.value = ppm ? Math.round(ppm * CARD_H) : (window.innerWidth < 700 ? 470 : 324);
+		/* the card stands upright: its long side (85.6 mm) runs between the two lines */
 		function drawCard() {
-			var w = +cr.value;
-			card.style.width = w + 'px';
-			card.style.height = (w * CARD_H / CARD_W) + 'px';
-			card.style.borderRadius = (w * CARD_R / CARD_W) + 'px';
-			var room = stage1.clientWidth;
-			warn.hidden = !(room > 0 && w + 24 > room);
+			var h = +cr.value;
+			line.style.top = (8 + h) + 'px';
+			stage1.style.height = (h + 19) + 'px';
 		}
 		function drawRing() {
 			var d = +rr.value;
@@ -148,23 +146,19 @@ add_action( 'wp_footer', function () {
 		}
 		cr.addEventListener('input', drawCard);
 		$('[data-sz-next]').addEventListener('click', function () {
-			ppm = (+cr.value) / CARD_W;
+			ppm = (+cr.value) / CARD_H;
 			savePpm(ppm);
 			step1.hidden = true; step2.hidden = false;
 			drawRing();
 		});
 		rr.addEventListener('input', drawRing);
 		$('[data-sz-recal]').addEventListener('click', function () {
-			cr.value = Math.round(ppm * CARD_W);
+			cr.value = Math.round(ppm * CARD_H);
 			step2.hidden = true; step1.hidden = false;
 			drawCard();
 		});
 		if (ppm) { step1.hidden = true; step2.hidden = false; drawRing(); } else { drawCard(); }
-		window.addEventListener('resize', function () { if (!step1.hidden) { drawCard(); } });
-		/* a popup shows the sizer later: measure the room again then */
-		var dlg = root.closest('dialog');
-		if (dlg) { new MutationObserver(function () { if (dlg.open && !step1.hidden) { drawCard(); } }).observe(dlg, { attributes: true, attributeFilter: ['open'] }); }
-
+		
 		/* the mm tab */
 		var inp = $('[data-sz-in]'), kind = $('[data-sz-kind]'), out = $('[data-sz-mm-res]');
 		function calc() {
