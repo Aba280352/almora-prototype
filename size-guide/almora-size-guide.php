@@ -81,16 +81,22 @@ function almora_sg_strip_svg() {
 	return $o;
 }
 
-/** Grey panel with true-size white circles (inner diameters of every half size) to lay a ring on. */
-function almora_sg_circles_svg() {
+/**
+ * Grey panel with true-size white circles (inner diameters of every half size) to lay a ring on.
+ * Two layouts of the same circles: 5 columns (print + wide screens) and 3 columns with bigger labels (phones).
+ */
+function almora_sg_circles_svg( $variant = 'd' ) {
 	$sizes = almora_sg_sizes();
-	$cols  = 5;
-	$cw    = 34;
-	$ch    = 33;
+	$mob   = ( 'm' === $variant );
+	$cols  = $mob ? 3 : 5;
+	$cw    = $mob ? 30 : 34;
+	$ch    = $mob ? 30 : 33;
+	$f_us  = $mob ? 5.2 : 4.2;
+	$f_eu  = $mob ? 3.1 : 2.6;
 	$w     = $cols * $cw;
 	$rows  = (int) ceil( count( $sizes ) / $cols );
 	$h     = $rows * $ch + 10;
-	$o     = '<svg class="alm-sz__svg alm-sz__svg--circles" viewBox="0 0 ' . $w . ' ' . $h . '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="עיגולים בגודל אמיתי לכל מידה" font-family="inherit">';
+	$o     = '<svg class="alm-sz__svg alm-sz__svg--circles alm-sz__svg--circles-' . $variant . '" viewBox="0 0 ' . $w . ' ' . $h . '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="עיגולים בגודל אמיתי לכל מידה" font-family="inherit">';
 	$o    .= '<rect width="' . $w . '" height="' . $h . '" rx="8" fill="#dedede"/>';
 	foreach ( $sizes as $i => $us ) {
 		$row = intdiv( $i, $cols );
@@ -99,8 +105,8 @@ function almora_sg_circles_svg() {
 		$cy  = 5 + $ch / 2 + $row * $ch;
 		$d   = almora_sg_d( $us );
 		$o  .= '<circle cx="' . $cx . '" cy="' . $cy . '" r="' . almora_sg_n( $d / 2, 3 ) . '" fill="#fff"/>';
-		$o  .= '<text x="' . $cx . '" y="' . ( $cy - 0.4 ) . '" font-size="4.2" font-weight="700" text-anchor="middle" fill="#202020">' . almora_sg_us_label( $us ) . '</text>';
-		$o  .= '<text x="' . $cx . '" y="' . ( $cy + 3.4 ) . '" font-size="2.2" text-anchor="middle" fill="#202020">EU ' . round( almora_sg_c( $us ) ) . '</text>';
+		$o  .= '<text x="' . $cx . '" y="' . ( $cy - 0.3 ) . '" font-size="' . $f_us . '" font-weight="700" text-anchor="middle" fill="#202020">' . almora_sg_us_label( $us ) . '</text>';
+		$o  .= '<text x="' . $cx . '" y="' . ( $cy + $f_us * 0.85 ) . '" font-size="' . $f_eu . '" text-anchor="middle" fill="#202020">EU ' . round( almora_sg_c( $us ) ) . '</text>';
 	}
 	$o .= '</svg>';
 	return $o;
@@ -141,6 +147,8 @@ function almora_sg_css() {
 		. '.alm-sz__svg--card{width:100%;max-width:380px}'
 		. '.alm-sz__svg--strip{width:100%;max-width:520px}'
 		. '.alm-sz__svg--circles{width:100%}'
+		. '.alm-sz__svg--circles-m{display:none}'
+		. '@media screen and (max-width:760px){.alm-sz__svg--circles-d{display:none}.alm-sz__svg--circles-m{display:block}}'
 		. '.alm-sz__cap{text-align:center;font-size:14px;margin:0 0 6px}'
 		. '.alm-sz__steps{list-style:none;counter-reset:s;margin:8px 0 12px;padding:0}'
 		. '.alm-sz__steps li{counter-increment:s;display:flex;gap:10px;align-items:flex-start;margin:0 0 7px}'
@@ -175,6 +183,8 @@ function almora_sg_css() {
 		. '.alm-sz .alm-sz__svg--card{width:95mm!important;max-width:none!important}'
 		. '.alm-sz .alm-sz__svg--strip{width:106mm!important;max-width:none!important}'
 		. '.alm-sz .alm-sz__svg--circles{width:170mm!important;max-width:none!important;margin-left:auto;margin-right:auto}'
+		. '.alm-sz .alm-sz__svg--circles-d{display:block!important}'
+		. '.alm-sz .alm-sz__svg--circles-m{display:none!important}'
 		. '.alm-sz .alm-sz__table td{padding:1.4mm 2mm}'
 		. '.alm-sz .alm-sz__table th{padding:2.4mm 2mm}'
 		. '.alm-sz *{-webkit-print-color-adjust:exact;print-color-adjust:exact}'
@@ -220,7 +230,7 @@ add_shortcode( 'almora_size_guide', function () {
 		. '<div class="alm-sz__top">' . $logo . '</div>'
 		. '<h2>אופציה 2: מדידת גודל טבעת</h2>'
 		. '<p>בוחרים טבעת שיש ברשותכם ומתאימה לכם בגודלה. מניחים אותה על אחד העיגולים, ומוודאים שהעיגול ממלא את החלק הפנימי של הטבעת בדיוק: בתוך החור של הטבעת רואים רק צבע לבן, בלי אפור. המספר שבתוך העיגול הוא המידה. אם יצא בין שתי מידות, בוחרים את הגדולה.</p>'
-		. almora_sg_circles_svg()
+		. almora_sg_circles_svg( 'd' ) . almora_sg_circles_svg( 'm' )
 		. '<p class="alm-sz__note">העיגולים הם בגודל אמיתי רק בדף מודפס ב-100%. על המסך הם מוקטנים ולכן אי אפשר למדוד עליהם.</p>'
 		. '<h3>אופציה 3: עזרה אישית</h3>'
 		. '<p>לא בטוחים? כתבו לנו בוואטסאפ, אפשר לשלוח צילום של הטבעת על הסרגל, ונעזור לבחור מידה.</p>'
