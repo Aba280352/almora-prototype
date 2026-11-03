@@ -445,3 +445,8 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Uploaded as attachments `almora-worn-<id>.webp`, post meta `_almora_worn_att` on the product, alt text "<name> - <body-part phrase>".
 - Held for owner decision: earrings 8169, necklace 8145, pendants 8267, 8223, 8221, 8226, 7935. Open: a "הדמיה להמחשה" note.
 - Slider arrows (product gallery and carousels, `.ecomus-swiper-button`): always #E3E3E3 gray circle with #202020 arrow; no hover, click or disabled colour change. Lives in Customizer Additional CSS (backup option `almora_backup_customcss_20261103`).
+
+## 9. Moissanite home (page 8755, /moissanite, draft)
+- Clone of the home page for category 117 only (rings, necklaces, earrings, tennis bracelet). Copy in moissanite wording, same tone, truth rule kept. Draft + noindex + not in the menu until the owner approves.
+- Hero: 5 banners generated in ChatGPT at 16:9 (`moissanite-home/banners/`, WebP desktop + mobile). Category cards, rail lead cards and FAQ photos reuse the worn-product photos. Sale rail and Shop the Look removed (no moissanite on sale, no moissanite look photo yet).
+- Snippets 7779 and 7865 and the two home mu-plugins also run on 8755 (conditions must be added both in post meta and in option `elementor_pro_theme_builder_conditions`).
