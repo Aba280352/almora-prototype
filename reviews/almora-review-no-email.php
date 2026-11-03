@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ALMORA review form without email
- * Description: Product review form asks only for rating, review text and name (no email). Guest reviews without email are always held for moderation (WordPress auto-approve needs an email). Blog comments keep the normal name + email rule.
+ * Description: Product review form asks only for rating, review text and name (no email). Reviews are published right away unless they contain a link. Blog comments keep the normal name + email rule.
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -49,14 +49,24 @@ add_filter( 'preprocess_comment', function ( $data ) {
 	}
 	return $data;
 }, 5 );
-/* the same person may send several reviews in a row: no duplicate block, no 15-second flood block on products */
-add_filter( 'duplicate_comment_id', function ( $dupe_id, $commentdata ) {
-	return 'product' === get_post_type( (int) $commentdata['comment_post_ID'] ) ? false : $dupe_id;
-}, 10, 2 );
-
+/* the same person may send several different reviews in a row: no 15-second flood block on products. The same text twice (a double click) is still blocked by WordPress. */
 add_filter( 'wp_is_comment_flood', function ( $is_flood ) {
 	if ( isset( $_POST['comment_post_ID'] ) && 'product' === get_post_type( (int) $_POST['comment_post_ID'] ) ) {
 		return false;
 	}
 	return $is_flood;
 }, 20 );
+
+/* product reviews are published right away; a review with a link is held for approval (the usual spam sign). Spam and blocked words keep WordPress's own result. */
+add_filter( 'pre_comment_approved', function ( $approved, $data ) {
+	if ( 0 !== $approved && '0' !== $approved ) {
+		return $approved;
+	}
+	if ( 'product' !== get_post_type( (int) $data['comment_post_ID'] ) ) {
+		return $approved;
+	}
+	if ( preg_match( '#https?://|www\.|\.(com|co\.il|net|org|ru)\b#i', (string) $data['comment_content'] ) ) {
+		return $approved;
+	}
+	return 1;
+}, 20, 2 );

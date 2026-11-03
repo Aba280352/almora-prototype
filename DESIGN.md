@@ -483,3 +483,4 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Review wording gender-neutral: "כתיבת ביקורת", "שליחת ביקורת".
 - Gift wrap (mu-plugin `almora-gift.php`, copy in `checkout/`): checkout checkbox "אריזת מתנה (+9 ₪)" as a non-taxed fee, free dedication (200 chars) saved on the order, shown in admin order, emails and order details. Tested: fee adds and removes.
 - Owner answers: no formal warranty (show the 14-day exchange/return policy instead), birthstone/zodiac/initial collections skipped (no such products).
+- Reviews auto-approve (owner request 2026-11-03): product reviews publish right away; a review containing a link waits for approval. Identical text twice (double click) is blocked again (WordPress duplicate check restored after reviews 43/45 came in twice); different reviews from the same person in a row are allowed (no 15-second flood block). Approved 44, 46, 47; duplicates 43, 45 moved to trash.
