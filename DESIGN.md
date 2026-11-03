@@ -484,3 +484,10 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Gift wrap (mu-plugin `almora-gift.php`, copy in `checkout/`): checkout checkbox "אריזת מתנה (+9 ₪)" as a non-taxed fee, free dedication (200 chars) saved on the order, shown in admin order, emails and order details. Tested: fee adds and removes.
 - Owner answers: no formal warranty (show the 14-day exchange/return policy instead), birthstone/zodiac/initial collections skipped (no such products).
 - Reviews auto-approve (owner request 2026-11-03): product reviews publish right away; a review containing a link waits for approval. Identical text twice (double click) is blocked again (WordPress duplicate check restored after reviews 43/45 came in twice); different reviews from the same person in a row are allowed (no 15-second flood block). Approved 44, 46, 47; duplicates 43, 45 moved to trash.
+
+## 15. Size guide (2026-11-03)
+- Page 9477 `/size-guide` "מדריך מידות" (Yoast title "מדריך מידות טבעות וצמידים | ALMORA", keyphrase "מדריך מידות טבעות"), content = shortcode `[almora_size_guide]` from mu-plugin `almora-size-guide.php` (copy in `size-guide/`).
+- Rings: US sizes 5-14 (the sizes the site sells), inner diameter = 11.63 + 0.8128 x US, circumference = pi x diameter; two home methods; tips. Bracelets: how to measure the wrist, +1-2 cm rule, table 14-18 cm. Only 4 of 24 bracelets state a length, so the guide does not invent lengths ("when the length is known it is on the product page").
+- Product pages (ring cats 66/120/127, bracelet cats 69/121/125, variable products): "מדריך מידות" link under the size choice opens the relevant part in a dialog + link to the full page.
+- Footer support list (template 8110, widget foot-list-support): added "מדריך מידות" after the exchange policy. Backup option `almora_backup_footer_8110_20261103`.
+- Trust line near the buy button already existed (shipping 35 ₪ 3-5 days, free over 1,000 ₪, cleaning cloth gift, 14-day exchange/return, secure payment); nothing added there.
