@@ -491,3 +491,4 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Product pages (ring cats 66/120/127, bracelet cats 69/121/125, variable products): "מדריך מידות" link under the size choice opens the relevant part in a dialog + link to the full page.
 - Footer support list (template 8110, widget foot-list-support): added "מדריך מידות" after the exchange policy. Backup option `almora_backup_footer_8110_20261103`.
 - Trust line near the buy button already existed (shipping 35 ₪ 3-5 days, free over 1,000 ₪, cleaning cloth gift, 14-day exchange/return, secure payment); nothing added there.
+- Main menu (menu 114 "ALMORA ראשי", the Elementor one): added "מדריך מידות" (item 9478, page 9477) after "קנייה לפי תקציב". Positions backup: option `almora_backup_menu114_positions_20261103`. Note: `wp_update_nav_menu_item` on an existing item with partial args wipes its type/url; always pass the full set (type, object, object-id, url).
