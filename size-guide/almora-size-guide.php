@@ -129,6 +129,7 @@ function almora_sg_css() {
 		. '.alm-sz__pdf-btn svg{flex:none;width:22px;height:22px}'
 		. '.alm-sg-link{display:inline-flex;align-items:center;gap:6px;margin:4px 0 14px;padding:0;background:none;border:0;color:#202020;font-size:14px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}'
 		. '@media(max-width:600px){.alm-sz__sheet{padding:18px 14px}.alm-sz h2{font-size:22px}.alm-sz__pdf{padding:14px 12px}.alm-sz__pdf-t{font-size:14px}.alm-sz a.alm-sz__pdf-btn{display:flex;width:100%;min-height:44px;padding:8px 10px;gap:6px;font-size:14px;white-space:nowrap}.alm-sz__pdf-btn svg{width:20px;height:20px}}'
+		. '@media(max-width:359px){.alm-sz a.alm-sz__pdf-btn{font-size:13px;padding:8px 6px}}'
 		/* print: only the sheets, one per A4 page, true size */
 		. '@media print{'
 		. '@page{size:A4;margin:0}'
