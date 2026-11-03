@@ -8,8 +8,8 @@ defined( 'ABSPATH' ) || exit;
 function almora_sg_tool_html() {
 	$GLOBALS['almora_sg_need_js'] = true;
 	return almora_sg_tool_css()
+		. '<details class="alm-sizer-fold"><summary>אין סרגל? מדידה על המסך</summary>'
 		. '<div class="alm-sizer" data-alm-sizer>'
-		. '<h3 class="alm-sizer__title">מדידה מהירה במסך</h3>'
 		. '<p class="alm-sizer__lead">שמים טבעת שמתאימה לכם על המסך, ורואים מיד איזו מידה היא. בלי חישובים.</p>'
 		. '<div class="alm-sizer__tabs" role="group" aria-label="שיטת מדידה">'
 		. '<button type="button" class="is-on" data-sz-tab="screen" aria-pressed="true">מודדים על המסך</button>'
@@ -41,8 +41,8 @@ function almora_sg_tool_html() {
 		. '<p class="alm-sizer__res" data-sz-mm-res aria-live="polite"></p>'
 		. '</div>'
 
-		. '<p class="alm-sizer__note">המדידה על המסך מקורבת. אם יצא קרוב לגבול בין שתי מידות, בוחרים את הגדולה, ואפשר לאמת מול הטבלה למטה.</p>'
-		. '</div>';
+		. '<p class="alm-sizer__note">המדידה על המסך מקורבת. אם יצא קרוב לגבול בין שתי מידות, בוחרים את הגדולה, ואפשר לאמת מול הטבלה למעלה.</p>'
+		. '</div></details>';
 }
 
 function almora_sg_tool_css() {
@@ -52,7 +52,12 @@ function almora_sg_tool_css() {
 	}
 	$done = true;
 	return '<style id="almora-sizer">'
-		. '.alm-sizer{background:#f5f5f5;border-radius:12px;padding:18px;margin:16px 0 24px;color:#202020}'
+		. '.alm-sizer-fold{margin:18px 0 0;background:#f5f5f5;border-radius:12px;color:#202020}'
+		. '.alm-sizer-fold>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:600;display:flex;justify-content:space-between;align-items:center}'
+		. '.alm-sizer-fold>summary::-webkit-details-marker{display:none}'
+		. '.alm-sizer-fold>summary::after{content:"+";font-size:22px;line-height:1}'
+		. '.alm-sizer-fold[open]>summary::after{content:"−"}'
+		. '.alm-sizer{padding:0 16px 16px;color:#202020}'
 		. '.alm-sizer .alm-sizer__title{font-size:20px;margin:0 0 4px}'
 		. '.alm-sizer p{margin:0 0 12px}'
 		. '.alm-sizer .alm-sizer__tabs{display:flex;gap:8px;margin:0 0 14px}'
