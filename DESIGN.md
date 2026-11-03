@@ -468,5 +468,5 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 
 ## 12. Review cards and header cache (2026-11-03)
 - Review 40 (צמיד גאדי 8373, 5 stars) approved. The 10 older pending reviews (ids 26-35) were left pending.
-- mu-plugin `almora-review-cards.php`: on product pages each review is a card (12px radius, border) and the avatar is the product photo (`pre_get_avatar` filter) instead of the gravatar silhouette. Source in `reviews/almora-review-cards.php`.
+- mu-plugin `almora-review-cards.php`: on product pages each review is a card (12px radius, border) and the avatar is the product photo (`pre_get_avatar` filter) instead of the gravatar silhouette.
 - Header lost nav/cart/search because of a stale Elementor element cache (`_elementor_element_cache`); fixed by deleting those rows. Header template 8107 was not changed.
