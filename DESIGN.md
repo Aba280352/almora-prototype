@@ -473,3 +473,9 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 
 ## 13. Package cards (2026-11-03)
 `cards/almora-thank-you-card.png` (gold) and `cards/almora-silver-care-card.png` (silver care instructions), 1060x1484 px, 5:7 (wedding-invitation size, 5x7 in). Made in ChatGPT with the top area left empty, then the real logo (`almora-team/logo.png`, recoloured gold / grey) placed on top so the logo is exact. Hebrew text checked letter by letter. For print, ask for a higher-resolution export.
+
+## 14. Cleanup, review form, roadmap (2026-11-03)
+- Trashed (WordPress trash, restorable 30 days): theme demo posts 144-158 + 3872, "שלום עולם!" (1), Coming Soon (394), unused duplicate cart 9 / checkout 10 (WooCommerce uses 6124 / 6123), English demo FAQ pages 193 and 466 (live footer is template 8110, not linked).
+- Review form (mu-plugin `almora-review-no-email.php`, copy in `reviews/`): rating + text + name only, no email. Same person can send several reviews in a row (no duplicate / flood block on products). Guest reviews without email are always held for approval. Blog comments unchanged.
+- Review cards copy: `reviews/almora-review-cards.php`.
+- Roadmap agreed: review-request email after purchase (no incentive), size guide (rings + bracelets, Israeli market convention), gift wrap paid + free dedication, publish 4 blog drafts, enrich top products, speed. Later: try-on, send-a-hint, abandoned cart, gamification.
