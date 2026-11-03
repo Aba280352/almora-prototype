@@ -24,7 +24,15 @@ add_filter( 'comment_form_fields', function ( $fields ) {
 
 add_filter( 'woocommerce_product_review_comment_form_args', function ( $args ) {
 	$args['comment_notes_before'] = '';
+	$args['title_reply']          = 'כתיבת ביקורת';
+	$args['label_submit']         = 'שליחת ביקורת';
 	return $args;
+}, 99 );
+
+/* gender-neutral wording for the theme's review button and title */
+add_filter( 'gettext', function ( $translation ) {
+	static $map = array( 'כתוב ביקורת' => 'כתיבת ביקורת', 'כתוב ביקורת מוצר' => 'כתיבת ביקורת', 'שלח ביקורת' => 'שליחת ביקורת' );
+	return isset( $map[ $translation ] ) ? $map[ $translation ] : $translation;
 } );
 
 /* the submit: email is not required on products, the name still is */
