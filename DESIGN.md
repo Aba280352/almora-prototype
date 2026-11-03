@@ -446,7 +446,8 @@ Resolved: tablet type sizes, section/element spacing, Polin font files (body tex
 - Held for owner decision: earrings 8169, necklace 8145, pendants 8267, 8223, 8221, 8226, 7935. Open: a "הדמיה להמחשה" note.
 - Slider arrows (product gallery and carousels, `.ecomus-swiper-button`): always #E3E3E3 gray circle with #202020 arrow; no hover, click or disabled colour change. Lives in Customizer Additional CSS (backup option `almora_backup_customcss_20261103`).
 
-## 9. Moissanite home (page 8755, /moissanite, draft)
-- Clone of the home page for category 117 only (rings, necklaces, earrings, tennis bracelet). Copy in moissanite wording, same tone, truth rule kept. Draft + noindex + not in the menu until the owner approves.
+## 9. Moissanite home (page 8755, /moissanite, LIVE since 2026-11-03)
+- Clone of the home page for category 117 only (rings, necklaces, earrings, tennis bracelet). Copy in moissanite wording, same tone, truth rule kept. Published, indexable, in the main menu (114).
+- Menu: item 7971 "כל תכשיטי המוסונייט" (page 8755) with dropdown: תכשיטי מוסונייט (cat 117, item 8768), טבעות / שרשראות / עגילים / צמידים מוסונייט (cats 120, 122, 119, 121). Rule: `wp_update_nav_menu_item` must always get the full args (title, type, object, object-id, status, parent, position); position-only calls wipe the item.
 - Hero: 5 banners generated in ChatGPT at 16:9 (`moissanite-home/banners/`, WebP desktop + mobile). Category cards, rail lead cards and FAQ photos reuse the worn-product photos. Sale rail removed (no moissanite on sale). Shop the Look rebuilt with a new ChatGPT photo (necklace 6569, ring 7540, tennis bracelet 6577).
 - Snippets 7779 and 7865 and the two home mu-plugins also run on 8755 (conditions must be added both in post meta and in option `elementor_pro_theme_builder_conditions`).
