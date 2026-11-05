@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Polin";
+        font-weight: 300;
+        src: url("fonts/Polin-Light.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Polin";
+        font-weight: 400;
+        src: url("fonts/Polin-Regular.woff2") format("woff2");
+      }
+      :root {
+        --ground: #fdfdfd;
+        --ink: #202020;
+        --muted: #6e6e6e;
+        --hair: #d6d6d6;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: "Polin", sans-serif;
+        color: var(--ink);
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+      }
+
+      /* ---------- product scene ---------- */
+      #p-fade {
+        position: absolute;
+        inset: 0;
+      }
+      #top-logo {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+      }
+      #top-logo img {
+        display: block;
+        width: 170px;
+        height: auto;
+      }
+      #stage {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 1080px;
+        height: 1080px;
+        overflow: hidden;
+        -webkit-mask-image: radial-gradient(closest-side, #000 80%, transparent 100%);
+        mask-image: radial-gradient(closest-side, #000 80%, transparent 100%);
+      }
+      #ring-move {
+        position: absolute;
+        inset: 0;
+      }
+      #ring-wrap {
+        position: absolute;
+        inset: 0;
+      }
+      .ring {
+        position: absolute;
+        top: 0;
+        left: 27px; /* the ring sits 26px left of centre in the photos */
+        width: 1080px;
+        height: 1080px;
+        display: block;
+      }
+      #ring-yellow,
+      #ring-rose {
+        opacity: 0;
+      }
+      .shine-lane {
+        position: absolute;
+        inset: 0;
+        mix-blend-mode: screen;
+      }
+      .shine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1080px;
+        background: linear-gradient(
+          105deg,
+          rgba(255, 255, 255, 0) 38%,
+          rgba(255, 255, 255, 0.55) 50%,
+          rgba(255, 255, 255, 0) 62%
+        );
+      }
+
+      #copy {
+        position: absolute;
+        top: 1360px;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      #title {
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
+      }
+      #rule {
+        width: 120px;
+        height: 1px;
+        margin: 34px auto 30px;
+        background: var(--ink);
+        opacity: 0.35;
+      }
+      #sub-slot {
+        position: relative;
+        height: 60px;
+      }
+      .sub {
+        position: absolute;
+        inset: 0;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 60px;
+        letter-spacing: 0.04em;
+        color: var(--muted);
+      }
+      #sub-b {
+        opacity: 0;
+      }
+
+      #tones {
+        position: absolute;
+        top: 1640px;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      #dots {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        direction: ltr;
+      }
+      .dot {
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px solid #9a9a9a;
+      }
+      .dot i {
+        position: absolute;
+        inset: 3px;
+        border-radius: 50%;
+        opacity: 0;
+      }
+      #d-white i {
+        background: #dcdcdc;
+      }
+      #d-yellow i {
+        background: #d6b46a;
+      }
+      #d-rose i {
+        background: #dba48e;
+      }
+      #tone-slot {
+        position: relative;
+        height: 52px;
+        margin-top: 22px;
+      }
+      .tone {
+        position: absolute;
+        inset: 0;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 52px;
+        letter-spacing: 0.06em;
+        color: var(--ink);
+        opacity: 0;
+      }
+
+      #price {
+        position: absolute;
+        top: 1590px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+      }
+      #price .from {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+      #price .num {
+        display: block;
+        font-weight: 300;
+        font-size: 96px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+      }
+
+      /* ---------- end card ---------- */
+      #end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #end-logo {
+        display: block;
+        width: 560px;
+        height: auto;
+        opacity: 0;
+      }
+      #end-url {
+        margin-top: 64px;
+        font-weight: 300;
+        font-size: 34px;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        direction: ltr;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="16.5"
+      data-width="1080"
+      data-height="1920"
+    >
+      <section id="product" class="clip" data-start="0" data-duration="14.2" data-track-index="0">
+        <div id="p-fade">
+          <div id="top-logo"><img id="top-logo-img" src="assets/logo-black.png" alt="ALMORA" /></div>
+
+          <div id="stage">
+            <div id="ring-move">
+              <div id="ring-wrap">
+                <img class="ring" id="ring-white" src="assets/ring-white.webp" alt="" />
+                <img class="ring" id="ring-yellow" src="assets/ring-yellow.webp" alt="" />
+                <img class="ring" id="ring-rose" src="assets/ring-rose.webp" alt="" />
+              </div>
+              <div class="shine-lane"><div class="shine" id="shine" data-layout-allow-overflow></div></div>
+            </div>
+          </div>
+
+          <div id="copy">
+            <h1 id="title">טבעת סוליטר עגול</h1>
+            <div id="rule"></div>
+            <div id="sub-slot">
+              <p class="sub" id="sub-a">כסף 925 · מוסונייט VVS1</p>
+              <p class="sub" id="sub-b">1 עד 3 קראט · מידות 5 עד 12</p>
+            </div>
+          </div>
+
+          <div id="tones">
+            <div id="dots">
+              <span class="dot" id="d-white"><i></i></span>
+              <span class="dot" id="d-yellow"><i></i></span>
+              <span class="dot" id="d-rose"><i></i></span>
+            </div>
+            <div id="tone-slot">
+              <p class="tone" id="t-white">זהב לבן</p>
+              <p class="tone" id="t-yellow">זהב צהוב</p>
+              <p class="tone" id="t-rose">רוז גולד</p>
+            </div>
+          </div>
+
+          <div id="price"><p class="from">החל מ</p><p class="num" dir="ltr">₪575</p></div>
+        </div>
+      </section>
+
+      <section id="end" class="clip" data-start="13.4" data-duration="3.1" data-track-index="1">
+        <img id="end-logo" src="assets/logo-black.png" alt="ALMORA" />
+        <p id="end-url">almora.co.il</p>
+      </section>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const soft = "power2.inOut";
+      const out = "expo.out";
+
+      // opening: logo, ring settles in
+      tl.fromTo("#top-logo-img", { opacity: 0.35, y: -8 }, { opacity: 1, y: 0, duration: 1.2, ease: out }, 0);
+      tl.fromTo("#ring-move", { opacity: 0.55 }, { opacity: 1, duration: 1.0, ease: "power1.out" }, 0);
+      tl.fromTo("#ring-wrap", { scale: 1.12 }, { scale: 1.0, duration: 1.8, ease: out }, 0);
+      tl.to("#ring-wrap", { scale: 1.06, duration: 8.6, ease: "none" }, 1.8);
+
+      // copy
+      tl.fromTo("#title", { opacity: 0, y: 26, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: out }, 0.9);
+      tl.fromTo("#rule", { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: soft }, 1.2);
+      tl.fromTo("#sub-a", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 1.0, ease: out }, 1.4);
+
+      // tone row
+      tl.fromTo("#dots", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.9, ease: out }, 1.8);
+      tl.fromTo("#d-white i", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: soft }, 2.0);
+      tl.fromTo("#t-white", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: soft }, 2.0);
+
+      // light sweeps
+      const sweep = (at) =>
+        tl.fromTo("#shine", { xPercent: -110 }, { xPercent: 110, duration: 1.3, ease: "power1.inOut" }, at);
+      sweep(2.4);
+
+      // white gold -> yellow gold
+      tl.to("#ring-yellow", { opacity: 1, duration: 1.2, ease: soft }, 3.9);
+      tl.to("#t-white", { opacity: 0, duration: 0.5, ease: soft }, 4.0);
+      tl.to("#d-white i", { opacity: 0, duration: 0.6, ease: soft }, 4.1);
+      tl.to("#d-yellow i", { opacity: 1, duration: 0.6, ease: soft }, 4.3);
+      tl.to("#t-yellow", { opacity: 1, duration: 0.7, ease: soft }, 4.5);
+      sweep(5.6);
+
+      // yellow gold -> rose gold
+      tl.to("#ring-rose", { opacity: 1, duration: 1.2, ease: soft }, 7.4);
+      tl.to("#t-yellow", { opacity: 0, duration: 0.5, ease: soft }, 7.5);
+      tl.to("#d-yellow i", { opacity: 0, duration: 0.6, ease: soft }, 7.6);
+      tl.to("#d-rose i", { opacity: 1, duration: 0.6, ease: soft }, 7.8);
+      tl.to("#t-rose", { opacity: 1, duration: 0.7, ease: soft }, 8.0);
+      sweep(9.0);
+
+      // details + price
+      tl.to("#tones", { opacity: 0, y: 12, duration: 0.6, ease: soft }, 10.6);
+      tl.to("#sub-a", { opacity: 0, duration: 0.5, ease: soft }, 10.7);
+      tl.fromTo("#sub-b", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.9, ease: out }, 11.0);
+      tl.fromTo("#price", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: out }, 11.3);
+
+      // hand-off to the end card
+      tl.to("#p-fade", { opacity: 0, duration: 0.9, ease: soft }, 13.3);
+      tl.fromTo("#end-logo", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 1.4, ease: out }, 13.8);
+      tl.fromTo("#end-url", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 1.0, ease: out }, 14.2);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
