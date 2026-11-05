@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Polin";
+        font-weight: 300;
+        src: url("fonts/Polin-Light.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Polin";
+        font-weight: 400;
+        src: url("fonts/Polin-Regular.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Polin";
+        font-weight: 500;
+        src: url("fonts/Polin-Medium.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Polin";
+        font-weight: 600;
+        src: url("fonts/Polin-Semibold.woff2") format("woff2");
+      }
+      :root {
+        --ground: #ffffff; /* the product photo background is pure white */
+        --ink: #202020;
+        --gap: 64px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: "Polin", sans-serif;
+        color: var(--ink);
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+      }
+
+      /* ---------- product scene ---------- */
+      #p-fade {
+        position: absolute;
+        inset: 0;
+      }
+      #top-logo {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+      }
+      #top-logo img {
+        display: block;
+        width: 240px;
+        height: auto;
+      }
+
+      /* media slot: full width, 1080 x 800, photos are 1:1 so they are cropped top/bottom */
+      #media {
+        position: absolute;
+        top: 360px;
+        left: 0;
+        width: 1080px;
+        height: 800px;
+        overflow: hidden;
+      }
+      .layer {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .layer .pic {
+        position: absolute;
+        inset: 0;
+      }
+      .layer img {
+        position: absolute;
+        left: 0;
+        width: 1080px;
+        height: 1080px;
+        display: block;
+      }
+      #l-real img,
+      #l-real2 img {
+        top: -200px;
+      }
+      #l-ai1 img {
+        top: -150px;
+      }
+      #l-ai2 img {
+        top: -170px;
+      }
+
+      #tag {
+        position: absolute;
+        left: 36px;
+        bottom: 32px;
+        padding: 6px 22px 8px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.9);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--ink);
+        opacity: 0;
+      }
+
+      /* ---------- copy ---------- */
+      #copy {
+        position: absolute;
+        top: 1224px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap);
+        text-align: center;
+      }
+      #title {
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 110px;
+        letter-spacing: 0.005em;
+      }
+      #slot {
+        position: relative;
+        width: 1080px;
+        height: 140px;
+      }
+      #sub,
+      #price {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+      }
+      #sub {
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 56px;
+        letter-spacing: 0.03em;
+      }
+      #price {
+        align-items: baseline;
+        gap: 26px;
+        opacity: 0;
+      }
+      #price .from {
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 56px;
+        letter-spacing: 0.03em;
+      }
+      #price .num {
+        font-weight: 500;
+        font-size: 132px;
+        line-height: 136px;
+        letter-spacing: 0.01em;
+      }
+
+      /* ---------- end card ---------- */
+      #end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 120px;
+      }
+      #end-logo {
+        display: block;
+        width: 660px;
+        height: auto;
+        opacity: 0;
+      }
+      #end-url {
+        margin-top: 70px;
+        font-weight: 300;
+        font-size: 46px;
+        letter-spacing: 0.12em;
+        direction: ltr;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="17"
+      data-width="1080"
+      data-height="1920"
+    >
+      <section id="product" class="clip" data-start="0" data-duration="14.9" data-track-index="0">
+        <div id="p-fade">
+          <div id="top-logo"><img id="top-logo-img" src="assets/logo-black.png" alt="ALMORA" /></div>
+
+          <div id="media">
+            <div class="layer" id="l-real"><div class="pic"><img src="assets/necklace-real.webp" alt="" /></div></div>
+            <div class="layer" id="l-ai1"><div class="pic"><img src="assets/necklace-ai-1.webp" alt="" /></div></div>
+            <div class="layer" id="l-ai2"><div class="pic"><img src="assets/necklace-ai-2.webp" alt="" /></div></div>
+            <div class="layer" id="l-real2"><div class="pic"><img src="assets/necklace-real.webp" alt="" /></div></div>
+            <p id="tag">הדמיה</p>
+          </div>
+
+          <div id="copy">
+            <h1 id="title">שרשרת סוליטר עיגול</h1>
+            <div id="slot">
+              <p id="sub">כסף 925 · מוסונייט</p>
+              <div id="price"><p class="from">החל מ</p><p class="num" dir="ltr">₪860</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="end" class="clip" data-start="14.0" data-duration="3.0" data-track-index="1">
+        <img id="end-logo" src="assets/logo-black.png" alt="ALMORA" />
+        <p id="end-url">almora.co.il</p>
+      </section>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const soft = "power2.inOut";
+      const out = "expo.out";
+      const wipe = "power3.inOut";
+
+      // later layers start hidden behind a clip (revealed right-to-left, the Hebrew reading direction)
+      tl.set(["#l-ai1", "#l-ai2", "#l-real2"], { clipPath: "inset(0% 0% 0% 100%)" }, 0);
+
+      // opening: logo and product on screen at frame 0
+      tl.fromTo("#top-logo-img", { opacity: 0.4, y: -8 }, { opacity: 1, y: 0, duration: 1.2, ease: out }, 0);
+      tl.fromTo("#l-real .pic", { scale: 1.08 }, { scale: 1.0, duration: 4.6, ease: "power2.out" }, 0);
+
+      // copy
+      tl.fromTo("#title", { opacity: 0, y: 26, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: out }, 0.8);
+      tl.fromTo("#sub", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 1.0, ease: out }, 1.2);
+
+      // reveal helper: wipe the layer in, with a slow settle on its photo
+      const reveal = (layer, at, hold) => {
+        tl.to(layer, { clipPath: "inset(0% 0% 0% 0%)", duration: 1.1, ease: wipe }, at);
+        tl.fromTo(layer + " .pic", { scale: 1.1 }, { scale: 1.0, duration: hold, ease: "power2.out" }, at);
+      };
+
+      // AI photo 1 (on the neck), with the "הדמיה" tag
+      reveal("#l-ai1", 4.2, 3.8);
+      tl.to("#tag", { opacity: 1, duration: 0.6, ease: soft }, 4.9);
+
+      // AI photo 2
+      reveal("#l-ai2", 7.6, 3.8);
+
+      // back to the real product for the price
+      reveal("#l-real2", 11.0, 3.6);
+      tl.to("#tag", { opacity: 0, duration: 0.4, ease: soft }, 11.0);
+      tl.to("#sub", { opacity: 0, y: -10, duration: 0.5, ease: soft }, 11.4);
+      tl.fromTo("#price", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: out }, 11.7);
+
+      // hand-off to the end card
+      tl.to("#p-fade", { opacity: 0, duration: 0.9, ease: soft }, 14.0);
+      tl.fromTo("#end-logo", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 1.4, ease: out }, 14.4);
+      tl.fromTo("#end-url", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 1.0, ease: out }, 14.8);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
