@@ -111,19 +111,6 @@
         top: -170px;
       }
 
-      #tag {
-        position: absolute;
-        left: 36px;
-        bottom: 32px;
-        padding: 6px 22px 8px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.9);
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 40px;
-        color: var(--ink);
-        opacity: 0;
-      }
 
       /* ---------- copy ---------- */
       #copy {
@@ -223,7 +210,6 @@
             <div class="layer" id="l-ai1"><div class="pic"><img src="assets/necklace-ai-1.webp" alt="" /></div></div>
             <div class="layer" id="l-ai2"><div class="pic"><img src="assets/necklace-ai-2.webp" alt="" /></div></div>
             <div class="layer" id="l-real2"><div class="pic"><img src="assets/necklace-real.webp" alt="" /></div></div>
-            <p id="tag">הדמיה</p>
           </div>
 
           <div id="copy">
@@ -264,16 +250,14 @@
         tl.fromTo(layer + " .pic", { scale: 1.1 }, { scale: 1.0, duration: hold, ease: "power2.out" }, at);
       };
 
-      // AI photo 1 (on the neck), with the "הדמיה" tag
+      // AI photo 1 (on the neck)
       reveal("#l-ai1", 4.2, 3.8);
-      tl.to("#tag", { opacity: 1, duration: 0.6, ease: soft }, 4.9);
 
       // AI photo 2
       reveal("#l-ai2", 7.6, 3.8);
 
       // back to the real product for the price
       reveal("#l-real2", 11.0, 3.6);
-      tl.to("#tag", { opacity: 0, duration: 0.4, ease: soft }, 11.0);
       tl.to("#sub", { opacity: 0, y: -10, duration: 0.5, ease: soft }, 11.4);
       tl.fromTo("#price", { opacity: 0, y: 20, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: out }, 11.7);
 
