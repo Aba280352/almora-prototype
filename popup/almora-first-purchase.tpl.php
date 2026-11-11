@@ -354,6 +354,24 @@ function almora_fp_ensure_popup() {
 }
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
+function almora_fp_visible() {
+	if ( is_admin() || ( function_exists( 'is_checkout' ) && is_checkout() ) ) {
+		return false;
+	}
+	return (bool) get_option( 'almora_fp_live' ) || ! empty( $_GET['almora-fp'] );
+}
+
+// Print the popup on the page (independent of the theme builder conditions cache).
+add_action(
+	'wp',
+	function () {
+		$id = (int) get_option( 'almora_fp_popup_id' );
+		if ( $id && almora_fp_visible() && class_exists( '\ElementorPro\Modules\Popup\Module' ) ) {
+			\ElementorPro\Modules\Popup\Module::add_popup_to_location( $id );
+		}
+	}
+);
+
 /**
  * Floating gift button "10%", just above the accessibility button (bottom left).
  * Visible when option almora_fp_live is on, or with ?almora-fp=1 for a preview.
@@ -362,10 +380,7 @@ add_action(
 	'wp_footer',
 	function () {
 		$id = (int) get_option( 'almora_fp_popup_id' );
-		if ( ! $id || is_admin() || ( function_exists( 'is_checkout' ) && is_checkout() ) ) {
-			return;
-		}
-		if ( ! get_option( 'almora_fp_live' ) && empty( $_GET['almora-fp'] ) ) {
+		if ( ! $id || ! almora_fp_visible() ) {
 			return;
 		}
 		$pct = (int) ALMORA_FP_PERCENT;
