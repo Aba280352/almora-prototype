@@ -37,7 +37,6 @@ ALMORA_EMAIL;
 		array(
 			'{{CODE}}'      => esc_html( $code ),
 			'{{PERCENT}}'   => (int) ALMORA_FP_PERCENT,
-			'{{EXPIRY}}'    => esc_html( wp_date( 'd.m.Y', $expiry_ts ) ),
 			'{{NAME_LINE}}' => $name_line,
 			'{{LOGO}}'      => esc_url( home_url( '/wp-content/uploads/2026/09/ALMORA-header-compact.png' ) ),
 			'{{SHOP_URL}}'  => esc_url( home_url( '/' ) ),
@@ -46,51 +45,48 @@ ALMORA_EMAIL;
 }
 
 /**
- * One personal coupon per email address. A repeat sign-up gets the same code again.
+ * One fixed code for everyone (owner, 2026-11-11): ALMORA10.
+ * First purchase only, once per customer, no expiry. Created if missing.
  */
-function almora_fp_get_or_create_coupon( $email ) {
-	$email = strtolower( trim( $email ) );
-	$found = get_posts(
-		array(
-			'post_type'      => 'shop_coupon',
-			'post_status'    => array( 'publish', 'draft', 'pending', 'private' ),
-			'meta_key'       => '_almora_fp_email',
-			'meta_value'     => $email,
-			'posts_per_page' => 1,
-			'fields'         => 'ids',
-		)
-	);
-	if ( $found ) {
-		$c = new WC_Coupon( $found[0] );
-		return array( $c->get_code(), $c->get_date_expires() ? $c->get_date_expires()->getTimestamp() : time() + ALMORA_FP_DAYS * DAY_IN_SECONDS, false );
+define( 'ALMORA_FP_CODE', 'ALMORA10' );
+function almora_fp_get_or_create_coupon( $email = '' ) {
+	$cid    = wc_get_coupon_id_by_code( ALMORA_FP_CODE );
+	$coupon = $cid ? new WC_Coupon( $cid ) : new WC_Coupon();
+	if ( ! $cid || $coupon->get_meta( '_almora_fp_v' ) !== '2' ) {
+		$coupon->set_code( ALMORA_FP_CODE );
+		$coupon->set_discount_type( 'percent' );
+		$coupon->set_amount( ALMORA_FP_PERCENT );
+		$coupon->set_usage_limit_per_user( 1 );
+		$coupon->set_individual_use( true );      // no other coupon with it
+		$coupon->set_exclude_sale_items( true );  // not on items already on sale
+		$coupon->set_description( 'Popup: ' . ALMORA_FP_PERCENT . '% first purchase, once per customer, no stacking (no sale items, no other coupon, no 2+ items 5% fee)' );
+		$coupon->update_meta_data( '_almora_first_purchase', '1' );
+		$coupon->update_meta_data( '_almora_fp_v', '2' );
+		$coupon->save();
 	}
-
-	$chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // no 0/O/1/I
-	do {
-		$suffix = '';
-		for ( $i = 0; $i < 5; $i++ ) {
-			$suffix .= $chars[ wp_rand( 0, strlen( $chars ) - 1 ) ];
-		}
-		$code = 'ALMORA-' . $suffix;
-		$dupe = wc_get_coupon_id_by_code( $code );
-	} while ( $dupe );
-
-	$expires = time() + ALMORA_FP_DAYS * DAY_IN_SECONDS;
-	$coupon  = new WC_Coupon();
-	$coupon->set_code( $code );
-	$coupon->set_discount_type( 'percent' );
-	$coupon->set_amount( ALMORA_FP_PERCENT );
-	$coupon->set_usage_limit( 1 );
-	$coupon->set_usage_limit_per_user( 1 );
-	$coupon->set_email_restrictions( array( $email ) );
-	$coupon->set_date_expires( $expires );
-	$coupon->set_description( 'Popup: first purchase ' . ALMORA_FP_PERCENT . '% (auto)' );
-	$coupon->update_meta_data( '_almora_fp_email', $email );
-	$coupon->update_meta_data( '_almora_first_purchase', '1' );
-	$coupon->save();
-
-	return array( $code, $expires, true );
+	return array( ALMORA_FP_CODE, 0, true );
 }
+
+// No stacking with the automatic cart discounts (negative fees, e.g. the 5% for 2+ items).
+add_action(
+	'woocommerce_cart_calculate_fees',
+	function ( $cart ) {
+		if ( ! $cart->has_discount( ALMORA_FP_CODE ) ) {
+			return;
+		}
+		$fees = $cart->fees_api()->get_fees();
+		$keep = array_filter(
+			$fees,
+			function ( $fee ) {
+				return (float) $fee->amount >= 0;
+			}
+		);
+		if ( count( $keep ) !== count( $fees ) ) {
+			$cart->fees_api()->set_fees( $keep );
+		}
+	},
+	9999
+);
 
 /**
  * Form submit: build the coupon and send the mail.
@@ -145,11 +141,14 @@ add_filter(
 		if ( ! $valid || $coupon->get_meta( '_almora_first_purchase' ) !== '1' ) {
 			return $valid;
 		}
-		$emails = array();
-		$restr  = $coupon->get_email_restrictions();
-		if ( $restr ) {
-			$emails = array_map( 'strtolower', $restr );
+		$emails = array_map( 'strtolower', (array) $coupon->get_email_restrictions() );
+		if ( function_exists( 'WC' ) && WC()->customer && WC()->customer->get_billing_email() ) {
+			$emails[] = strtolower( WC()->customer->get_billing_email() );
 		}
+		if ( ! empty( $_POST['billing_email'] ) ) { // checkout submit
+			$emails[] = strtolower( sanitize_email( wp_unslash( $_POST['billing_email'] ) ) );
+		}
+		$emails = array_unique( array_filter( $emails ) );
 		$args = array(
 			'status' => array( 'wc-processing', 'wc-completed', 'wc-on-hold' ),
 			'limit'  => 1,
@@ -228,7 +227,7 @@ function almora_fp_popup_data() {
 					'elType'     => 'widget',
 					'widgetType' => 'text-editor',
 					'settings'   => array(
-						'editor'     => '<p>השאירו פרטים ונשלח אליכם במייל קוד קופון אישי, תקף ' . ALMORA_FP_DAYS . ' ימים.</p>',
+						'editor'     => '<p>השאירו פרטים ונשלח אליכם במייל את קוד הקופון.</p>',
 						'align'      => 'center',
 						'text_color' => $ink,
 						'typography_typography' => 'custom',
@@ -345,7 +344,7 @@ function almora_fp_ensure_popup() {
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
 // Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
-define( 'ALMORA_FP_VER', 3 );
+define( 'ALMORA_FP_VER', 4 );
 add_action(
 	'admin_init',
 	function () {
@@ -361,6 +360,7 @@ add_action(
 		update_post_meta( $id, '_elementor_page_settings', $ps );
 		delete_post_meta( $id, '_elementor_css' );
 		delete_post_meta( $id, '_elementor_element_cache' );
+		almora_fp_get_or_create_coupon();
 		update_option( 'almora_fp_live', 1, true ); // owner asked to put the button on the site (2026-11-11)
 		update_option( 'almora_fp_ver', ALMORA_FP_VER, false );
 		if ( function_exists( 'rocket_clean_domain' ) ) {
