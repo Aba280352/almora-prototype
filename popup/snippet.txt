@@ -284,7 +284,7 @@ function almora_fp_popup_data() {
 					'elType'     => 'widget',
 					'widgetType' => 'text-editor',
 					'settings'   => array(
-						'editor'     => '<p>השאירו פרטים ונשלח אליכם במייל את קוד הקופון.</p>',
+						'editor'     => '<p>הקוד שלכם כאן. מעתיקים ומזינים בקופה.</p>',
 						'align'      => 'center',
 						'text_color' => $ink,
 						'typography_typography' => 'custom',
@@ -298,32 +298,11 @@ function almora_fp_popup_data() {
 				array(
 					'id'         => 'alfp0005',
 					'elType'     => 'widget',
-					'widgetType' => 'form',
+					'widgetType' => 'html',
 					'settings'   => array(
-						'form_name'      => ALMORA_FP_FORM,
-						'form_fields'    => array(
-							array( 'custom_id' => 'name', 'field_type' => 'text', 'field_label' => 'שם מלא', 'placeholder' => 'שם מלא', 'required' => 'true', 'width' => '100', '_id' => 'fldname1' ),
-							array( 'custom_id' => 'email', 'field_type' => 'email', 'field_label' => 'אימייל', 'placeholder' => 'אימייל', 'required' => 'true', 'width' => '100', '_id' => 'fldmail1' ),
-							array( 'custom_id' => 'phone', 'field_type' => 'tel', 'field_label' => 'טלפון', 'placeholder' => 'טלפון', 'required' => 'true', 'width' => '100', '_id' => 'fldtel01' ),
-							array( 'custom_id' => 'privacy', 'field_type' => 'acceptance', 'field_label' => 'מדיניות פרטיות', 'acceptance_text' => 'אני מאשר את <a href="' . esc_url( home_url( '/privacy-policy/' ) ) . '" target="_blank" rel="noopener">מדיניות הפרטיות</a>', 'required' => 'true', 'width' => '100', '_id' => 'fldpriv1' ),
-						),
-						'show_labels'      => '',
-						'button_text'      => 'שלחו לי את הקוד',
-						'button_size'      => 'md',
-						'button_width'     => '100',
-						'submit_actions'   => array( 'save-to-database' ),
-						'custom_messages'  => 'yes',
-						'success_message'  =>'הקוד נשלח למייל שלכם. אם לא רואים אותו, כדאי להציץ גם בספאם.',
-						'error_message'    => 'משהו השתבש, נסו שוב.',
-						'required_field_message' => 'שדה חובה',
-						'field_text_color' => $ink,
-						'field_background_color' => '#FFFFFF',
-						'field_border_color'     => '#C9C9C9',
-						'field_border_radius'    => array( 'unit' => 'px', 'top' => '12', 'right' => '12', 'bottom' => '12', 'left' => '12', 'isLinked' => true ),
-						'button_background_color'=> $ink,
-						'button_text_color'      => '#FFFFFF',
-						'button_border_radius'   => array( 'unit' => 'px', 'top' => '12', 'right' => '12', 'bottom' => '12', 'left' => '12', 'isLinked' => true ),
+						'html' => '<div class="alm-fp-code" dir="ltr" role="button" tabindex="0" data-code="' . ALMORA_FP_CODE . '">' . ALMORA_FP_CODE . '</div><button type="button" class="alm-fp-copy" data-code="' . ALMORA_FP_CODE . '">העתקת הקוד</button><p class="alm-fp-note">מזינים בעגלה או בתשלום. תקף לרכישה הראשונה באתר, פעם אחת ללקוח, ולא חל על פריטים במבצע או יחד עם הנחות וקופונים אחרים.</p>',
 					),
+				),
 				),
 			),
 		),
@@ -344,6 +323,10 @@ function almora_fp_popup_css( $id ) {
 .elementor-{$id} .elementor-button:hover{background:#202020;color:#fff;opacity:.9}
 .elementor-{$id} .elementor-message-success{font-family:Polin,sans-serif;font-size:17px;font-weight:600;text-align:center;color:#202020;padding:6px 0}
 .elementor-{$id} .elementor-message-danger{font-family:Polin,sans-serif;text-align:center}
+.elementor-{$id} .alm-fp-code{display:block;margin:0 auto 14px;padding:16px 20px;background:#F5F5F5;border:2px dashed #202020;border-radius:12px;font-family:'Courier New',Courier,monospace;font-size:34px;line-height:1.1;font-weight:700;letter-spacing:5px;text-align:center;color:#202020;cursor:pointer;user-select:all}
+.elementor-{$id} .alm-fp-copy{display:block;width:100%;height:52px;border:0;border-radius:12px;background:#202020;color:#fff;font-family:Polin,sans-serif;font-size:18px;font-weight:600;letter-spacing:.9px;cursor:pointer}
+.elementor-{$id} .alm-fp-copy:hover,.elementor-{$id} .alm-fp-copy:focus{background:#202020;color:#fff;opacity:.9}
+.elementor-{$id} .alm-fp-note{margin:14px 0 0;font-family:Polin,sans-serif;font-size:13px;font-weight:300;line-height:1.45;text-align:center;color:#202020}
 #elementor-popup-modal-{$id}{z-index:2147483600 !important}
 #elementor-popup-modal-{$id} .dialog-message{border-radius:16px;overflow:hidden;max-width:92vw;max-height:92vh;overflow-y:auto}
 @media (max-width:767px){
@@ -412,7 +395,7 @@ function almora_fp_ensure_popup() {
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
 // Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
-define( 'ALMORA_FP_VER', 5 );
+define( 'ALMORA_FP_VER', 6 );
 add_action(
 	'admin_init',
 	function () {
@@ -485,6 +468,13 @@ var b=document.querySelector('.alm-gift'); if(!b) return;
 function place(){var a=document.querySelector('.userway_buttons_wrapper'); if(!a) return; var r=a.getBoundingClientRect(); if(!r.width) return;
 b.style.left=Math.max(4,Math.round(r.left+r.width/2-27))+'px'; b.style.bottom=Math.round(window.innerHeight-r.top+12)+'px';}
 place(); setTimeout(place,1500); setTimeout(place,4000); window.addEventListener('resize',place);
+document.addEventListener('click',function(e){
+ var t=e.target.closest&&e.target.closest('.alm-fp-code,.alm-fp-copy'); if(!t) return;
+ var code=t.getAttribute('data-code'); var btn=document.querySelector('.alm-fp-copy');
+ function done(){ if(btn){ btn.textContent='הקוד הועתק'; setTimeout(function(){btn.textContent='העתקת הקוד';},2200);} if(window.gtag){gtag('event','almora_code_copy');} }
+ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(code).then(done,done); }
+ else { var i=document.createElement('input'); i.value=code; document.body.appendChild(i); i.select(); try{document.execCommand('copy');}catch(x){} i.remove(); done(); }
+});
 b.addEventListener('click',function(){
  var id=parseInt(b.getAttribute('data-popup'),10);
  if(window.elementorProFrontend && elementorProFrontend.modules && elementorProFrontend.modules.popup){ elementorProFrontend.modules.popup.showPopup({id:id}); }
