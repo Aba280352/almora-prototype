@@ -292,7 +292,9 @@ function almora_fp_popup_css( $id ) {
 .elementor-{$id} .alm-fp-copy:hover,.elementor-{$id} .alm-fp-copy:focus{background:#202020;color:#fff;opacity:.9}
 .elementor-{$id} .alm-fp-note{margin:14px 0 0;font-family:Polin,sans-serif;font-size:13px;font-weight:300;line-height:1.45;text-align:center;color:#202020}
 #elementor-popup-modal-{$id}{z-index:2147483600 !important}
-#elementor-popup-modal-{$id} .dialog-message{border-radius:16px;overflow:hidden;max-width:92vw;max-height:92vh;overflow-y:auto}
+#elementor-popup-modal-{$id} .dialog-widget-content{border-radius:12px !important;overflow:hidden;background:#fff}
+#elementor-popup-modal-{$id} .dialog-message{border-radius:12px;max-width:92vw;max-height:92vh;overflow-y:auto}
+.elementor-{$id} .alm-fp{border-radius:12px}
 @media (max-width:767px){
 .elementor-{$id} .alm-fp{padding:30px 20px 22px !important}
 .elementor-{$id} .elementor-widget-image img{width:96px !important}
@@ -359,7 +361,7 @@ function almora_fp_ensure_popup() {
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
 // Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
-define( 'ALMORA_FP_VER', 6 );
+define( 'ALMORA_FP_VER', 7 );
 add_action(
 	'admin_init',
 	function () {
