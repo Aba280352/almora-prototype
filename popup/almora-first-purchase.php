@@ -314,7 +314,7 @@ function almora_fp_popup_css( $id ) {
 .elementor-{$id} .alm-fp{font-family:Polin,sans-serif;color:#202020}
 .elementor-{$id} .elementor-field-textual{height:50px;padding:0 16px;font-family:Polin,sans-serif;font-size:16px;font-weight:300;text-align:right}
 .elementor-{$id} .elementor-field-textual::placeholder{color:#6b6b6b}
-.elementor-{$id} .elementor-field-type-acceptance .elementor-field-subgroup{display:flex;align-items:center;gap:8px}
+.elementor-{$id} .elementor-field-type-acceptance .elementor-field-subgroup,.elementor-{$id} .elementor-field-type-acceptance .elementor-field-option{display:flex;align-items:center;gap:10px}
 .elementor-{$id} .elementor-field-type-acceptance input[type=checkbox]{width:18px;height:18px;margin:0;accent-color:#202020;cursor:pointer}
 .elementor-{$id} .elementor-field-type-acceptance label{font-family:Polin,sans-serif;font-size:15px;font-weight:300;line-height:1.4;color:#202020}
 .elementor-{$id} .elementor-field-type-acceptance label a{color:#202020;text-decoration:underline;text-underline-offset:3px}
@@ -323,7 +323,18 @@ function almora_fp_popup_css( $id ) {
 .elementor-{$id} .elementor-button:hover{background:#202020;color:#fff;opacity:.9}
 .elementor-{$id} .elementor-message-success{font-family:Polin,sans-serif;font-size:17px;font-weight:600;text-align:center;color:#202020;padding:6px 0}
 .elementor-{$id} .elementor-message-danger{font-family:Polin,sans-serif;text-align:center}
-#elementor-popup-modal-{$id} .dialog-message{border-radius:16px;overflow:hidden;max-width:92vw}
+#elementor-popup-modal-{$id}{z-index:2147483600 !important}
+#elementor-popup-modal-{$id} .dialog-message{border-radius:16px;overflow:hidden;max-width:92vw;max-height:92vh;overflow-y:auto}
+@media (max-width:767px){
+.elementor-{$id} .alm-fp{padding:30px 20px 22px !important}
+.elementor-{$id} .elementor-widget-image img{width:96px !important}
+.elementor-{$id} .elementor-widget-image{margin-bottom:14px !important}
+.elementor-{$id} .elementor-widget-heading .elementor-heading-title{font-size:24px !important}
+.elementor-{$id} .elementor-widget-text-editor{margin-bottom:16px !important}
+.elementor-{$id} .elementor-widget-text-editor p{font-size:16px;margin:0}
+.elementor-{$id} .elementor-field-textual{height:46px}
+.elementor-{$id} .elementor-button{height:50px}
+}
 #elementor-popup-modal-{$id} .dialog-close-button{inset-inline-start:14px;inset-inline-end:auto;top:14px;color:#202020;font-size:18px}
 CSS;
 }
@@ -380,7 +391,7 @@ function almora_fp_ensure_popup() {
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
 // Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
-define( 'ALMORA_FP_VER', 4 );
+define( 'ALMORA_FP_VER', 5 );
 add_action(
 	'admin_init',
 	function () {
