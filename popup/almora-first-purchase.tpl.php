@@ -216,8 +216,8 @@ function almora_fp_popup_data() {
 						'title_color' => $ink,
 						'typography_typography' => 'custom',
 						'typography_font_family' => 'Polin',
-						'typography_font_size'   => array( 'unit' => 'px', 'size' => 34 ),
-						'typography_font_size_mobile' => array( 'unit' => 'px', 'size' => 27 ),
+						'typography_font_size'   => array( 'unit' => 'px', 'size' => 30 ),
+						'typography_font_size_mobile' => array( 'unit' => 'px', 'size' => 25 ),
 						'typography_font_weight' => '600',
 						'typography_line_height' => array( 'unit' => 'em', 'size' => 1.15 ),
 						'_margin'     => array( 'unit' => 'px', 'top' => '0', 'right' => '0', 'bottom' => '14', 'left' => '0', 'isLinked' => false ),
@@ -255,7 +255,8 @@ function almora_fp_popup_data() {
 						'button_size'      => 'md',
 						'button_width'     => '100',
 						'submit_actions'   => array( 'save-to-database' ),
-						'success_message'  => 'הקוד נשלח למייל שלכם. אם לא רואים אותו, כדאי להציץ גם בספאם.',
+						'custom_messages'  => 'yes',
+						'success_message'  =>'הקוד נשלח למייל שלכם. אם לא רואים אותו, כדאי להציץ גם בספאם.',
 						'error_message'    => 'משהו השתבש, נסו שוב.',
 						'required_field_message' => 'שדה חובה',
 						'field_text_color' => $ink,
@@ -353,6 +354,32 @@ function almora_fp_ensure_popup() {
 	update_option( 'almora_fp_popup_id', $id, false );
 }
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
+
+// Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
+define( 'ALMORA_FP_VER', 2 );
+add_action(
+	'admin_init',
+	function () {
+		$id = (int) get_option( 'almora_fp_popup_id' );
+		if ( ! $id || (int) get_option( 'almora_fp_ver' ) >= ALMORA_FP_VER ) {
+			return;
+		}
+		update_post_meta( $id, '_elementor_data', wp_slash( wp_json_encode( almora_fp_popup_data() ) ) );
+		$ps = get_post_meta( $id, '_elementor_page_settings', true );
+		$ps = is_array( $ps ) ? $ps : array();
+		$ps['width']      = array( 'unit' => 'px', 'size' => 480 );
+		$ps['custom_css'] = almora_fp_popup_css( $id );
+		update_post_meta( $id, '_elementor_page_settings', $ps );
+		delete_post_meta( $id, '_elementor_css' );
+		delete_post_meta( $id, '_elementor_element_cache' );
+		update_option( 'almora_fp_live', 1, true ); // owner asked to put the button on the site (2026-11-11)
+		update_option( 'almora_fp_ver', ALMORA_FP_VER, false );
+		if ( function_exists( 'rocket_clean_domain' ) ) {
+			rocket_clean_domain();
+		}
+	},
+	20
+);
 
 function almora_fp_visible() {
 	if ( is_admin() || ( function_exists( 'is_checkout' ) && is_checkout() ) ) {
