@@ -284,6 +284,7 @@ function almora_fp_popup_data() {
 							array( 'custom_id' => 'name', 'field_type' => 'text', 'field_label' => 'שם מלא', 'placeholder' => 'שם מלא', 'required' => 'true', 'width' => '100', '_id' => 'fldname1' ),
 							array( 'custom_id' => 'email', 'field_type' => 'email', 'field_label' => 'אימייל', 'placeholder' => 'אימייל', 'required' => 'true', 'width' => '100', '_id' => 'fldmail1' ),
 							array( 'custom_id' => 'phone', 'field_type' => 'tel', 'field_label' => 'טלפון', 'placeholder' => 'טלפון', 'required' => 'true', 'width' => '100', '_id' => 'fldtel01' ),
+							array( 'custom_id' => 'privacy', 'field_type' => 'acceptance', 'field_label' => 'מדיניות פרטיות', 'acceptance_text' => 'אני מאשר את <a href="' . esc_url( home_url( '/privacy-policy/' ) ) . '" target="_blank" rel="noopener">מדיניות הפרטיות</a>', 'required' => 'true', 'width' => '100', '_id' => 'fldpriv1' ),
 						),
 						'show_labels'      => '',
 						'button_text'      => 'שלחו לי את הקוד',
@@ -303,22 +304,6 @@ function almora_fp_popup_data() {
 						'button_border_radius'   => array( 'unit' => 'px', 'top' => '12', 'right' => '12', 'bottom' => '12', 'left' => '12', 'isLinked' => true ),
 					),
 				),
-				array(
-					'id'         => 'alfp0006',
-					'elType'     => 'widget',
-					'widgetType' => 'text-editor',
-					'settings'   => array(
-						'editor'     => '<p>בשליחה אתם מאשרים לקבל מאיתנו את הקוד ועדכונים במייל. אפשר להסיר בכל עת.</p>',
-						'align'      => 'center',
-						'text_color' => $ink,
-						'typography_typography' => 'custom',
-						'typography_font_family' => 'Polin',
-						'typography_font_size'   => array( 'unit' => 'px', 'size' => 13 ),
-						'typography_font_weight' => '300',
-						'typography_line_height' => array( 'unit' => 'em', 'size' => 1.4 ),
-						'_margin'    => array( 'unit' => 'px', 'top' => '14', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
-					),
-				),
 			),
 		),
 	);
@@ -329,7 +314,11 @@ function almora_fp_popup_css( $id ) {
 .elementor-{$id} .alm-fp{font-family:Polin,sans-serif;color:#202020}
 .elementor-{$id} .elementor-field-textual{height:50px;padding:0 16px;font-family:Polin,sans-serif;font-size:16px;font-weight:300;text-align:right}
 .elementor-{$id} .elementor-field-textual::placeholder{color:#6b6b6b}
-.elementor-{$id} .elementor-field-type-acceptance label{font-family:Polin,sans-serif;font-size:14px;font-weight:300;line-height:1.4}
+.elementor-{$id} .elementor-field-type-acceptance .elementor-field-subgroup{display:flex;align-items:center;gap:8px}
+.elementor-{$id} .elementor-field-type-acceptance input[type=checkbox]{width:18px;height:18px;margin:0;accent-color:#202020;cursor:pointer}
+.elementor-{$id} .elementor-field-type-acceptance label{font-family:Polin,sans-serif;font-size:15px;font-weight:300;line-height:1.4;color:#202020}
+.elementor-{$id} .elementor-field-type-acceptance label a{color:#202020;text-decoration:underline;text-underline-offset:3px}
+.elementor-{$id} .elementor-field-type-acceptance label a:hover{color:#202020}
 .elementor-{$id} .elementor-button{height:52px;font-family:Polin,sans-serif;font-size:18px;font-weight:600;letter-spacing:.9px;background:#202020;color:#fff}
 .elementor-{$id} .elementor-button:hover{background:#202020;color:#fff;opacity:.9}
 .elementor-{$id} .elementor-message-success{font-family:Polin,sans-serif;font-size:17px;font-weight:600;text-align:center;color:#202020;padding:6px 0}
@@ -391,7 +380,7 @@ function almora_fp_ensure_popup() {
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
 
 // Versioned refresh of the popup content (bump ALMORA_FP_VER to re-apply almora_fp_popup_data()).
-define( 'ALMORA_FP_VER', 2 );
+define( 'ALMORA_FP_VER', 3 );
 add_action(
 	'admin_init',
 	function () {
