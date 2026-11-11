@@ -268,7 +268,6 @@ function almora_fp_popup_data() {
 						'html' => '<div class="alm-fp-code" dir="ltr" role="button" tabindex="0" data-code="' . ALMORA_FP_CODE . '">' . ALMORA_FP_CODE . '</div><button type="button" class="alm-fp-copy" data-code="' . ALMORA_FP_CODE . '">העתקת הקוד</button><p class="alm-fp-note">מזינים בעגלה או בתשלום. תקף לרכישה הראשונה באתר, פעם אחת ללקוח, ולא חל על פריטים במבצע או יחד עם הנחות וקופונים אחרים.</p>',
 					),
 				),
-				),
 			),
 		),
 	);
