@@ -43,7 +43,7 @@ function almora_fp_email_html( $code, $expiry_ts, $name ) {
 <tr><td align="center" style="padding:40px 32px 8px 32px;">
 <img src="{{LOGO}}" width="150" alt="ALMORA" style="display:block;border:0;width:150px;height:auto;">
 </td></tr>
-<tr><td align="center" style="padding:24px 32px 0 32px;font-family:Polin,Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:2px;color:#B8860B;">ברוכים הבאים</td></tr>
+<tr><td align="center" style="padding:24px 32px 0 32px;font-family:Polin,Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:2px;color:#B8860B;">מתנה לרכישה הראשונה</td></tr>
 <tr><td align="center" style="padding:8px 32px 0 32px;font-family:Polin,Arial,Helvetica,sans-serif;font-size:30px;line-height:38px;font-weight:600;color:#202020;">{{NAME_LINE}}הקופון שלכם כאן</td></tr>
 <tr><td align="center" style="padding:16px 40px 0 40px;font-family:Polin,Arial,Helvetica,sans-serif;font-size:18px;line-height:28px;color:#202020;">{{PERCENT}}% הנחה על הרכישה הראשונה שלכם בתכשיטי הכסף של ALMORA. הקוד אישי ומחכה לכם בקופה.</td></tr>
 <tr><td align="center" style="padding:28px 32px 0 32px;">
@@ -284,8 +284,7 @@ function almora_fp_popup_data() {
 						'form_fields'    => array(
 							array( 'custom_id' => 'name', 'field_type' => 'text', 'field_label' => 'שם מלא', 'placeholder' => 'שם מלא', 'required' => 'true', 'width' => '100', '_id' => 'fldname1' ),
 							array( 'custom_id' => 'email', 'field_type' => 'email', 'field_label' => 'אימייל', 'placeholder' => 'אימייל', 'required' => 'true', 'width' => '100', '_id' => 'fldmail1' ),
-							array( 'custom_id' => 'phone', 'field_type' => 'tel', 'field_label' => 'טלפון', 'placeholder' => 'טלפון (לא חובה)', 'width' => '100', '_id' => 'fldtel01' ),
-							array( 'custom_id' => 'consent', 'field_type' => 'acceptance', 'field_label' => 'אישור', 'acceptance_text' => 'אני מאשר/ת קבלת הקוד ועדכונים מ-ALMORA במייל, אפשר להסיר בכל עת', 'required' => 'true', 'width' => '100', '_id' => 'fldcons1' ),
+							array( 'custom_id' => 'phone', 'field_type' => 'tel', 'field_label' => 'טלפון', 'placeholder' => 'טלפון', 'required' => 'true', 'width' => '100', '_id' => 'fldtel01' ),
 						),
 						'show_labels'      => '',
 						'button_text'      => 'שלחו לי את הקוד',
@@ -302,6 +301,22 @@ function almora_fp_popup_data() {
 						'button_background_color'=> $ink,
 						'button_text_color'      => '#FFFFFF',
 						'button_border_radius'   => array( 'unit' => 'px', 'top' => '12', 'right' => '12', 'bottom' => '12', 'left' => '12', 'isLinked' => true ),
+					),
+				),
+				array(
+					'id'         => 'alfp0006',
+					'elType'     => 'widget',
+					'widgetType' => 'text-editor',
+					'settings'   => array(
+						'editor'     => '<p>בשליחה אתם מאשרים לקבל מאיתנו את הקוד ועדכונים במייל. אפשר להסיר בכל עת.</p>',
+						'align'      => 'center',
+						'text_color' => $ink,
+						'typography_typography' => 'custom',
+						'typography_font_family' => 'Polin',
+						'typography_font_size'   => array( 'unit' => 'px', 'size' => 13 ),
+						'typography_font_weight' => '300',
+						'typography_line_height' => array( 'unit' => 'em', 'size' => 1.4 ),
+						'_margin'    => array( 'unit' => 'px', 'top' => '14', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
 					),
 				),
 			),
@@ -332,7 +347,7 @@ function almora_fp_ensure_popup() {
 		array(
 			'post_type'   => 'elementor_library',
 			'post_title'  => 'ALMORA - ' . ALMORA_FP_PERCENT . '% לרכישה ראשונה (פופאפ)',
-			'post_status' => 'draft',
+			'post_status' => 'publish',
 		)
 	);
 	if ( ! $id || is_wp_error( $id ) ) {
@@ -362,22 +377,58 @@ function almora_fp_ensure_popup() {
 			'custom_css'           => almora_fp_popup_css( $id ),
 		)
 	);
-	update_post_meta(
-		$id,
-		'_elementor_popup_display_settings',
-		array(
-			'triggers' => array(
-				'page_load'       => 'yes',
-				'page_load_delay' => 8,
-			),
-			'timing'   => array(
-				'times'       => 'yes',
-				'times_times' => 1,
-				'times_count' => 1,
-				'times_period' => 'week',
-			),
-		)
-	);
+	// No automatic trigger: the popup opens only from the gift button.
+	update_post_meta( $id, '_elementor_popup_display_settings', array( 'triggers' => array(), 'timing' => array() ) );
+	// Load it on every page (Pro conditions manager keeps its own cache).
+	if ( class_exists( '\ElementorPro\Modules\ThemeBuilder\Module' ) ) {
+		\ElementorPro\Modules\ThemeBuilder\Module::instance()->get_conditions_manager()->save_conditions(
+			$id,
+			array( array( 'type' => 'include', 'name' => 'general', 'sub_name' => '', 'sub_id' => '' ) )
+		);
+	}
 	update_option( 'almora_fp_popup_id', $id, false );
 }
 add_action( 'admin_init', 'almora_fp_ensure_popup' );
+
+/**
+ * Floating gift button "10%", just above the accessibility button (bottom left).
+ * Visible when option almora_fp_live is on, or with ?almora-fp=1 for a preview.
+ */
+add_action(
+	'wp_footer',
+	function () {
+		$id = (int) get_option( 'almora_fp_popup_id' );
+		if ( ! $id || is_admin() || ( function_exists( 'is_checkout' ) && is_checkout() ) ) {
+			return;
+		}
+		if ( ! get_option( 'almora_fp_live' ) && empty( $_GET['almora-fp'] ) ) {
+			return;
+		}
+		$pct = (int) ALMORA_FP_PERCENT;
+		?>
+<button type="button" class="alm-gift" aria-label="<?php echo esc_attr( $pct ); ?>% הנחה לרכישה הראשונה" data-popup="<?php echo esc_attr( $id ); ?>">
+<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" transform="translate(2.5 2.5)" d="M17 4L15.487 4C15.804 3.581 16 3.065 16 2.5C16 1.122 14.879 0 13.5 0C12.753 0 12.051 0.333 11.569 0.918C11.539 0.955 10.19 2.75 9.5 3.668C8.809 2.749 7.459 0.953 7.426 0.912C6.949 0.332 6.247 0 5.5 0C4.121 0 3 1.122 3 2.5C3 3.065 3.195 3.581 3.513 4L2 4C0.897 4 0 4.897 0 6L0 9.5C0 9.776 0.224 10 0.5 10L1 10L1 15.5C1 17.79 2.21 19 4.5 19L14.5 19C16.79 19 18 17.79 18 15.5L18 10L18.5 10C18.776 10 19 9.776 19 9.5L19 6C19 4.897 18.103 4 17 4ZM12.346 1.548C12.633 1.2 13.053 1 13.5 1C14.327 1 15 1.673 15 2.5C15 3.327 14.327 4 13.5 4L10.501 4C11.209 3.058 12.296 1.613 12.346 1.548ZM4 2.5C4 1.673 4.673 1 5.5 1C5.947 1 6.367 1.2 6.646 1.538C6.702 1.61 7.79 3.058 8.499 4L5.5 4C4.673 4 4 3.327 4 2.5ZM1 6C1 5.448 1.448 5 2 5L5.5 5L9 5L9 9L1 9L1 6ZM2 15.5L2 10L9 10L9 18L4.5 18C2.771 18 2 17.229 2 15.5ZM17 15.5C17 17.229 16.229 18 14.5 18L10 18L10 10L17 10L17 15.5ZM18 9L10 9L10 5L13.5 5L17 5C17.552 5 18 5.448 18 6L18 9Z"/></svg>
+<span><?php echo esc_html( $pct ); ?>%</span>
+</button>
+<style>
+.alm-gift{position:fixed;left:8px;bottom:69px;z-index:99999990;width:54px;height:54px;padding:0;border:0;border-radius:12px;background:#202020;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18);font-family:Polin,sans-serif;line-height:1}
+.alm-gift span{font-size:13px;font-weight:600;letter-spacing:.3px}
+.alm-gift:hover,.alm-gift:focus{background:#202020;color:#fff;opacity:.9}
+.alm-gift:focus-visible{outline:2px solid #B8860B;outline-offset:2px}
+</style>
+<script>
+(function(){
+var b=document.querySelector('.alm-gift'); if(!b) return;
+function place(){var a=document.querySelector('.userway_buttons_wrapper'); if(!a) return; var r=a.getBoundingClientRect(); if(!r.width) return;
+b.style.left=Math.max(4,Math.round(r.left+r.width/2-27))+'px'; b.style.bottom=Math.round(window.innerHeight-r.top+12)+'px';}
+place(); setTimeout(place,1500); setTimeout(place,4000); window.addEventListener('resize',place);
+b.addEventListener('click',function(){
+ var id=parseInt(b.getAttribute('data-popup'),10);
+ if(window.elementorProFrontend && elementorProFrontend.modules && elementorProFrontend.modules.popup){ elementorProFrontend.modules.popup.showPopup({id:id}); }
+ if(window.gtag){ gtag('event','almora_gift_click'); }
+});
+})();
+</script>
+		<?php
+	}
+);
