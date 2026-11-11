@@ -143,13 +143,23 @@ add_action(
 
 		list( $code, $expires, $is_new ) = almora_fp_get_or_create_coupon( $email );
 
-		$subject = 'הקופון שלכם מ-ALMORA: ' . ALMORA_FP_PERCENT . '% הנחה לרכישה הראשונה';
-		$sent    = wp_mail(
+		// Spam hygiene: calm subject (no % / "הנחה"), plain-text twin, unsubscribe header.
+		$subject = 'הקוד שלכם מ-ALMORA';
+		$first   = trim( preg_split( '/\s+/u', trim( $name ) )[0] ?? '' );
+		$GLOBALS['almora_fp_alt'] = ( $first !== '' ? $first . ",\n\n" : '' )
+			. "הקוד שלכם לרכישה הראשונה באתר ALMORA: {$code}\n"
+			. ALMORA_FP_PERCENT . "% הנחה. מזינים את הקוד בעגלה או בתשלום.\n"
+			. "הקוד תקף לרכישה הראשונה באתר, פעם אחת ללקוח, ולא חל על פריטים במבצע.\n\n"
+			. home_url( '/' ) . "\n\n"
+			. "שאלה? וואטסאפ 052-3550851\n"
+			. 'להסרה מהרשימה, השיבו למייל זה "הסר".';
+		$sent = wp_mail(
 			$email,
 			$subject,
 			almora_fp_email_html( $code, $expires, $name ),
-			array( 'Content-Type: text/html; charset=UTF-8' )
+			array( 'Content-Type: text/html; charset=UTF-8', 'Reply-To: ALMORA <' . get_option( 'admin_email' ) . '>' )
 		);
+		unset( $GLOBALS['almora_fp_alt'] );
 		if ( ! $sent ) {
 			$handler->add_error_message( 'לא הצלחנו לשלוח את המייל. נסו שוב, או כתבו לנו בוואטסאפ.' );
 			return;
@@ -166,6 +176,18 @@ add_action(
 	},
 	10,
 	2
+);
+
+// Plain-text alternative + List-Unsubscribe for the popup mail only.
+add_action(
+	'phpmailer_init',
+	function ( $mailer ) {
+		if ( empty( $GLOBALS['almora_fp_alt'] ) ) {
+			return;
+		}
+		$mailer->AltBody = $GLOBALS['almora_fp_alt'];
+		$mailer->addCustomHeader( 'List-Unsubscribe', '<mailto:' . get_option( 'admin_email' ) . '?subject=unsubscribe>' );
+	}
 );
 
 /**
