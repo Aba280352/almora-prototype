@@ -1,0 +1,200 @@
+/**
+ * ALMORA review photo upload (Code Snippets, run everywhere).
+ *
+ * Adds an optional photo field to the product review form. The photo is shrunk and converted to WebP
+ * in the browser before sending (light on phones), and again on the server (max 1200px, WebP, quality 80),
+ * so no heavy image ever lands in the media library. The review is saved even if there is no photo, and in that
+ * case the product photo stays as the review picture (almora-review-cards.php). Email is not asked
+ * (almora-review-no-email.php) and the review is published right away; a review with a link is still held.
+ * The photo is stored as an attachment ID in comment meta `almora_review_photo` (same key as almora-review-image.php).
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	return;
+}
+
+define( 'ALMORA_RU_MAX_PX', 1200 );
+define( 'ALMORA_RU_QUALITY', 80 );
+
+/* 1. the field, inside the review form on product pages only */
+add_filter(
+	'comment_form_fields',
+	function ( $fields ) {
+		if ( ! function_exists( 'is_product' ) || ! is_product() ) {
+			return $fields;
+		}
+		$field = '<p class="comment-form-photo almora-ru">'
+			. '<label for="almora_review_file">תמונה (לא חובה)</label>'
+			. '<span class="almora-ru__row">'
+			. '<label class="almora-ru__btn" for="almora_review_file">בחירת תמונה</label>'
+			. '<span class="almora-ru__name" id="almora-ru-name">לא נבחרה תמונה</span>'
+			. '<button type="button" class="almora-ru__x" id="almora-ru-x" hidden aria-label="הסרת התמונה">הסרה</button>'
+			. '</span>'
+			. '<input id="almora_review_file" name="almora_review_file" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" class="almora-ru__input">'
+			. '<span class="almora-ru__prev" id="almora-ru-prev" hidden></span>'
+			. '</p>';
+		$out = array();
+		foreach ( $fields as $k => $v ) {
+			if ( 'cookies' === $k ) {
+				$out['almora_photo'] = $field;
+			}
+			$out[ $k ] = $v;
+		}
+		if ( ! isset( $out['almora_photo'] ) ) {
+			$out['almora_photo'] = $field;
+		}
+		return $out;
+	},
+	20
+);
+
+/* 2. styles + script (product pages, in the footer) */
+add_action(
+	'wp_footer',
+	function () {
+		if ( ! function_exists( 'is_product' ) || ! is_product() ) {
+			return;
+		}
+		?>
+<style id="almora-ru-css">
+.almora-ru{margin:0 0 16px}
+.almora-ru>label:first-child{display:block;margin:0 0 8px}
+.almora-ru__row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.almora-ru__btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border:1px solid #202020;border-radius:12px;background:#fff;color:#202020;cursor:pointer;font-size:15px;line-height:1}
+.almora-ru__btn:hover{background:#202020;color:#fff}
+.almora-ru__name{font-size:14px;color:#202020;word-break:break-all}
+.almora-ru__x{min-height:44px;padding:0 12px;border:0;background:none;color:#202020;text-decoration:underline;cursor:pointer;font-size:14px}
+.almora-ru__input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none}
+.almora-ru__prev{display:block;margin-top:12px}
+.almora-ru__prev img{display:block;width:96px;height:96px;object-fit:cover;border-radius:12px;border:1px solid #e5e5e5}
+</style>
+<script id="almora-ru-js">
+(function(){
+	var MAX=<?php echo (int) ALMORA_RU_MAX_PX; ?>, Q=<?php echo (float) ALMORA_RU_QUALITY / 100; ?>;
+	function init(){
+		var inp=document.getElementById('almora_review_file'); if(!inp) return;
+		var form=inp.form; if(!form) return;
+		form.setAttribute('enctype','multipart/form-data'); form.enctype='multipart/form-data';
+		var nameEl=document.getElementById('almora-ru-name'), x=document.getElementById('almora-ru-x'), prev=document.getElementById('almora-ru-prev');
+		var busy=false, pend=null;
+		function reset(){ try{ inp.value=''; }catch(e){} nameEl.textContent='לא נבחרה תמונה'; x.hidden=true; prev.hidden=true; prev.innerHTML=''; }
+		x.addEventListener('click',reset);
+		function setFile(file){
+			try{ var dt=new DataTransfer(); dt.items.add(file); inp.files=dt.files; return true; }catch(e){ return false; }
+		}
+		inp.addEventListener('change',function(){
+			var f=inp.files&&inp.files[0]; if(!f){ reset(); return; }
+			nameEl.textContent='מכינים את התמונה...'; busy=true;
+			var url=URL.createObjectURL(f), img=new Image();
+			img.onload=function(){
+				var w=img.naturalWidth,h=img.naturalHeight,s=Math.min(1,MAX/Math.max(w,h));
+				var c=document.createElement('canvas'); c.width=Math.max(1,Math.round(w*s)); c.height=Math.max(1,Math.round(h*s));
+				c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+				var done=function(blob){
+					busy=false;
+					if(blob&&blob.type==='image/webp'&&blob.size<f.size){
+						var nf=new File([blob],'review.webp',{type:'image/webp'});
+						if(setFile(nf)){ f=nf; }
+					}
+					nameEl.textContent='התמונה מוכנה ('+Math.max(1,Math.round(f.size/1024))+' KB)';
+					x.hidden=false;
+					prev.innerHTML=''; var pi=document.createElement('img'); pi.src=url; pi.alt=''; prev.appendChild(pi); prev.hidden=false;
+					if(pend){ var cb=pend; pend=null; cb(); }
+				};
+				if(c.toBlob){ c.toBlob(done,'image/webp',Q); } else { done(null); }
+			};
+			img.onerror=function(){ busy=false; nameEl.textContent=f.name; x.hidden=false; if(pend){ var cb=pend; pend=null; cb(); } };
+			img.src=url;
+		});
+		/* wait for the conversion if the customer presses send very fast */
+		form.addEventListener('submit',function(e){
+			if(busy){ e.preventDefault(); pend=function(){ if(form.requestSubmit){ form.requestSubmit(); } else { form.submit(); } }; }
+		});
+	}
+	if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',init); } else { init(); }
+})();
+</script>
+		<?php
+	},
+	99
+);
+
+/* 3. the server side: save the photo as a WebP attachment and link it to the review */
+function almora_ru_store( $comment_id ) {
+	if ( empty( $_FILES['almora_review_file'] ) || ! is_array( $_FILES['almora_review_file'] ) ) {
+		return;
+	}
+	$f = $_FILES['almora_review_file'];
+	if ( empty( $f['tmp_name'] ) || UPLOAD_ERR_OK !== (int) $f['error'] || ! is_uploaded_file( $f['tmp_name'] ) ) {
+		return;
+	}
+	if ( $f['size'] > 12 * MB_IN_BYTES ) {
+		return;
+	}
+	$comment = get_comment( $comment_id );
+	if ( ! $comment || 'product' !== get_post_type( (int) $comment->comment_post_ID ) ) {
+		return;
+	}
+
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+	require_once ABSPATH . 'wp-admin/includes/media.php';
+
+	/* only real images, by content, and only these types */
+	$check = wp_check_filetype_and_ext( $f['tmp_name'], $f['name'], array( 'jpg|jpeg|jpe' => 'image/jpeg', 'png' => 'image/png', 'webp' => 'image/webp', 'heic' => 'image/heic', 'heif' => 'image/heif' ) );
+	if ( empty( $check['type'] ) ) {
+		return;
+	}
+	$info = @getimagesize( $f['tmp_name'] );
+	if ( ! $info ) {
+		return;
+	}
+
+	$editor = wp_get_image_editor( $f['tmp_name'] );
+	if ( is_wp_error( $editor ) ) {
+		return;
+	}
+	$size = $editor->get_size();
+	if ( $size['width'] > ALMORA_RU_MAX_PX || $size['height'] > ALMORA_RU_MAX_PX ) {
+		$editor->resize( ALMORA_RU_MAX_PX, ALMORA_RU_MAX_PX, false );
+	}
+	$editor->set_quality( ALMORA_RU_QUALITY );
+
+	$up     = wp_upload_dir();
+	$target = trailingslashit( $up['path'] ) . wp_unique_filename( $up['path'], 'review-' . $comment_id . '.webp' );
+	$saved  = $editor->save( $target, 'image/webp' );
+	if ( is_wp_error( $saved ) || empty( $saved['path'] ) || ! file_exists( $saved['path'] ) ) {
+		return;
+	}
+
+	$att = wp_insert_attachment(
+		array(
+			'post_mime_type' => 'image/webp',
+			'post_title'     => 'תמונה לביקורת ' . $comment_id,
+			'post_status'    => 'inherit',
+			'post_content'   => '',
+		),
+		$saved['path'],
+		(int) $comment->comment_post_ID
+	);
+	if ( is_wp_error( $att ) || ! $att ) {
+		return;
+	}
+	wp_update_attachment_metadata( $att, wp_generate_attachment_metadata( $att, $saved['path'] ) );
+	update_comment_meta( $comment_id, 'almora_review_photo', (int) $att );
+	if ( function_exists( 'rocket_clean_domain' ) ) {
+		rocket_clean_domain();
+	}
+}
+add_action( 'comment_post', 'almora_ru_store', 20, 1 );
+
+/* 4. never let a photo problem lose the review: the form post with a file bigger than the server limit would come empty, so tell it clearly */
+add_filter(
+	'preprocess_comment',
+	function ( $data ) {
+		if ( ! empty( $_FILES['almora_review_file']['error'] ) && UPLOAD_ERR_NO_FILE !== (int) $_FILES['almora_review_file']['error'] && UPLOAD_ERR_OK !== (int) $_FILES['almora_review_file']['error'] ) {
+			unset( $_FILES['almora_review_file'] );
+		}
+		return $data;
+	},
+	1
+);
