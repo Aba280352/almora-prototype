@@ -2,8 +2,8 @@
 /**
  * ALMORA review photo upload (Code Snippets, run everywhere).
  *
- * Adds an optional photo field to the product review form. The photo is shrunk and converted to WebP
- * in the browser before sending (light on phones), and again on the server (max 1200px, WebP, quality 80),
+ * Adds an optional photo field (always stored as a centred 1:1 square) to the product review form. The photo is shrunk and converted to WebP
+ * in the browser before sending (light on phones), and again on the server (centred square crop, max 1000px, WebP, quality 80),
  * so no heavy image ever lands in the media library. The review is saved even if there is no photo, and in that
  * case the product photo stays as the review picture (almora-review-cards.php). Email is not asked
  * (almora-review-no-email.php) and the review is published right away; a review with a link is still held.
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	return;
 }
 
-define( 'ALMORA_RU_MAX_PX', 1200 );
+define( 'ALMORA_RU_MAX_PX', 1000 ); // the stored photo is a centred 1:1 square, at most this many px per side
 define( 'ALMORA_RU_QUALITY', 80 );
 
 /* 1. the field, inside the review form on product pages only */
@@ -87,9 +87,10 @@ add_action(
 			nameEl.textContent='מכינים את התמונה...'; busy=true;
 			var url=URL.createObjectURL(f), img=new Image();
 			img.onload=function(){
-				var w=img.naturalWidth,h=img.naturalHeight,s=Math.min(1,MAX/Math.max(w,h));
-				var c=document.createElement('canvas'); c.width=Math.max(1,Math.round(w*s)); c.height=Math.max(1,Math.round(h*s));
-				c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+				var w=img.naturalWidth,h=img.naturalHeight,side=Math.min(w,h),out=Math.max(1,Math.min(MAX,side));
+				var sx=Math.round((w-side)/2),sy=Math.round((h-side)/2);
+				var c=document.createElement('canvas'); c.width=out; c.height=out;
+				c.getContext('2d').drawImage(img,sx,sy,side,side,0,0,out,out);
 				var done=function(blob){
 					busy=false;
 					if(blob&&blob.type==='image/webp'&&blob.size<f.size){
@@ -154,8 +155,16 @@ function almora_ru_store( $comment_id ) {
 	if ( is_wp_error( $editor ) ) {
 		return;
 	}
+	if ( method_exists( $editor, 'maybe_exif_rotate' ) ) {
+		$editor->maybe_exif_rotate();
+	}
+	/* always a centred 1:1 square, so every review picture looks the same (no 9:16 or panorama) */
 	$size = $editor->get_size();
-	if ( $size['width'] > ALMORA_RU_MAX_PX || $size['height'] > ALMORA_RU_MAX_PX ) {
+	$side = min( $size['width'], $size['height'] );
+	if ( $size['width'] !== $size['height'] ) {
+		$editor->crop( (int) floor( ( $size['width'] - $side ) / 2 ), (int) floor( ( $size['height'] - $side ) / 2 ), $side, $side );
+	}
+	if ( $side > ALMORA_RU_MAX_PX ) {
 		$editor->resize( ALMORA_RU_MAX_PX, ALMORA_RU_MAX_PX, false );
 	}
 	$editor->set_quality( ALMORA_RU_QUALITY );
