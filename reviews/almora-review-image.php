@@ -1,0 +1,119 @@
+<?php
+/**
+ * ALMORA review main image override (Code Snippets, run everywhere).
+ *
+ * Each product review card shows the product photo as its picture (almora-review-cards.php).
+ * This adds a box to the review edit screen (wp-admin > Comments > edit, or the product's
+ * Reviews) where the owner can choose another image from the media library for that review,
+ * or remove it to go back to the product photo. Stored in comment meta `almora_review_photo`
+ * (attachment ID, the same key the home reviews widget reads).
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	return;
+}
+
+function almora_ri_attachment_id( $comment_id ) {
+	$v = get_comment_meta( $comment_id, 'almora_review_photo', true );
+	if ( is_numeric( $v ) ) {
+		return (int) $v;
+	}
+	if ( is_string( $v ) && $v !== '' ) {
+		return (int) attachment_url_to_postid( $v );
+	}
+	return 0;
+}
+
+// 1. Front end: the override wins over the product photo (runs after almora-review-cards.php, priority 10).
+add_filter(
+	'pre_get_avatar',
+	function ( $avatar, $id_or_email, $args ) {
+		if ( ! ( $id_or_email instanceof WP_Comment ) || 'review' !== $id_or_email->comment_type ) {
+			return $avatar;
+		}
+		$att = almora_ri_attachment_id( $id_or_email->comment_ID );
+		if ( ! $att || ! wp_attachment_is_image( $att ) ) {
+			return $avatar;
+		}
+		return wp_get_attachment_image(
+			$att,
+			array( 300, 300 ),
+			false,
+			array(
+				'class' => 'avatar almora-review-product-img',
+				'alt'   => esc_attr( get_comment_author( $id_or_email ) ),
+			)
+		);
+	},
+	20,
+	3
+);
+
+// 2. Admin: box on the review edit screen.
+add_action(
+	'add_meta_boxes_comment',
+	function ( $comment ) {
+		if ( 'review' !== $comment->comment_type ) {
+			return;
+		}
+		add_meta_box( 'almora_review_image', 'תמונה ראשית של הביקורת', 'almora_ri_box', 'comment', 'normal', 'high' );
+	}
+);
+
+function almora_ri_box( $comment ) {
+	$att     = almora_ri_attachment_id( $comment->comment_ID );
+	$product = wc_get_product( $comment->comment_post_ID );
+	$default = $product && $product->get_image_id() ? wp_get_attachment_image_url( $product->get_image_id(), 'thumbnail' ) : '';
+	$current = $att ? wp_get_attachment_image_url( $att, 'thumbnail' ) : $default;
+	wp_nonce_field( 'almora_ri', 'almora_ri_nonce' );
+	?>
+	<div id="almora-ri" style="display:flex;gap:16px;align-items:center">
+		<img id="almora-ri-img" src="<?php echo esc_url( $current ); ?>" data-default="<?php echo esc_url( $default ); ?>" style="width:130px;height:130px;object-fit:cover;border-radius:12px;border:1px solid #ddd;background:#f5f5f5" alt="">
+		<div>
+			<p style="margin:0 0 8px"><strong id="almora-ri-state"><?php echo $att ? 'תמונה מותאמת לביקורת' : 'ברירת מחדל: תמונת המוצר'; ?></strong></p>
+			<input type="hidden" name="almora_review_photo" id="almora-ri-val" value="<?php echo (int) $att; ?>">
+			<button type="button" class="button button-primary" id="almora-ri-pick">בחירת תמונה</button>
+			<button type="button" class="button" id="almora-ri-clear"<?php echo $att ? '' : ' style="display:none"'; ?>>חזרה לתמונת המוצר</button>
+			<p class="description" style="margin-top:8px">התמונה מוצגת בכרטיס הביקורת בעמוד המוצר. שומרים בלחיצה על "עדכון".</p>
+		</div>
+	</div>
+	<script>
+	jQuery(function($){
+		var frame, img=$('#almora-ri-img'), val=$('#almora-ri-val'), clr=$('#almora-ri-clear'), st=$('#almora-ri-state');
+		$('#almora-ri-pick').on('click',function(e){
+			e.preventDefault();
+			if(!frame){ frame=wp.media({title:'בחירת תמונה לביקורת',button:{text:'שימוש בתמונה'},library:{type:'image'},multiple:false});
+				frame.on('select',function(){ var a=frame.state().get('selection').first().toJSON(); val.val(a.id); img.attr('src',(a.sizes&&a.sizes.thumbnail)?a.sizes.thumbnail.url:a.url); clr.show(); st.text('תמונה מותאמת לביקורת'); }); }
+			frame.open();
+		});
+		clr.on('click',function(e){ e.preventDefault(); val.val(''); img.attr('src',img.data('default')); clr.hide(); st.text('ברירת מחדל: תמונת המוצר'); });
+	});
+	</script>
+	<?php
+}
+
+add_action(
+	'admin_enqueue_scripts',
+	function ( $hook ) {
+		if ( 'comment.php' === $hook ) {
+			wp_enqueue_media();
+		}
+	}
+);
+
+add_action(
+	'edit_comment',
+	function ( $comment_id ) {
+		if ( ! isset( $_POST['almora_ri_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['almora_ri_nonce'] ) ), 'almora_ri' ) || ! current_user_can( 'edit_comment', $comment_id ) ) {
+			return;
+		}
+		$id = isset( $_POST['almora_review_photo'] ) ? absint( $_POST['almora_review_photo'] ) : 0;
+		if ( $id && wp_attachment_is_image( $id ) ) {
+			update_comment_meta( $comment_id, 'almora_review_photo', $id );
+		} else {
+			delete_comment_meta( $comment_id, 'almora_review_photo' );
+		}
+		if ( function_exists( 'rocket_clean_domain' ) ) {
+			rocket_clean_domain();
+		}
+	}
+);
