@@ -55,3 +55,7 @@ Batch 2 complete: 18/18 done, 0 held. Live page HTML checked for every id (almor
 10421 | 0ebceba | 11085, 11086 | live
 10423 | 0ebceba | 11087, 11088 | live
 10425 | 0ebceba | 11089, 11090 | live
+10433 | 4c8ae3e | 11091, 11092 | live
+10493 | 4c8ae3e | 11093, 11094 | live (variable product; photos show the silver main colour)
+10514 | 4c8ae3e | 11095, 11096 | live
+Batch 3 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next batch starts at manifest index 48.
