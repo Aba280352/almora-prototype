@@ -1,0 +1,48 @@
+/**
+ * ALMORA: when a product is out of stock, replace the add-to-cart / "more info" button with a black
+ * button "הפריט חסר במלאי, דברו איתנו בוואטסאפ לעדכונים נוספים" that opens WhatsApp with a ready message.
+ * Covers product cards (shop, categories, search, related) and the product page (stock line / out-of-stock message).
+ */
+if ( ! function_exists( 'almora_oos_button' ) ) {
+	function almora_oos_button( $product, $extra_class = '' ) {
+		if ( ! $product || ! is_a( $product, 'WC_Product' ) ) {
+			return '';
+		}
+		$msg = 'היי, אשמח לעדכון לגבי ' . $product->get_name() . ' (חסר במלאי) ' . get_permalink( $product->get_id() );
+		$url = 'https://wa.me/972523550851?text=' . rawurlencode( $msg );
+		return '<a class="almora-oos-btn ' . esc_attr( $extra_class ) . '" href="' . esc_url( $url ) . '" target="_blank" rel="noopener"><span class="almora-oos-btn__text">הפריט חסר במלאי, דברו איתנו בוואטסאפ לעדכונים נוספים</span></a>';
+	}
+}
+
+add_filter( 'woocommerce_loop_add_to_cart_link', function ( $html, $product ) {
+	if ( $product && ! $product->is_in_stock() ) {
+		return almora_oos_button( $product, 'button ecomus-button product-loop-button product-loop-button-atc almora-oos-btn--loop' );
+	}
+	return $html;
+}, 99, 2 );
+
+add_filter( 'woocommerce_get_stock_html', function ( $html, $product ) {
+	if ( $product && ! $product->is_in_stock() ) {
+		return almora_oos_button( $product, 'almora-oos-btn--single' );
+	}
+	return $html;
+}, 99, 2 );
+
+add_filter( 'woocommerce_out_of_stock_message', function ( $msg ) {
+	global $product;
+	if ( $product && is_a( $product, 'WC_Product' ) && ! $product->is_in_stock() ) {
+		return almora_oos_button( $product, 'almora-oos-btn--single' );
+	}
+	return $msg;
+}, 99 );
+
+add_action( 'wp_head', function () {
+	echo '<style id="almora-oos-css">'
+		. 'a.almora-oos-btn{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;background:#000!important;color:#fff!important;border:1px solid #000!important;text-align:center;text-decoration:none;font-weight:500;line-height:1.3;border-radius:inherit;transition:opacity .2s}'
+		. 'a.almora-oos-btn:hover,a.almora-oos-btn:focus{opacity:.85;background:#000!important;color:#fff!important}'
+		. 'a.almora-oos-btn .almora-oos-btn__text{color:#fff!important;white-space:normal}'
+		. 'a.almora-oos-btn--loop{min-height:44px;padding:8px 10px!important;font-size:13px!important}'
+		. 'a.almora-oos-btn--single{min-height:54px;padding:14px 20px;font-size:17px;margin:8px 0}'
+		. '.single-product .stock.sold-out.woocommerce-badge{all:unset}'
+		. '</style>';
+}, 100 );
