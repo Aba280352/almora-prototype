@@ -46,11 +46,11 @@ add_action( 'woocommerce_single_product_summary', function () {
 
 add_action( 'wp_head', function () {
 	echo '<style id="almora-oos-css">'
-		. 'a.almora-oos-btn{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;background:#000!important;color:#fff!important;border:1px solid #000!important;text-align:center;text-decoration:none;font-weight:500;line-height:1.3;border-radius:inherit;transition:opacity .2s}'
+		. 'a.almora-oos-btn{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;background:#000!important;color:#fff!important;border:1px solid #000!important;text-align:center;text-decoration:none;font-weight:500;line-height:1.3;transition:opacity .2s}'
 		. 'a.almora-oos-btn:hover,a.almora-oos-btn:focus{opacity:.85;background:#000!important;color:#fff!important}'
 		. 'a.almora-oos-btn .almora-oos-btn__text{color:#fff!important;white-space:normal}'
-		. 'a.almora-oos-btn--loop{min-height:44px;padding:8px 10px!important;font-size:13px!important}'
-		. 'a.almora-oos-btn--single{min-height:54px;padding:14px 20px;font-size:17px;margin:8px 0}'
+		. 'a.almora-oos-btn--loop{border-radius:5px!important;min-height:44px;padding:8px 10px!important;font-size:13px!important}'
+		. 'a.almora-oos-btn--single{border-radius:12px!important;min-height:50px;padding:14px 20px;font-size:17px;margin:8px 0}'
 		. '.single-product .woocommerce-badges--single .stock-badge{display:none}'
 		. '.single-product div.product.outofstock form.cart{display:none!important}'
 		. '</style>';
