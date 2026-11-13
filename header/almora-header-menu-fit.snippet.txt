@@ -20,5 +20,7 @@ add_action( 'wp_head', function () {
 .elementor-element-mobile-menu-logo img{height:48px!important;padding:4px 6px!important}
 /* tablet: smaller row, fewer items */
 @media (max-width:899px){.elementor-element-header-menu .elementor-nav-menu--main .elementor-item{font-size:13px!important;padding:6px 4px!important}.elementor-element-header-menu li.menu-item-10985{display:none!important}}
-@media (max-width:820px){.elementor-element-header-menu li.menu-item-7972{display:none!important}}' . '</style>';
+@media (max-width:820px){.elementor-element-header-menu li.menu-item-7972{display:none!important}}
+/* mobile sticky bar logo: same edge-touching artwork */
+@media (max-width:767px){.elementor-element-sticky-logo-mobile img{box-sizing:content-box!important;width:auto!important;max-width:none!important;height:38px!important;padding:5px 8px!important}}' . '</style>';
 }, 100 );
