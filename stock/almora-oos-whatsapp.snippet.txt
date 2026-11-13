@@ -52,5 +52,6 @@ add_action( 'wp_head', function () {
 		. 'a.almora-oos-btn--loop{min-height:44px;padding:8px 10px!important;font-size:13px!important}'
 		. 'a.almora-oos-btn--single{min-height:54px;padding:14px 20px;font-size:17px;margin:8px 0}'
 		. '.single-product .woocommerce-badges--single .stock-badge{display:none}'
+		. '.single-product div.product.outofstock form.cart{display:none!important}'
 		. '</style>';
 }, 100 );
