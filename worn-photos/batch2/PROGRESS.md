@@ -13,3 +13,7 @@ Format: id | images commit SHA | uploaded attachment ids (worn, var2) | status. 
 9908 | 3cb45c2 | 11013, 11014 | live
 9913 | 3cb45c2 | 11015, 11016 | live
 9955 | 3cb45c2 | 11017, 11018 | live
+9958 | 99db2ed | 11019, 11020 | live
+9961 | 99db2ed | 11021, 11022 | live
+9964 | 99db2ed | 11023, 11024 | live
+Batch 1 complete: 12/12 done, 0 held. Live page HTML checked for every id (almora-worn-<id> and almora-worn2-<id> present). Next batch starts at manifest index 12 (type necklace men=true / pendant ...).
