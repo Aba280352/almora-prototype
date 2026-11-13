@@ -10,7 +10,9 @@ if ( ! function_exists( 'almora_oos_button' ) ) {
 		}
 		$msg = 'היי, אשמח לעדכון לגבי ' . $product->get_name() . ' (חסר במלאי) ' . get_permalink( $product->get_id() );
 		$url = 'https://wa.me/972523550851?text=' . rawurlencode( $msg );
-		return '<a class="almora-oos-btn ' . esc_attr( $extra_class ) . '" href="' . esc_url( $url ) . '" target="_blank" rel="noopener"><span class="almora-oos-btn__text">הפריט חסר במלאי, דברו איתנו בוואטסאפ לעדכונים נוספים</span></a>';
+		// cards get a short two-line text so grid rows stay even; the product page keeps the full sentence
+		$text = false !== strpos( $extra_class, 'almora-oos-btn--loop' ) ? 'חסר במלאי, דברו איתנו בוואטסאפ' : 'הפריט חסר במלאי, דברו איתנו בוואטסאפ לעדכונים נוספים';
+		return '<a class="almora-oos-btn ' . esc_attr( $extra_class ) . '" href="' . esc_url( $url ) . '" target="_blank" rel="noopener"><span class="almora-oos-btn__text">' . $text . '</span></a>';
 	}
 }
 
@@ -49,8 +51,8 @@ add_action( 'wp_head', function () {
 		. 'a.almora-oos-btn{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;background:#000!important;color:#fff!important;border:1px solid #000!important;text-align:center;text-decoration:none;font-weight:500;line-height:1.3;transition:opacity .2s}'
 		. 'a.almora-oos-btn:hover,a.almora-oos-btn:focus{opacity:.85;background:#000!important;color:#fff!important}'
 		. 'a.almora-oos-btn .almora-oos-btn__text{color:#fff!important;white-space:normal}'
-		. 'a.almora-oos-btn--loop{border-radius:5px!important;height:auto!important;max-height:none!important;min-height:44px;padding:8px 6px!important;font-size:11.5px!important;line-height:1.35!important;overflow:visible!important}'
-		. '.product-featured-icons a.almora-oos-btn,.product-thumbnail a.almora-oos-btn{display:none!important}'
+		. 'a.almora-oos-btn--loop{border-radius:5px!important;height:auto!important;max-height:none!important;min-height:44px;padding:6px 6px!important;font-size:12.5px!important;line-height:1.3!important;overflow:visible!important}'
+		. '.product-featured-icons a.almora-oos-btn,.product-thumbnail a.almora-oos-btn,li.product.outofstock .product-featured-icons a.product-loop-button-atc{display:none!important}'
 		. 'a.almora-oos-btn--single{border-radius:12px!important;min-height:50px;padding:14px 20px;font-size:17px;margin:8px 0}'
 		. '.single-product .woocommerce-badges--single .stock-badge{display:none}'
 		. '.single-product div.product.outofstock form.cart{display:none!important}'
