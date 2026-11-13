@@ -36,6 +36,14 @@ add_filter( 'woocommerce_out_of_stock_message', function ( $msg ) {
 	return $msg;
 }, 99 );
 
+/* product page: the theme prints no add-to-cart for sold-out items, so the button goes where it would be */
+add_action( 'woocommerce_single_product_summary', function () {
+	global $product;
+	if ( $product && is_a( $product, 'WC_Product' ) && ! $product->is_in_stock() ) {
+		echo almora_oos_button( $product, 'almora-oos-btn--single' ); // phpcs:ignore
+	}
+}, 31 );
+
 add_action( 'wp_head', function () {
 	echo '<style id="almora-oos-css">'
 		. 'a.almora-oos-btn{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;background:#000!important;color:#fff!important;border:1px solid #000!important;text-align:center;text-decoration:none;font-weight:500;line-height:1.3;border-radius:inherit;transition:opacity .2s}'
@@ -43,6 +51,6 @@ add_action( 'wp_head', function () {
 		. 'a.almora-oos-btn .almora-oos-btn__text{color:#fff!important;white-space:normal}'
 		. 'a.almora-oos-btn--loop{min-height:44px;padding:8px 10px!important;font-size:13px!important}'
 		. 'a.almora-oos-btn--single{min-height:54px;padding:14px 20px;font-size:17px;margin:8px 0}'
-		. '.single-product .stock.sold-out.woocommerce-badge{all:unset}'
+		. '.single-product .woocommerce-badges--single .stock-badge{display:none}'
 		. '</style>';
 }, 100 );
