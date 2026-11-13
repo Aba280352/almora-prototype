@@ -1,0 +1,39 @@
+add_action( 'wp_footer', function () {
+	echo <<<'JS'
+<script id="almora-mobile-menu-arrow">
+(function () {
+	/* Mobile off-canvas menu: the chevron only opens/closes the group, the title opens the category page.
+	   Before, a second tap anywhere on the row (including the chevron) followed the link. */
+	var ZONE = 64, last = 0;
+	function inArrowZone(a, e) {
+		var r = a.getBoundingClientRect();
+		var rtl = getComputedStyle(a).direction === 'rtl';
+		return rtl ? (e.clientX - r.left) < ZONE : (r.right - e.clientX) < ZONE;
+	}
+	document.addEventListener('click', function (e) {
+		var t = e.target;
+		if (!t || !t.closest) { return; }
+		var a = t.closest('.elementor-element-mobile-menu-nav a');
+		if (!a) { return; }
+		var isParent = a.classList.contains('has-submenu');
+		/* a "ghost" tap right after collapsing must not land on the item that slid up underneath */
+		if (!isParent && Date.now() - last < 700) { e.preventDefault(); e.stopImmediatePropagation(); return; }
+		if (!isParent) { return; }
+		var $ = window.jQuery;
+		var ul = $ ? $(a).closest('ul.elementor-nav-menu') : null;
+		var sm = ul && ul.length ? ul.data('smartmenus') : null;
+		if (!sm || !sm.menuHideAll || !sm.itemActivate) { return; }
+		if (inArrowZone(a, e)) {
+			last = Date.now();
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			if (a.getAttribute('aria-expanded') === 'true') { sm.menuHideAll(); } else { sm.itemActivate($(a)); }
+		} else {
+			/* title tap: go straight to the category */
+			e.stopImmediatePropagation();
+		}
+	}, true);
+})();
+</script>
+JS;
+}, 100 );
