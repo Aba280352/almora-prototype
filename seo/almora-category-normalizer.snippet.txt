@@ -105,6 +105,9 @@ function almora_cn_fix_inner( $pid ) {
 			}
 		}
 	}
+	if ( false !== mb_strpos( $title, 'לעגיל' ) ) {
+		$type = 67; // a chain made for earrings stays under earrings
+	}
 	if ( preg_match( '/(^|\s)סט(\s|$)/u', $title ) || false !== mb_strpos( $sup, 'SHOP THE LOOK' ) ) {
 		$type = 70;
 	}
