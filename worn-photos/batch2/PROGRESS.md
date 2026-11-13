@@ -146,4 +146,15 @@ Format: id | commit | attachment ids (worn, var2) | status. All verified in live
 10383 | c527375 | 11252, 11253 | live
 10388 | c527375 | 11254, 11255 | live
 10394 | c527375 | 11256, 11257 | live
+10400 | 318f2c5 | 11258, 11259 | live
+10405 | 318f2c5 | 11260, 11261 | live (variable; yellow gold)
+10410 | 318f2c5 | 11262, 11263 | live (variable; yellow gold)
+10437 | 318f2c5 | 11264, 11265 | live (variable; silver)
+10446 | 0381852 | 11266 (worn only) | live, var2 PENDING (gen1 made; ring is silver flower, variable)
+10451 | 0381852 | 11267 (worn only) | live, var2 PENDING (gen1 made; rose gold flower, variable)
+10456 | - | - | NOT STARTED (yellow gold flower; ChatGPT limit hit while generating gen1)
+
+CHATGPT LIMIT HIT 2026-11-13 ~19:24 (local): daily image limit, resets in about 7h35m (about 2026-11-14 03:00 local). Generation stopped.
+RESUME: (1) gen2 for 10446 and 10451 (send the follow-up in a fresh chat with ref.webp + gen1 described, or regenerate a different angle from ref), finalize2, upload var2 and insert it as the 2nd gallery image right after the worn image (set _almora_worn2_att + attachment meta _almora_worn2); (2) gen1+gen2 for 10456; (3) then continue at manifest index 133 (10547). Refs are already downloaded for manifest indexes 118 to 165 (worn-photos/ring/<id>/ref.webp, gitignored).
+
 Notes: ring fidelity is a little lower than chains/pendants (stone sizes can drift); rings are generated as back-of-hand close-ups, hand only, no face.
