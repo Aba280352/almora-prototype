@@ -52,3 +52,6 @@ Batch 2 complete: 18/18 done, 0 held. Live page HTML checked for every id (almor
 10415 | e72e385 | 11079, 11080 | live
 10417 | e72e385 | 11081, 11082 | live
 10419 | e72e385 | 11083, 11084 | live
+10421 | 0ebceba | 11085, 11086 | live
+10423 | 0ebceba | 11087, 11088 | live
+10425 | 0ebceba | 11089, 11090 | live
