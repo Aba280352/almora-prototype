@@ -59,3 +59,24 @@ Batch 2 complete: 18/18 done, 0 held. Live page HTML checked for every id (almor
 10493 | 4c8ae3e | 11093, 11094 | live (variable product; photos show the silver main colour)
 10514 | 4c8ae3e | 11095, 11096 | live
 Batch 3 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next batch starts at manifest index 48.
+
+## Batch 4 (manifest indexes 48-65, 18 necklaces), run 2026-11-13
+10516 | 4c5ed2e | 11097, 11098 | live
+10518 | 4c5ed2e | 11099, 11100 | live
+10526 | 4c5ed2e | 11101, 11102 | live
+10528 | 7eb25f8 | 11103, 11104 | live
+10530 | 7eb25f8 | 11105, 11106 | live
+10536 | 7eb25f8 | 11107, 11108 | live
+10545 | d1d5265 | 11109, 11110 | live
+10626 | d1d5265 | 11111, 11112 | live
+10628 | d1d5265 | 11113, 11114 | live
+10630 | c273fc4 | 11115, 11116 | live
+10632 | c273fc4 | 11117, 11118 | live
+10716 | c273fc4 | 11119, 11120 | live (variable product; photos show the silver main colour)
+10734 | c273fc4 | 11121, 11122 | live (variable product; same product photo as 10716, so the same two AI images were reused)
+10724 | 8da2c34 | 11123, 11124 | live (variable product; silver)
+10728 | 8da2c34 | 11125, 11126 | live (variable product; yellow gold)
+10918 | 8da2c34 | 11127, 11128 | live
+10921 | f2e35af | 11129, 11130 | live
+10924 | f2e35af | 11131, 11132 | live
+Batch 4 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next batch starts at manifest index 66.
