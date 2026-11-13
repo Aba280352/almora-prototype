@@ -80,3 +80,11 @@ Batch 3 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next 
 10921 | f2e35af | 11129, 11130 | live
 10924 | f2e35af | 11131, 11132 | live
 Batch 4 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next batch starts at manifest index 66.
+
+## Batch 5 (manifest indexes 66-83: 7 necklaces, 5 men's chains, 1 men's necklace, 5 pendants), run 2026-11-13
+10927 | 4596cbf | 11133, 11134 | live
+10930 | 4596cbf | 11135, 11136 | live
+10933 | 4596cbf | 11137, 11138 | live
+10936 | 5ac3e6e | 11139, 11140 | live
+10951 | 5ac3e6e | 11141, 11142 | live
+10954 | 5ac3e6e | 11143, 11144 | live
