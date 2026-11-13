@@ -9,7 +9,7 @@ if ( ! function_exists( 'almora_oos_button' ) ) {
 			return '';
 		}
 		$msg = 'היי, אשמח לעדכון לגבי ' . $product->get_name() . ' (חסר במלאי) ' . get_permalink( $product->get_id() );
-		$url = 'https://wa.me/972523550851?text=' . rawurlencode( $msg );
+		$url = 'https://wa.me/972528976193?text=' . rawurlencode( $msg );
 		// cards get a short two-line text so grid rows stay even; the product page keeps the full sentence
 		$text = false !== strpos( $extra_class, 'almora-oos-btn--loop' ) ? 'חסר במלאי, דברו איתנו בוואטסאפ' : 'הפריט חסר במלאי, דברו איתנו בוואטסאפ לעדכונים נוספים';
 		return '<a class="almora-oos-btn ' . esc_attr( $extra_class ) . '" href="' . esc_url( $url ) . '" target="_blank" rel="noopener"><span class="almora-oos-btn__text">' . $text . '</span></a>';

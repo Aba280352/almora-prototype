@@ -5,8 +5,8 @@
  */
 defined( 'ABSPATH' ) || exit;
 
-const ALMORA_BOT_WA    = '972523550851';
-const ALMORA_BOT_PHONE = '052-3550851';
+const ALMORA_BOT_WA    = '972528976193';
+const ALMORA_BOT_PHONE = '052-8976193';
 const ALMORA_BOT_FREE  = 1000;
 const ALMORA_BOT_CATS  = array(
 	'ring'     => 66,
