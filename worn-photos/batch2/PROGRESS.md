@@ -38,3 +38,11 @@ Batch 1 complete: 12/12 done, 0 held. Live page HTML checked for every id (almor
 10137 | d44cc57 | 11057, 11058 | live
 10140 | d44cc57 | 11059, 11060 | live
 Batch 2 complete: 18/18 done, 0 held. Live page HTML checked for every id (almora-worn-<id> and almora-worn2-<id> present). Next batch starts at manifest index 30.
+
+## Batch 3 (manifest indexes 30-47, 18 necklaces), run 2026-11-13
+10142 | 54ee084 | 11061, 11062 | live
+10144 | 54ee084 | 11063, 11064 | live
+10282 | 54ee084 | 11065, 11066 | live
+10284 | 54ee084 | 11067, 11068 | live
+10295 | 54ee084 | 11069, 11070 | live
+10297 | 54ee084 | 11071, 11072 | live
