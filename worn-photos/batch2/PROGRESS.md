@@ -121,5 +121,29 @@ Format: id | commit | attachment ids (worn, var2) | status. All verified in live
 10064 | 560c860 | 11202, 11203 | live (variable; rose gold)
 10072 | 560c860 | 11204, 11205 | live (variable; yellow gold)
 10079 | 560c860 | 11206, 11207 | live (variable; yellow gold)
-Pending in this run (gen1+gen2 made, not yet finalized/uploaded): 10089 (V-shape silver pears), 10105 (V-shape rose gold; gen2 in progress). In generation: 10126 (heart).
+10089 | 53c4334 | 11208, 11209 | live
+10105 | 53c4334 | 11210, 11211 | live
+10126 | 53c4334 | 11212, 11213 | live
+10159 | 53c4334 | 11214, 11215 | live
+10169 | 53c4334 | 11216, 11217 | live
+10178 | 53c4334 | 11218, 11219 | live
+10182 | d77cbfd | 11220, 11221 | live
+10191 | d77cbfd | 11222, 11223 | live
+10196 | d77cbfd | 11224, 11225 | live
+10198 | d77cbfd | 11226, 11227 | live
+10208 | d77cbfd | 11228, 11229 | live
+10213 | d77cbfd | 11230, 11231 | live
+10220 | d41aed9 | 11232, 11233 | live
+10226 | d41aed9 | 11234, 11235 | live
+10232 | d41aed9 | 11236, 11237 | live
+10240 | d41aed9 | 11238, 11239 | live
+10241 | d41aed9 | 11240, 11241 | live
+10251 | b135d14 | 11242, 11243 | live
+10254 | b135d14 | 11244, 11245 | live (stones mix of pear/marquise, slightly off the ref)
+10261 | b135d14 | 11246, 11247 | live
+10343 | c527375 | 11248, 11249 | live (first gen had the marquise across the finger; redone north-south)
+10378 | c527375 | 11250, 11251 | live
+10383 | c527375 | 11252, 11253 | live
+10388 | c527375 | 11254, 11255 | live
+10394 | c527375 | 11256, 11257 | live
 Notes: ring fidelity is a little lower than chains/pendants (stone sizes can drift); rings are generated as back-of-hand close-ups, hand only, no face.
