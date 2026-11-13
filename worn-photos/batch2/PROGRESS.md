@@ -88,3 +88,4 @@ Batch 4 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next 
 10936 | 5ac3e6e | 11139, 11140 | live
 10951 | 5ac3e6e | 11141, 11142 | live
 10954 | 5ac3e6e | 11143, 11144 | live
+Batch 5 paused 2026-11-13 14:35: ChatGPT image limit reached ("You're out of image creations for now. Try again at 5:32 PM") after 12 images (6 products). Refs for all 18 batch-5 products are already prepared in worn-photos/<type>/<id>/ref.webp (git-ignored, local). Continue from manifest index 72 (10004) after 17:32; helper worn-photos/tools/mv_dl.sh moves Downloads/w_<type>_<id>_<n>.png to gen<n>.png. Prompt notes: 10004 = dark oxidized silver round box chain (men); 10306/10314 refs are photos on a man, prompt asks for a NEW different man, no beard line.
