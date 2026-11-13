@@ -89,3 +89,37 @@ Batch 4 complete: 18/18 done, 0 held. Live page HTML checked for every id. Next 
 10951 | 5ac3e6e | 11141, 11142 | live
 10954 | 5ac3e6e | 11143, 11144 | live
 Batch 5 paused 2026-11-13 14:35: ChatGPT image limit reached ("You're out of image creations for now. Try again at 5:32 PM") after 12 images (6 products). Refs for all 18 batch-5 products are already prepared in worn-photos/<type>/<id>/ref.webp (git-ignored, local). Continue from manifest index 72 (10004) after 17:32; helper worn-photos/tools/mv_dl.sh moves Downloads/w_<type>_<id>_<n>.png to gen<n>.png. Prompt notes: 10004 = dark oxidized silver round box chain (men); 10306/10314 refs are photos on a man, prompt asks for a NEW different man, no beard line.
+
+## Batch 5b / Batch 6 (manifest indexes 72-83 and 84-100), run 2026-11-13 after the limit reset (no new limit hit so far)
+Format: id | commit | attachment ids (worn, var2) | status. All verified in live HTML except where noted.
+10004 | e916bed | 11150, 11151 | live
+10306 | e916bed | 11152, 11153 | live (variable product; shows the main colour only)
+10314 | e916bed | 11154, 11155 | live (variable product; main colour only)
+10322 | b395d87 | 11156, 11157 | live (variable product; main colour only)
+10329 | b395d87 | 11158, 11159 | live (variable product; main colour only)
+10351 | b395d87 | 11160, 11161 | live
+10353 | 9d25eaa | 11162, 11163 | live (variable product; main colour only)
+10364 | 9d25eaa | 11164, 11165 | live
+10366 | 9d25eaa | 11166, 11167 | live
+10368 | a52a244 | 11168, 11169 | live
+10370 | a52a244 | 11170, 11171 | live
+10372 | a52a244 | 11172, 11173 | live
+10374 | 5e0333e | 11174, 11175 | live
+9816 | 5e0333e | 11176, 11177 | live
+9825 | 5e0333e | 11178, 11179 | live
+9833 | 5e0333e | 11180, 11181 | live
+9881 | c8df3cd | 11182, 11183 | live
+9887 | c8df3cd | 11184, 11185 | live
+9894 | c8df3cd | 11186, 11187 | live (variable)
+9946 | c8df3cd | 11188, 11189 | live (variable)
+9986 | c8df3cd | 11190, 11191 | live (variable)
+9998 | c8df3cd | 11192, 11193 | live (variable; rose gold)
+10026 | 560c860 | 11194, 11195 | live (variable; rose gold shown)
+10039 | 560c860 | 11196, 11197 | live (variable; yellow gold shown)
+10050 | 560c860 | 11198, 11199 | live (variable; silver)
+10059 | 560c860 | 11200, 11201 | live (variable; rose gold)
+10064 | 560c860 | 11202, 11203 | live (variable; rose gold)
+10072 | 560c860 | 11204, 11205 | live (variable; yellow gold)
+10079 | 560c860 | 11206, 11207 | live (variable; yellow gold)
+Pending in this run (gen1+gen2 made, not yet finalized/uploaded): 10089 (V-shape silver pears), 10105 (V-shape rose gold; gen2 in progress). In generation: 10126 (heart).
+Notes: ring fidelity is a little lower than chains/pendants (stone sizes can drift); rings are generated as back-of-hand close-ups, hand only, no face.
