@@ -28,6 +28,63 @@ function almora_cn_accessory_ids() {
 	);
 }
 
+/**
+ * Sub-categories under rings / earrings / necklaces / bracelets (owner OK 2026-11-13).
+ * key => array( parent type id, name, slug, regex run on supplier categories + product title )
+ */
+function almora_cn_subs_map() {
+	return array(
+		'pinky'    => array( 66, 'טבעות לזרת', 'pinky-rings', '/לזרת/u' ),
+		'e-stud'   => array( 67, 'עגילים צמודים', 'stud-earrings', '/עגילים צמודים|עגילי צמוד/u' ),
+		'e-drop'   => array( 67, 'עגילים נופלים', 'drop-earrings', '/נופלים|עגילי נפילה/u' ),
+		'e-hoop'   => array( 67, 'עגילי חישוק', 'hoop-earrings', '/חישוק/u' ),
+		'e-two'    => array( 67, 'עגילי שני חורים', 'two-hole-earrings', '/שני חורים/u' ),
+		'e-helix'  => array( 67, 'עגילי הליקס', 'helix-earrings', '/הליקס/u' ),
+		'e-eve'    => array( 67, 'עגילי ערב', 'evening-earrings', '/עגילי ערב/u' ),
+		'n-tennis' => array( 68, 'שרשראות טניס', 'tennis-necklaces', '/טניס/u' ),
+		'n-choker' => array( 68, 'שרשראות צ\'וקר', 'choker-necklaces', '/צ.?וקר|קולר/u' ),
+		'n-tie'    => array( 68, 'שרשראות עניבה', 'tie-necklaces', '/עניבה/u' ),
+		'n-ice'    => array( 68, 'שרשראות אייס', 'ice-necklaces', '/אייס/u' ),
+		'n-coll'   => array( 68, 'קוליירים', 'colliers', '/קולייר/u' ),
+		'b-tennis' => array( 69, 'צמידי טניס', 'tennis-bracelets', '/טניס/u' ),
+		'b-bangle' => array( 69, 'צמידים קשיחים', 'bangle-bracelets', '/קשיח|בנגל/u' ),
+		'b-jadi'   => array( 69, 'צמידי ג\'אדי', 'jadi-bracelets', '/ג.?אדי/u' ),
+		'b-chain'  => array( 69, 'צמידי שרשרת', 'chain-bracelets', '/צמידי שרשרת/u' ),
+		'b-ice'    => array( 69, 'צמידי אייס', 'ice-bracelets', '/אייס/u' ),
+	);
+}
+
+function almora_cn_sub_ids( $types, $text ) {
+	$ids = array();
+	foreach ( almora_cn_subs_map() as $s ) {
+		if ( ! in_array( $s[0], $types, true ) || ! preg_match( $s[3], $text ) ) {
+			continue;
+		}
+		$t = get_term_by( 'slug', $s[2], 'product_cat' );
+		if ( ! $t ) {
+			$r = wp_insert_term( $s[1], 'product_cat', array( 'slug' => $s[2], 'parent' => $s[0] ) );
+			if ( is_wp_error( $r ) ) {
+				continue;
+			}
+			$ids[] = (int) $r['term_id'];
+		} else {
+			$ids[] = (int) $t->term_id;
+		}
+	}
+	return $ids;
+}
+
+function almora_cn_sub_slugs_ids() {
+	$ids = array();
+	foreach ( almora_cn_subs_map() as $s ) {
+		$t = get_term_by( 'slug', $s[2], 'product_cat' );
+		if ( $t ) {
+			$ids[] = (int) $t->term_id;
+		}
+	}
+	return $ids;
+}
+
 function almora_cn_fix( $pid ) {
 	static $busy = false;
 	if ( $busy ) {
@@ -61,6 +118,8 @@ function almora_cn_fix_inner( $pid ) {
 	if ( $pc ) {
 		$ours[] = (int) $pc->term_id;
 	}
+	$sub_ids = almora_cn_sub_slugs_ids();
+	$ours    = array_merge( $ours, $sub_ids );
 	$terms = wp_get_object_terms( $pid, 'product_cat' );
 	if ( is_wp_error( $terms ) ) {
 		return;
@@ -163,6 +222,8 @@ function almora_cn_fix_inner( $pid ) {
 	if ( false !== mb_strpos( $title . ' ' . $post->post_content, 'פליז' ) || preg_match( '/ציפוי/u', $sup ) || in_array( 153, $keep, true ) ) {
 		$new[] = 153;
 	}
+	/* sub-categories (hoops, tennis, bangles ...) from the supplier names + title */
+	$new = array_merge( $new, almora_cn_sub_ids( array( $type ), $sup . ' ' . $title ), array_intersect( $keep, $sub_ids ) );
 	/* flags we already had on the product (new in stock, hand-picked) */
 	foreach ( array( 111, 112 ) as $f ) {
 		if ( in_array( $f, $keep, true ) ) {
