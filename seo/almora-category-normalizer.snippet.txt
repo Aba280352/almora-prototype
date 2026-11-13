@@ -57,6 +57,10 @@ function almora_cn_fix_inner( $pid ) {
 			$ours[] = $a;
 		}
 	}
+	$pc = get_term_by( 'slug', 'piercing', 'product_cat' );
+	if ( $pc ) {
+		$ours[] = (int) $pc->term_id;
+	}
 	$terms = wp_get_object_terms( $pid, 'product_cat' );
 	if ( is_wp_error( $terms ) ) {
 		return;
@@ -77,7 +81,16 @@ function almora_cn_fix_inner( $pid ) {
 
 	/* accessories (piercing equipment, display stands) */
 	$is_stand = (bool) preg_match( '/מתקני תצוגה|סטנד עומד|סטנד שוכב|משטח/u', $sup . ' ' . $title ) && ! preg_match( '/עגיל|טבעת|שרשרת|צמיד/u', $title );
-	$is_equip = (bool) preg_match( '/מחטים|מלקחיים|אביזרים לפירסינג|ציוד עזר|ציוד נלווה/u', $sup );
+	$is_equip = (bool) preg_match( '/מחטים|מחטי|מלקחיים|פלייר|כפפות|דרמל|אביזרים לפירסינג|ציוד עזר|ציוד נלווה/u', $sup . ' ' . $title );
+	/* piercing jewelry (titanium labrets, barbells, belly rings ...) is a main category of its own, not earrings */
+	$pierc_cat = get_term_by( 'slug', 'piercing', 'product_cat' );
+	if ( $pierc_cat && ! $is_equip && preg_match( '/Lumipierce|Belly Ring|Labret|Barbell|לברט|קליקר|פירסינג/ui', $sup . ' ' . $title ) ) {
+		almora_cn_apply( $pid, $old, array( (int) $pierc_cat->term_id ) );
+		return;
+	}
+	if ( $pierc_cat && in_array( (int) $pierc_cat->term_id, $keep, true ) ) {
+		return;
+	}
 	if ( $acc['parent'] && ( $is_stand || $is_equip ) ) {
 		$new = array( $acc['parent'] );
 		if ( $is_stand && $acc['stands'] ) {
