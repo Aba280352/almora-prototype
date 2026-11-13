@@ -18,7 +18,8 @@ if ( ! function_exists( 'almora_oos_button' ) ) {
 
 add_filter( 'woocommerce_loop_add_to_cart_link', function ( $html, $product ) {
 	if ( $product && ! $product->is_in_stock() ) {
-		return almora_oos_button( $product, 'button ecomus-button product-loop-button product-loop-button-atc almora-oos-btn--loop' );
+		// owner 2026-11-13: no button on archive cards (the "Sold out" badge is enough); the WhatsApp button lives on the product page only
+		return '';
 	}
 	return $html;
 }, 99, 2 );
