@@ -1,0 +1,6629 @@
+[
+ {
+  "id": "9783",
+  "sku": "ZSI552-1",
+  "title": "עגיל ZSI552-1",
+  "slug": "עגיל-zsi552-1",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל מניפה  עשוי כסף אמיתי 925  משובץ באבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": ".",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1769514864_generation_1769513725264.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9788",
+  "sku": "ZSI055-1-2m\"m",
+  "title": "צמיד טניס  ZSI055-1-2mm",
+  "slug": "צמיד-טניס-zsi055-1-2mm",
+  "cats": [
+   "צמידי טניס",
+   "צמידים"
+  ],
+  "price": "479.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "15 cm",
+    "16 ס\"מ",
+    "17 ס\"מ",
+    "18 ס\"מ",
+    "19cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי כסף אמיתי 925 משובץ אבני זרקון באיכות 5A מידת הצמיד ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249600_1663525848_ZSI055201-scaled-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9798",
+  "sku": "ZSI056-1-2.5mm",
+  "title": "צמיד טניס ZSI056-1-2.5mm",
+  "slug": "צמיד-טניס-zsi056-1-2-5mm",
+  "cats": [
+   "צמידי טניס",
+   "צמידים"
+  ],
+  "price": "519.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "15 cm",
+    "16 ס\"מ",
+    "17 ס\"מ",
+    "18 ס\"מ",
+    "19cm",
+    "20cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי כסף אמיתי 925 בציפוי זהב אדום (1 מיקרון) משובץ אבני זרקון באיכות 5A מידת הצמיד ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249597_1663526190_ZSI056-scaled-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9809",
+  "sku": "ZSI186-1",
+  "title": "שרשרת ZSI186-1",
+  "slug": "שרשרת-zsi186-1",
+  "cats": [
+   "שרשראות עניבה",
+   "שרשראות"
+  ],
+  "price": "329.9",
+  "regular": "329.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עניבה נופלת עשויה כסף אמיתי 925 משובצת אבני זרקון אורך השרשרת:  40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249578_ZSI186-WHITE-1-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9816",
+  "sku": "JSI063-1-1",
+  "title": "טבעת JSI063-1",
+  "slug": "טבעת-jsi063-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_ring-size": [
+    "10",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736294856_R3970-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9825",
+  "sku": "JSI101",
+  "title": "טבעת JSI101",
+  "slug": "טבעת-jsi101",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_ring-size": [
+    "10",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736294787_ssKioBf.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9833",
+  "sku": "ZSI214-1",
+  "title": "טבעת ZSI214-1",
+  "slug": "טבעת-zsi214-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249217_PJ9B7026-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9842",
+  "sku": "ZSI234-1",
+  "title": "שרשרת ZSI234-1",
+  "slug": "שרשרת-zsi234-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "249.9",
+  "regular": "249.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זרקון    אורך השרשרת: 37+7 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736294710_PJ9B7016-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9848",
+  "sku": "ZSI675-1",
+  "title": "שרשרת טניס משולבת ZSI675-1",
+  "slug": "שרשרת-טניס-משולבת-zsi675-1",
+  "cats": [
+   "שרשראות טניס",
+   "שרשראות"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "שרשרת עשוייה כסף אמיתי 925 משובצת זרקונים אורך השרשרת: 40+5 ס”מ",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249160_1727258996_3.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9855",
+  "sku": "LOZ3093-1",
+  "title": "שרשרת LOZ3093-1",
+  "slug": "שרשרת-loz3093-1",
+  "cats": [
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר) עשויה כסף אמיתי 925 משובצת אבני זרקון אורך השרשרת:  35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249061_1674991695_9K3A0005-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9860",
+  "sku": "LOZ9048-2",
+  "title": "שרשרת LOZ9048-2 מ\"מ",
+  "slug": "שרשרת-loz9048-2-ממ",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249047_9K3A9988-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9867",
+  "sku": "LOZ10048-2",
+  "title": "שרשרת LOZ10048-2",
+  "slug": "שרשרת-loz10048-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/9K3A9987-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9873",
+  "sku": "ZSI554-1",
+  "title": "עגיל ZSI554-1",
+  "slug": "עגיל-zsi554-1",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249033_1675067924_9K3A9612-scaled-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9876",
+  "sku": "ZSI554-2",
+  "title": "עגילZSI554-2",
+  "slug": "עגילzsi554-2",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249032_1675067898_9K3A9611-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9881",
+  "sku": "ZSI262-1",
+  "title": "טבעת ZSI262-1",
+  "slug": "טבעת-zsi262-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736249011_1688548395_ZSI262-scaled-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9887",
+  "sku": "ZSI250-1",
+  "title": "טבעת 1-ZSI250",
+  "slug": "טבעת-1-zsi250",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "319.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1678434684_ZSI250-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9894",
+  "sku": "ZSI307-1",
+  "title": "טבעת ZSI307-1",
+  "slug": "טבעת-zsi307-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "299.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248633_1684396914_PJ9B4206.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9901",
+  "sku": "KSI3021-1-B",
+  "title": "צמיד קשיח KSI3021-1-B",
+  "slug": "צמיד-קשיח-ksi3021-1-b",
+  "cats": [
+   "צמידים קשיחים",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "329.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד קשיח    עשוי מכסף 925    משובץ אבני זרקון באיכות 5A",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248611_1684396059_PJ9B4193.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9904",
+  "sku": "KSI3021-2-B",
+  "title": "צמיד קשיח KSI3021-2-B",
+  "slug": "צמיד-קשיח-ksi3021-2-b",
+  "cats": [
+   "צמידים קשיחים",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד קשיח עשוי מפליז (Brass) בציפוי זהב אדום (2 מיקרון) משובץ אבני זרקון באיכות 5A",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248612_1684395458_PJ9B4192.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9908",
+  "sku": "ZSI340-1-1",
+  "title": "שרשרת טניס 3 מ\"מ ZSI340-42CM-1",
+  "slug": "שרשרת-טניס-3-ממ-zsi340-42cm-1",
+  "cats": [
+   "קוליירים",
+   "שרשראות טניס",
+   "שרשראות"
+  ],
+  "price": "1749.9",
+  "regular": "1749.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "גודל אבן: 3 מ\"מ אורך השרשרת: 40 ס\"מ",
+  "excerpt": "שרשרת עשוייה כסף אמיתי 925 משובצת זרקונים אורך השרשרת: 40+5 ס”מ",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248604_3.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9913",
+  "sku": "2 מ\"מ ZSI338-1",
+  "title": "שרשרת טניס 2 מ\"מ ZSI338-1",
+  "slug": "שרשרת-טניס-2-ממ-zsi338-1",
+  "cats": [
+   "שרשראות טניס",
+   "שרשראות"
+  ],
+  "price": "999.9",
+  "regular": "999.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת טניס (קולייר)    עשויה כסף אמיתי 925    משובצת אבני זרקון בדרגת 5A    אורך השרשרת 40 ס\"מ.    גודל האבנים מצויין בכותרת המוצר.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248600_1719230748_DSC_0500-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9915",
+  "sku": "36644_3CCC",
+  "title": "SI007 סט שרשרת",
+  "slug": "si007-סט-שרשרת",
+  "cats": [
+   "סטים"
+  ],
+  "price": "459.9",
+  "regular": "459.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1769947596_7.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9917",
+  "sku": "36647_C7B5",
+  "title": "SI008 סט שרשרת",
+  "slug": "si008-סט-שרשרת",
+  "cats": [
+   "סטים"
+  ],
+  "price": "329.9",
+  "regular": "329.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/8.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9919",
+  "sku": "36652_643C",
+  "title": "SI009 סט שרשרת",
+  "slug": "si009-סט-שרשרת",
+  "cats": [
+   "סטים"
+  ],
+  "price": "439.9",
+  "regular": "439.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/9.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9921",
+  "sku": "36661_FC9E",
+  "title": "SI011 סט שרשרת",
+  "slug": "si011-סט-שרשרת",
+  "cats": [
+   "סטים"
+  ],
+  "price": "429.9",
+  "regular": "429.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/11.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9923",
+  "sku": "36715_2BA9",
+  "title": "SI0015 סט עגיל",
+  "slug": "si0015-סט-עגיל",
+  "cats": [
+   "סטים"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1768385146_15.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9927",
+  "sku": "36720_B386",
+  "title": "SI017 סט עגיל",
+  "slug": "si017-סט-עגיל",
+  "cats": [
+   "סטים"
+  ],
+  "price": "419.9",
+  "regular": "419.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1768385137_17.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9936",
+  "sku": "LO0012-2",
+  "title": "עגיל LO0012-2",
+  "slug": "עגיל-lo0012-2",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_צבע-אבנים": [
+    "ורוד",
+    "ירוק",
+    "לבן",
+    "שחור"
+   ]
+  },
+  "content": "עגילים נופלים רוז גולד עשויים כסף 925 ןמצופה זהב אדום (רוז גולד) משובצים אבני זרקון. העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248543_1730626859_LO0012-220ROSE20GOLD-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9946",
+  "sku": "LO0006-1",
+  "title": "טבעת LO0006-1",
+  "slug": "טבעת-lo0006-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "159.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3",
+    "4",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה כסף אמיתי 925 משובצת באבני זירקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "…",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736248516_1684865037_708411723e86e138ce71d2ac794ef6872.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9955",
+  "sku": "LSI8003-2",
+  "title": "שרשרת LSI8003-2",
+  "slug": "שרשרת-lsi8003-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245857_1725453529_PJ9B4493-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9958",
+  "sku": "LSI8004-2",
+  "title": "שרשרת LSI8004-2",
+  "slug": "שרשרת-lsi8004-2",
+  "cats": [
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר) עשויה כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובצת אבני זרקון אורך השרשרת:  35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245854_1725794097_LSI8004-2-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9961",
+  "sku": "LSI8004-3",
+  "title": "שרשרת LSI8004-3",
+  "slug": "שרשרת-lsi8004-3",
+  "cats": [
+   "שרשראות צ'וקר",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר) עשויה פליז בציפוי זהב 14k)2 מיקרון) משובצת אבני זרקון אורך השרשרת:  35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245851_1725794118_LSI8004-3-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9964",
+  "sku": "LSI8016-1",
+  "title": "שרשרת LSI8016-1",
+  "slug": "שרשרת-lsi8016-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "169.9",
+  "regular": "169.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "S925 sterling silver silver neckalce with 7 prismatic tassel necklace size :33+7cm ,0.35 chain",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245802_1725522533_LSI8016-1-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9968",
+  "sku": "KASI5052-2",
+  "title": "שרשרת KASI5052-2",
+  "slug": "שרשרת-kasi5052-2",
+  "cats": [
+   "שרשראות עניבה",
+   "שרשראות"
+  ],
+  "price": "249.9",
+  "regular": "249.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עניבה נופלת    עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    אורך השרשרת:  37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245745_1725954431_DSC_8152-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9971",
+  "sku": "KASI5052-3",
+  "title": "שרשרת KASI5052-3",
+  "slug": "שרשרת-kasi5052-3",
+  "cats": [
+   "שרשראות עניבה",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "249.9",
+  "regular": "249.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עניבה נופלת עשויה פליז בציפוי זהב 14k (2 מיקרון) משובצת אבני זרקון אורך השרשרת:  40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245740_1725954430_DSC_8183-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9976",
+  "sku": "ZSI689-3",
+  "title": "שרשרת ZSI689-3",
+  "slug": "שרשרת-zsi689-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובצת באבני זרקון    אורך השרשרת: 35+7 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245251_1731488241_PJ9B0530-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9977",
+  "sku": "TSI5055-1",
+  "title": "שרשרת TSI5055-1",
+  "slug": "שרשרת-tsi5055-1",
+  "cats": [
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245735_1725890040_DSC_8194-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9984",
+  "sku": "ZSI689-2",
+  "title": "שרשרת ZSI689-2",
+  "slug": "שרשרת-zsi689-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת באבני זרקון    אורך השרשרת: 35+7 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245250_1731488235_PJ9B0529-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9986",
+  "sku": "FLSI5012-1",
+  "title": "טבעת FLSI5012-1",
+  "slug": "טבעת-flsi5012-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "309.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245653_1726578822_JJJDDDD.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9994",
+  "sku": "ZSI689-1",
+  "title": "שרשרת ZSI689-1",
+  "slug": "שרשרת-zsi689-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "219.9",
+  "regular": "219.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זרקון    אורך השרשרת: 35+7 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245248_1731488229_PJ9B0528-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "9998",
+  "sku": "FLSI5012-2-B",
+  "title": "טבעת FLSI5012-2-B",
+  "slug": "טבעת-flsi5012-2-b",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה כסף אמיתי 925 מצופה זהב אדום (רוז גולד) מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245651_1726579199_6422a_2UUDUUDUD.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10004",
+  "sku": "ESI341-6",
+  "title": "שרשרת ESI341-6",
+  "slug": "שרשרת-esi341-6",
+  "cats": [
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "89.9",
+  "regular": "89.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1737275841_67.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10007",
+  "sku": "ZSI436-3-40cm-2.5mm",
+  "title": "שרשרת טניס שפיצים ZSI436-3-40cm-2.5mm",
+  "slug": "שרשרת-טניס-שפיצים-zsi436-3-40cm-2-5mm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "1409.9",
+  "regular": "1409.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245573_1728549599_GOLD207-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10012",
+  "sku": "ZSI437-3-40CM",
+  "title": "שרשרת טניס מדורגת ZSI437-3-40CM",
+  "slug": "שרשרת-טניס-מדורגת-zsi437-3-40cm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "1799.9",
+  "regular": "1799.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245571_1728559779_GOLD206.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10023",
+  "sku": "ZSI744-2",
+  "title": "עגיל ZSI744-2",
+  "slug": "עגיל-zsi744-2",
+  "cats": [
+   "עגילי חישוק",
+   "עגילים"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים אבני זרקון.    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1738576217_ZSI744-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10024",
+  "sku": "ZSI546-3B",
+  "title": "צמיד ZSI546-3B",
+  "slug": "צמיד-zsi546-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245546_1728548419_GOLD.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10026",
+  "sku": "ZSI874-2B",
+  "title": "טבעת ZSI874-2B",
+  "slug": "טבעת-zsi874-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758798901_PJ9B6044.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10028",
+  "sku": "ZSI746-1",
+  "title": "שרשרת ZSI746-1",
+  "slug": "שרשרת-zsi746-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "459.9",
+  "regular": "459.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1738578702_ZSI746-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10035",
+  "sku": "ZSI549-1-1",
+  "title": "צמיד ZSI549-1-1",
+  "slug": "צמיד-zsi549-1-1",
+  "cats": [
+   "צמידים"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245543_1728286109_PJ9B1656-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10038",
+  "sku": "ZSI746-2B",
+  "title": "שרשרת ZSI746-2B",
+  "slug": "שרשרת-zsi746-2b",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "259.9",
+  "regular": "259.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1738578727_ZSI746-2.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10039",
+  "sku": "ZSI874-3B-OLD",
+  "title": "טבעת ZSI874-3B-OLD",
+  "slug": "טבעת-zsi874-3b-old",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758799041_PJ9B6045.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10045",
+  "sku": "ZSI218-3",
+  "title": "שרשרת ZSI218-3",
+  "slug": "שרשרת-zsi218-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10045-hq-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10047",
+  "sku": "KSI3021-3-B",
+  "title": "צמיד קשיח KSI3021-3-B",
+  "slug": "צמיד-קשיח-ksi3021-3-b",
+  "cats": [
+   "צמידים קשיחים",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד קשיח עשוי מפליז (Brass) בציפוי זהב  (2 מיקרון) משובץ אבני זרקון באיכות 5A",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1770633595_generation_1770633553737.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10050",
+  "sku": "ZSI889-1",
+  "title": "טבעת ZSI889-1",
+  "slug": "טבעת-zsi889-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "289.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758804835_IMG-20250925-WA0003.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10058",
+  "sku": "CSI051-2",
+  "title": "שרשרת לעגיל CSI051-2",
+  "slug": "שרשרת-לעגיל-csi051-2",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245464_1728565593_PJ9B4153-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10059",
+  "sku": "FLSI022-2-B",
+  "title": "טבעת FLSI022-2-B",
+  "slug": "טבעת-flsi022-2-b",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767532659_generation_1767532505483.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10064",
+  "sku": "ZSI889-2",
+  "title": "טבעת ZSI889-2",
+  "slug": "טבעת-zsi889-2",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי אדום 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758804876_IMG-20250925-WA0004.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10072",
+  "sku": "FLSI022-3-B",
+  "title": "טבעת FLSI022-3-B",
+  "slug": "טבעת-flsi022-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "169.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767532648_generation_1767532590007.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10079",
+  "sku": "ZSI889-3",
+  "title": "טבעת ZSI889-3",
+  "slug": "טבעת-zsi889-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758804916_IMG-20250925-WA0005.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10084",
+  "sku": "ZSI900-2",
+  "title": "עגיל ZSI900-2",
+  "slug": "עגיל-zsi900-2",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "219.9",
+  "regular": "219.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגילים נופלים רוז גולד עשויים כסף 925 ןמצופה זהב אדום (רוז גולד) משובצים אבני זרקון. העגילים מגיעים כזוג. עגילים נופלים עשויים כסף אמיתי 925 משובצים אבני זרקון. העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245410_1728562240_PJ9B4092-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10089",
+  "sku": "KSI2028-1",
+  "title": "טבעת KSI2028-1",
+  "slug": "טבעת-ksi2028-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10089-hq-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10091",
+  "sku": "ZSI919-3",
+  "title": "שרשרת ZSI919-3",
+  "slug": "שרשרת-zsi919-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "439.9",
+  "regular": "439.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובצת באבני זרקון    אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761661283_PJ9B1799.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10097",
+  "sku": "ZSI921-1",
+  "title": "שרשרת ZSI921-1",
+  "slug": "שרשרת-zsi921-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "649.9",
+  "regular": "649.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761661634_PJ9B1803.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10102",
+  "sku": "ZSI921-2",
+  "title": "שרשרת ZSI921-2B",
+  "slug": "שרשרת-zsi921-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב אדום 14K בעובי 2 מיקרון  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761661664_PJ9B1804.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10105",
+  "sku": "KSI2028-2",
+  "title": "טבעת KSI2028-2",
+  "slug": "טבעת-ksi2028-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ],
+   "pa_אורך-השרשרת": [
+    "40cm",
+    "45cm",
+    "50cm",
+    "55cm",
+    "60cm"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1769694193_generation_1769693440919.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10124",
+  "sku": "ZSI923-3B",
+  "title": "שרשרת ZSI923-3B",
+  "slug": "שרשרת-zsi923-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662102_PJ9B1796.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10126",
+  "sku": "CSI020-1",
+  "title": "טבעת CSI020-1",
+  "slug": "טבעת-csi020-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "169.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10126-hq-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10127",
+  "sku": "COSl8002-3",
+  "title": "שרשרת COSI8002-3",
+  "slug": "שרשרת-cosi8002-3",
+  "cats": [
+   "שרשראות צ'וקר",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_צבע-אבנים": [
+    "טורקיז",
+    "ירוק",
+    "כחול",
+    "לבן"
+   ]
+  },
+  "content": "שרשרת קולר (צ׳וקר) עשויה פליז בציפוי זהב 14k)2 מיקרון) משובצת אבני זרקון אורך השרשרת:  35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245378_1728904963_1701694147_F248D7B2-88B7-462A-8B48-DF3BC332EC85-1-scaled-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10137",
+  "sku": "ZSI923-2B",
+  "title": "שרשרת ZSI923-2B",
+  "slug": "שרשרת-zsi923-2b",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662068_PJ9B1792.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10140",
+  "sku": "KSI3055-1 40CM",
+  "title": "שרשרת טניס KSI3055-1 40CM",
+  "slug": "שרשרת-טניס-ksi3055-1-40cm",
+  "cats": [
+   "שרשראות טניס",
+   "שרשראות"
+  ],
+  "price": "1999.9",
+  "regular": "1999.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת טניס (קולייר)    עשויה כסף אמיתי 925    משובצת אבני זרקון בדרגת 5A    אורך השרשרת וגודל האבנים מצויין בכותרת המוצר.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1769943194_generation_1769943165377.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10142",
+  "sku": "CSI064-2",
+  "title": "שרשרת CSI064-2",
+  "slug": "שרשרת-csi064-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1728827980_1664103213_1208.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10144",
+  "sku": "ZSI923-1",
+  "title": "שרשרת ZSI923-1",
+  "slug": "שרשרת-zsi923-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "309.9",
+  "regular": "309.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662028_PJ9B1791.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10149",
+  "sku": "ZSI924-1",
+  "title": "עגיל ZSI924-1",
+  "slug": "עגיל-zsi924-1",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "229.9",
+  "regular": "229.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל צמוד  עשוי כסף אמיתי 925  משובץ באבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662251_PJ9B1856.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10151",
+  "sku": "ZSI686-2",
+  "title": "עגיל ZSI686-2",
+  "slug": "עגיל-zsi686-2",
+  "cats": [
+   "עגילי ערב",
+   "עגילים"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגילי ערב רוז גולד    עשויים כסף 925 מצופה זהב אדום (רוז גולד)    משובצים אבני זרקון.    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744116730_ZSI686-220ROSE20GOLD.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10154",
+  "sku": "ZSI527-3B",
+  "title": "צמיד ZSI527-3B",
+  "slug": "צמיד-zsi527-3b",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובץ אבני זרקון  אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1736245252_1730023810_PJ9B5940-3-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10155",
+  "sku": "ZSI924-2",
+  "title": "עגיל ZSI924-2B",
+  "slug": "עגיל-zsi924-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד  עשוי פליז  בציפוי זהב אדום 14K 2 מיקרון  משובץ באבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662292_PJ9B1860.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10159",
+  "sku": "ZSI752-2",
+  "title": "טבעת ZSI752-2",
+  "slug": "טבעת-zsi752-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "159.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744015897_PJ9B3424.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10161",
+  "sku": "ZSI924-3",
+  "title": "עגיל ZSI924-3B",
+  "slug": "עגיל-zsi924-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד  עשוי פליז  בציפוי זהב 14K 2 מיקרון  משובץ באבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662333_PJ9B1863.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10168",
+  "sku": "ZSI528-3",
+  "title": "צמיד ZSI528-3",
+  "slug": "צמיד-zsi528-3",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744116671_ZSI528-320GOLD.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10169",
+  "sku": "ZSI1134-3B",
+  "title": "טבעת ZSI1134-3B",
+  "slug": "טבעת-zsi1134-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305943_31-ZSI1134-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10178",
+  "sku": "KSI6003-2",
+  "title": "טבעת KSI6003-2",
+  "slug": "טבעת-ksi6003-2",
+  "cats": [
+   "טבעות לזרת",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "4"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744715097_9K3A1737-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10182",
+  "sku": "ZSI1136-3B",
+  "title": "טבעת ZSI1136-3B",
+  "slug": "טבעת-zsi1136-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "4",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794304704_1-ZSI1136-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10191",
+  "sku": "KSI6003-3",
+  "title": "טבעת KSI6003-3",
+  "slug": "טבעת-ksi6003-3",
+  "cats": [
+   "טבעות לזרת",
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "4"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744715106_9K3A1738-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10196",
+  "sku": "ZSI1137-1",
+  "title": "טבעת ZSI1137-1",
+  "slug": "טבעת-zsi1137-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה כסף אמיתי 925 משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305971_32-ZSI1137-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10198",
+  "sku": "KSI6005-1",
+  "title": "טבעת KSI6005-1",
+  "slug": "טבעת-ksi6005-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה    עובי האבנים                      3*5mm+ 5*7mm",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744700220_9K3A1724.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10208",
+  "sku": "KSI6007-2-B",
+  "title": "טבעת KSI6007-2-B",
+  "slug": "טבעת-ksi6007-2-b",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744715238_9K3A1717-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10213",
+  "sku": "ZSI1137-2B",
+  "title": "טבעת ZSI1137-2B",
+  "slug": "טבעת-zsi1137-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306000_33-ZSI1137-2B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10220",
+  "sku": "KSI6007-1",
+  "title": "טבעת KSI6007-1",
+  "slug": "טבעת-ksi6007-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "309.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744715229_9K3A1716-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10226",
+  "sku": "ZSI1137-3B",
+  "title": "טבעת ZSI1137-3B",
+  "slug": "טבעת-zsi1137-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306346_37-ZSI1137-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10232",
+  "sku": "KSI6015-1",
+  "title": "טבעת KSI6015-1",
+  "slug": "טבעת-ksi6015-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744717229_9K3A1722-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10240",
+  "sku": "ZSI1141-2B",
+  "title": "טבעת ZSI1141-2B",
+  "slug": "טבעת-zsi1141-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306301_36-ZSI1141-2B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10241",
+  "sku": "KSI6014-1",
+  "title": "טבעת KSI6014-1",
+  "slug": "טבעת-ksi6014-1",
+  "cats": [
+   "טבעות לזרת",
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "4",
+    "7"
+   ]
+  },
+  "content": "כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744717995_9K3A1739-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10251",
+  "sku": "KSI6014-2",
+  "title": "טבעת KSI6014-2",
+  "slug": "טבעת-ksi6014-2",
+  "cats": [
+   "טבעות לזרת",
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "4",
+    "7"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744718019_9K3A1741-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10254",
+  "sku": "ZSI1141-3B",
+  "title": "טבעת ZSI1141-3B",
+  "slug": "טבעת-zsi1141-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306373_38-ZSI1141-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10261",
+  "sku": "KSI6014-3",
+  "title": "טבעת KSI6014-3",
+  "slug": "טבעת-ksi6014-3",
+  "cats": [
+   "טבעות לזרת",
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "4",
+    "6 2",
+    "7",
+    "8 2"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1744718056_9K3A1740-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10262",
+  "sku": "KSI3009-2",
+  "title": "צמיד טניס ציפוי KSI3009-2",
+  "slug": "צמיד-טניס-ציפוי-ksi3009-2",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16 ס\"מ",
+    "17 ס\"מ",
+    "18 ס\"מ",
+    "19 ס\"מ"
+   ]
+  },
+  "content": "עשוי מפליז    בציפוי זהב אדום (    0.25 מיקרון)    משובץ אבני זרקון באיכות 5A    מידת הצמיד ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794388510_image-1794388359453.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10272",
+  "sku": "ZSI768-2",
+  "title": "צמיד ZSI768-2",
+  "slug": "צמיד-zsi768-2",
+  "cats": [
+   "צמידים"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746349694_PJ9B1734.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10274",
+  "sku": "KSI3009-3",
+  "title": "צמיד טניס ציפוי KSI3009-3",
+  "slug": "צמיד-טניס-ציפוי-ksi3009-3",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16 ס\"מ",
+    "17 ס\"מ",
+    "18 ס\"מ",
+    "19 ס\"מ"
+   ]
+  },
+  "content": "עשוי מפליז    בציפוי זהב (    0.25 מיקרון)    משובץ אבני זרקון באיכות 5A    מידת הצמיד ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794388568_image-1794388360488.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10280",
+  "sku": "ZSI774-2",
+  "title": "צמיד ZSI774-2",
+  "slug": "צמיד-zsi774-2",
+  "cats": [
+   "צמידים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350048_PJ9B1733.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10282",
+  "sku": "ZSI775-2",
+  "title": "שרשרת ZSI775-2",
+  "slug": "שרשרת-zsi775-2",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז    בציפוי זהב אדום (רוז גולד)    משובצת באבני זרקון    אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350135_PJ9B1784.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10284",
+  "sku": "ZSI775-1",
+  "title": "שרשרת ZSI775-1",
+  "slug": "שרשרת-zsi775-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זרקון    אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350126_PJ9B1786.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10287",
+  "sku": "ZSI776-2",
+  "title": "עגיל ZSI776-2",
+  "slug": "עגיל-zsi776-2",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "309.9",
+  "regular": "309.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים אבני זרקון.    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350233_PJ9B1779.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10289",
+  "sku": "ZSI777-1",
+  "title": "צמיד ZSI777-1",
+  "slug": "צמיד-zsi777-1",
+  "cats": [
+   "צמידים"
+  ],
+  "price": "489.9",
+  "regular": "489.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350263_PJ9B1724.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10291",
+  "sku": "ZSI777-2",
+  "title": "צמיד ZSI777-2",
+  "slug": "צמיד-zsi777-2",
+  "cats": [
+   "צמידים"
+  ],
+  "price": "489.9",
+  "regular": "489.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350266_PJ9B1723.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10293",
+  "sku": "ZSI777-3",
+  "title": "צמיד ZSI777-3",
+  "slug": "צמיד-zsi777-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "489.9",
+  "regular": "489.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746350273_PJ9B1712.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10295",
+  "sku": "KSI3308-2",
+  "title": "שרשרת טניס מדורגת לבבות 3+4+5MM KSI3308-2",
+  "slug": "שרשרת-טניס-מדורגת-לבבות-345mm-ksi3308-2",
+  "cats": [
+   "שרשראות טניס",
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "1919.9",
+  "regular": "1919.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר)    עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    אורך השרשרת:  40 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746513481_KSI3308-220ROSH20GOLD.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10297",
+  "sku": "KSI3308-3",
+  "title": "שרשרת טניס מדורגת לבבות 3+4+5MM KSI3308-3",
+  "slug": "שרשרת-טניס-מדורגת-לבבות-345mm-ksi3308-3",
+  "cats": [
+   "שרשראות טניס",
+   "שרשראות צ'וקר",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "1919.9",
+  "regular": "1919.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר)    עשויה פליז    בציפוי זהב 14k)2 מיקרון)    משובצת אבני זרקון    אורך השרשרת:  40 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746513359_KSI3308-320GOLD.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10300",
+  "sku": "ZSI529-2",
+  "title": "שרשרת קולייר טניס ZSI529-2",
+  "slug": "שרשרת-קולייר-טניס-zsi529-2",
+  "cats": [
+   "קוליירים",
+   "שרשראות טניס",
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "1959.9",
+  "regular": "1959.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר)    עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    אורך השרשרת:  40 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746513402_ZSI529-220ROSH20GOLD.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10302",
+  "sku": "ZSI529-3",
+  "title": "שרשרת קולייר טניס ZSI529-3",
+  "slug": "שרשרת-קולייר-טניס-zsi529-3",
+  "cats": [
+   "קוליירים",
+   "שרשראות טניס",
+   "שרשראות צ'וקר",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "1959.9",
+  "regular": "1959.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת קולר (צ׳וקר)    עשויה פליז    בציפוי זהב 14k)2 מיקרון)    משובצת אבני זרקון    אורך השרשרת:  40 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746513410_ZSI529-320GOLD.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10306",
+  "sku": "ISI003-1",
+  "title": "שרשרת אייס איטלקית 3 שורות ISI003-1",
+  "slug": "שרשרת-אייס-איטלקית-3-שורות-isi003-1",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "1229.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "40cm",
+    "50cm",
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת אייס 3 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי רודיום קיימת באורכים 40/50/60/70 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746716482_VVU.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10314",
+  "sku": "ISI003-9",
+  "title": "שרשרת אייס איטלקית 3 שורות ISI003-9",
+  "slug": "שרשרת-אייס-איטלקית-3-שורות-isi003-9",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "1229.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "40cm",
+    "50cm",
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת אייס 3 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי רוז גולד משולב כסף קיימת באורכים 40/50/60/70 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746716645_JFF.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10322",
+  "sku": "ISI003-2",
+  "title": "שרשרת אייס איטלקית 3 שורות ISI003-2",
+  "slug": "שרשרת-אייס-איטלקית-3-שורות-isi003-2",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "1529.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "50cm",
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת אייס 3 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי רוז גולד קיימת באורכים 40/50/60/70 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746716437_L.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10329",
+  "sku": "ISI004-2",
+  "title": "שרשרת אייס איטלקית 4 שורות ISI004-2",
+  "slug": "שרשרת-אייס-איטלקית-4-שורות-isi004-2",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "2949.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת אייס 4 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי רוז גולד קיימת באורכים 60/70 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1746716509_DUFIY.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10333",
+  "sku": "TSI5502-1",
+  "title": "עגיל TSI5502-1",
+  "slug": "עגיל-tsi5502-1",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1750161324_TSI5502-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10335",
+  "sku": "TSI5502-2",
+  "title": "עגיל TSI5502-2",
+  "slug": "עגיל-tsi5502-2",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1750161356_TSI5502-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10343",
+  "sku": "ZSI835-1",
+  "title": "טבעת ZSI835-1",
+  "slug": "טבעת-zsi835-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1752573998_PJ9B0457.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10349",
+  "sku": "ISI003-3-15cm",
+  "title": "צמיד אייס איטלקי 3 שורות בחיתוך לייזר -זהב - ISI003-3-15cm",
+  "slug": "צמיד-אייס-איטלקי-3-שורות-בחיתוך-לייזר-ז",
+  "cats": [
+   "צמידי אייס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "479.9",
+  "regular": "479.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "צמיד אייס איטלקי 3 שורות בחיתוך לייזר עשוי כסף אמיתי 925 בציפוי זהב אורך הצמיד 15 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1752995548_99.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10351",
+  "sku": "ISI003-3",
+  "title": "שרשרת אייס איטלקית 3 שורות ISI003-3 (40 ס\"מ)",
+  "slug": "שרשרת-אייס-איטלקית-3-שורות-isi003-3-40-סמ",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "שרשראות"
+  ],
+  "price": "1229.9",
+  "regular": "1229.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת אייס 3 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי זהב קיימת ב- 40 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753265029_GOLD.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10353",
+  "sku": "ISI003-8-",
+  "title": "שרשרת אייס איטלקי 3 שורות בחיתוך לייזר - זהב משולב כסף ISI003-8",
+  "slug": "שרשרת-אייס-איטלקי-3-שורות-בחיתוך-לייזר",
+  "cats": [
+   "שרשראות אייס",
+   "שרשראות גברים",
+   "תכשיטי גברים",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "1229.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "40cm",
+    "50cm",
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת אייס 3 שורות בחיתוך לייזר עשויה כסף אמיתי 925 איטלקי בציפוי זהב משולב כסף קיימת באורכים 40/50/60/70 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1752995363_55555.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10362",
+  "sku": "KSI6055-2",
+  "title": "עגיל KSI6055-2",
+  "slug": "עגיל-ksi6055-2",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים באבני זרקון    העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1754378543_KSI6055-2-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10364",
+  "sku": "SSI1002-1",
+  "title": "תליון SSI1002-1",
+  "slug": "תליון-ssi1002-1",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "379.9",
+  "regular": "379.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004677_SSI1002-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10366",
+  "sku": "SSI1002-2",
+  "title": "תליון SSI1002-2",
+  "slug": "תליון-ssi1002-2",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "379.9",
+  "regular": "379.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004664_SSI1002-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10368",
+  "sku": "SSI1003-2",
+  "title": "תליון SSI1003-2",
+  "slug": "תליון-ssi1003-2",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "389.9",
+  "regular": "389.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004648_SSI1003-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10370",
+  "sku": "SSI1004-1",
+  "title": "תליון SSI1004-1",
+  "slug": "תליון-ssi1004-1",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "379.9",
+  "regular": "379.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004628_SSI1004-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10372",
+  "sku": "SSI1004-2",
+  "title": "תליון SSI1004-2",
+  "slug": "תליון-ssi1004-2",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "379.9",
+  "regular": "379.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004617_SSI1004-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10374",
+  "sku": "SSI1005-1",
+  "title": "תליון SSI1005-1",
+  "slug": "תליון-ssi1005-1",
+  "cats": [
+   "תליונים"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004608_SSI1005-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10376",
+  "sku": "CSI110-2",
+  "title": "שרשרת CSI110-2",
+  "slug": "שרשרת-csi110-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובצת באבני זרקון    אורך השרשרת: 37+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753004885_615888319009-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10378",
+  "sku": "KSI6059-1",
+  "title": "טבעת KSI6059-1",
+  "slug": "טבעת-ksi6059-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753007932_KSI6059-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10383",
+  "sku": "KSI6061-2",
+  "title": "טבעת KSI6061-2",
+  "slug": "טבעת-ksi6061-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "309.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753008925_KSI6061-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10388",
+  "sku": "KSI6062-1",
+  "title": "טבעת KSI6062-1",
+  "slug": "טבעת-ksi6062-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753009307_KSI6062-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10394",
+  "sku": "KSI6062-2-B",
+  "title": "טבעת KSI6062-2-B",
+  "slug": "טבעת-ksi6062-2-b",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753009354_KSI6062-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10400",
+  "sku": "KSI6063-1",
+  "title": "טבעת KSI6063-1",
+  "slug": "טבעת-ksi6063-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753009483_KSI6063-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10405",
+  "sku": "KSI6063-3",
+  "title": "טבעת KSI6063-3",
+  "slug": "טבעת-ksi6063-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753009555_KSI6063-3-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10410",
+  "sku": "KSI6064-3",
+  "title": "טבעת KSI6064-3",
+  "slug": "טבעת-ksi6064-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753009846_KSI6064-3-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10415",
+  "sku": "ZSI852-1",
+  "title": "שרשרת ZSI852-1",
+  "slug": "שרשרת-zsi852-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 35+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753338965_PJ9B4234.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10417",
+  "sku": "ZSI852-2",
+  "title": "שרשרת ZSI852-2B",
+  "slug": "שרשרת-zsi852-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב אדום 14K בעובי 2 מיקרון  משובצת באבני זרקון  אורך השרשרת: 35+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753338989_PJ9B4236.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10419",
+  "sku": "ZSI853-1",
+  "title": "שרשרת ZSI853-1",
+  "slug": "שרשרת-zsi853-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוייה כסף אמיתי 925 ומשובצת זרקונים אורך השרשרת: 35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753339429_PJ9B4232.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10421",
+  "sku": "ZSI853-2",
+  "title": "שרשרת ZSI853-2",
+  "slug": "שרשרת-zsi853-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוייה כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) ומשובצת זרקונים אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753339446_PJ9B4228.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10423",
+  "sku": "ZSI839-1",
+  "title": "שרשרת ZSI839-1",
+  "slug": "שרשרת-zsi839-1",
+  "cats": [
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "699.9",
+  "regular": "699.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוייה כסף אמיתי 925 ומשובצת זרקונים אורך השרשרת: 35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753341151_PJ9B4244.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10425",
+  "sku": "ZSI839-2",
+  "title": "שרשרת ZSI839-2",
+  "slug": "שרשרת-zsi839-2",
+  "cats": [
+   "שרשראות צ'וקר",
+   "שרשראות"
+  ],
+  "price": "819.9",
+  "regular": "819.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוייה כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) ומשובצת זרקונים אורך השרשרת: 35+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753341165_PJ9B4243.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10428",
+  "sku": "ZSI843-1",
+  "title": "עגיל ZSI843-1",
+  "slug": "עגיל-zsi843-1",
+  "cats": [
+   "עגילי ערב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925 משובצים באבני זירקון מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1753341524_PJ9B4304.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10431",
+  "sku": "ZSI843-3",
+  "title": "עגיל ZSI843-3",
+  "slug": "עגיל-zsi843-3",
+  "cats": [
+   "עגילי ערב",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל ZSI843-3עשויים פליז  בציפוי זהב 14K (2 מיקרון)  משובצים באבני זירקון  מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1754818862_PJ9B7456.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10433",
+  "sku": "ZSI876-3",
+  "title": "שרשרת ZSI876-3",
+  "slug": "שרשרת-zsi876-3",
+  "cats": [
+   "שרשראות עניבה",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "259.9",
+  "regular": "259.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת עניבה נופלת    עשויה פליז    בציפוי זהב 14k (2 מיקרון)    משובצת אבני זרקון    אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758795234_PJ9B5885.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10435",
+  "sku": "ZSI892-2",
+  "title": "צמיד ZSI892-2",
+  "slug": "צמיד-zsi892-2",
+  "cats": [
+   "צמידי שרשרת",
+   "צמידים"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758792400_PJ9B6091.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10437",
+  "sku": "ZSI874-1",
+  "title": "טבעת ZSI874-1",
+  "slug": "טבעת-zsi874-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1758798693_PJ9B6043.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10444",
+  "sku": "KSI6055-3",
+  "title": "עגיל KSI6055-3",
+  "slug": "עגיל-ksi6055-3",
+  "cats": [
+   "עגילים צמודים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי פליז    בציפוי זהב 14K 2 מיקרון    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1754378548_KSI6055-3-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10446",
+  "sku": "ZSI925-1",
+  "title": "טבעת ZSI925-1",
+  "slug": "טבעת-zsi925-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662488_PJ9B1989.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10451",
+  "sku": "ZSI925-2",
+  "title": "טבעת ZSI925-2",
+  "slug": "טבעת-zsi925-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662526_PJ9B1986.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10456",
+  "sku": "ZSI925-3",
+  "title": "טבעת ZSI925-3",
+  "slug": "טבעת-zsi925-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "ע   שויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761662562_PJ9B1984.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10462",
+  "sku": "KLSI006-2",
+  "title": "עגיל KLSI006-2 6*8mm",
+  "slug": "עגיל-klsi006-2-68mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": ":עשויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים באבני זרקון    העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10462-hq-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10465",
+  "sku": "KLSI006-3",
+  "title": "עגיל KLSI006-3 6*8mm",
+  "slug": "עגיל-klsi006-3-68mm",
+  "cats": [
+   "עגילים צמודים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי מכסף    בציפוי זהב 14K 2 מיקרון    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10465-hq-1.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10468",
+  "sku": "KLSI007-1",
+  "title": "עגיל KLSI007-1 5*10mm",
+  "slug": "עגיל-klsi007-1-510mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי כסף אמיתי 925    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761807980_DSC_6462.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10473",
+  "sku": "KLSI002-3",
+  "title": "עגיל KLSI002-3",
+  "slug": "עגיל-klsi002-3",
+  "cats": [
+   "עגילים צמודים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "79.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_קוטר": [
+    "4mm",
+    "5mm",
+    "6mm"
+   ]
+  },
+  "content": "עגיל צמוד    עשוי מכסף    בציפוי זהב 14K 2 מיקרון    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767620540_generation_1767620341769.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10479",
+  "sku": "KLSI003-2",
+  "title": "עגיל KLSI003-2 3*5mm",
+  "slug": "עגיל-klsi003-2-35mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "69.9",
+  "regular": "69.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים באבני זרקון    העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10479-hq-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10482",
+  "sku": "KLSI004-1",
+  "title": "עגיל KLSI004-1 4*6mm",
+  "slug": "עגיל-klsi004-1-46mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "89.9",
+  "regular": "89.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי כסף אמיתי 925    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761820323_DSC_6468.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10485",
+  "sku": "KLSI005-1",
+  "title": "עגיל KLSI005-1 5*7mm",
+  "slug": "עגיל-klsi005-1-57mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי כסף אמיתי 925    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761820288_DSC_6468.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10488",
+  "sku": "KLSI005-2",
+  "title": "עגיל KLSI005-2 5*7mm",
+  "slug": "עגיל-klsi005-2-57mm",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925    ומצופים זהב אדום (רוז גולד)    משובצים באבני זרקון    העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10488-hq-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10491",
+  "sku": "KLSI005-3",
+  "title": "עגיל KLSI005-3 5*7mm",
+  "slug": "עגיל-klsi005-3-57mm",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד    עשוי מכסף    בציפוי זהב 14K 2 מיקרון    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10491-hq-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10493",
+  "sku": "ZSI457-1.",
+  "title": "שרשרת טניס 4 מ\"מ ZSI457-1",
+  "slug": "שרשרת-טניס-4-ממ-zsi457-1",
+  "cats": [
+   "קוליירים",
+   "שרשראות טניס",
+   "שרשראות"
+  ],
+  "price": "2199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "40cm",
+    "45cm",
+    "60cm",
+    "70cm"
+   ]
+  },
+  "content": "שרשרת טניס (קולייר)    עשויה כסף אמיתי 925    משובצת אבני זרקון בדרגת 5A    אורך השרשרת וגודל האבנים מצויין בכותרת המוצר.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1769943772_generation_1769943675513.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10500",
+  "sku": "ZSI927-2",
+  "title": "עגיל ZSI927-2",
+  "slug": "עגיל-zsi927-2",
+  "cats": [
+   "עגילי הליקס",
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל שני חורים    עשוי כסף אמיתי 925    בציפוי זהב אדום (רוז גולד)    משובץ אבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761831160_IMG-20251030-WA0020.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10503",
+  "sku": "ZSI927-3",
+  "title": "עגיל ZSI927-3",
+  "slug": "עגיל-zsi927-3",
+  "cats": [
+   "עגילי הליקס",
+   "עגילי שני חורים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל שני חורים    עשוי פליז בציפוי זהב 14k)2 מיקרון)    העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1761832055_PJ9B2167.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10509",
+  "sku": "KLSI002-1.",
+  "title": "עגיל KLSI002-1",
+  "slug": "עגיל-klsi002-1",
+  "cats": [
+   "עגילים צמודים",
+   "עגילים"
+  ],
+  "price": "89.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_קוטר": [
+    "4mm",
+    "5mm",
+    "6mm"
+   ]
+  },
+  "content": "עגיל צמוד    עשוי כסף אמיתי 925    משובץ באבני זרקון    העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/almora-10509-hq-1.webp",
+  "gallery": 3,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10514",
+  "sku": "ZSI979-1",
+  "title": "שרשרת ZSI979-1",
+  "slug": "שרשרת-zsi979-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766391683_PJ9B0931.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10516",
+  "sku": "ZSI979-2",
+  "title": "שרשרת ZSI979-2",
+  "slug": "שרשרת-zsi979-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766391642_PJ9B0933.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10518",
+  "sku": "ZSI979-3",
+  "title": "שרשרת ZSI979-3",
+  "slug": "שרשרת-zsi979-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766391676_PJ9B0934.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10520",
+  "sku": "ZSI980-3B",
+  "title": "צמיד גאדי ZSI980-3B",
+  "slug": "צמיד-גאדי-zsi980-3b",
+  "cats": [
+   "צמידי ג'אדי",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת  עשוי פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובץ אבני זרקון",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766391304_PJ9B0945.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10526",
+  "sku": "ZSI982-1",
+  "title": "שרשרת ZSI982-1",
+  "slug": "שרשרת-zsi982-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "259.9",
+  "regular": "259.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1785780576_8b992b60e_generated_image.webp",
+  "gallery": 5,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10528",
+  "sku": "ZSI982-2",
+  "title": "שרשרת ZSI982-2",
+  "slug": "שרשרת-zsi982-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766391553_PJ9B0927.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10530",
+  "sku": "ZSI983-2",
+  "title": "שרשרת ZSI983-2",
+  "slug": "שרשרת-zsi983-2",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "329.9",
+  "regular": "329.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766392107_PJ9B0940.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10536",
+  "sku": "ZSI983-3",
+  "title": "שרשרת ZSI983-3",
+  "slug": "שרשרת-zsi983-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "329.9",
+  "regular": "329.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766392123_PJ9B0937.webp",
+  "gallery": 5,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10538",
+  "sku": "ZSI985-2",
+  "title": "צמיד ZSI985-2",
+  "slug": "צמיד-zsi985-2",
+  "cats": [
+   "צמידי שרשרת",
+   "צמידים"
+  ],
+  "price": "319.9",
+  "regular": "319.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובץ אבני זרקון  אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403157_PJ9B0954.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10540",
+  "sku": "ZSI985-3",
+  "title": "צמיד ZSI985-3",
+  "slug": "צמיד-zsi985-3",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "319.9",
+  "regular": "319.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובץ אבני זרקון  אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403167_PJ9B0955.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10543",
+  "sku": "ZSI164-3",
+  "title": "עגיל ZSI164-3",
+  "slug": "עגיל-zsi164-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "309.9",
+  "regular": "309.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403275_PJ9B0915.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10545",
+  "sku": "ZSI234-3",
+  "title": "שרשרת ZSI234-3",
+  "slug": "שרשרת-zsi234-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "249.9",
+  "regular": "249.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובצת באבני זרקון  אורך השרשרת: 37+7 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403307_PJ9B0919.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10547",
+  "sku": "ZSI981-1",
+  "title": "טבעת ZSI981-1",
+  "slug": "טבעת-zsi981-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766390688_PJ9B0961.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10553",
+  "sku": "ZSI981-2B",
+  "title": "טבעת ZSI981-2B",
+  "slug": "טבעת-zsi981-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב אדום 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766390732_PJ9B0959.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10559",
+  "sku": "ZSI981-3B",
+  "title": "טבעת ZSI981-3B",
+  "slug": "טבעת-zsi981-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766390765_PJ9B0960.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10566",
+  "sku": "ZSI987-2",
+  "title": "עגיל ZSI987-2",
+  "slug": "עגיל-zsi987-2",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403915_PJ9B3760.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10571",
+  "sku": "ZSI987-3",
+  "title": "עגיל ZSI987-3",
+  "slug": "עגיל-zsi987-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל נופל  עשוי פליז  בציפוי זהב 14K 2 מיקרון  משובץ באבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766403936_PJ9B3764.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10574",
+  "sku": "ZSI763-3",
+  "title": "עגיל ZSI763-3",
+  "slug": "עגיל-zsi763-3",
+  "cats": [
+   "עגילים נופלים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404014_PJ9B3784.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10577",
+  "sku": "ZSI988-1",
+  "title": "עגיל ZSI988-1",
+  "slug": "עגיל-zsi988-1",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406213_PJ9B1670.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10580",
+  "sku": "ZSI988-3",
+  "title": "עגיל ZSI988-3",
+  "slug": "עגיל-zsi988-3",
+  "cats": [
+   "עגילים נופלים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406231_PJ9B1679.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10583",
+  "sku": "ZSI989-2",
+  "title": "עגיל ZSI989-2",
+  "slug": "עגיל-zsi989-2",
+  "cats": [
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406288_PJ9B1686.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10586",
+  "sku": "ZSI991-1",
+  "title": "עגיל ZSI991-1",
+  "slug": "עגיל-zsi991-1",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404556_PJ9B3724.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10589",
+  "sku": "ZSI991-2B",
+  "title": "עגיל ZSI991-2B",
+  "slug": "עגיל-zsi991-2b",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404568_PJ9B3715.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10592",
+  "sku": "ZSI991-3B",
+  "title": "עגיל ZSI991-3B",
+  "slug": "עגיל-zsi991-3b",
+  "cats": [
+   "עגילים נופלים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404627_PJ9B3720.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10595",
+  "sku": "ZSI992-3",
+  "title": "עגיל ZSI992-3",
+  "slug": "עגיל-zsi992-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406429_PJ9B1756.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10598",
+  "sku": "ZSI993-2",
+  "title": "עגיל ZSI993-2",
+  "slug": "עגיל-zsi993-2",
+  "cats": [
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "249.9",
+  "regular": "249.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל שני חורים  עשוי כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובץ אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406466_PJ9B1730.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10601",
+  "sku": "ZSI1095-1",
+  "title": "עגיל ZSI1095-1",
+  "slug": "עגיל-zsi1095-1",
+  "cats": [
+   "עגילי ערב",
+   "עגילים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגיל עשוי כסף אמיתי 925 משובצים אבני זרקון. העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406600_PJ9B1713.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10604",
+  "sku": "ZSI995-1",
+  "title": "עגיל ZSI995-1",
+  "slug": "עגיל-zsi995-1",
+  "cats": [
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406709_PJ9B1746.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10607",
+  "sku": "ZSI995-2",
+  "title": "עגיל ZSI995-2",
+  "slug": "עגיל-zsi995-2",
+  "cats": [
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766406726_PJ9B1738.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10612",
+  "sku": "ZSI999-2",
+  "title": "עגיל ZSI999-2",
+  "slug": "עגיל-zsi999-2",
+  "cats": [
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל שני חורים  עשוי כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובץ אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766407055_PJ9B1760.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10615",
+  "sku": "ZSI1000-3",
+  "title": "עגיל ZSI1000-3",
+  "slug": "עגיל-zsi1000-3",
+  "cats": [
+   "עגילי ערב",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עגילי ערב  עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766407157_PJ9B1703.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10618",
+  "sku": "ZSI1001-2",
+  "title": "עגיל ZSI1001-2",
+  "slug": "עגיל-zsi1001-2",
+  "cats": [
+   "עגילי שני חורים",
+   "עגילים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766479199_PJ9B3734.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10621",
+  "sku": "ZSI1001-3",
+  "title": "עגיל ZSI1001-3",
+  "slug": "עגיל-zsi1001-3",
+  "cats": [
+   "עגילי שני חורים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשויים פליז ומשובצים זהב בעובי 2 מיקרון  משובצים אבני זרקון  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766479235_PJ9B3737.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10624",
+  "sku": "ZSI1002-2",
+  "title": "עגיל ZSI1002-2",
+  "slug": "עגיל-zsi1002-2",
+  "cats": [
+   "עגילים נופלים",
+   "עגילים"
+  ],
+  "price": "199.9",
+  "regular": "199.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויים כסף אמיתי 925  ומצופים זהב אדום (רוז גולד)  משובצים אבני זרקון.  העגילים מגיעים כזוג.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766407462_PJ9B3769.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10626",
+  "sku": "ZSI1004-1",
+  "title": "שרשרת ZSI1004-1",
+  "slug": "שרשרת-zsi1004-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "209.9",
+  "regular": "209.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404897_PJ9B3684.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10628",
+  "sku": "ZSI1004-2B",
+  "title": "שרשרת ZSI1004-2B",
+  "slug": "שרשרת-zsi1004-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז בציפוי זהב אדום 14K בעובי 2 מיקרון משובצת באבני זרקון אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404912_PJ9B3680.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10630",
+  "sku": "ZSI1004-3",
+  "title": "שרשרת ZSI1004-3",
+  "slug": "שרשרת-zsi1004-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404923_PJ9B3677.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10632",
+  "sku": "ZSI1005-1",
+  "title": "שרשרת ZSI1005-1",
+  "slug": "שרשרת-zsi1005-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "319.9",
+  "regular": "319.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  אורך השרשרת: 40+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1766404977_PJ9B3670.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10636",
+  "sku": "KSI8018-2B",
+  "title": "צמיד KSI8018-2B",
+  "slug": "צמיד-ksi8018-2b",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי פליז    בציפוי זהב אדום 14K בעובי 2 מיקרון    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767099568_KSI8018-2-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10640",
+  "sku": "KSI8018-3B",
+  "title": "צמיד KSI8018-3B",
+  "slug": "צמיד-ksi8018-3b",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי פליז    בציפוי זהב 14K בעובי 2 מיקרון    משובץ אבני זרקון    אורך הצמיד: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767099798_KSI8018-3-scaled-1.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10642",
+  "sku": "LESI3313-02",
+  "title": "צמיד גאדי LESI3313-02",
+  "slug": "צמיד-גאדי-lesi3313-02",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "229.9",
+  "regular": "229.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת עשוי כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובץ אבני זרקון אורך 15+5 סמ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767517292_LESI3313-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10644",
+  "sku": "LESI3320-2",
+  "title": "צמיד גאדי LESI3320-2",
+  "slug": "צמיד-גאדי-lesi3320-2",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "229.9",
+  "regular": "229.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת עשוי כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובץ אבני זרקון אורך 15+5 סמ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767532367_LESI3302-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10646",
+  "sku": "LESI3321-2",
+  "title": "צמיד גאדי LESI3321-2",
+  "slug": "צמיד-גאדי-lesi3321-2",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת עשוי כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובץ אבני זרקון אורך 15+5 סמ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767178805_LESI3321-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10650",
+  "sku": "LESI3325-2",
+  "title": "צמיד גאדי LESI3325-2",
+  "slug": "צמיד-גאדי-lesi3325-2",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת עשוי כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובץ אבני זרקון אורך 15+5 סמ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767178574_LESI3325-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10652",
+  "sku": "LESI3326-2",
+  "title": "צמיד גאדי LESI3326-2",
+  "slug": "צמיד-גאדי-lesi3326-2",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "379.9",
+  "regular": "379.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד משולב טבעת עשוי כסף אמיתי 925 בציפוי זהב אדום (רוז גולד) משובץ אבני זרקון אורך 15+5 סמ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767178642_LESI3326-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10656",
+  "sku": "KSI8010-3-B",
+  "title": "טבעת KSI8010 -3",
+  "slug": "טבעת-ksi8010-3",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "219.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K    עובי הציפוי 2 מיקרון    משובצת באבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767097984_KSI8010-3.webp",
+  "gallery": 1,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10662",
+  "sku": "KSI8011-1",
+  "title": "טבעת KSI8011-1",
+  "slug": "טבעת-ksi8011-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098014_KSI8011-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10667",
+  "sku": "KSI8011-2",
+  "title": "טבעת KSI8011-2",
+  "slug": "טבעת-ksi8011-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925. בציפוי זהב אדום (רוז גולד) משובצת אבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098029_KSI8011-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10672",
+  "sku": "KSI8012-1",
+  "title": "טבעת KSI8012-1",
+  "slug": "טבעת-ksi8012-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098062_KSI8012-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10677",
+  "sku": "KSI8012-2",
+  "title": "טבעת KSI8012-2",
+  "slug": "טבעת-ksi8012-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925. בציפוי זהב אדום (רוז גולד) משובצת אבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098079_KSI8012-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10682",
+  "sku": "KSI8017-1",
+  "title": "טבעת KSI8017-1",
+  "slug": "טבעת-ksi8017-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925    משובצת באבני זירקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098344_KSI8017-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10687",
+  "sku": "KSI8017-2",
+  "title": "טבעת KSI8017-2",
+  "slug": "טבעת-ksi8017-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925.    בציפוי זהב אדום (רוז גולד)    משובצת אבני זרקון    מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098471_KSI8017-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10692",
+  "sku": "KSI8020-2",
+  "title": "טבעת KSI8020-2",
+  "slug": "טבעת-ksi8020-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925. בציפוי זהב אדום (רוז גולד) משובצת אבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098553_KSI8020-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10698",
+  "sku": "KSI8021-2",
+  "title": "טבעת KSI8021-2",
+  "slug": "טבעת-ksi8021-2",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "259.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_מידת-טבעת": [
+    "6",
+    "7",
+    "8"
+   ]
+  },
+  "content": "עשויה כסף 925. בציפוי זהב אדום (רוז גולד) משובצת אבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767098601_KSI8021-2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10703",
+  "sku": "KSI8025-1",
+  "title": "צמיד קשיח KSI8025-1",
+  "slug": "צמיד-קשיח-ksi8025-1",
+  "cats": [
+   "צמידים קשיחים",
+   "צמידים"
+  ],
+  "price": "639.9",
+  "regular": "639.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "עשוי מכסף אמיתי 925  משובץ באבני זרקון",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767186370_KSI8025-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10705",
+  "sku": "KSI8025-2",
+  "title": "צמיד קשיח KSI8025-2",
+  "slug": "צמיד-קשיח-ksi8025-2",
+  "cats": [
+   "צמידים קשיחים",
+   "צמידים"
+  ],
+  "price": "639.9",
+  "regular": "639.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשוי כסף אמיתי 925  בציפוי זהב אדום (רוז גולד)  משובץ באבני זרקון.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767186400_KSI8025-2-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10707",
+  "sku": "KSI8026-3-B",
+  "title": "צמיד קשיח KSI8026-3-B",
+  "slug": "צמיד-קשיח-ksi8026-3-b",
+  "cats": [
+   "צמידים קשיחים",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד קשיח עשוי מפליז (Brass) בציפוי זהב  (2 מיקרון) משובץ אבני זרקון באיכות 5A",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1767186561_KSI8026-3-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10709",
+  "sku": "YISI2767-2-B",
+  "title": "עגיל צמוד YISI2767-2-B",
+  "slug": "עגיל-צמוד-yisi2767-2-b",
+  "cats": [
+   "עגילים צמודים",
+   "תכשיטי ציפוי זהב",
+   "עגילים"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עגיל צמוד עשוי פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובץ באבני זרקון. העגילים מגיעים כזוג",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789398617_59-YISI2767-2-B-2fcf313a.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10711",
+  "sku": "BKSI033-1-4MM",
+  "title": "צמיד BKSI033-1-4MM",
+  "slug": "צמיד-bksi033-1-4mm",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "339.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16cm",
+    "17cm",
+    "18cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי מפליז (Brass) בציפוי רודיום בעובי 2 מיקרון, משובץ אבני זרקון באיכות 5A. ניתן לבחירה באורכים 16CM, 17CM, 18CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789550533_2-BKSI033-4MM-clean-white-f2ae80b5.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10716",
+  "sku": "BKSI028-1-4X6MM+4MM",
+  "title": "שרשרת BKSI028-1-4X6MM+4MM",
+  "slug": "שרשרת-bksi028-1-4x6mm4mm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "849.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "42cm"
+   ]
+  },
+  "content": "שרשרת טניס עשויה מפליז (Brass) בציפוי רודיום בעובי 2 מיקרון, משובצת אבני זרקון באיכות 5A, באורך 42CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789551519_2-BKSI028-clean-white-c3573d3d.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10719",
+  "sku": "BKSI033-3-4MM",
+  "title": "צמיד BKSI033-3-4MM",
+  "slug": "צמיד-bksi033-3-4mm",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "339.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16cm",
+    "17cm",
+    "18cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי מפליז (Brass) בציפוי זהב 14K בעובי 2 מיקרון, משובץ אבני זרקון באיכות 5A. ניתן לבחירה באורכים 16CM, 17CM, 18CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789556093_10-BKSI033-gold-v2.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10724",
+  "sku": "BKSI036-1-4MM",
+  "title": "שרשרת BKSI036-1-4MM",
+  "slug": "שרשרת-bksi036-1-4mm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "739.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "37cm",
+    "40cm"
+   ]
+  },
+  "content": "שרשרת טניס עשויה מפליז (Brass) בציפוי רודיום בעובי 2 מיקרון, משובצת אבני זרקון באיכות 5A. ניתן לבחירה באורכים 37CM, 40CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789552043_5-BKSI036-clean-white-ca75bcd2.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10728",
+  "sku": "BKSI036-3-4MM",
+  "title": "שרשרת BKSI036-3-4MM",
+  "slug": "שרשרת-bksi036-3-4mm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "739.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "37cm",
+    "40cm"
+   ]
+  },
+  "content": "שרשרת טניס עשויה מפליז (Brass) בציפוי זהב 14K בעובי 2 מיקרון, משובצת אבני זרקון באיכות 5A. ניתן לבחירה באורכים 37CM, 40CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789556207_13-BKSI036-gold.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10734",
+  "sku": "BKSI028-3-4X6MM+4MM",
+  "title": "שרשרת BKSI028-3-4X6MM+4MM",
+  "slug": "שרשרת-bksi028-3-4x6mm4mm",
+  "cats": [
+   "שרשראות טניס",
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "849.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "outofstock",
+  "attrs": {
+   "pa_אורך-השרשרת": [
+    "42cm"
+   ]
+  },
+  "content": "שרשרת טניס עשויה מפליז (Brass) בציפוי זהב בעובי 2 מיקרון, משובצת אבני זרקון באיכות 5A, באורך 42CM.",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789552231_3-BKSI028-clean-white-c3573d3d.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10741",
+  "sku": "BKSI029-3-4MM",
+  "title": "צמיד BKSI029-3-4MM",
+  "slug": "צמיד-bksi029-3-4mm",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16cm",
+    "17cm",
+    "18cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי מפליז (Brass) בציפוי זהב 14K בעובי 2 מיקרון, משובץ אבני זרקון באיכות 5A. ניתן לבחירה באורכי",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789555872_6-BKSI029-gold.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10746",
+  "sku": "BKSI034-3-3X5MM",
+  "title": "צמיד BKSI034-3-3X5MM",
+  "slug": "צמיד-bksi034-3-3x5mm",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16cm",
+    "17cm",
+    "18cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי מפליז (Brass) בציפוי זהב 14K בעובי 2 מיקרון, משובץ אבני זרקון באיכות 5A. ניתן לבחירה באורכי",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789556342_16-BKSI034-gold14k.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10751",
+  "sku": "BKSI029-1-4MM-A",
+  "title": "צמיד BKSI029-1-4MM",
+  "slug": "צמיד-bksi029-1-4mm",
+  "cats": [
+   "צמידי טניס",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "329.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_אורך-הצמיד": [
+    "16cm",
+    "17cm",
+    "18cm"
+   ]
+  },
+  "content": "צמיד טניס עשוי מפליז (Brass) בציפוי רודיום כסף בעובי 2 מיקרון, משובץ אבני זרקון באיכות 5A. ניתן לבחירה באורכ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1789554765_6-BKSI029-clean-white-44473a0d.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10756",
+  "sku": "ZSI1093-2B",
+  "title": "צמיד ZSI1093-2B",
+  "slug": "צמיד-zsi1093-2b",
+  "cats": [
+   "צמידי שרשרת",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "159.9",
+  "regular": "159.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד ZSI1093-2B עשוי פליז בציפוי זהב אדום 14K בעובי 2 מיקרון משובץ אבני זרקון 5A אורך הצמיד: 15+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1792328459_8095afaa2_generated_image.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10761",
+  "sku": "KSI9098-1",
+  "title": "טבעת KSI9098-1",
+  "slug": "טבעת-ksi9098-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "309.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "3 5 2",
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960251_2-KSI9098-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10768",
+  "sku": "KSI9098-2-B",
+  "title": "טבעת KSI9098-2-B",
+  "slug": "טבעת-ksi9098-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "3 5 2",
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה פליז  בציפוי זהב אדום 14K בעובי 2 מיקרון  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960309_4-KSI9098-2-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10774",
+  "sku": "KSI9098-3-B",
+  "title": "טבעת KSI9098-3-B",
+  "slug": "טבעת-ksi9098-3-b",
+  "cats": [
+   "טבעות לזרת",
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "3 5 2",
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793002169_image-1792327452113.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10781",
+  "sku": "KSI9099-2-B",
+  "title": "טבעת KSI9099-2-B",
+  "slug": "טבעת-ksi9099-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב אדום 14K בעובי 2 מיקרון  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960337_5-KSI9099-2-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10784",
+  "sku": "KSI9099-3-B",
+  "title": "טבעת KSI9099-3-B",
+  "slug": "טבעת-ksi9099-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "עשויה פליז  בציפוי זהב 14K בעובי 2 מיקרון  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960353_6-KSI9099-3-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10787",
+  "sku": "KSI9100-1",
+  "title": "טבעת KSI9100-1",
+  "slug": "טבעת-ksi9100-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "259.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "3 5 2",
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960368_7-KSI9100-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10794",
+  "sku": "KSI9100-2-B",
+  "title": "טבעת KSI9100-2-B",
+  "slug": "טבעת-ksi9100-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז  בציפוי זהב אדום 14K בעובי 2 מיקרון  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960383_8-KSI9100-2-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10803",
+  "sku": "KSI9101-1",
+  "title": "טבעת KSI9101-1",
+  "slug": "טבעת-ksi9101-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925  משובצת באבני זרקון  מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1791960401_9-KSI9101-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10809",
+  "sku": "YXSI2787-1",
+  "title": "צמיד גאדי YXSI2787-1",
+  "slug": "צמיד-גאדי-yxsi2787-1",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "389.9",
+  "regular": "389.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד גאדי עשויה כסף אמיתי 925 משובצת אבני זרקון אורך השרשרת: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793976138_57-batch-YXSI2787-1-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10812",
+  "sku": "YXSI2787-3-B",
+  "title": "צמיד גאדי YXSI2787-3-B",
+  "slug": "צמיד-גאדי-yxsi2787-3-b",
+  "cats": [
+   "צמידי ג'אדי",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "259.9",
+  "regular": "259.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד גאדי עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון אורך השרשרת: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793976156_58-batch-YXSI2787-3-B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10815",
+  "sku": "YXSI2787-2-B",
+  "title": "צמיד גאדי YXSI2787-2-B",
+  "slug": "צמיד-גאדי-yxsi2787-2-b",
+  "cats": [
+   "צמידי ג'אדי",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "259.9",
+  "regular": "259.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד גאדי עשויה פליז בציפוי זהב אדום 14K בעובי 2 מיקרון משובצת באבני זרקון אורך השרשרת: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793976179_59-batch-YXSI2787-2-B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10818",
+  "sku": "YXSI2788-1",
+  "title": "צמיד גאדי YXSI2788-1",
+  "slug": "צמיד-גאדי-yxsi2788-1",
+  "cats": [
+   "צמידי ג'אדי",
+   "צמידים"
+  ],
+  "price": "349.9",
+  "regular": "349.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד גאדי עשויה כסף אמיתי 925 משובצת אבני זרקון אורך השרשרת: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793976198_60-batch-YXSI2788-1-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10821",
+  "sku": "YXSI2788-3-B",
+  "title": "צמיד גאדי YXSI2788-3-B",
+  "slug": "צמיד-גאדי-yxsi2788-3-b",
+  "cats": [
+   "צמידי ג'אדי",
+   "תכשיטי ציפוי זהב",
+   "צמידים"
+  ],
+  "price": "279.9",
+  "regular": "279.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "צמיד גאדי עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון אורך השרשרת: 15+5 ס”מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793976217_61-batch-YXSI2788-3-B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10824",
+  "sku": "KSI9115-3-B",
+  "title": "טבעת KSI9115-3-B",
+  "slug": "טבעת-ksi9115-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290366_1-KSI9115-3-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10831",
+  "sku": "KSI9116-1",
+  "title": "טבעת KSI9116-1",
+  "slug": "טבעת-ksi9116-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "229.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925 משובצת באבני זירקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290835_19-KSI9116-1-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10838",
+  "sku": "KSI9116-2-B",
+  "title": "טבעת KSI9116-2-B",
+  "slug": "טבעת-ksi9116-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב אדום 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290416_2-KSI9116-2-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10845",
+  "sku": "KSI9116-3-B",
+  "title": "טבעת KSI9116-3-B",
+  "slug": "טבעת-ksi9116-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290434_3-KSI9116-3-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10852",
+  "sku": "KSI9117-1",
+  "title": "טבעת KSI9117-1",
+  "slug": "טבעת-ksi9117-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "249.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925 משובצת באבני זירקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290460_4-KSI9117-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10859",
+  "sku": "KSI9117-2-B",
+  "title": "טבעת KSI9117-2-B",
+  "slug": "טבעת-ksi9117-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב אדום 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290477_5-KSI9117-2-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10866",
+  "sku": "KSI9117-3-B",
+  "title": "טבעת KSI9117-3-B",
+  "slug": "טבעת-ksi9117-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290494_6-KSI9117-3-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10873",
+  "sku": "KSI9118-1",
+  "title": "טבעת KSI9118-1",
+  "slug": "טבעת-ksi9118-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "279.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925 משובצת באבני זירקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290517_7-KSI9118-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10879",
+  "sku": "KSI9118-2-B",
+  "title": "טבעת KSI9118-2-B",
+  "slug": "טבעת-ksi9118-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב אדום 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290543_8-KSI9118-2-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10885",
+  "sku": "KSI9118-3-B",
+  "title": "טבעת KSI9118-3-B",
+  "slug": "טבעת-ksi9118-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "209.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290561_9-KSI9118-3-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10891",
+  "sku": "KSI9120-1",
+  "title": "טבעת KSI9120-1",
+  "slug": "טבעת-ksi9120-1",
+  "cats": [
+   "טבעות"
+  ],
+  "price": "199.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה כסף אמיתי 925 משובצת באבני זירקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290582_10-KSI9120-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10898",
+  "sku": "KSI9121-3-B",
+  "title": "טבעת KSI9121-3-B",
+  "slug": "טבעת-ksi9121-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290672_15-KSI9121-3-B-scaled-1.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10905",
+  "sku": "KSI6062-3-B",
+  "title": "טבעת KSI6062-3-B",
+  "slug": "טבעת-ksi6062-3-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "189.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3",
+    "9"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290698_16-KSI6062-3-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10912",
+  "sku": "KSI9030R-2-B",
+  "title": "טבעת KSI9030R-2-B",
+  "slug": "טבעת-ksi9030r-2-b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "179.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידה": [
+    "6 3",
+    "7 3",
+    "8 3"
+   ]
+  },
+  "content": "עשויה פליז בציפוי זהב אדום 14K עובי הציפוי 2 מיקרון משובצת באבני זרקון מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1793290730_18-KSI9030R-2-B.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10918",
+  "sku": "ZSI1122-2B",
+  "title": "שרשרת ZSI1122-2B",
+  "slug": "שרשרת-zsi1122-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "179.9",
+  "regular": "179.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 37+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305224_12-ZSI1122-2B-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10921",
+  "sku": "ZSI1123-2B",
+  "title": "שרשרת ZSI1123-2B",
+  "slug": "שרשרת-zsi1123-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 37+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305307_15-ZSI1123-2B-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10924",
+  "sku": "ZSI1123-3B",
+  "title": "שרשרת ZSI1123-3B",
+  "slug": "שרשרת-zsi1123-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 37+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794297945_4-ZSI1123-3B-1-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10927",
+  "sku": "ZSI1125-1",
+  "title": "שרשרת ZSI1125-1",
+  "slug": "שרשרת-zsi1125-1",
+  "cats": [
+   "שרשראות"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה כסף אמיתי 925 משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305393_17-ZSI1125-1-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10930",
+  "sku": "ZSI1125-2B",
+  "title": "שרשרת ZSI1125-2B",
+  "slug": "שרשרת-zsi1125-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305422_18-ZSI1125-2B-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10933",
+  "sku": "ZSI1125-3B",
+  "title": "שרשרת ZSI1125-3B",
+  "slug": "שרשרת-zsi1125-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "409.9",
+  "regular": "409.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305479_19-ZSI1125-3B-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10936",
+  "sku": "ZSI1133-3B",
+  "title": "שרשרת ZSI1133-3B",
+  "slug": "שרשרת-zsi1133-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "309.9",
+  "regular": "309.9",
+  "type": "simple",
+  "stock": "outofstock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794386073_WhatsApp-Image-2026-11-11-at-10.30.46.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10939",
+  "sku": "ZSI1140-2B-3.5#",
+  "title": "טבעת ZSI1140-2B-3.5#",
+  "slug": "טבעת-zsi1140-2b-3-5",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "טבעת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306137_34-ZSI1140-2B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10942",
+  "sku": "ZSI1140-3B-3.5#",
+  "title": "טבעת ZSI1140-3B-3.5#",
+  "slug": "טבעת-zsi1140-3b-3-5",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "149.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794306164_35-ZSI1140-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10945",
+  "sku": "ZSI1120-2B",
+  "title": "טבעת ZSI1120-2B",
+  "slug": "טבעת-zsi1120-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "129.9",
+  "regular": "129.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "טבעת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבן לבנה מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794304988_6-ZSI1120-2B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10948",
+  "sku": "ZSI1120-3B",
+  "title": "טבעת ZSI1120-3B",
+  "slug": "טבעת-zsi1120-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "129.9",
+  "regular": "129.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "טבעת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבן לבנה מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305016_7-ZSI1120-3B-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10951",
+  "sku": "ZSI186-2B",
+  "title": "שרשרת ZSI186-2B",
+  "slug": "שרשרת-zsi186-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794297875_3-ZSI186-2B-1-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10954",
+  "sku": "ZSI186-3B",
+  "title": "שרשרת ZSI186-3B",
+  "slug": "שרשרת-zsi186-3b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "שרשראות"
+  ],
+  "price": "189.9",
+  "regular": "189.9",
+  "type": "simple",
+  "stock": "instock",
+  "attrs": [],
+  "content": "שרשרת עשויה פליז בציפוי זהב 14K בעובי 2 מיקרון משובצת באבני זרקון 5A אורך השרשרת: 40+5 ס\"מ",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794297827_2-ZSI186-3B-1-scaled.webp",
+  "gallery": 2,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ },
+ {
+  "id": "10957",
+  "sku": "ZSI1134-2B",
+  "title": "טבעת ZSI1134-2B",
+  "slug": "טבעת-zsi1134-2b",
+  "cats": [
+   "תכשיטי ציפוי זהב",
+   "טבעות"
+  ],
+  "price": "149.9",
+  "regular": "",
+  "type": "variable",
+  "stock": "instock",
+  "attrs": {
+   "pa_מידת-הטבעת": [
+    "3.5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "content": "טבעת עשויה פליז בציפוי זהב אדום (רוז גולד) בעובי 2 מיקרון משובצת באבני זרקון 5A מידת הטבעת ניתנת לבחירה",
+  "excerpt": "",
+  "img": "https://almora.co.il/wp-content/uploads/2026/11/1794305879_30-ZSI1134-2B-1-scaled.webp",
+  "gallery": 0,
+  "yt": "",
+  "ym": "",
+  "fk": ""
+ }
+]
