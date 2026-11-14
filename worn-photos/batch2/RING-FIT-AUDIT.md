@@ -73,3 +73,14 @@ If the upload cannot be done, these live products still show the clipping photos
 Owner example that failed 3+4: solitaire with pave band, curled fingers; band ends vanish into the skin, band runs across the knuckle at an odd angle, stone at the side of the finger, ring straddles two fingers.
 
 Prompt guidance for rings (new): "natural physically correct ring placement; the ring is worn on exactly ONE finger (the ring finger only); the band fully encircles that finger; stone on top of the finger centered on the finger axis; straight relaxed hand, back of hand toward the camera, fingers slightly separated with the neighbouring fingers visibly apart from the ring finger; no curled fingers, no fist." Retry cap 6 per image. Previous ids -> option almora_worn_redo_backup. Unfixable after 6 -> remove worn photos from the gallery.
+
+## Audit 3 (2026-11-14, new criteria physical logic + exactly one finger) - all 136 ring folders, final + var2 reviewed as contact sheets (380px cells) and zoomed on suspects
+FAILED and REDONE (try limit not exceeded; all <= 4 tries):
+- 10196 final: ring straddled the junction of two fingers (exactly-one-finger). Redone (straight hand, ring finger only); var2 also regenerated (dark stone, flat hand).
+- 10105 final: V of pears ran diagonally across two fingers (exactly-one-finger / axis). Redone twice (1st try large pear too small -> retry); var2 judged OK, kept.
+- 10383 final + var2: double-chevron ring lay diagonally across the finger, axis mismatch / straddled. Both redone (flat hand, then upright hand).
+- 10957 var2: ring on a curled fist (curled finger criterion). Redone (flat hand on marble); final was already fine.
+Previously redone and consistent with the new criteria: 10169, 10232, 10254, 10559, 8360 (final).
+Borderline, accepted (not a clear failure at full size; list for the owner to decide): var2 images of older rings are "hand lifted, fingers gently curled" poses (6571..8335 batch and others): ring is on one finger and the band is visible, but the finger is gently curled. 9816 / 9825 (very large multi-loop rings: design is wide, sits on the ring finger but loops touch the neighbouring finger); 10852..10885 long cluster rings (stones run along the finger as in a bypass cluster; ring on one finger). Not removed from the gallery.
+Removed from gallery: none (everything failing could be redone in <= 4 tries).
+All of the above is in git only: live site still has the OLD photos until the upload is possible (Novamira session error), so currently live and failing: 10196, 10105, 10383, 10957 (var2), plus the earlier list (10232, 10254, 10559, 10553, 8360, 10169).

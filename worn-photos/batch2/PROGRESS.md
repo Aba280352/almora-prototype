@@ -194,3 +194,9 @@ Done since last note (final + var2 in git unless noted): 10838 10845 10852 10859
 In progress: 10905, 10912, 10939 (gen1 sent). Then 10942, 10945, 10948, then bracelets (172-213), earrings (214-266), sets (267-272).
 Slightly-off fidelity (accepted, flag for owner): 10873 large pear a bit smaller than ref in gen1 (gen2 better); 10891 stone is a rounded cushion/oval with about 6 prongs instead of the ref's 4-claw elongated cushion; 10553 mildly weak (not redone); 8360 var2 left as the old image.
 Held ids: none.
+
+## Run 2026-11-14 (late night 2) - UPDATE
+New owner criteria (physical logic + exactly one finger) applied to all ring photos: see RING-FIT-AUDIT.md "Audit 3". Redone: 10196 (final+var2), 10105 (final), 10383 (final+var2), 10957 (var2). Nothing removed.
+Done in git (final + var2): 10905, 10912, 10939 (plus earlier list). NOT uploaded (Novamira "Session not found").
+NEXT manifest index: 168 (10942, ZSI1140-3B-3.5#), then 10945, 10948 (open rings with two hanging pear drops: refs are in ring/<id>/ref.webp), then bracelets (172-213), earrings (214-266), sets (267-272). Refs for 10912-10948 downloaded (gitignored).
+Ring prompt v3 (use for all new rings): straight relaxed hand, back of hand toward camera, fingers slightly separated, "ring worn on exactly ONE finger (the ring finger only), natural physically correct ring placement at the base of the finger, band fully encircles the finger and is visible on both sides, stone on TOP of the finger centered on the finger axis, ring axis matches the finger axis, neighbouring fingers visibly apart and not covering the ring, metal rests ON the skin with a soft contact shadow, no curled fingers or fist".
