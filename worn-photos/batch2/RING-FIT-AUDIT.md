@@ -60,3 +60,7 @@ New failing ones found in this audit (final image only unless noted) - to redo:
 - 10559 (yellow gold pear solitaire): stone floating, band only on one side (final); 10553 similar but milder
 - 8360 (silver two-stone cuff, oval + round): stones floating, no band visible (final)
 Judged OK: all solitaires/halos/eternity bands/signets, men's rings, 8333/8335/8338 (thin bands but wrap), 7928, 8143, 8296, 8294.
+
+## Audit 2 status (2026-11-14 late night)
+Redone (final.webp in git, NOT yet uploaded, live photos still the old ones until upload): 10105, 10232, 10254, 10383, 10559, 8360 (final only), 10169, 10957. 10553 was only mild and was not redone.
+If the upload cannot be done, these live products still show the clipping photos: 10105, 10232, 10254, 10383, 10559, 10553 (mild), 8360, 10169, 10957. They could not be removed because the site was unreachable (Novamira session error).

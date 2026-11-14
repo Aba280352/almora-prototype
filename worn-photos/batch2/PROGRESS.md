@@ -187,3 +187,10 @@ QA bar: fidelity, 5 fingers, band wraps whole finger with both sides visible on 
 Fit-audit-2 redo, all finals+var2 in git, NOT yet uploaded (replace live photos once site access works): 10169, 10957, 10105 (redone twice: first try was a symmetric chevron, wrong design), 10232, 10254 (first try had small marquise stones, wrong), 10383, 10559, 8360 (final only; var2 kept as is), 10553 (mild, not redone).
 New rings made (final + var2 in git, NOT uploaded): 10682 10687 10692 10698 10761 10768 10774 10781 10784 10787 10794 10803 10824 10831 (+10838 gen1 done, gen2 pending; 10845 10852 in progress).
 NEXT manifest index after 10852: 10859 (KSI9117-2-B). 
+
+## Run 2026-11-14 (late night) - status UPDATE (supersedes the "NEXT manifest index" line above)
+Still: Novamira almora "Session not found" -> nothing uploaded, no bad live photo could be removed/replaced. Owner wp-admin tab is logged in in Chrome but I did NOT drive uploads through it without permission.
+Done since last note (final + var2 in git unless noted): 10838 10845 10852 10859 10866 10873 10879 10885 10891 10898.
+In progress: 10905, 10912, 10939 (gen1 sent). Then 10942, 10945, 10948, then bracelets (172-213), earrings (214-266), sets (267-272).
+Slightly-off fidelity (accepted, flag for owner): 10873 large pear a bit smaller than ref in gen1 (gen2 better); 10891 stone is a rounded cushion/oval with about 6 prongs instead of the ref's 4-claw elongated cushion; 10553 mildly weak (not redone); 8360 var2 left as the old image.
+Held ids: none.
