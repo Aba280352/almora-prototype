@@ -64,3 +64,12 @@ Judged OK: all solitaires/halos/eternity bands/signets, men's rings, 8333/8335/8
 ## Audit 2 status (2026-11-14 late night)
 Redone (final.webp in git, NOT yet uploaded, live photos still the old ones until upload): 10105, 10232, 10254, 10383, 10559, 8360 (final only), 10169, 10957. 10553 was only mild and was not redone.
 If the upload cannot be done, these live products still show the clipping photos: 10105, 10232, 10254, 10383, 10559, 10553 (mild), 8360, 10169, 10957. They could not be removed because the site was unreachable (Novamira session error).
+
+## MANDATORY ring QA criteria (owner, 2026-11-14 late night) - apply to every ring image, final AND var2, at full size
+1. Clipping: metal rests ON the skin, no sinking/merging, band ends do not vanish into the skin.
+2. Half-finger: the finger passes fully through the band; band visible continuing on both sides.
+3. PHYSICAL LOGIC: the band forms a visible continuous loop around the finger (both edges visible, or a clear underside); the stone is on TOP of the finger, centered on the finger axis; the ring axis matches the finger axis; the finger is straight or gently bent, not curled so that it hides the band; ring proportional to the finger.
+4. EXACTLY ONE FINGER: the whole ring (stone + full band) sits on ONE finger; the band does not cross to a neighbouring finger or sit between two fingers; the stone is centered on the same finger the band wraps; adjacent fingers do not overlap or hide the ring.
+Owner example that failed 3+4: solitaire with pave band, curled fingers; band ends vanish into the skin, band runs across the knuckle at an odd angle, stone at the side of the finger, ring straddles two fingers.
+
+Prompt guidance for rings (new): "natural physically correct ring placement; the ring is worn on exactly ONE finger (the ring finger only); the band fully encircles that finger; stone on top of the finger centered on the finger axis; straight relaxed hand, back of hand toward the camera, fingers slightly separated with the neighbouring fingers visibly apart from the ring finger; no curled fingers, no fist." Retry cap 6 per image. Previous ids -> option almora_worn_redo_backup. Unfixable after 6 -> remove worn photos from the gallery.
