@@ -160,3 +160,19 @@ RESUME: (1) gen2 for 10446 and 10451 (send the follow-up in a fresh chat with re
 Notes: ring fidelity is a little lower than chains/pendants (stone sizes can drift); rings are generated as back-of-hand close-ups, hand only, no face.
 
 BLOCKED 2026-11-14 (resume attempt): Claude in Chrome extension not connected (list_connected_browsers returned [] on repeated retries over ~5 min; Chrome processes are running, so the extension/side panel needs to be opened/signed in). No ChatGPT image limit was hit; no images generated. Nothing changed vs the RESUME note above. Additional owner-approved task queued FIRST: redo main photos of 10509 (KLSI002-1, variable, 351px source) and 10126 (CSI020-1, 300px source) per worn-photos/mainfix method (backup old id in almora_up2_backup[id]).
+
+UPDATE 2026-11-14 (Chrome reconnected, no ChatGPT image limit hit; about 120 images generated today):
+- 10446 / 10451 var2 live (11272 / 11273); 10456 live (11274 / 11275). md5 gen1 != gen2 checked for all.
+- Main photos 10509 -> 11268 (old 10992), 10126 -> 11269 (old 10998), old ids in almora_up2_backup.
+- RING FIT AUDIT done: see RING-FIT-AUDIT.md. 20 rings redone with the corrected "band wraps the whole finger" prompt, old attachment ids in option almora_worn_redo_backup. 10957 (rose gold wave marquise) photographed new with the same prompt (11310 / 11311).
+- Manifest continued (new, both images live; gallery = worn, var2, then existing images):
+  10547 | 11316, 11317 | live
+  10553 | 11318, 11319 | live
+  10559 | 11320, 11321 | live
+  10656 | 11322, 11323 | live
+  10662 | 11324, 11325 | live
+  10667 | 11326, 11327 | live
+  10672 | 11328, 11329 | live
+  10677 | 11330, 11331 | live
+- NEXT manifest index: 141 (10682, KSI8017-1). Refs for indexes 118-165 are in worn-photos/ring/<id>/ref.webp (gitignored; ref.webp for 10957 downloaded from the product main image).
+- Prompt template for rings (all new ones): "...CRITICAL FIT: the band must wrap the WHOLE finger at its natural position at the base of the finger; finger passes fully through; full band visible; not floating, not tilted, not covering only part of the finger. Photograph from a slightly raised 3/4 side angle so the band is seen continuing down both sides"; for bypass/open rings add "both ends of the bypass are visibly overlapping beside the stone".
