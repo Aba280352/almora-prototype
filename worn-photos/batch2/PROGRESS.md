@@ -209,3 +209,10 @@ REPLACED live (old ids in option almora_worn_redo_backup; second-generation redo
 Main-photo fixes 10462 10465 10479 10488 10491 10509 10126 verified live (md5 equals worn-photos/mainfix). 10547/10553/10559 galleries: worn, var2 first (variation image is the product main).
 Verified: product page 200, both image URLs 200, filenames present in live HTML in the right order for all 36 products.
 NEXT: Phase 2 from manifest index 168 (10942).
+
+## Run 2026-11-14 (Phase 2) - LIVE and verified (page 200, worn + worn2 URLs present)
+Rings (worn, var2 attachment ids): 10942 11403/11404, 10945 11405/11406, 10948 11407/11408.
+Bracelets (pinned SHA 0a071bac / 47cc3b81): 9788 11409/11410, 9798 11411/11412, 9901 11413/11414, 10024 11415/11416, 10035 11417/11418, 10047 11419/11420, 10154 11421/11422, 10168 11423/11424, 10262 11425/11426, 10272 11427/11428, 10274 11429/11430, 10280 11431/11432, 10289 11433/11434, 10291 11435/11436, 10293 11437/11438, 10349 11439/11440, 10435 11441/11442.
+Notes: 10024 gen1 retried once (first try missed one bezel stone). 10349 ref is portrait 770x1013 (final/var2 keep that size).
+ChatGPT IMAGE RATE LIMIT HIT at 2026-11-14 20:13 (local) in all 3 tabs while starting 10520 / 10538 / 10540 ("try again in about 2 minutes"). Stopped, nothing bypassed.
+NEXT manifest index: 190 (10520 hand chain ZSI980-3B, no image yet), then 10538, 10540 (3-butterfly chains), 10636, 10640 (chain + pave bar), 10642 (hand chain with finger loop), 10644, 10646, 10650, 10652, 10703 ... up to index 213, then earrings 214-266, sets 267-272. Refs for 10636..10703 downloaded (gitignored). Hand chains (10520, 10642, others named "גאדי"): loop around the middle finger, chain along the back of the hand, one finger only.
