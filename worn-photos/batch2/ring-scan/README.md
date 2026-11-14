@@ -12,3 +12,7 @@ Problem types:
 - 12 (10787 w2): the two stones are stacked along the finger.
 - 13-20 (10824, 10852, 10859, 10866): two stone arms lie along the finger like a brooch; on the real ring they wrap around the finger.
 - 21-26 (10873, 10879, 10885): cluster plus a tail running down the finger toward the knuckle (borderline).
+
+## Owner decision (2026-11-14)
+Owner approved all numbers except 5 (10169 w1) and 12 (10787 w2), which stay live.
+The 24 approved bad photos were removed from the product galleries right away (attachments kept; backup with previous gallery order in option `almora_ringscan_removed`). They are to be regenerated via ChatGPT and re-added after QA. Products 8290, 10824, 10852, 10859, 10866, 10873, 10879, 10885 and 10957 have no worn photo until then.
