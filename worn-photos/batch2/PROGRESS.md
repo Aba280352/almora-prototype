@@ -181,3 +181,9 @@ UPDATE 2026-11-14 (Chrome reconnected, no ChatGPT image limit hit; about 120 ima
 - Novamira session for almora.co.il was dead ("Session not found: Invalid or expired session") for this whole run, so NOTHING from this run is uploaded yet. All finals are committed in git (worn-photos/ring/<id>/final.webp + var2.webp) and are ready to upload with the standard recipe (sideload from raw GitHub at the commit SHA, set _almora_worn/_almora_worn2 meta, gallery = worn, var2, then the rest).
 - Gallery check 10547/10553/10559: they are three SEPARATE products (silver / rose-gold plated / gold plated), each variable only by ring SIZE (6-9); the variation image is the product main photo for every size. Live gallery order on all three is: main, worn, var2. No colour mismatch is possible. Worn photo colours match each product. (10553 and 10559 finals are a bit weak - see audit 2.)
 - Rings redone: 10169, 10957. New (images ready, not uploaded): 10682, 10687, 10692, 10698 (and 10761, 10768, 10774 when marked done below).
+
+## Run 2026-11-14 (night) - status (Novamira almora still "Session not found": nothing uploaded)
+QA bar: fidelity, 5 fingers, band wraps whole finger with both sides visible on skin, no text/face. Strict retries used (up to 6).
+Fit-audit-2 redo, all finals+var2 in git, NOT yet uploaded (replace live photos once site access works): 10169, 10957, 10105 (redone twice: first try was a symmetric chevron, wrong design), 10232, 10254 (first try had small marquise stones, wrong), 10383, 10559, 8360 (final only; var2 kept as is), 10553 (mild, not redone).
+New rings made (final + var2 in git, NOT uploaded): 10682 10687 10692 10698 10761 10768 10774 10781 10784 10787 10794 10803 10824 10831 (+10838 gen1 done, gen2 pending; 10845 10852 in progress).
+NEXT manifest index after 10852: 10859 (KSI9117-2-B). 
