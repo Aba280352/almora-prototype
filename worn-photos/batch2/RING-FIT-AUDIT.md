@@ -46,3 +46,17 @@ Status codes: REDONE = replaced live (old attachment ids in option almora_worn_r
 ## Redone in this run (attachment ids)
 Old ids are saved in option almora_worn_redo_backup[product_id] = {worn, worn2}. Source images: worn-photos/ring/<id>/ (gen1_old.png / gen2_old.png = the replaced generations; gen1.png / gen2.png = the new ones; final.webp / var2.webp = uploaded).
 Redone and live: 10169, 10059, 10072, 8296, 7928, 8143, 8290, 8292, 8294, 8333, 8335, 10050, 10196, 10213, 8358, 8338, 10064, 10079, 7945, 10226 (20 rings).
+
+## Audit 2 (2026-11-14, owner criteria: no metal clipping into skin / band vanishing / band ends in the skin, plus partial-finger)
+Reviewed all 106 ring finals + var2 as contact sheets (480px cells) and zoomed on suspects (640-900px).
+Redone with the "band clearly ON the skin, both ends visible, contact shadow, finger passes through" prompt and a different pose:
+- 10169 (yellow gold wave marquise): owner-reported clipping. REDONE (gen1 = hand flat, 3/4 low; gen2 = marble) - band loops around the finger on both sides. Needs upload (see PROGRESS.md).
+- 10957 (rose gold wave marquise): REDONE (marble flat hand + curled fist view). Needs upload.
+New failing ones found in this audit (final image only unless noted) - to redo:
+- 10105 (rose gold pear + V of pear stones): stones only, band not visible, ends vanish at finger edges (final)
+- 10232 (silver marquise spiral): loops look like a floating cage, not wrapped around the finger (final)
+- 10254 (yellow gold pear/marquise V cluster): no band visible on the right, stones float (final)
+- 10383 (rose gold double V pave): reads as spanning two fingers / band ends hidden (final + var2)
+- 10559 (yellow gold pear solitaire): stone floating, band only on one side (final); 10553 similar but milder
+- 8360 (silver two-stone cuff, oval + round): stones floating, no band visible (final)
+Judged OK: all solitaires/halos/eternity bands/signets, men's rings, 8333/8335/8338 (thin bands but wrap), 7928, 8143, 8296, 8294.

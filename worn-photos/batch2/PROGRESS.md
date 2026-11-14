@@ -176,3 +176,8 @@ UPDATE 2026-11-14 (Chrome reconnected, no ChatGPT image limit hit; about 120 ima
   10677 | 11330, 11331 | live
 - NEXT manifest index: 141 (10682, KSI8017-1). Refs for indexes 118-165 are in worn-photos/ring/<id>/ref.webp (gitignored; ref.webp for 10957 downloaded from the product main image).
 - Prompt template for rings (all new ones): "...CRITICAL FIT: the band must wrap the WHOLE finger at its natural position at the base of the finger; finger passes fully through; full band visible; not floating, not tilted, not covering only part of the finger. Photograph from a slightly raised 3/4 side angle so the band is seen continuing down both sides"; for bypass/open rings add "both ends of the bypass are visibly overlapping beside the stone".
+
+## Run 2026-11-14 (evening) - IMPORTANT STATE
+- Novamira session for almora.co.il was dead ("Session not found: Invalid or expired session") for this whole run, so NOTHING from this run is uploaded yet. All finals are committed in git (worn-photos/ring/<id>/final.webp + var2.webp) and are ready to upload with the standard recipe (sideload from raw GitHub at the commit SHA, set _almora_worn/_almora_worn2 meta, gallery = worn, var2, then the rest).
+- Gallery check 10547/10553/10559: they are three SEPARATE products (silver / rose-gold plated / gold plated), each variable only by ring SIZE (6-9); the variation image is the product main photo for every size. Live gallery order on all three is: main, worn, var2. No colour mismatch is possible. Worn photo colours match each product. (10553 and 10559 finals are a bit weak - see audit 2.)
+- Rings redone: 10169, 10957. New (images ready, not uploaded): 10682, 10687, 10692, 10698 (and 10761, 10768, 10774 when marked done below).
