@@ -33,3 +33,9 @@ QA passed (21 of 24) - finals in git at 45896b5, list in `upload-pending-2026-11
 - 10879 w1 (3: crown over the gap to the little finger / thin single-row tiara / pass) + w2 (1)
 - 10885 w1 (2: 8 stones, kite instead of emerald) + w2 (1)
 NOT done (ChatGPT daily image limit hit 2026-11-15 ~08:51, "Try again at 5:51 PM"): 10059 w1 (2 failed tries: hand with only 3 fingers / ring on the index finger), 10196 w1 (1 failed try: ring spread over two fingers), 10226 w1 (no try yet). Their final.webp in git is still the OLD bad image - do not upload it.
+
+## Uploaded 2026-11-15 (after Novamira reconnect)
+21 QA-passed redos sideloaded from SHA 45896b5 via aw_up (gallery = worn, var2, rest; old ids kept in almora_worn_redo_backup):
+7911 w2 11447 | 10169 w2 11448 | 10213 w1 11449 | 8290 11450/11451 | 10957 11452/11453 | 10824 11454/11455 | 10852 11456/11457 | 10859 11458/11459 | 10866 11460/11461 | 10873 11462/11463 | 10879 11464/11465 | 10885 11466/11467.
+Verified: files exist, galleries set, live page of 10859 serves the new image.
+Still pending (ChatGPT limit until 17:51): 10059 w1, 10196 w1, 10226 w1.

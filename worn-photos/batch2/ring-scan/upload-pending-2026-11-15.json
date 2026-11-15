@@ -1,5 +1,5 @@
 {
- "note": "QA-passed ring redos from 2026-11-15, NOT uploaded yet (Novamira almora 'Session not found'). Sideload from raw.githubusercontent at commit 45896b5 (pinned). Gallery order: worn (w1 = final.webp), var2 (w2 = var2.webp), then the existing images. Old bad attachments are already out of the galleries (option almora_ringscan_removed) - do not re-add them. Where only one key is listed, keep the other existing worn image as is.",
+ "note": "UPLOADED 2026-11-15 (see README). QA-passed ring redos from 2026-11-15 (Novamira almora 'Session not found'). Sideload from raw.githubusercontent at commit 45896b5 (pinned). Gallery order: worn (w1 = final.webp), var2 (w2 = var2.webp), then the existing images. Old bad attachments are already out of the galleries (option almora_ringscan_removed) - do not re-add them. Where only one key is listed, keep the other existing worn image as is.",
  "sha": "45896b5",
  "items": [
   {"pid": 7911,  "upload": ["w2"]},
