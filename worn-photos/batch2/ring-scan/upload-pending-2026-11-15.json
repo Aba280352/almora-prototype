@@ -1,0 +1,20 @@
+{
+ "note": "QA-passed ring redos from 2026-11-15, NOT uploaded yet (Novamira almora 'Session not found'). Sideload from raw.githubusercontent at commit 45896b5 (pinned). Gallery order: worn (w1 = final.webp), var2 (w2 = var2.webp), then the existing images. Old bad attachments are already out of the galleries (option almora_ringscan_removed) - do not re-add them. Where only one key is listed, keep the other existing worn image as is.",
+ "sha": "45896b5",
+ "items": [
+  {"pid": 7911,  "upload": ["w2"]},
+  {"pid": 8290,  "upload": ["w1","w2"]},
+  {"pid": 10169, "upload": ["w2"]},
+  {"pid": 10957, "upload": ["w1","w2"]},
+  {"pid": 10213, "upload": ["w1"]},
+  {"pid": 10824, "upload": ["w1","w2"]},
+  {"pid": 10852, "upload": ["w1","w2"]},
+  {"pid": 10859, "upload": ["w1","w2"]},
+  {"pid": 10866, "upload": ["w1","w2"]},
+  {"pid": 10873, "upload": ["w1","w2"]},
+  {"pid": 10879, "upload": ["w1","w2"]},
+  {"pid": 10885, "upload": ["w1","w2"]}
+ ],
+ "not_ready": {"10059": "w1", "10196": "w1", "10226": "w1"},
+ "files": "w1 -> worn-photos/ring/<pid>/final.webp ; w2 -> worn-photos/ring/<pid>/var2.webp"
+}

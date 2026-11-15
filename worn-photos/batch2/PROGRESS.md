@@ -222,3 +222,12 @@ The earlier 2-minute rate limit cleared and 10520, 10540 and 10538 gen1 were gen
 LIVE and verified: 10520 11443/11444, 10540 11445/11446 (SHA 4fe0c401).
 10538: final.webp ready in git (gen1 accepted), var2 NOT generated, NOT uploaded yet. After the reset: ref -> overhead hand on linen -> var2, then aw_up.
 NEXT manifest index 191: 10538 (var2 only), then 10636, 10640 (rose/yellow chain with pave bar), 10642, 10644, 10646, 10650, 10652 (hand chains with finger loop), 10703, 10705, 10707 (hinged bangles with one stone: oval silver, oval rose gold, marquise yellow gold), 10711, 10719 (hex-link tennis silver/yellow gold), 10741, 10751 (round bezel tennis yellow/silver), 10746 (mixed-shape stone tennis, yellow), 10756 (rose chain with 3 round stones), 10809, 10812, 10815 (hand chain 3 pear stones on a bar: silver/yellow/rose), 10818, 10821 (hand chain bezel stones silver/yellow), then earrings 214-266, sets 267-272.
+
+## Run 2026-11-15 (morning) - ring-scan redos, NOT uploaded
+- Novamira almora: "Session not found" for the whole run (no other connector reaches almora.co.il), so nothing was uploaded and no gallery was changed.
+- 21 of the 24 owner-approved ring redos passed QA and are in git (pinned SHA 45896b5): see batch2/ring-scan/README.md and ring-scan/upload-pending-2026-11-15.json (pid + which of w1/w2 to sideload). Products 8290, 10824, 10852, 10859, 10866, 10873, 10879, 10885, 10957 still have NO worn photo on the site until this upload runs.
+- Still to generate: 10059 w1, 10196 w1, 10226 w1 (their final.webp in git is the old bad image - do not upload).
+- CHATGPT DAILY IMAGE LIMIT HIT 2026-11-15 ~08:51 local: "You're out of image creations for now. Try again at 5:51 PM" (resets in about 9 h). Nothing bypassed.
+- Manifest work (10538 var2, bracelets index 192+, earrings 214-266, sets 267-272) not started in this run.
+- Tools: worn-photos/tools/accept.sh <type/id> <1|2> <tryfile> copies a QA-passed try to gen<n>.png (old kept as gen<n>_pre.png) and builds final.webp / var2.webp.
+- Download tip: ChatGPT virtualises old images in long chats, so count-based waits fail; take the LAST non-user img with naturalWidth>=1000 after the Stop button disappears. Clear the composer (selectAll+delete) before inserting a prompt - ChatGPT keeps unsent drafts across tabs.
