@@ -39,3 +39,6 @@ NOT done (ChatGPT daily image limit hit 2026-11-15 ~08:51, "Try again at 5:51 PM
 7911 w2 11447 | 10169 w2 11448 | 10213 w1 11449 | 8290 11450/11451 | 10957 11452/11453 | 10824 11454/11455 | 10852 11456/11457 | 10859 11458/11459 | 10866 11460/11461 | 10873 11462/11463 | 10879 11464/11465 | 10885 11466/11467.
 Verified: files exist, galleries set, live page of 10859 serves the new image.
 Still pending (ChatGPT limit until 17:51): 10059 w1, 10196 w1, 10226 w1.
+
+## Final 3 redos (2026-11-15 evening)
+10059 w1 11468, 10196 w1 11469, 10226 w1 11470 - all passed on the 1st try (straight top-down hand, slight diagonal, passing var2 attached as a placement-only guide). All 24 approved redos are now live.

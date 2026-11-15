@@ -231,3 +231,8 @@ NEXT manifest index 191: 10538 (var2 only), then 10636, 10640 (rose/yellow chain
 - Manifest work (10538 var2, bracelets index 192+, earrings 214-266, sets 267-272) not started in this run.
 - Tools: worn-photos/tools/accept.sh <type/id> <1|2> <tryfile> copies a QA-passed try to gen<n>.png (old kept as gen<n>_pre.png) and builds final.webp / var2.webp.
 - Download tip: ChatGPT virtualises old images in long chats, so count-based waits fail; take the LAST non-user img with naturalWidth>=1000 after the Stop button disappears. Clear the composer (selectAll+delete) before inserting a prompt - ChatGPT keeps unsent drafts across tabs.
+
+## Run 2026-11-15 (evening, after the 17:51 limit reset)
+- Ring redos LIVE (w1 replaced; var2 unchanged), each passed QA on the 1st try with the placement-guide method (10196/10226 guided by the passing 10196 var2, 10059 by its own var2), SHA 718b2f9: 10059 11468 | 10196 11469 | 10226 11470. Old bad finals still in history; ring-scan redo list now complete (24/24).
+- 10538: var2 11471 + final 11472 LIVE (the final had never been uploaded; gallery had a stray "0" entry, cleaned). SHA 228875c.
+- Bracelets LIVE (worn, var2): 10636 11473/11474, 10640 11475/11476 (SHA f68c651).
