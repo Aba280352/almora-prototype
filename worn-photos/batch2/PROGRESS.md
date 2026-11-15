@@ -236,3 +236,11 @@ NEXT manifest index 191: 10538 (var2 only), then 10636, 10640 (rose/yellow chain
 - Ring redos LIVE (w1 replaced; var2 unchanged), each passed QA on the 1st try with the placement-guide method (10196/10226 guided by the passing 10196 var2, 10059 by its own var2), SHA 718b2f9: 10059 11468 | 10196 11469 | 10226 11470. Old bad finals still in history; ring-scan redo list now complete (24/24).
 - 10538: var2 11471 + final 11472 LIVE (the final had never been uploaded; gallery had a stray "0" entry, cleaned). SHA 228875c.
 - Bracelets LIVE (worn, var2): 10636 11473/11474, 10640 11475/11476 (SHA f68c651).
+- Bracelets LIVE (worn, var2), all verified (attachment files exist, gallery = worn, var2, rest):
+  10642 11477/11478, 10644 11479/11480, 10646 11489/11490, 10650 11481/11482, 10703 11483/11484, 10705 11485/11486, 10707 11487/11488,
+  10711 11491/11492, 10719 11495/11496, 10741 11493/11494, 10746 11499/11500, 10751 11497/11498, 10756 11501/11502,
+  10809 11503/11504, 10812 11511/11512, 10815 11509/11510, 10818 11505/11506, 10821 11507/11508.
+- HELD: 10652 (rose hand chain with a large double-strand teardrop loop): how it is worn is unclear (finger loop vs. around the hand); not generated. Owner to decide.
+- Notes/doubts: 10711 final shows 8 pave hexagon links (product front has 9; var2 has 9). 10809/10812/10815: ChatGPT draws the pear motifs as plain pear bezels; the product has an extra open teardrop frame around each pear. 10646 needed 5 tries for the 9 dangles. 10719 was made with the passing silver 10711 photo as a design guide.
+- Method notes: hand chains = loop on the MIDDLE finger, gen1 3/4 side view, gen2 top view; ChatGPT miscounts small repeated stones (always zoom-count); a passing photo of a sister colour attached as "image 2" fixes counts/orientation fast.
+- Earrings started (index 214+): 9783 LIVE 11513/11514.
