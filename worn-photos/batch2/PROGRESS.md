@@ -244,3 +244,15 @@ NEXT manifest index 191: 10538 (var2 only), then 10636, 10640 (rose/yellow chain
 - Notes/doubts: 10711 final shows 8 pave hexagon links (product front has 9; var2 has 9). 10809/10812/10815: ChatGPT draws the pear motifs as plain pear bezels; the product has an extra open teardrop frame around each pear. 10646 needed 5 tries for the 9 dangles. 10719 was made with the passing silver 10711 photo as a design guide.
 - Method notes: hand chains = loop on the MIDDLE finger, gen1 3/4 side view, gen2 top view; ChatGPT miscounts small repeated stones (always zoom-count); a passing photo of a sister colour attached as "image 2" fixes counts/orientation fast.
 - Earrings started (index 214+): 9783 LIVE 11513/11514.
+- Earrings DONE (manifest 214-266): 52 of 53 LIVE and verified (gallery[0] = worn, var2 right after, files exist). Ids (worn/var2):
+  9783 11513/11514, 9873 11515/11516, 9876 11517/11518, 9936 11519/11520, 10023 11521/11522, 10084 11523/11524, 10149 11525/11526, 10151 11615/11616,
+  10155 11527/11528, 10161 11529/11530, 10287 11531/11532, 10333 11533/11534, 10335 11537/11538, 10339 11535/11536, 10341 11539/11540, 10362 11541/11542,
+  10428 11545/11546, 10431 11549/11550, 10444 11543/11544, 10462 11547/11548, 10465 11551/11552, 10468 11553/11554, 10473 11555/11556, 10479 11557/11558,
+  10482 11559/11560, 10485 11561/11562, 10488 11563/11564, 10491 11565/11566, 10500 11567/11568, 10503 11571/11572, 10509 11569/11570, 10543 11573/11574,
+  10566 11575/11576, 10571 11579/11580, 10574 11577/11578, 10577 11581/11582, 10580 11585/11586, 10583 11583/11584, 10586 11587/11588, 10589 11589/11590,
+  10592 11591/11592, 10595 11593/11594, 10598 11595/11596, 10601 11597/11598, 10604 11601/11602, 10607 11605/11606, 10612 11599/11600, 10615 11603/11604,
+  10618 11607/11608, 10621 11609/11610, 10624 11611/11612, 10709 11613/11614.
+- HELD: 10058 (rose "chain for earring" accessory, needs separate studs; how to show it truthfully is unclear). Not generated.
+- Earring doubts for the owner: 10428/10431 wire wrap is an interpretation; 10500/10503 cuff shown on the helix; 10566/10571 and the double-piercing chain pieces (10604/10607/10618/10621) shown in two lobe piercings; var2 angle close to the final on 10488, 10607, 10618, 10151 (different hair, same side view).
+- SETS (manifest 267-272: 9915, 9917, 9919, 9921, 9923, 9927) NOT generated, HELD: their main product photo is already a real on-body photo (neck/ear of a model), so an AI worn photo adds nothing, and the layered multi-pendant necklaces / climber + drop sets are high-risk for exact match. Owner to decide if a second, different worn angle is wanted.
+- Manifest status after this run: everything done except held 10652 (bracelet), 10058 (earring) and the 6 sets.
