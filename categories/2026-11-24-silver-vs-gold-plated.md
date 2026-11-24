@@ -17,3 +17,9 @@ Round 2 (owner: do only what is certain, send the rest as a WhatsApp list):
 - 4 bracelets named "בראס" (8136, 8133, 8131, 8129) moved to 153 + new subcat 600 צמידי ציפוי זהב.
 - 67 uncertain products listed for a material check in whatsapp-material-check-2026-11-24.txt (part A: "בציפוי" without base, 33; part B: colour only / no material, 34).
 - Left alone: 4 moissanite (8325, 8246, 7949, 7909), men's brass bracelet 8149 (men's category).
+
+Round 3 (owner: all 59 SKU items from the list are silver 925, Silver Israel):
+- 59 ids removed from 153 + subcats (kept in their type categories).
+- Found: LitCommerce sync (products carry _litc_product_id) restored the original categories on 44 brass products (modified 12:36 / 15:09 / 16:45). Re-applied once.
+- Owner declined a permanent enforcement mu-plugin (no new products planned). If LitCommerce syncs categories again, re-run the one-off sweep (brass: name has פליז/בראס, men's skipped; silver: name has כסף/925 or the 59 ids).
+- Result 2026-11-24 17:0x: gold-plated 93 (all brass), rings 82 / earrings 63 / necklaces 100 / bracelets 59 / sets 8 / pendants 11 with 0 brass. 8149 (men's brass) left in men's.
