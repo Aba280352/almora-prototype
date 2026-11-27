@@ -30,3 +30,4 @@ Round 3 (owner: all 59 SKU items from the list are silver 925, Silver Israel):
 
 2026-11-27 pagination: owner asked to drop the numbered pagination on all category pages for a simple "load more" button.
 Used the Ecomus theme's built-in option: theme_mod product_catalog_pagination = loadmore (was default numeric; backup option almora_pagination_backup_20261127). Button label "טען עוד" (theme translation). Verified on /product-category/טבעות: 16 -> 32 products after one click, no console errors. WP Rocket cleared per category URL.
+- Load more button style (owner): black fill, no border, white text, wider (min-width 240px, padding 14px 48px), hover opacity .85. Added to Customizer Additional CSS between markers "/* ALMORA load more button */". Verified computed: bg #000, border 0, white text, 240x42.
