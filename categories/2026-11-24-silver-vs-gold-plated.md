@@ -27,3 +27,6 @@ Round 3 (owner: all 59 SKU items from the list are silver 925, Silver Israel):
 2026-11-27:
 - LitCommerce reverted again (brass products modified 2026-11-26 15:14 and 2026-11-27 12:24): 54 brass back in silver cats, 15 silver back in 153. One-off sweep re-applied.
 - Menu 114: "ציפוי זהב" (10985) got children 11617 כל ציפוי הזהב (153), 11618 rings (597), 11619 earrings (598), 11620 necklaces (599), 11621 bracelets (600). menu_order renumbered; order backup option almora_menu114_backup_20261127. Verified in header, sticky and mobile menus; subcat pages 200 with products, no silver-named items.
+
+2026-11-27 pagination: owner asked to drop the numbered pagination on all category pages for a simple "load more" button.
+Used the Ecomus theme's built-in option: theme_mod product_catalog_pagination = loadmore (was default numeric; backup option almora_pagination_backup_20261127). Button label "טען עוד" (theme translation). Verified on /product-category/טבעות: 16 -> 32 products after one click, no console errors. WP Rocket cleared per category URL.
