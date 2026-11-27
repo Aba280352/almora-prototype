@@ -23,3 +23,7 @@ Round 3 (owner: all 59 SKU items from the list are silver 925, Silver Israel):
 - Found: LitCommerce sync (products carry _litc_product_id) restored the original categories on 44 brass products (modified 12:36 / 15:09 / 16:45). Re-applied once.
 - Owner declined a permanent enforcement mu-plugin (no new products planned). If LitCommerce syncs categories again, re-run the one-off sweep (brass: name has פליז/בראס, men's skipped; silver: name has כסף/925 or the 59 ids).
 - Result 2026-11-24 17:0x: gold-plated 93 (all brass), rings 82 / earrings 63 / necklaces 100 / bracelets 59 / sets 8 / pendants 11 with 0 brass. 8149 (men's brass) left in men's.
+
+2026-11-27:
+- LitCommerce reverted again (brass products modified 2026-11-26 15:14 and 2026-11-27 12:24): 54 brass back in silver cats, 15 silver back in 153. One-off sweep re-applied.
+- Menu 114: "ציפוי זהב" (10985) got children 11617 כל ציפוי הזהב (153), 11618 rings (597), 11619 earrings (598), 11620 necklaces (599), 11621 bracelets (600). menu_order renumbered; order backup option almora_menu114_backup_20261127. Verified in header, sticky and mobile menus; subcat pages 200 with products, no silver-named items.
